@@ -1,0 +1,107 @@
+.service-page-root {
+    /* background-color: lime; */
+    padding-left: 7%;
+    /* padding-right: 7%; */
+    display: flex;
+    height: 115vh;
+}
+
+.service-page-left {
+    /* background-color: magenta; */
+    width: 60%;
+    padding-right: 7% !important;
+    overflow-y: scroll;
+    padding: 1%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
+.service-page-right {
+    /* background-color: dodgerblue; */
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-page-title-details {
+    /* background-color: maroon; */
+    display: flex;
+}
+
+.service-details-icon {
+    height: 175px;
+    width: 175px;
+
+    margin-right: 30px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 10px black;
+    background-color: rgb(49, 48, 48);
+    padding: 1%;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+
+.service-details-icon-mobile {
+    height: 120px;
+    width: 120px;
+
+    margin-right: 30px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 10px black;
+    background-color: rgb(49, 48, 48);
+    padding: 1%;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+
+.service-details-name {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-page-img-base {
+    /* background-color: gold; */
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.service-page-img {
+    /* background-color: gold; */
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@font-face {
+    font-family: 'bukra-bold';
+    src: local('bukra-bold'), url(../../../../fonts/bukra-bold.OTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'bukra-regular';
+    src: local('bukra-regular'), url(../../../../fonts/bukra-regular.OTF) format('truetype');
+}
+
+.bukra-bold {
+    font-family: 'bukra-bold' !important;
+}
+
+.bukra-regular {
+    font-family: 'bukra-regular' !important;
+    line-height: 150% !important;
+}
+
+.lspacing {
+    
+    line-height: 150% !important;
+}

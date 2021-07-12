@@ -1,0 +1,192 @@
+.admin-courses-root {
+    padding-top: 3%;
+    display: flex;
+    /* height: 100vh; */
+    /* background-color: lightslategray; */
+}
+
+.admin-courses-controls{
+    background-color: slategray;
+    width: 20%;
+    padding: 1%;
+    border-right: 5px solid darkslategrey;
+    /* border-radius: 100px; */
+    z-index: 1;
+}
+
+.admin-courses-body {
+    /* background-color: maroon; */
+    min-height: 120vh;
+    padding: 1%;
+    width: 100%;
+}
+
+.admin-courses-controls-btns {
+    /* background-color: darkturquoise; */
+}
+
+.admin-course-root {
+    /* background-color: lightgrey; */
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.admin-course-post {
+    /* background-color: violet; */
+    width: 60%;
+    padding: 1%;
+}
+
+.admin-course-controls {
+    /* background-color: turquoise; */
+    width: 40%;
+    padding: 3%;
+    background-color: lightgrey;
+}
+
+.admin-course-controls-info {
+    /* width: 40%; */
+    padding: 2%;
+}
+
+.admin-course-post-paper {
+    width: 75%;
+    margin: auto;
+    padding: 2%;
+    min-height: 100vh;
+    white-space: pre-line;
+
+    box-shadow: 2px 2px 10px black !important;
+}
+
+.admin-course-controls-btn-groups {
+    /* background-color: deeppink; */
+    display: flex;
+    justify-content: center;
+}
+
+.admin-course-controls-btn-base {
+    width: 100%;
+    /* background-color: darkred; */
+}
+
+.admin-course-controls-btn {
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    /* background-color: whitesmoke; */
+}
+
+.admin-course-controls-btn-delete {
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    background-color: red;
+    transition: .5s;
+}
+
+.admin-course-controls-btn-delete:hover {
+    /* width: 95%;
+    height: 10vh;
+    margin: auto; */
+    background-color: maroon;
+}
+
+.admin-course-controls-btn-edit {
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    transition: .5s;
+
+    background-color: slateblue;
+}
+
+.admin-course-controls-btn-edit:hover {
+    /* width: 95%;
+    height: 10vh;
+    margin: auto; */
+    background-color: darkslateblue;
+}
+
+.admin-course-controls-btn-confirm {
+    width: 95%;
+    height: 10vh;
+    transition: .5s;
+
+    margin: auto;
+    background-color: green;
+}
+
+/* .admin-course-controls-btn-confirm:hover {
+    /* width: 95%;
+    height: 10vh;
+    margin: auto; */
+    /* background-color: darkgreen; */
+/* } */ 
+
+.admin-course-controls-btn-cancel {
+    width: 95%;
+    height: 10vh;
+    transition: .5s;
+
+    margin: auto;
+    background-color: red;
+}
+/* 
+.admin-course-controls-btn-cancel:hover {
+    /* width: 95%;
+    height: 10vh;
+    margin: auto; */
+    /* background-color: maroon;  */
+/* } */
+
+.course-page-schedule {
+    background-color: white;
+    padding: 1%;
+    display: flex;
+}
+.course-page-schedule-left {
+    /* background-color: mediumseagreen; */
+    padding: 1%;
+    width: 70%;
+    /* display: flex; */
+}
+.course-page-schedule-right {
+    /* background-color: deepskyblue; */
+    width: 30%;
+    padding: 1%;
+    /* display: flex; */
+}
+
+.course-page-schedule-weekdays {
+    background-color: whitesmoke;
+    margin: 1%;
+    padding: 2%;
+}
+
+.trainer-qualifications {
+    background-color: whitesmoke;
+    padding: 1%;
+}
+
+.trainer-info {
+    /* background-color: yellowgreen; */
+    padding: 1%;
+    display: flex;
+}
+.trainer-info-left {
+    padding: 1%;
+    /* background-color: azure; */
+    width: 65%;
+}
+
+.trainer-info-img {
+    padding: 1%;
+    width: 30%;
+    margin-left: auto;
+    height: 20%;
+    border-radius: 50px;
+}

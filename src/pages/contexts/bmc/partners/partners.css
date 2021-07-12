@@ -1,0 +1,31 @@
+.partners-root {
+    /* background-color: lightgray; */
+    min-height: 100vh;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.partners-grid {
+    /* background-color: beige; */
+    padding: 1%;
+    width: 85%;
+    margin: auto;
+}
+
+.partners-title {
+    padding: 2%;
+    text-align: center;
+}
+
+.partner-card {
+    /* background-color: saddlebrown; */
+    padding: 10%;
+    margin: 10%;
+}
+
+.partners-body {
+    width: 90%;
+    margin: auto;
+    /* background-color: silver; */
+    justify-content: center;
+}

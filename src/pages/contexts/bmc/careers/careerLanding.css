@@ -1,0 +1,85 @@
+.career-landing-root {
+    background-color: whites;
+    /* min-height: 100vh; */
+    padding-top: 6%;
+    padding-bottom: 3%;
+}
+
+.career-landing-title{
+    padding: 2%;
+    text-align: center;
+}
+
+.career-landing-margins {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.career-landing-banner {
+    display: flex;
+    /* height: 50vh; */
+    background-color: lightgrey;
+    padding: 2%;
+}
+.career-landing-banner-text {
+    width: 60%;
+    transform: translateX(50px);
+    /* background-color: seagreen; */
+    padding: 3%;
+}
+.career-landing-banner-img-base {
+    width: 100%;
+    /* transform: translateX(-80px); */
+    height: 40vh;
+    text-align: right;
+    /* background-color: yellow; */
+}
+.career-landing-banner-img {
+    /* width: 60vw; */
+    transform: translateX(-80px);
+    height: 40vh;
+}
+
+.career-landing-banner-btn{
+    text-align: center;
+    width: 60%;
+    /* background-color: red; */
+}
+
+.career-landing-info {
+    /* background-color: seashell; */
+    display: flex;
+}
+.career-landing-info-grid {
+    /* background-color: yellowgreen; */
+    width: 60%;
+    padding: 2%;
+}
+.career-landing-info-grid-paper {
+    margin: 2%;
+    padding: 4%;
+}
+.career-landing-info-grid-paper-img {
+    width: 100px;
+
+}
+.career-landing-info-about {
+    background-color: white;
+    border-radius: 60px;
+    box-shadow: 2px 2px 10px black;
+    width: 40%;
+    padding: 2%;
+}
+.career-landing-info-about-title {
+    padding: 2%;
+    /* background-color: mediumblue; */
+}
+.career-landing-info-about-body {
+    padding: 2%;
+    /* background-color: chocolate; */
+}
+.career-landing-info-about-btn {
+    text-align: center; 
+    /* padding: 2%; */
+    /* background-color: silver; */
+}

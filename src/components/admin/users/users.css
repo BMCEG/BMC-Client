@@ -1,0 +1,9 @@
+.users-create-btn-base{
+    justify-content: center;
+    display: flex;
+}
+
+.users-create-btn {
+    width: 30%;
+    box-shadow: 1px 1px 10px black;
+}

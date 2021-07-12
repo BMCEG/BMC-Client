@@ -1,0 +1,75 @@
+.digital-root {
+    /* background-color: lightgray; */
+    /* min-height: 100vh;
+    padding-top: 5%; */
+    display: flex;
+
+}
+.page-margin-financial {
+    margin-left: 10%;
+    /* margin-right: 10%; */
+}
+.financial-text {
+    width: 65%;
+    /* box-shadow: 2px 0px 5px black;
+    background-color: thistle; */
+    padding: 3%;
+    /* max-height: 100vh; */
+}
+
+.financial-img-base {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.financial-img {
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+width: 100%;
+    object-fit: cover;
+
+}
+
+.financial-details {
+    /* background-color: blueviolet; */
+    display: flex;
+    /* justify-content: center; */
+    height: 220px;
+}
+.financial-icon {
+    height: 100%;
+    margin-right: 30px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 10px black;
+    background-color: rgb(49, 48, 48);
+    width: 220px;
+    padding: 1%;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+.financial-text-box {
+    /* border-style: solid;
+    border-color: black;
+    border-width: 4px; */
+    /* background-color: blanchedalmond; */
+    width: fit-content;
+    padding: 1%;
+    /* text-align: center; */
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}5
+
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}

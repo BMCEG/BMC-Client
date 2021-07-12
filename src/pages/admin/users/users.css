@@ -1,0 +1,26 @@
+.admin-partners-root {
+    padding-top: 3%;
+    display: flex;
+    /* height: 100vh; */
+    /* background-color: lightslategray; */
+}
+
+.admin-partners-controls{
+    background-color: slategray;
+    width: 20%;
+    padding: 1%;
+    border-right: 5px solid darkslategrey;
+    /* border-radius: 100px; */
+    z-index: 1;
+}
+
+.admin-partners-body {
+    /* background-color: maroon; */
+    min-height: 120vh;
+    padding: 1%;
+    width: 100%;
+}
+
+.admin-partners-controls-btns {
+    /* background-color: darkturquoise; */
+}

@@ -1,0 +1,103 @@
+.whyBMC-root {
+    /* height: 100vh; */
+    /* margin-top: 2.9%; */
+    /* background-color: lightgray; */
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.whyBMC-text-box {
+    margin-top: 2%;
+    margin-left: 2%;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 4px; */
+    /* background-color: blanchedalmond; */
+    width: fit-content;
+    padding: 1%;
+}
+
+.whyBMC-page-margin {
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.whyBMC-card {
+    background-color: whitesmoke;
+    height: 600px;
+    width: 600px;
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 10px black;
+    margin: auto;
+    margin-bottom: 2%;
+    transition: all .2s;
+}
+.whyBMC-card-mobile {
+    background-color: whitesmoke;
+    height: 350px;
+    width: 350px;
+    padding: 5%;
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    box-shadow: 2px 2px 10px black;
+    margin: auto;
+    margin-bottom: 2%;
+    transition: all .2s;
+    overflow-y: scroll;
+}
+
+.whyBMC-card:hover {
+    background-color: lightgray;
+}
+
+.whyBMC-grid-col {
+    /* background-color: yellowgreen; */
+    /* width: 400px !important; */
+}
+
+.whyBMC-body {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: 'bukra-regular' !important;
+    line-height: 150% !important;
+
+}
+
+.whyBMC-text-img {
+    display: flex;
+}
+
+.whyBMC-text-left {
+    /* background-color: saddlebrown; */
+}
+.whyBMC-img {
+    padding: 1%;
+    box-shadow: 1px 2px 5px black;
+}
+
+@font-face {
+    font-family: 'bukra-bold';
+    src: local('bukra-bold'), url(../../../../fonts/bukra-bold.OTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'bukra-regular';
+    src: local('bukra-regular'), url(../../../../fonts/bukra-regular.OTF) format('truetype');
+}
+
+.bukra-bold {
+    font-family: 'bukra-bold' !important;
+}
+
+.bukra-regular {
+    font-family: 'bukra-regular' !important;
+    line-height: 150% !important;
+}

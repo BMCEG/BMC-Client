@@ -1,0 +1,89 @@
+.career-listing-root {
+    /* background-color: lightgray; */
+    /* min-height: 100vh; */
+    /* padding-top: 1%; */
+}
+
+.career-listing-title {
+    padding: 2%;
+    text-align: center;
+}
+
+.career-listing-details {
+    background-color: whitesmoke;
+    padding: 3%
+}
+
+.career-listing-page-margins {
+    padding-left: 16%;
+    padding-right: 16%;
+    /* padding-left: 16%; */
+    /* padding-top: 2%; */
+}
+.career-listing-page-margins-mobile {
+    /* padding-left: 16%; */
+    padding-right: 4%;
+    padding-left: 4%;
+    /* padding-top: 2%; */
+}
+
+.career-listing-subtitle {
+    padding-left: 1%;
+}
+
+.career-listing-subtitle-body {
+    padding-left: 2%;
+    white-space: pre-line;
+}
+
+.career-listing-application-title {
+    /* background-color: lightyellow; */
+    padding: 1%;
+    /* background-color: linen; */
+    background-color: whitesmoke;
+}
+
+.career-listing-application-form {
+    padding: 1%;
+    background-color: whitesmoke;
+}
+
+.career-listing-application-row {
+    display: flex;
+    margin: 1%;
+}
+
+.career-listing-application-label {
+    width: 250px !important;
+    /* background-color: sandybrown; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.career-listing-application-row-number {
+    width: 50% !important;
+    display: flex;
+    margin: 1%;
+    
+    
+}
+.career-listing-application-row-email {
+    /* width: 1%; */
+    width: 50% !important;
+    display: flex;
+    margin: 1%;
+    padding-left: 2%;
+    /* background-color: blue; */
+}
+
+.lmao {
+    /* background-color: blueviolet; */
+    display: flex;
+}
+
+.career-listing-application-btn {
+    padding: 1%;
+    text-align: center;
+}

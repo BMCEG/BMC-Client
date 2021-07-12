@@ -1,0 +1,96 @@
+.page-root{
+    /* background-color: red; */
+    padding-top: 3%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    /* display: flex; */
+    /* flex-direction: column; */
+
+}
+
+.admin-blogs-root{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    /* min-height: 100vh; */
+    background-color: whitesmoke
+}
+.admin-contacts-root{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    min-height: 100vh;
+    background-color: whitesmoke
+}
+
+.admin-blogs-btns {
+    background-color: blueviolet;
+    padding: 1%;
+    margin: auto;
+}
+
+.admin-blogs-btn {
+    background-color: burlywood;
+    width: 10%;
+    margin: auto;
+    height: 13vh;
+    border-radius: 10%;
+}
+
+.admin-blogs-btn-img {
+    background-color: cadetblue;
+    /* height: 5vh; */
+    height: 8vh;
+    /* margin: auto; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.admin-blogs-btn-label {
+    /* background-color: cadetblue; */
+    /* height: 5vh; */
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admin-blogs-table {
+    /* background-color: yellow; */
+    /* width: 90%; */
+    margin: auto;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    
+}
+.admin-table-row {
+    -webkit-animation: fadeIn .2s;
+    animation: fadeIn .2s;
+    
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+.inner-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    min-width: 100% !important;
+    /* background-color: blueviolet; */
+
+}
+
+.admin-create-blog-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

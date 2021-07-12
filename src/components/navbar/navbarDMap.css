@@ -1,0 +1,118 @@
+.nav-dmap-root {
+    background-color: white;
+    box-shadow: 1px 1px 5px #393938 !important;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex !important;
+    /* min-width: 100%; */
+    color: black;
+    position: sticky !important;
+    top: 0;
+    z-index: 3;
+}
+
+.nav-dmap-root-mob {
+    background-color: white;
+    box-shadow: 1px 1px 5px #393938 !important;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex !important;
+    height: 70px;
+    color: black;
+    position: sticky !important;
+    top: 0;
+}
+
+
+.nav-dmap-left {
+    /* background-color: limegreen; */
+    width: 20%;
+}
+.nav-dmap-center {
+    /* background-color: navy; */
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.nav-dmap-right {
+    /* background-color: orange; */
+    width: 20%;
+    display: flex;
+}
+.nav-dmap-right-mob {
+    /* background-color: orange; */
+    width: 80%;
+    display: flex;
+}
+
+.gallery-tab {
+    /* background-color: skyblue; */
+    border-left: 3px solid skyblue;
+    padding-left: 30px;
+}
+
+.nav-bar-skyblue {
+    color: skyblue !important;
+    /* background-color: slategrey; */
+}
+
+.navbar-logo {
+    display: inline !important;
+    padding: 25% !important;
+    margin: 10% !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: lightgreen !important;
+}
+
+.title {
+    color: black;
+    margin-right: 2%;
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* .btn-link {
+    color: black !important;
+
+} */
+
+#dropdown-basic::after {
+    display: none;
+}
+
+
+@font-face {
+    font-family: 'bukra-bold';
+    src: local('bukra-bold'), url(../../fonts/bukra-bold.OTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'bukra-regular';
+    src: local('bukra-regular'), url(../../fonts/bukra-regular.OTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'bukra-medium';
+    src: local('bukra-medium'), url(../../fonts/bukra-medium.OTF) format('truetype');
+}
+
+.bukra-bold {
+    font-family: 'bukra-bold' !important;
+}
+
+.bukra-regular {
+    font-family: 'bukra-regular' !important;
+}
+.bukra-medium {
+    font-family: 'bukra-medium' !important;
+}
+
+.line-spacing {
+    line-height: 150% !important;
+}

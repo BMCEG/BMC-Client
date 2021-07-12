@@ -1,0 +1,49 @@
+.ewings-homepage-text {
+    /* background-color: red; */
+    z-index: 0;
+    transform: translateY(-90vh);
+    width: 65%;
+    margin: auto;
+    /* position:relative;
+    overflow: hidden !important; */
+    /* margin-bottom: -159px; */
+}
+.ewings-homepage-text-mob {
+    /* background-color: rgb(170, 169, 169); */
+    /* z-index: 0; */
+    /* transform: translateY(-90px); */
+    width: 85%;
+    margin: auto;
+    height: 67%;
+    padding: 10px;
+    overflow-y: scroll;
+    color: white;
+    /* position:relative;
+    overflow: hidden !important; */
+    /* margin-bottom: -159px; */
+}
+
+.carousel-item {background-color: transparent;}
+.carousel-indicators {
+    display: none !important;
+}
+
+.carousel-control-prev {
+    display: none;
+}
+.carousel-control-next {
+    display: none;
+}
+
+.ewings-homepage-root-mob{
+    background-color: #4694D6;
+    height: 850px;
+}
+
+.ewings-player {
+    max-height: 50%;
+    /* background-color: springgreen; */
+    /* padding: 10%; */
+    /* height: 100% !important; */
+    /* width: 500px !important; */
+}

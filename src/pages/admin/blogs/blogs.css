@@ -1,0 +1,117 @@
+.admin-blog-root {
+    /* background-color: lightgrey; */
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.admin-blog-post {
+    /* background-color: violet; */
+    width: 60%;
+    padding: 1%;
+}
+
+.admin-blog-controls {
+    /* background-color: turquoise; */
+    width: 40%;
+    padding: 3%;
+    background-color: lightgrey;
+}
+
+.admin-blog-controls-info {
+    /* width: 40%; */
+    padding: 2%;
+}
+
+.admin-blog-post-paper {
+    width: 75%;
+    margin: auto;
+    padding: 2%;
+    min-height: 100vh;
+    white-space: pre-line;
+
+    box-shadow: 2px 2px 10px black !important;
+}
+
+.admin-blog-controls-btn-groups {
+    /* background-color: deeppink; */
+    display: flex;
+    justify-content: center;
+}
+
+.admin-blog-controls-btn-base {
+    width: 100%;
+    /* background-color: darkred; */
+}
+
+.admin-blog-controls-btn {
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    /* background-color: whitesmoke; */
+}
+
+.admin-blog-controls-btn-delete {
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    background-color: red;
+    transition: .5s;
+}
+
+.admin-blog-controls-btn-delete:hover {
+    /* width: 95%;
+    height: 10vh;
+    margin: auto; */
+    background-color: maroon;
+}
+
+.admin-blog-controls-btn-edit {
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    transition: .5s;
+
+    background-color: slateblue;
+}
+
+.admin-blog-controls-btn-edit:hover {
+    /* width: 95%;
+    height: 10vh;
+    margin: auto; */
+    background-color: darkslateblue;
+}
+
+.admin-blog-controls-btn-confirm {
+    width: 95%;
+    height: 10vh;
+    transition: .5s;
+
+    margin: auto;
+    background-color: green;
+}
+
+.admin-blog-controls-btn-confirm:hover {
+    /* width: 95%;
+    height: 10vh;
+    margin: auto; */
+    background-color: darkgreen;
+}
+
+.admin-blog-controls-btn-cancel {
+    width: 95%;
+    height: 10vh;
+    transition: .5s;
+
+    margin: auto;
+    background-color: red;
+}
+
+.admin-blog-controls-btn-cancel:hover {
+    /* width: 95%;
+    height: 10vh;
+    margin: auto; */
+    background-color: maroon;
+}

@@ -1,0 +1,149 @@
+.footer-ewings-root {
+    padding-top: 1%;
+    /* background-color: springgreen; */
+    color: white;
+    width: 100%;
+    display: flex;
+    height: 300px;
+    -webkit-box-shadow: inset 0 5px 10px -8px #000000;
+    box-shadow: inset 0 5px 10px -8px #000000;
+}
+.footer-ewings-root-mob {
+    /* padding: 2%; */
+    /* background-color: springgreen; */
+    color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    -webkit-box-shadow: inset 0 5px 10px -8px #000000;
+    box-shadow: inset 0 5px 10px -8px #000000;
+}
+.footer-ewings-root-left {
+    /* background-color: aqua; */
+    width: 15% !important;
+    height: 100% !important;
+}
+.footer-ewings-root-center {
+    /* background-color: aqua; */
+    width: 60% !important;
+    margin: auto;
+}
+.footer-ewings-logo-img {
+    /* background-color: blueviolet; */
+}
+.footer-ewings-root-right {
+    /* background-color: aqua; */
+    width: 15% !important;
+    height: 100% !important;
+}
+
+.footer-ewings-info {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    /* background-color: yellow; */
+    padding: 2%;
+    color: skyblue;
+}
+
+.footer-ewings-info-mob {
+    /* width: 40%; */
+    margin: auto;
+    display: flex;
+    /* background-color: yellow; */
+    padding: 2%;
+    color: #62A4DC;
+}
+
+.footer-ewings-left {
+    width: 50%;
+    /* background-color: violet; */
+}
+
+.footer-ewings-mob {
+    /* width: 50%; */
+    margin: auto;
+    text-align: center;
+    /* background-color: violet; */
+}
+
+.footer-ewings-right {
+    width: 50%;
+    padding-left: 10%;
+    border-left: 5px solid #62A4DC;
+    color: #62A4DC;
+    /* background-color: navy; */
+}
+
+.footer-ewings-social-links {
+    display: flex;
+    /* background-color: maroon; */
+    justify-content: center;
+}
+
+.footer-ewingss-social-btn {
+    background-color: #62A4DC;
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    border-radius: 100%;
+    color: white !important;
+    text-align: center !important;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+.footer-ewingss-social-btn-mob {
+    background-color: #62A4DC;
+    width: 45px;
+    height: 45px;
+    margin: 4px;
+    border-radius: 100%;
+    color: white !important;
+    text-align: center !important;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.lmoa {
+    /* background-color: yellow; */
+    margin: auto;
+}
+
+.footer-ewings-root-left {
+    /* background-color: magenta; */
+    width: 30%;
+    padding-top: 20px;
+    height: 300px;
+}
+
+.footer-ewings-root-right {
+    /* background-color: magenta; */
+    width: 30%;
+    padding-top: 20px;
+    text-align: right;
+    height: 300px;
+}
+
+.footer-ewings-root-img {
+    height: 100%;
+}
+
+.footer-ewings-logo {
+    /* background-color: magenta; */
+    height: fit-content;
+}
+.footer-ewings-logo-mob {
+    /* background-color: magenta; */
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-ewings-root-logo-img{
+    /* background-color: maroon; */
+    width: 100%;
+    margin-bottom: -150px;
+    margin-top: -150px;
+}

@@ -1,0 +1,47 @@
+.content-root {
+    background-color: lightgray;
+    min-height: 100vh;
+    padding-top: 6%;
+    display: flex;
+
+}
+
+.content-icon {
+    height: 100% !important;
+    margin-right: 30px;
+    /* background-color: beige; */
+    /* background-color: rgb(158, 154, 148); */
+}
+
+.content-title {
+    display: flex;
+    /* justify-content: center; */
+    height: 20vh;
+    width: 100vw;
+    /* background-color: lavenderblush; */
+
+}
+
+.content-page {
+    /* width: 80%; */
+    /* box-shadow: 2px 0px 5px black;
+    background-color: thistle; */
+    padding: 3%;
+    /* max-height: 100vh; */
+}
+
+.content-body {
+    display: flex;
+    margin-left: 3%;
+    margin-right: 10%;
+}
+
+.content-text {
+    /* background-color: lavenderblush; */
+    padding: 3%;
+}
+
+.content-img {
+    box-shadow: 3px 3px 10px black;
+
+}

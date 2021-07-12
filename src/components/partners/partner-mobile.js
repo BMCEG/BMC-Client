@@ -1,0 +1,32 @@
+import React, { Component } from 'react'
+import './partner.css';
+import endpoint from '../../helpers/api_service';
+import { Paper, Typography } from '@material-ui/core'
+// import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import Button from 'react-bootstrap/esm/Button';
+
+export default class PartnerCard extends Component {
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+
+        this.state = {
+            partner: this.props.partner
+        }
+    }
+
+    handleClick(url) {
+        window.open(url, "_blank")
+    }
+
+    render() {
+        return (
+            <>
+                <Paper className='partner-paper-mobile'>
+                    <img src={`${endpoint}/${this.props.partner.logo}`} alt='partner' className='partner-img' />
+                </Paper>
+                <br></br>
+            </>
+        )
+    }
+}

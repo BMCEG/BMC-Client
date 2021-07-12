@@ -1,0 +1,47 @@
+.pr-root {
+    background-color: lightgray;
+    min-height: 100vh;
+    padding-top: 6%;
+    display: flex;
+
+}
+
+.pr-icon {
+    height: 100% !important;
+    margin-right: 30px;
+    /* background-color: beige; */
+    /* background-color: rgb(158, 154, 148); */
+}
+
+.pr-title {
+    display: flex;
+    /* justify-pr: center; */
+    height: 20vh;
+    width: 100vw;
+    /* background-color: lavenderblush; */
+
+}
+
+.pr-page {
+    /* width: 80%; */
+    /* box-shadow: 2px 0px 5px black; */
+    /* background-color: saddlebrown; */
+    padding: 3%;
+    /* max-height: 100vh; */
+}
+
+.pr-body {
+    display: flex;
+    margin-left: 3%;
+    margin-right: 10%;
+}
+
+.pr-text {
+    /* background-color: lavenderblush; */
+    padding: 3%;
+}
+
+.pr-img {
+    box-shadow: 3px 3px 10px black;
+
+}
