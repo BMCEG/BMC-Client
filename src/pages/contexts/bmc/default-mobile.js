@@ -4,7 +4,7 @@ import './default.css';
 // import "react-responsive-carousel/lib/stylesx/carousel.min.css";
 import Carousel from 'react-elastic-carousel';
 import CarouselComp from '../../../components/carousel-mobile'
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import endpoint from '../../../helpers/api_service.js';
 // import Carousel from "react-multi-carousel";
@@ -55,14 +55,14 @@ export default class DefaultPage extends Component {
         return (
             <div className="default-root">
                 <div className="carousel-canvas-mobile">
-                    <CarouselComp items={this.state.carouselItems} />
+                    <CarouselComp isMobile={true} items={this.state.carouselItems} />
                 </div>
                 {/* <br></br> */}
                 <div className="page-margin-mobile">
                     <div className='banner-grid-mobile'>
                         <div className='banner-text-mobile'>
-                            <h3>Who Are We?!</h3>
-                            <h6>We are experts in such broad business tools as Strategic audit, Feasibility studies, research and analysis, Business strategies - Internal business processes – Business development, book keeping, financial audits, Business Manuals, Digital transformation, training courses, among other custom-tailored services.</h6>
+                            <h4 className='bukra-bold'>Who Are We?!</h4>
+                            <h6 className='bukra-regular'>We are experts in such broad business tools as Strategic audit, Feasibility studies, research and analysis, Business strategies - Internal business processes – Business development, book keeping, financial audits, Business Manuals, Digital transformation, training courses, among other custom-tailored services.</h6>
                         </div>
                         <div className="banner-photo-base-mobile">
                             <img
@@ -103,8 +103,8 @@ export default class DefaultPage extends Component {
                                 <img className='home-service-icon-mobile' src={`${endpoint}/service-strategic-planning-black.png`} />
                             </div>
                             <div className='home-service-text-mobile'>
-                                <h4>Strategic Plan</h4>
-                                <h6>BMC has the aim to provide professional counsel, and plans along with the development of the implementation framework that assure client’s long-term growth.</h6>
+                                <h4 className='bukra-bold'>Strategic Plan</h4>
+                                <h6 className='bukra-regular'>BMC has the aim to provide professional counsel, and plans along with the development of the implementation framework that assure client’s long-term growth.</h6>
                             </div>
 
                             <div style={{ textAlign: 'right', paddingTop: '20px' }}>
@@ -117,8 +117,8 @@ export default class DefaultPage extends Component {
                                 <img className='home-service-icon-mobile' src={`${endpoint}/service-hr-black.png`} />
                             </div>
                             <div className='home-service-text-mobile'>
-                                <h4>HR Management</h4>
-                                <h6>We provide Human Resources service promoting the concept that employees are the most valuable resource and will be treated as such.</h6>
+                                <h4 className='bukra-bold'>HR Management</h4>
+                                <h6 className='bukra-regular'>We provide Human Resources service promoting the concept that employees are the most valuable resource and will be treated as such.</h6>
                             </div>
 
                             <div style={{ textAlign: 'right', paddingTop: '20px' }}>
@@ -131,8 +131,8 @@ export default class DefaultPage extends Component {
                                 <img className='home-service-icon-mobile' src={`${endpoint}/service-toolbox-black.png`} />
                             </div>
                             <div className='home-service-text-mobile'>
-                                <h4>BMC Tool Box</h4>
-                                <h6>We are often engaged to provide Custom-tailored solutions that meet the needs of your particular organization.</h6>
+                                <h4 className='bukra-bold'>BMC Tool Box</h4>
+                                <h6 className='bukra-regular'>We are often engaged to provide Custom-tailored solutions that meet the needs of your particular organization.</h6>
                             </div>
 
                             <div style={{ textAlign: 'right', paddingTop: '20px' }}>
@@ -147,8 +147,8 @@ export default class DefaultPage extends Component {
                                 <img className='home-service-icon-mobile' src={`${endpoint}/service-marketing-mgmt-black.png`} />
                             </div>
                             <div className='home-service-text-mobile'>
-                                <h4>Marketing Management</h4>
-                                <h6>We act as your marketing arm department, dedicated to achieve the goal at the highest quality, on time and within your budget.</h6>
+                                <h4 className='bukra-bold'>Marketing Management</h4>
+                                <h6 className='bukra-regular'>We act as your marketing arm department, dedicated to achieve the goal at the highest quality, on time and within your budget.</h6>
                             </div>
 
                             <div style={{ textAlign: 'right', paddingTop: '20px' }}>
@@ -161,8 +161,8 @@ export default class DefaultPage extends Component {
                                 <img className='home-service-icon-mobile' src={`${endpoint}/service-marketing-mgmt-black.png`} />
                             </div>
                             <div className='home-service-text-mobile'>
-                                <h4>Finance and Accounting</h4>
-                                <h6>We have the aim to provide a full range of comprehensive high quality services.</h6>
+                                <h4 className='bukra-bold'>Finance and Accounting</h4>
+                                <h6 className='bukra-regular'>We have the aim to provide a full range of comprehensive high quality services.</h6>
                             </div>
 
                             <div style={{ textAlign: 'right', paddingTop: '20px' }}>

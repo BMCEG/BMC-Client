@@ -6,9 +6,7 @@ import './blog.css'
 import axios from 'axios';
 import endpoint from '../../helpers/api_service';
 import { Grid } from '@material-ui/core';
-import Button from 'react-bootstrap/Button';
-import NavbarBMC from '../../components/navbar/navbarBMC.js';
-import FooterBMC from '../../components/footer/footer.js';
+import { Button } from 'react-bootstrap';
 
 export default class Blog extends Component {
     constructor(props) {
@@ -72,20 +70,20 @@ export default class Blog extends Component {
                             <img className='blog-img' src={`${endpoint}/${this.state.blog.image}`} alt={this.state.blog.title} />
                         </div>
                         <div className='blog-title'>
-                            <h1>{this.state.blog.title}</h1>
+                            <h1 className='bukra-bold'>{this.state.blog.title}</h1>
                         </div>
                         <div className="blogs-ticket">
                             <div className="blogs-author">
                                 <FontAwesomeIcon icon={faUserCircle} style={{ marginRight: '5px' }} />
-                                <h6>{this.state.blog.author}</h6>
+                                <h6 className='bukra-regular'>{this.state.blog.author}</h6>
                             </div>
                             <div className="blogs-date">
                                 <FontAwesomeIcon icon={faClock} style={{ marginRight: '5px' }} />
-                                <h6>{moment(this.state.blog.dateCreated).format('DD MMM, YYYY')}</h6>
+                                <h6 className='bukra-regular'>{moment(this.state.blog.dateCreated).format('DD MMM, YYYY')}</h6>
                             </div>
                         </div>
                         <div className='blog-post'>
-                            <h5>{this.state.blog.post}</h5>
+                            <h5 className='bukra-regular'>{this.state.blog.post}</h5>
                         </div>
                         {/* <hr></hr> */}
 
@@ -103,7 +101,7 @@ export default class Blog extends Component {
 
                                     </Grid>
                                     <Grid item xs={6} className="recent-blog-title">
-                                        <h4>{blog.title}</h4>
+                                        <h4 className='bukra-bold'>{blog.title}</h4>
                                         <h6>{moment(this.state.blog.dateCreated).format('DD MMM, YYYY')}</h6>
                                         <Button variant="danger" value={blog._id} onClick={this.handleClick}>
                                             Read More

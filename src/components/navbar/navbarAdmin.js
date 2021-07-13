@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './navbarAdmin.css'
 import Navbar from 'react-bootstrap/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 
 export default class NavbarBMC extends Component {
     constructor(props) {

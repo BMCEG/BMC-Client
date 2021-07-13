@@ -41,6 +41,10 @@
     font-family: 'bukra-regular' !important;
 }
 
+.founder-sig-mob {
+    /* background-color: yellow; */
+    width: 70%;
+}
 .founder-sig {
     /* background-color: yellow; */
     width: 20%;

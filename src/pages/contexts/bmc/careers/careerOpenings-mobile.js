@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Paper, Grid } from '@material-ui/core';
-import Button from 'react-bootstrap/button'
+import { Button } from 'react-bootstrap';
 import './careerOpenings.css';
 import endpoint from '../../../../helpers/api_service.js'
 import axios from 'axios';
@@ -28,7 +28,7 @@ export default class CareerOpenings extends Component {
 
     render() {
         return (
-            <div className='career-opening-root' style={{ backgroundImage: `url(${endpoint}/bg-our-story.png)`, backgroundSize: 'cover' }}>
+            <div className='career-opening-root-mob' style={{ backgroundImage: `url(${endpoint}/bg-our-story.png)`, backgroundSize: 'cover' }}>
                 {/* <div className='career-opening-margin'> */}
                 {this.state.openings.map((opening) => (
                     // <h3>ss</h3>

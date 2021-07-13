@@ -3,7 +3,7 @@ import NavbarDropdown from './navbarBMCDropdown';
 import './navbarDMap.css'
 import Navbar from 'react-bootstrap/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import endpoint from '../../helpers/api_service';
@@ -108,30 +108,10 @@ export default class NavbarDMap extends Component {
                     </div>
                 </div>
                 <div className="title gallery-tab">
-                        <Button variant="link" href='/' >
-                            <img src={`${endpoint}/logo-no-text.png`} alt='home' className='nav-logo-img-ewings' />
-                        </Button>
-                    </div>
-
-                {/* <div className="title">
-                    <NavbarDropdown title="About" items={aboutItems} setSelectedItem={this.setSelectedItem} />
-                </div> */}
-                {/* <div className="title">
-                    <NavbarDropdown title="Packages" items={packagesItems} setSelectedItem={this.setSelectedItem} />
+                    <Button variant="link" href='/' >
+                        <img src={`${endpoint}/logo-no-text.png`} alt='home' className='nav-logo-img-ewings' />
+                    </Button>
                 </div>
-                <div className="title">
-                    <h5>Contact Us</h5>
-                </div>
-                <div className="title">
-                    <h5>Careers</h5>
-                </div> */}
-                {/* <div className="title">
-                    <h5>Partners</h5>
-                </div>
-                <Button className="title" variant="link" onClick={() => this.setSelectedItem('', 'bmc')} >
-                    <h5>Consultants</h5>
-
-                </Button> */}
             </Navbar>
         )
     }

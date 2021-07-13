@@ -3,7 +3,7 @@ import './gallery.css';
 import axios from 'axios';
 import endpoint from '../../../../helpers/api_service.js';
 import ReactPlayer from "react-player";
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons'
 

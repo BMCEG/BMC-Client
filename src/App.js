@@ -4,6 +4,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import Homepage from "./pages/homepage/homepage.js";
 import LandingPage from "./pages/landing/landing.js";
+import LandingPageMob from "./pages/landing/landing-mobile.js";
 
 import NavbarBMC from './components/navbar/navbarBMC.js';
 import NavbarBMCMob from './components/navbar/navbarBMC-mobile';

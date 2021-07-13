@@ -4,7 +4,7 @@ import endpoint from '../../helpers/api_service';
 import { getAdminID } from '../../helpers/adminID';
 import './panel.css'
 import { Grid, Paper } from '@material-ui/core';
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import Moment from 'react-moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'

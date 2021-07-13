@@ -3,7 +3,7 @@ import { TextField } from '@material-ui/core';
 import axios from 'axios';
 import endpoint from '../../../../helpers/api_service';
 import './contact.css';
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 class Contact extends Component {

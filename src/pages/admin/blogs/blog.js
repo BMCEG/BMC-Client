@@ -5,7 +5,7 @@ import './blogs.css';
 import NavbarAdmin from '../../../components/navbar/navbarAdmin.js';
 import { Paper, TextField, Zoom } from '@material-ui/core';
 import Moment from 'react-moment';
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
 
 export default class Blog extends Component {
     constructor(props) {

@@ -135,19 +135,19 @@ export default class ourStory extends Component {
           >
             <div className="story-node-mobile">
               <img
-                src={`${endpoint}/our-story-2014.png`}
+               src={`${endpoint}/our-story-2014.png`}
                 alt="ds"
                 className="story-ball-mobile"
                 onMouseOver={() => this.handleMouseOver("ball3")}
                 onMouseLeave={() => this.handleMouseLeave("ball3")}
               />
               <div className='story-year-mobile'>
-                <h4>2014</h4>
+                <h4 className='bukra-bold'>2014</h4>
               </div>
             </div>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography variant='h6' component='h6' className='bukra-regular'>
               Since inception, we have advised, planned and managed
               investments valued over 6.5 billion EGP specializing in
               real-estate development and construction and trading
@@ -171,12 +171,12 @@ export default class ourStory extends Component {
                 onMouseLeave={() => this.handleMouseLeave("ball3")}
               />
               <div className='story-year-mobile'>
-                <h4>2015</h4>
+                <h4 className='bukra-bold'>2015</h4>
               </div>
             </div>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography variant='h6' component='h6' className='bukra-regular'>
               More industries included in the manufacturing and
               agricultural sector ordering feasibility studies and setup for
               factories in cosmeceuticals, detergents, food, and packing
@@ -197,12 +197,12 @@ export default class ourStory extends Component {
                 className="story-ball-mobile"
               />
               <div className='story-year-mobile'>
-                <h4>2016-2017</h4>
+                <h4 className='bukra-bold'>2016-2017</h4>
               </div>
             </div>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography variant='h6' component='h6' className='bukra-regular'>
               Widen our scope of services to include Financial advisory,
               serving new sectors like import & export, supporting
               startups and entrepreneurs.
@@ -223,12 +223,12 @@ export default class ourStory extends Component {
                 className="story-ball-mobile"
               />
               <div className='story-year-mobile'>
-                <h4>2018-2019</h4>
+                <h4 className='bukra-bold'>2018-2019</h4>
               </div>
             </div>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography variant='h6' component='h6' className='bukra-regular'>
               Digital transformation, introducing a new scope of digital
               marketing services, hiring digital experts, and blend of
               thinkers, creatives, and designers.
@@ -251,12 +251,12 @@ export default class ourStory extends Component {
                 onMouseLeave={() => this.handleMouseLeave("ball3")}
               />
               <div className='story-year-mobile'>
-                <h4>2020</h4>
+                <h4 className='bukra-bold'>2020</h4>
               </div>
             </div>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography variant='h6' component='h6' className='bukra-regular'>
               Dealing with COVID 19 Pandemic with all our business clients
               to pass this critical period with tailored crisis management
               solutions for each sector and industry.
@@ -279,12 +279,12 @@ export default class ourStory extends Component {
                 onMouseLeave={() => this.handleMouseLeave("ball3")}
               />
               <div className='story-year-mobile'>
-                <h4>2021</h4>
+                <h4 className='bukra-bold'>2021</h4>
               </div>
             </div>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography variant='h6' component='h6' className='bukra-regular'>
               Widen our scope to include Taxation, more industries
               included in the Banking and telecom sectors, providing
               marketing advisory for Banks, financial firms, and

@@ -4,7 +4,7 @@ import './default.css';
 // import "react-responsive-carousel/lib/stylesx/carousel.min.css";
 import Carousel from 'react-elastic-carousel';
 import CarouselComp from '../../../components/carousel.js'
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import endpoint from '../../../helpers/api_service.js';
 // import Carousel from "react-multi-carousel";
@@ -55,7 +55,7 @@ export default class DefaultPage extends Component {
         return (
             <div className="default-root">
                 <div className="carousel-canvas">
-                    <CarouselComp items={this.state.carouselItems} />
+                    <CarouselComp isMobile={true} items={this.state.carouselItems} />
                 </div>
                 {/* <br></br> */}
                 <div className="page-margin">

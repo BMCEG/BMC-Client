@@ -81,7 +81,7 @@ export default class Landing extends Component {
                     <h1 className="bukra-bold">{this.state.courseDetails.displayTitle}</h1>
                     <div className='landing-grid-div'>
                         <div className='landing-grid-text'>
-                            <h2 className='bukra-bold' >Training Description</h2>
+                            <h2 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Training Desscription</h2>
                             <h3 className='bukra-regular'>{this.state.courseDetails.description}</h3>
                             <br></br>
                             <div className='landing-grid-btn-base-left'>
@@ -99,7 +99,7 @@ export default class Landing extends Component {
                         <img className='landing-grid-img' src={`${endpoint}/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
                         </div>
                         <div className='landing-grid-text'>
-                            <h2 className='bukra-bold' >Training Outline</h2>
+                            <h2 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Training Outline</h2>
                             <h3 className='bukra-regular'>{this.state.courseDetails.outline}</h3>
                             <br></br>
                             <div className='landing-grid-btn-base-right'>
@@ -110,7 +110,7 @@ export default class Landing extends Component {
                     <hr></hr>
                     <div className='landing-grid-div'>
                         <div className='landing-grid-text'>
-                            <h2 className='bukra-bold' >Training Methodology</h2>
+                            <h2 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Training Methodology</h2>
                             <h3 className='bukra-regular'>{this.state.courseDetails.methedology}</h3>
                             <br></br>
                             <div className='landing-grid-btn-base-left'>
@@ -129,7 +129,7 @@ export default class Landing extends Component {
                             </div>
                         </div>
                         <div className='landing-grid-text'>
-                            <h2  className='bukra-bold'>Meet the Trainer</h2>
+                            <h2 style={{ textShadow: '2px 2px lightgrey' }} className='bukra-bold'>Meet the Trainer</h2>
                             <h3 className='bukra-medium'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h3>
                             {this.state.courseTrainerQualifications.map((qual, index) => (
                                 <div key={index} className="course-trainer-qualification">
@@ -146,7 +146,7 @@ export default class Landing extends Component {
                     <hr></hr>
                     <div className='landing-grid-div'>
                         <div className='landing-grid-text-dates'>
-                            <h2 className='bukra-bold' >Duration and Fees</h2>
+                            <h2 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Duration and Fees</h2>
                             {this.state.courseSchedules.map((schedule, index) => (
                                 <div key={index} className="course-schedule">
                                     <Grid container>

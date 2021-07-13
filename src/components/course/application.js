@@ -3,7 +3,7 @@ import { TextField,  Select, MenuItem, InputLabel, FormControl } from '@material
 import './application.css';
 import axios from 'axios';
 import endpoint from '../../helpers/api_service';
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 
 export default class Application extends Component {
     constructor(props) {

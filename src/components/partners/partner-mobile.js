@@ -3,7 +3,7 @@ import './partner.css';
 import endpoint from '../../helpers/api_service';
 import { Paper, Typography } from '@material-ui/core'
 // import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
 
 export default class PartnerCard extends Component {
     constructor(props) {

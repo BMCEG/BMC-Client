@@ -1,6 +1,6 @@
 import React from 'react'
 import './careerLanding.css'
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import { Grid, Paper } from '@material-ui/core';
 import endpoint from '../../../../helpers/api_service.js'
 

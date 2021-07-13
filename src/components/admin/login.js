@@ -3,7 +3,7 @@ import './login.css';
 import axios from 'axios';
 import endpoint from '../../helpers/api_service.js';
 import { TextField, Zoom } from '@material-ui/core';
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
 
 export default class Login extends Component {
     constructor(props) {

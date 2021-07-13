@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import endpoint from '../../helpers/api_service'
 import './createBlog.css'
-import Button from 'react-bootstrap/Button'
+import { Button } from 'react-bootstrap';
 import { TextField, Select, MenuItem, FormControl } from '@material-ui/core'
 export default class createBlog extends Component {
     constructor(props) {

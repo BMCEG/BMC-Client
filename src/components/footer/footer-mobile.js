@@ -1,7 +1,7 @@
 import { Grid, TextField } from '@material-ui/core';
 import React, { Component } from 'react';
 import './footer.css';
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
 import endpoint from '../../helpers/api_service';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -19,13 +19,13 @@ export default class Footer extends Component {
                         </Grid>
                         <Grid item xs={1}></Grid>
                         <Grid item xs={6} className="footer-mob-text">
-                            <h3 style={{ color: 'black', fontWeight: 'bolder' }}>Business Map Consultants</h3>
+                            <h3 className='bukra-bold' style={{ color: 'black', fontWeight: 'bolder' }}>Business Map Consultants</h3>
                             <br></br>
-                            <h6 style={{ color: 'black' }}>Lorem Street</h6>
-                            <h6 style={{ color: 'black' }}>New Cairo, Cairo, Egypt</h6>
+                            <h6  className='bukra-regular' style={{ color: 'black' }}>Lorem Street</h6>
+                            <h6  className='bukra-regular' style={{ color: 'black' }}>New Cairo, Cairo, Egypt</h6>
                             <br></br>
-                            <h6 style={{ color: 'black' }}>Phone: +021234567890</h6>
-                            <h6 style={{ color: 'black' }}>E-Mail: test@email.com</h6>
+                            <h6 className='bukra-regular' style={{ color: 'black' }}>Phone: +021234567890</h6>
+                            <h6 className='bukra-regular' style={{ color: 'black' }}>E-Mail: test@email.com</h6>
                         </Grid>
                         {/* <Grid item xs={1}></Grid> */}
                         {/* <Grid item xs={3}>

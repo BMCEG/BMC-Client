@@ -6,9 +6,7 @@ import './blog.css'
 import axios from 'axios';
 import endpoint from '../../helpers/api_service';
 import { Grid } from '@material-ui/core';
-import Button from 'react-bootstrap/Button';
-import NavbarBMC from '../../components/navbar/navbarBMC.js';
-import FooterBMC from '../../components/footer/footer.js';
+import { Button } from 'react-bootstrap';
 
 export default class Blog extends Component {
     constructor(props) {

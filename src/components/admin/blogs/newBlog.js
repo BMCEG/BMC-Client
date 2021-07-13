@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './blogs.css';
-import Button from 'react-bootstrap/Button'
+import { Button } from 'react-bootstrap';
 import { TextField, Select, MenuItem, FormControl } from '@material-ui/core'
 import axios from 'axios';
 import endpoint from '../../../helpers/api_service';

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './courses.css';
 import { TextField } from '@material-ui/core';
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import endpoint from '../../../helpers/api_service';
 

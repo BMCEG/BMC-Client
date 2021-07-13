@@ -3,7 +3,7 @@ import NavbarDropdown from './navbarBMCDropdown';
 import './navbarBMC.css'
 import Navbar from 'react-bootstrap/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import endpoint from '../../helpers/api_service.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'

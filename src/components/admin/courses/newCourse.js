@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './courses.css';
 import { TextField, Select, MenuItem, FormControl, Grid, InputLabel } from '@material-ui/core';
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
 import Modal from '@material-ui/core/Modal';
 import axios from 'axios';
 import endpoint from '../../../helpers/api_service';

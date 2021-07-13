@@ -19,16 +19,24 @@ export default class CarouselComponenet extends Component {
                 {this.state.items.map((item) => (
                     <Carousel.Item>
                         <>
-                            <div className='carousel-slide-title-mobile'>
-                                <Typography variant='h3' component='h3' className='carousel-slide-title-text'>
-                                    {item.title}
-                                </Typography>
-                            </div>
+                            {this.props.isMobile ?
+                                <div className='carousel-slide-title-mobile-small'>
+                                    <Typography variant='h5' component='h5' className='carousel-slide-title-text'>
+                                        {item.title}
+                                    </Typography>
+                                </div>
+                                :
+                                <div className='carousel-slide-title-mobile'>
+                                    <Typography variant='h3' component='h3' className='carousel-slide-title-text'>
+                                        {item.title}
+                                    </Typography>
+                                </div>
+                            }
                             <img
                                 className="carousel-slide-img"
                                 src={`${endpoint}/${item.src}`}
                                 alt="First slide"
-                                width="100%"
+                                // width="100%"
                             />
                         </>
                     </Carousel.Item>

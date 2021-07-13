@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { TextField, Select, FormControl, MenuItem } from '@material-ui/core';
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import endpoint from '../../../helpers/api_service';
 import './gallery.css';

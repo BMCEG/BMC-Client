@@ -36,10 +36,11 @@
     /* padding: 3%; */
     -webkit-animation: fadeIn .5s;
     animation: fadeIn .5s;
-
+    background-color: white !important;
 }
 
 .blogs-card-mobile {
+    background-color: white !important;
     margin: 3% !important;
     /* width: 70%; */
     /* display: flex; */
@@ -48,7 +49,6 @@
     /* padding: 3%; */
     -webkit-animation: fadeIn .5s;
     animation: fadeIn .5s;
-
 }
 
 .blogs-btn {
@@ -68,6 +68,7 @@
     /* background-color: whitesmoke; */
     margin: 2%;
 }
+
 .blogs-card-info-mobile {
     padding: 1%;
     /* background-color: blueviolet; */
@@ -75,6 +76,7 @@
     /* background-color: whitesmoke; */
     margin: 2%;
 }
+
 .blogs-inner-text {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -82,7 +84,6 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     min-width: 100% !important;
-
 }
 
 .blogs-ticket {

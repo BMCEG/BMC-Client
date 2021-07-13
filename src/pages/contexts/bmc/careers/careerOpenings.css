@@ -4,6 +4,12 @@
     /* background-color: lightpink; */
     /* min-height: 100vh; */
 }
+.career-opening-root-mob {
+    padding-top: 1%;
+    padding-bottom: 3%;
+    /* background-color: lightpink; */
+    min-height: 100vh;
+}
 
 .career-opening-margin {
     width: 65%;

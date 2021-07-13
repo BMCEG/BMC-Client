@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './careerListing.css'
 import TextField from '@material-ui/core/TextField';
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
 import endpoint from '../../../../helpers/api_service.js'
 import axios from 'axios';
 import Moment from 'react-moment';
@@ -97,44 +97,44 @@ export default class CareerListing extends Component {
                     <h1>CAREERS</h1>
                 </div> */}
                 <div className='career-listing-details'style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
-                    <h2>{this.state.listing.title}</h2>
+                    <h2 className='bukra-bold'>{this.state.listing.title}</h2>
                     <hr></hr>
                     <div>
 
-                    <h5 style={{float:'left'}}>Department: {this.state.listing.department}</h5>
-                    <h6 style={{float: 'right'}}><Moment format='dddd DD MMMM, YYYY'>{this.state.listing.dateCreated}</Moment></h6>
+                    <h6 className='bukra-regular' style={{float:'left'}}>Department: {this.state.listing.department}</h6>
+                    <h6 className='bukra-regular' style={{float: 'right'}}><Moment format='dddd DD MMMM, YYYY'>{this.state.listing.dateCreated}</Moment></h6>
                     </div>
                     <br></br>
                     <br></br>
-                    <h5>Type: {this.state.listing.type}</h5>
-                    <h5>Salary Range: {this.state.listing.minSalary} - {this.state.listing.maxSalary} EGP</h5>
+                    <h5 className='bukra-regular'>Type: {this.state.listing.type}</h5>
+                    <h5 className='bukra-regular'>Salary Range: {this.state.listing.minSalary} - {this.state.listing.maxSalary} EGP</h5>
                 </div><br></br>
                 <div className='career-listing-page-margins-mobile'>
                     <div className='career-listing-subtitle'>
-                        <h3>Job Description:</h3>
+                        <h3 className='bukra-medium'>Job Description:</h3>
                     </div>
                     <div className='career-listing-subtitle-body'>
-                        <h5>
+                        <h5 className='bukra-regular'>
                             {this.state.listing.description}
                         </h5>
                     </div>
                     <br></br>
                     <div className='career-listing-subtitle'>
-                        <h3>Job Responsibilities:</h3>
+                        <h3 className='bukra-medium'>Job Responsibilities:</h3>
                     </div>
                     <div className='career-listing-subtitle-body'>
                         {this.state.listingResponsibilities.map((respo) => (
-                            <h5>- {respo}</h5>
+                            <h5 className='bukra-regular'>- {respo}</h5>
                         ))}
                     </div>
                     <br></br>
 
                     <div className='career-listing-subtitle'>
-                        <h3>Job Qualifications:</h3>
+                        <h3 className='bukra-medium'>Job Qualifications:</h3>
                     </div>
                     <div className='career-listing-subtitle-body'>
                         {this.state.listingQualifications.map((qualification) => (
-                            <h5>- {qualification}</h5>
+                            <h5 className='bukra-regular'>- {qualification}</h5>
                         ))}
                     </div>
 
@@ -142,42 +142,42 @@ export default class CareerListing extends Component {
                     <hr></hr>
                     <br></br>
                     <div className='career-listing-application-title'>
-                        <h3>Job Application:</h3>
+                        <h3 className='bukra-bold'>Job Application:</h3>
                     </div>
                     <div className='career-listing-application-form'>
                         <div className='career-listing-application-row'>
                             <div className='career-listing-application-label'>
-                                <h4>Full Name:</h4>
+                                <h4 className='bukra-regular'>Full Name:</h4>
                             </div>
                             <TextField onChange={this.handleInputChange} fullWidth={true} name='applicationName' value={this.state.applicationName} id="outlined-basic" variant="outlined" />
                         </div>
                         <div className='career-listing-application-row'>
                             <div className='career-listing-application-label'>
-                            <h4>E-Mail:</h4>
+                            <h4 className='bukra-regular'>E-Mail:</h4>
                             </div>
                             <TextField onChange={this.handleInputChange} fullWidth={true} name='applicationEmail' value={this.state.applicationEmail} id="outlined-basic" variant="outlined" />
                         </div>
                         <div className='career-listing-application-row'>
                             <div className='career-listing-application-label'>
-                            <h4>Phone Number:</h4>
+                            <h4 className='bukra-regular'>Phone Number:</h4>
                             </div>
                             <TextField onChange={this.handleInputChange} fullWidth={true} name='applicationMobile' value={this.state.applicationMobile} id="outlined-basic" variant="outlined" />
                         </div>
                         <div className='career-listing-application-row'>
                             <div className='career-listing-application-label'>
-                                <h4>Address:</h4>
+                                <h4 className='bukra-regular'>Address:</h4>
                             </div>
                             <TextField onChange={this.handleInputChange} fullWidth={true} name='applicationAddress' value={this.state.applicationAddress} id="outlined-basic" variant="outlined" />
                         </div>
                         <div className='career-listing-application-row'>
                             <div className='career-listing-application-label'>
-                                <h4>Birthdate:</h4>
+                                <h4 className='bukra-regular'>Birthdate:</h4>
                             </div>
                             <TextField onChange={this.handleInputChange} type='date' name='applicatinoBirthday' value={this.state.applicatinoBirthday} fullWidth={true} id="outlined-basic" variant="outlined" />
                         </div>
                         <div className='career-listing-application-row'>
                             <div className='career-listing-application-label'>
-                                <h4>Attach Resume:</h4>
+                                <h4 className='bukra-regular'>Attach Resume:</h4>
                             </div>
                             <form encType="multipart/form-data">
                                 <input

@@ -3,7 +3,7 @@ import Fab from '@material-ui/core/Fab';
 import './floatingBtn.css';
 import Modal from '@material-ui/core/Modal';
 import TextField from '@material-ui/core/TextField';
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import endpoint from '../helpers/api_service';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -72,27 +72,12 @@ export default class floatingBtn extends Component {
         return (
             <div className='fab-root-mobile' >
                 <div className='fab-social-mobile'>
-                    <Button className='fab-social-btn-mobile' variant='link'>
+                    <a className='fab-social-btn-mobile' href="tel:123-456-7890">
                         <FontAwesomeIcon icon={faPhone} size={'3x'} style={{ color: 'red' }} />
-                    </Button>
+                    </a>
                 </div>
-                {/* <div className='fab-social'>
-                <Button className='fab-social-btn' variant='link'>
-                    <FontAwesomeIcon icon={faFacebook} size={'3x'}/>
-                </Button>
-                </div>
-                <div className='fab-social'>
-                <Button className='fab-social-btn' variant='link'>
-                    <FontAwesomeIcon icon={faInstagram} size={'3x'}/>
-                </Button>
-                </div>
-                <div className='fab-social'>
-                <Button className='fab-social-btn' variant='link'>
-                    <FontAwesomeIcon icon={faLinkedin} size={'3x'}/>
-                </Button>
-                </div> */}
                 <Fab variant="extended" className='fab-btn-mobile' onClick={this.handleModalOpen}>
-                    <h6 style={{fontWeight:'bold'}}>Request Consultancy</h6>
+                    <h6 className='bukra-bold' style={{ fontWeight: 'bold' }}>Request Consultancy</h6>
                 </Fab>
                 <Modal
                     open={this.state.modalFlag}
@@ -112,7 +97,6 @@ export default class floatingBtn extends Component {
                         <br></br>
                         <br></br>
                         <div style={{ textAlign: 'center' }}>
-
                             <Button variant='danger' onClick={this.handleSubmitRequest}>Submit Request</Button>
                         </div>
                     </div>

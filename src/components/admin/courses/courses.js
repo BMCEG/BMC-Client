@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import endpoint from '../../../helpers/api_service';
 import './courses.css'
 import Table from 'react-bootstrap/Table';
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import Moment from 'react-moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash, faPencilAlt } from '@fortawesome/free-solid-svg-icons'

@@ -3,7 +3,7 @@ import { TextField } from '@material-ui/core';
 import axios from 'axios';
 import endpoint from '../../../../helpers/api_service';
 import './contact.css';
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 class Contact extends Component {
@@ -67,18 +67,18 @@ class Contact extends Component {
                     <div className='contact-form-body-mobile'>
 
                         <span>
-                            <h3>Location:
-                                <h5>A108 Adam Street, New York, NY 535022</h5>
+                            <h3 className='bukra-bold'>Location:
+                                <h5 className='bukra-regular'>A108 Adam Street, New York, NY 535022</h5>
                             </h3>
                         </span>
                         <span>
-                            <h3>Email:
-                                <h5>info@example.com</h5>
+                            <h3 className='bukra-bold'>Email:
+                                <h5 className='bukra-regular'>info@example.com</h5>
                             </h3>
                         </span>
                         <span>
-                            <h3>Call:
-                                <h5>+1 5589 55488 55</h5>
+                            <h3 className='bukra-bold'>Call:
+                                <h5 className='bukra-regular'>+1 5589 55488 55</h5>
                             </h3>
                         </span>
                     </div>

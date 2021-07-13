@@ -6,7 +6,7 @@ import { faUserCircle, faClock } from '@fortawesome/free-solid-svg-icons'
 import moment from 'moment';
 import './blogs.css';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import { Redirect } from 'react-router';
 import { Paper, Grid } from '@material-ui/core';
 
@@ -56,18 +56,18 @@ export default class Blogs extends Component {
                                 <img src={`${endpoint}/${blog.image}`} alt={blog.title} className='blogs-img-mobile' />
                             </div>
                             <div className='blogs-card-info-mobile'>
-                                <h2>{blog.title}</h2>
+                                <h3 className='bukra-bold'>{blog.title}</h3>
                                 <div className="blogs-ticket">
                                     <div className="blogs-author">
                                         <FontAwesomeIcon icon={faUserCircle} style={{ marginRight: '5px' }} />
-                                        <h6>{blog.author}</h6>
+                                        <h6 className='bukra-regular'>{blog.author}</h6>
                                     </div>
                                     <div className="blogs-date">
                                         <FontAwesomeIcon icon={faClock} style={{ marginRight: '5px' }} />
-                                        <h6>{moment(blog.dateCreated).format('DD MMM, YYYY')}</h6>
+                                        <h6 className='bukra-regular'>{moment(blog.dateCreated).format('DD MMM, YYYY')}</h6>
                                     </div>
                                 </div>
-                                <div className='blogs-inner-text'>
+                                <div className='blogs-inner-text bukra-regular'>
                                     {blog.post}
                                 </div>
                                 <br></br>

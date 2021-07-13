@@ -41,6 +41,20 @@
     z-index: 0;
 
 }
+.carousel-slide-title-mobile-small {
+    /* padding: 1%; */
+    /* background-color: turquoise; */
+    width: 50%;
+    transform: translate(25px, 240px);
+    color: white;
+    transition: 0.2s;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+    text-shadow: 2px 2px 2px black;
+    display: inline-block;
+    z-index: 0;
+
+}
 
 .carousel-slide-title-text {
     line-height: 24px;
@@ -58,7 +72,7 @@
     /* padding: 1%; */
     /* opacity: .8; */
     /* position: fixed; */
-    /* width: 100vw; */
+    /* width: 100%; */
     object-fit: cover;
     height: 100%;
     /* transform: translateY(-70px); */

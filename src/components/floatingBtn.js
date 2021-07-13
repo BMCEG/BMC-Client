@@ -3,7 +3,7 @@ import Fab from '@material-ui/core/Fab';
 import './floatingBtn.css';
 import Modal from '@material-ui/core/Modal';
 import TextField from '@material-ui/core/TextField';
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import endpoint from '../helpers/api_service';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

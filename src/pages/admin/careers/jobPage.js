@@ -5,7 +5,7 @@ import './careers.css';
 import NavbarAdmin from '../../../components/navbar/navbarAdmin.js';
 import { Paper, TextField, Zoom, Select, MenuItem, FormControl } from '@material-ui/core';
 import Moment from 'react-moment';
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
 
 export default class Course extends Component {
     constructor(props) {
