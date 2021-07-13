@@ -5,7 +5,11 @@
     /* display:flex; */
     /* overflow:auto; */
 }
-
+.default-root-ios {
+    padding-top: 22px;
+    padding-bottom: 44px;
+    flex: 1;
+}
 .page-margin {
     margin-left: 10%;
     margin-right: 10%;

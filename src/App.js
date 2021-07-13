@@ -122,26 +122,10 @@ export default class App extends Component {
         navbarContext: 'ewings'
       })
     }
-    // const matches = useMediaQuery('(min-width:600px)');
-    // console.log(matches)
-
-    //     const isMobileDevice = useMediaQuery({
-    //       query: "(min-device-width: 768px)",
-    //     });
-
-    //     const isLaptop = useMediaQuery({
-    //       query: "(min-device-width: 1024px)",
-    //     });
-    // console.log(isMobileDevice)
-    //     this.setState({
-    //       isMobileDevice: isMobileDevice,
-    //       isLaptop: isLaptop
-    //     })
   }
 
 
   render() {
-    console.log('this.state', this.state);
     return (
       <Router>
         <Switch>
