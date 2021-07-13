@@ -156,7 +156,14 @@
 }
 
 .nav-bmc-dropdown {
-    background-color: #4694D6 !important;
-    height: 120vh;
+    /* background-color: red !important; */
+    /* position: static; */
+    height: 90vh;
     overflow-y: scroll !important;
+    overflow-y: hidden;
+}
+
+.Lmoa12 {
+    /* background-color: #4694D6; */
+    height: 100%;
 }
