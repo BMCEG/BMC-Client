@@ -48,7 +48,7 @@ export default function partnersMessage() {
                     <Typography variant='h5' component='h5' className='bukra-regular'>
                         Co-partners, Partners, and Consultants.
                     </Typography>
-                    <Typography align='justify' variant='h5' component='h5' className='bukra-regular'>
+                    <Typography variant='h5' component='h5' className='bukra-regular'>
                         Business Map Consultants.
                     </Typography>
                 </div>
