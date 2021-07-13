@@ -61,7 +61,7 @@ export default class DefaultPage extends Component {
                 <div className="page-margin-mobile">
                     <div className='banner-grid-mobile'>
                         <div className='banner-text-mobile'>
-                            <h4 className='bukra-bold'>Who Are We?!</h4>
+                            <h5 className='bukra-bold'>Who Are We?!</h5>
                             <h6 className='bukra-regular'>We are experts in such broad business tools as Strategic audit, Feasibility studies, research and analysis, Business strategies - Internal business processes – Business development, book keeping, financial audits, Business Manuals, Digital transformation, training courses, among other custom-tailored services.</h6>
                         </div>
                         <div className="banner-photo-base-mobile">
@@ -103,7 +103,7 @@ export default class DefaultPage extends Component {
                                 <img className='home-service-icon-mobile' src={`${endpoint}/service-strategic-planning-black.png`} />
                             </div>
                             <div className='home-service-text-mobile'>
-                                <h4 className='bukra-bold'>Strategic Plan</h4>
+                                <h5 className='bukra-bold'>Strategic Plan</h5>
                                 <h6 className='bukra-regular'>BMC has the aim to provide professional counsel, and plans along with the development of the implementation framework that assure client’s long-term growth.</h6>
                             </div>
 
@@ -117,7 +117,7 @@ export default class DefaultPage extends Component {
                                 <img className='home-service-icon-mobile' src={`${endpoint}/service-hr-black.png`} />
                             </div>
                             <div className='home-service-text-mobile'>
-                                <h4 className='bukra-bold'>HR Management</h4>
+                                <h5 className='bukra-bold'>HR Management</h5>
                                 <h6 className='bukra-regular'>We provide Human Resources service promoting the concept that employees are the most valuable resource and will be treated as such.</h6>
                             </div>
 
@@ -131,7 +131,7 @@ export default class DefaultPage extends Component {
                                 <img className='home-service-icon-mobile' src={`${endpoint}/service-toolbox-black.png`} />
                             </div>
                             <div className='home-service-text-mobile'>
-                                <h4 className='bukra-bold'>BMC Tool Box</h4>
+                                <h5 className='bukra-bold'>BMC Tool Box</h5>
                                 <h6 className='bukra-regular'>We are often engaged to provide Custom-tailored solutions that meet the needs of your particular organization.</h6>
                             </div>
 
@@ -147,7 +147,7 @@ export default class DefaultPage extends Component {
                                 <img className='home-service-icon-mobile' src={`${endpoint}/service-marketing-mgmt-black.png`} />
                             </div>
                             <div className='home-service-text-mobile'>
-                                <h4 className='bukra-bold'>Marketing Management</h4>
+                                <h5 className='bukra-bold'>Marketing Management</h5>
                                 <h6 className='bukra-regular'>We act as your marketing arm department, dedicated to achieve the goal at the highest quality, on time and within your budget.</h6>
                             </div>
 
@@ -161,7 +161,7 @@ export default class DefaultPage extends Component {
                                 <img className='home-service-icon-mobile' src={`${endpoint}/service-marketing-mgmt-black.png`} />
                             </div>
                             <div className='home-service-text-mobile'>
-                                <h4 className='bukra-bold'>Finance and Accounting</h4>
+                                <h5 className='bukra-bold'>Finance and Accounting</h5>
                                 <h6 className='bukra-regular'>We have the aim to provide a full range of comprehensive high quality services.</h6>
                             </div>
 

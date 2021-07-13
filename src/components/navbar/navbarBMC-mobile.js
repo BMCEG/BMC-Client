@@ -85,8 +85,7 @@ export default class NavbarBMC extends Component {
                                 {/* </Button> */}
                             </Dropdown.Toggle>
 
-                            <Dropdown.Menu align={{ lg: 'left' }}>
-
+                            <Dropdown.Menu align={{ lg: 'left' }}  className='nav-bmc-dropdown'>
                                 <Dropdown.Item href='/' ><h5 className='bukra-bold'>Home</h5></Dropdown.Item>
                                 <hr></hr>
                                 <Dropdown.Item><h5 className='bukra-bold'>About:</h5></Dropdown.Item>
@@ -133,7 +132,7 @@ export default class NavbarBMC extends Component {
                         </Dropdown>
                     </div>
                 </div>
-            </Navbar>
+            </Navbar >
         )
     }
 }
