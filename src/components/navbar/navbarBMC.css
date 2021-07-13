@@ -4,6 +4,7 @@
     padding-left: 1%;
     padding-right: 1%;
     display: flex !important;
+    /* width: 100%; */
     /* min-width: 100%; */
     color: black;
     position: sticky !important;
@@ -32,14 +33,17 @@
 }
 .nav-bmc-left {
     display: flex;
-    width: 70%;
+    min-width: 70%;
+    /* background-color: yellow; */
+    /* overflow-x: hidden; */
 }
 
 .nav-bmc-right {
     display: flex;
     /* margin-left: auto; */
-    /* text-align: right !important; */
-    width: 30%;
+    text-align: right !important;
+    min-width: 30%;
+    /* width: 30%; */
     /* background-color: darkgreen; */
     /* text-align: right; */
 }

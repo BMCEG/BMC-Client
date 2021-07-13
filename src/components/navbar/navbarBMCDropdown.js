@@ -27,27 +27,52 @@ export default class navbarDropdown extends Component {
                         <Dropdown.Toggle variant="link" id="dropdown-basic">
                             <h4 className='bukra-medium' style={{ color: '#4694D6' }}>{this.props.title}</h4>
                         </Dropdown.Toggle>
-                        <Dropdown.Menu className='dropdown-ewings'> 
+                        <Dropdown.Menu className='dropdown-ewings'>
                             {this.state.items.map((item) => (
                                 <Dropdown.Item className='dropdown-ewings-item' href={item.path}><h5>{item.displayTitle}</h5></Dropdown.Item>
                             ))
                             }
                         </Dropdown.Menu>
-                        
+
                     </Dropdown>
 
                     :
-                    <Dropdown>
-                        <Dropdown.Toggle variant="link" id="dropdown-basic">
-                            <h4 className='bukra-medium'>{this.props.title}</h4>
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu>
-                            {this.state.items.map((item) => (
-                                <Dropdown.Item href={item.path}><h5>{item.displayTitle}</h5></Dropdown.Item>
-                            ))
-                            }
-                        </Dropdown.Menu>
-                    </Dropdown>
+                    this.props.size === 'h6' ?
+
+                        <Dropdown>
+                            <Dropdown.Toggle variant="link" id="dropdown-basic">
+                                <h6 className='bukra-medium'>{this.props.title}</h6>
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu>
+                                {this.state.items.map((item) => (
+                                    <Dropdown.Item href={item.path}><h5>{item.displayTitle}</h5></Dropdown.Item>
+                                ))
+                                }
+                            </Dropdown.Menu>
+                        </Dropdown> :
+                        this.props.size === 'h5' ?
+                            <Dropdown>
+                                <Dropdown.Toggle variant="link" id="dropdown-basic">
+                                    <h5 className='bukra-medium'>{this.props.title}</h5>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    {this.state.items.map((item) => (
+                                        <Dropdown.Item href={item.path}><h5>{item.displayTitle}</h5></Dropdown.Item>
+                                    ))
+                                    }
+                                </Dropdown.Menu>
+                            </Dropdown> :
+                            <Dropdown>
+                                <Dropdown.Toggle variant="link" id="dropdown-basic">
+                                    <h4 className='bukra-medium'>{this.props.title}</h4>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    {this.state.items.map((item) => (
+                                        <Dropdown.Item href={item.path}><h5>{item.displayTitle}</h5></Dropdown.Item>
+                                    ))
+                                    }
+                                </Dropdown.Menu>
+                            </Dropdown>
                 }
 
             </>

@@ -7,6 +7,8 @@ import LandingPage from "./pages/landing/landing.js";
 import LandingPageMob from "./pages/landing/landing-mobile.js";
 
 import NavbarBMC from './components/navbar/navbarBMC.js';
+import NavbarBMCSmall from './components/navbar/navbarBMC-small.js';
+import NavbarBMCSmaller from './components/navbar/navbarBMC-smaller.js';
 import NavbarBMCMob from './components/navbar/navbarBMC-mobile';
 import FooterBMC from './components/footer/footer.js';
 import FooterBMCMob from './components/footer/footer-mobile';
@@ -171,15 +173,26 @@ export default class App extends Component {
           {this.state.navbarContext === 'bmc' ?
             <>
 
-              <Media query='(min-width: 1540px)'>
+              <Media queries={{
+                mobile: "(max-width: 1260px)",
+                small: "(min-width: 1260px) and (max-width: 1400px)",
+                medium: "(min-width: 1400px) and (max-width: 1600px)",
+                large: "(min-width: 1600px)",
+
+              }}>
                 {(matches) => {
-                  return matches ?
-                    <NavbarBMC handleSelectedContext={this.handleSelectedContext} />
-                    :
+                  return matches.mobile ?
                     <NavbarBMCMob handleSelectedContext={this.handleSelectedContext} />
+                    :
+                    matches.small ?
+                      <NavbarBMCSmaller handleSelectedContext={this.handleSelectedContext} />
+                      : matches.medium ?
+                        <NavbarBMCSmall handleSelectedContext={this.handleSelectedContext} />
+                        :
+                        <NavbarBMC handleSelectedContext={this.handleSelectedContext} />
                 }}
               </Media>
-              <Media query='(min-width: 1540px)'>
+              <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
                     // <NavbarBMC handleSelectedContext={this.handleSelectedContext} />

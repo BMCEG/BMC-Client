@@ -72,67 +72,67 @@ export default class NavbarBMC extends Component {
                     </div>
                     <div className="title">
                         <Button variant="link" href='/' >
-                            <h4 className='bukra-medium'>Home</h4>
+                            <h5 className='bukra-medium'>Home</h5>
                         </Button>
                     </div>
                     <div className="title">
-                        <NavbarDropdown title="About" items={aboutItems} />
+                        <NavbarDropdown size='h5' title="About" items={aboutItems} />
                     </div>
                     <div className="title">
                         <Button variant="link" href='/whyBMC' >
-                            <h4 className='bukra-medium'>Why BMC?!</h4>
+                            <h5 className='bukra-medium'>Why BMC?!</h5>
                         </Button>
                     </div>
                     <div className="title">
-                        <NavbarDropdown title="Consultency Services" items={servicesItems} />
+                        <NavbarDropdown size='h5' title="Consultency Services" items={servicesItems} />
                     </div>
                     <div className="title">
                         <Button variant="link" href='/partners' >
 
-                            <h4 className='bukra-medium'>Clients</h4>
+                            <h5 className='bukra-medium'>Clients</h5>
                         </Button>
 
                     </div>
                     <div className="title">
                         <Button variant="link" href='/careers/openings' >
-                            <h4 className='bukra-medium'>Careers</h4>
+                            <h5 className='bukra-medium'>Careers</h5>
                         </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/blogs' >
-                            <h4 className='bukra-medium'>Blogs</h4>
+                            <h5 className='bukra-medium'>Blogs</h5>
                         </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/contact' >
-                            <h4 className='bukra-medium'>Contact Us</h4>
+                            <h5 className='bukra-medium'>Contact Us</h5>
                         </Button>
                     </div>
                 </div>
                 <div className='nav-bmc-right'>
                     <div className="title" style={{ marginLeft: 'auto' }}>
                         <Button variant="link" href='/blogs' >
-                            <h5><FontAwesomeIcon icon={faFacebook} size={'2x'} /></h5>
+                            <h6><FontAwesomeIcon icon={faFacebook} size={'2x'} /></h6>
                         </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/blogs' >
-                            <h5><FontAwesomeIcon icon={faLinkedin} size={'2x'} /></h5>
+                            <h6><FontAwesomeIcon icon={faLinkedin} size={'2x'} /></h6>
                         </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/blogs' >
-                            <h5><FontAwesomeIcon icon={faYoutube} size={'2x'} /></h5>
+                            <h6><FontAwesomeIcon icon={faYoutube} size={'2x'} /></h6>
                         </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/blogs' >
-                            <h5><FontAwesomeIcon icon={faInstagram} size={'2x'} /></h5>
+                            <h6><FontAwesomeIcon icon={faInstagram} size={'2x'} /></h6>
                         </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/blogs' >
-                            <h5><FontAwesomeIcon icon={faTwitter} size={'2x'} /></h5>
+                            <h6><FontAwesomeIcon icon={faTwitter} size={'2x'} /></h6>
                         </Button>
                     </div>
                     <div className='title nav-logo-ewings'>
