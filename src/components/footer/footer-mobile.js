@@ -19,7 +19,7 @@ export default class Footer extends Component {
                         </Grid>
                         <Grid item xs={1}></Grid>
                         <Grid item xs={6} className="footer-mob-text">
-                            <h3 className='bukra-bold' style={{ color: 'black', fontWeight: 'bolder' }}>Business Map Consultants</h3>
+                            <h4 className='bukra-bold' style={{ color: 'black', fontWeight: 'bolder' }}>Business Map Consultants</h4>
                             <br></br>
                             <h6  className='bukra-regular' style={{ color: 'black' }}>Lorem Street</h6>
                             <h6  className='bukra-regular' style={{ color: 'black' }}>New Cairo, Cairo, Egypt</h6>
