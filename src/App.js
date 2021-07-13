@@ -428,17 +428,16 @@ export default class App extends Component {
             </>
             :
             <>
+
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
-                  return matches ?
-                    // <FooterBMC />
-                    <NavbarDMap handleSelectedContext={this.handleSelectedContext} />
-                    :
-                    <NavbarDMapMob handleSelectedContext={this.handleSelectedContext} />
-                  // <FooterBMCMob />
+                  return matches.mobile ?
+                  <NavbarDMapMob handleSelectedContext={this.handleSelectedContext} />
+                  :
+                  <NavbarDMap handleSelectedContext={this.handleSelectedContext} />
                 }}
               </Media>
-              {/* <Redirect push to="/digitalMap" /> */}
+
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
@@ -568,7 +567,7 @@ export default class App extends Component {
                     />
                 }}
               </Media>
-              <Media query='(min-width: 1280px)'>
+              <Media query='(min-width: 1440px)'>
                 {(matches) => {
                   return matches ?
                     <FooterEwings />

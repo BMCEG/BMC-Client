@@ -3,7 +3,7 @@ import NavbarDropdown from './navbarBMCDropdown';
 import './navbarDMap.css'
 import Navbar from 'react-bootstrap/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import endpoint from '../../helpers/api_service';
@@ -106,11 +106,11 @@ export default class NavbarDMap extends Component {
                             <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faTwitter} size={'2x'} /></h5>
                         </Button>
                     </div>
-                </div>
-                <div className="title gallery-tab">
+                <div className="nav-ewings-bmc-tab">
                     <Button variant="link" href='/' >
-                        <img src={`${endpoint}/logo-no-text.png`} alt='home' className='nav-logo-img-ewings' />
+                        <img src={`${endpoint}/logo-no-text.png`} alt='home' className='nav-logo-img-bmc' />
                     </Button>
+                </div>
                 </div>
             </Navbar>
         )
