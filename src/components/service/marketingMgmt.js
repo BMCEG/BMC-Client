@@ -7,7 +7,7 @@ export default function marketingMgmt() {
         <div>
 
 
-            <Typography align='justify' variant='h5' component='h5' style={{ fontWeight: 600 }} className='bukra-bold lspacing'>
+            <Typography variant='h5' component='h5' style={{ fontWeight: 600 }} className='bukra-bold lspacing'>
                 What is Marketing Management?
 
             </Typography>
@@ -17,7 +17,7 @@ export default function marketingMgmt() {
             </Typography>
             <br></br>
             {/* <br></br> */}
-            <Typography align='justify' variant='h5' component='h5' style={{ fontWeight: 600 }} className='bukra-bold lspacing'>
+            <Typography variant='h5' component='h5' style={{ fontWeight: 600 }} className='bukra-bold lspacing'>
                 Why is marketing management important?
             </Typography>
             {/* <br></br> */}
@@ -26,7 +26,7 @@ export default function marketingMgmt() {
                 Marketing management is critical to a company's success because it identifies the most effective strategies to reach out to customers and increase sales. To be competitive in their field, businesses need excellent marketing tactics to attract new consumers and retain existing ones.
             </Typography>
             <br></br>
-            <Typography align='justify' variant='h5' component='h5' style={{ fontWeight: 600 }} className='bukra-bold lspacing'>
+            <Typography variant='h5' component='h5' style={{ fontWeight: 600 }} className='bukra-bold lspacing'>
                 When do we need marketing management?
             </Typography>
             {/* <br></br> */}

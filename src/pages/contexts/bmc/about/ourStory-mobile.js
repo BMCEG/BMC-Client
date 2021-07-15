@@ -133,13 +133,11 @@ export default class ourStory extends Component {
             aria-controls="panel3bh-content"
             id="panel3bh-header"
           >
-            <div className="story-node-mobile">
+            <div className="story-node-mobile-mob">
               <img
                src={`${endpoint}/our-story-2014.png`}
                 alt="ds"
                 className="story-ball-mobile"
-                onMouseOver={() => this.handleMouseOver("ball3")}
-                onMouseLeave={() => this.handleMouseLeave("ball3")}
               />
               <div className='story-year-mobile'>
                 <h4 className='bukra-bold'>2014</h4>
@@ -162,13 +160,11 @@ export default class ourStory extends Component {
             aria-controls="panel3bh-content"
             id="panel3bh-header"
           >
-            <div className="story-node-mobile">
+            <div className="story-node-mobile-mob">
               <img
                 src={`${endpoint}/our-story-2015.png`}
                 alt="ds"
                 className="story-ball-mobile"
-                onMouseOver={() => this.handleMouseOver("ball3")}
-                onMouseLeave={() => this.handleMouseLeave("ball3")}
               />
               <div className='story-year-mobile'>
                 <h4 className='bukra-bold'>2015</h4>
@@ -190,7 +186,7 @@ export default class ourStory extends Component {
             aria-controls="panel3bh-content"
             id="panel3bh-header"
           >
-            <div className="story-node-mobile">
+            <div className="story-node-mobile-mob">
               <img
                 src={`${endpoint}/our-story-2016.png`}
                 alt="ds"
@@ -216,7 +212,7 @@ export default class ourStory extends Component {
             aria-controls="panel3bh-content"
             id="panel3bh-header"
           >
-            <div className="story-node-mobile">
+            <div className="story-node-mobile-mob">
               <img
                 src={`${endpoint}/our-story-2018.png`}
                 alt="ds"
@@ -242,13 +238,11 @@ export default class ourStory extends Component {
             aria-controls="panel3bh-content"
             id="panel3bh-header"
           >
-            <div className="story-node-mobile">
+            <div className="story-node-mobile-mob">
               <img
                 src={`${endpoint}/our-story-2020.png`}
                 alt="ds"
                 className="story-ball-mobile"
-                onMouseOver={() => this.handleMouseOver("ball3")}
-                onMouseLeave={() => this.handleMouseLeave("ball3")}
               />
               <div className='story-year-mobile'>
                 <h4 className='bukra-bold'>2020</h4>
@@ -270,13 +264,11 @@ export default class ourStory extends Component {
             aria-controls="panel3bh-content"
             id="panel3bh-header"
           >
-            <div className="story-node-mobile">
+            <div className="story-node-mobile-mob">
               <img
                 src={`${endpoint}/our-story-2021.png`}
                 alt="ds"
                 className="story-ball-mobile"
-                onMouseOver={() => this.handleMouseOver("ball3")}
-                onMouseLeave={() => this.handleMouseLeave("ball3")}
               />
               <div className='story-year-mobile'>
                 <h4 className='bukra-bold'>2021</h4>

@@ -96,6 +96,8 @@ export default function digital() {
             <Typography style={{ color: 'white' }} variant='h5' component='h5' className='bukra-regular'>
                 - Web Analytics
             </Typography>
+            <br></br>
+            <br></br>
         </div >
     )
 }

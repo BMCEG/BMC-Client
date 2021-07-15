@@ -67,19 +67,23 @@ class Contact extends Component {
                     <div className='contact-form-body-mobile'>
 
                         <span>
+                            <br></br>
                             <h3 className='bukra-bold'>Location:
                                 <h5 className='bukra-regular'>A108 Adam Street, New York, NY 535022</h5>
                             </h3>
                         </span>
                         <span>
+                            <br></br>
                             <h3 className='bukra-bold'>Email:
                                 <h5 className='bukra-regular'>info@example.com</h5>
                             </h3>
                         </span>
                         <span>
+                            <br></br>
                             <h3 className='bukra-bold'>Call:
                                 <h5 className='bukra-regular'>+1 5589 55488 55</h5>
                             </h3>
+                            <br></br>
                         </span>
                     </div>
 

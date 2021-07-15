@@ -4,6 +4,7 @@
     color: white;
     width: 100%;
     display: flex;
+    z-index: 4;
     height: 300px;
     -webkit-box-shadow: inset 0 5px 10px -8px #000000;
     box-shadow: inset 0 5px 10px -8px #000000;
@@ -13,37 +14,43 @@
     /* background-color: springgreen; */
     color: white;
     width: 100%;
-    height: 200px;
+    /* display: flex;
+    justify-content: center; */
+    /* height: 150px; */
     display: flex;
     -webkit-box-shadow: inset 0 5px 10px -8px #000000;
     box-shadow: inset 0 5px 10px -8px #000000;
 }
 .footer-ewings-root-left {
     /* background-color: aqua; */
-    width: 15% !important;
+    width: 12% !important;
+    /* margin-left: auto; */
     height: 100% !important;
 }
 .footer-ewings-root-center {
     /* background-color: aqua; */
-    width: 60% !important;
+    width: 80% !important;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 .footer-ewings-logo-img {
     /* background-color: blueviolet; */
 }
 .footer-ewings-root-right {
     /* background-color: aqua; */
-    width: 15% !important;
+    width: 12% !important;
     height: 100% !important;
 }
 
 .footer-ewings-info {
-    width: 40%;
+    width: 50%;
     margin: auto;
     display: flex;
     /* background-color: yellow; */
     padding: 2%;
     color: skyblue;
+    max-height: 100%;
 }
 
 .footer-ewings-info-mob {
@@ -56,8 +63,15 @@
 }
 
 .footer-ewings-left {
-    width: 50%;
+    width: 80%;
+    /* height: 100%; */
+    /* min-height: 100%; */
     /* background-color: violet; */
+    display: flex;
+    max-height: 370px;
+
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-ewings-mob {
@@ -73,19 +87,73 @@
     border-left: 5px solid #62A4DC;
     color: #62A4DC;
     /* background-color: navy; */
+    max-height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-ewings-social-links {
     display: flex;
     /* background-color: maroon; */
+    padding-top: 2%;
+    padding-bottom: 1%;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    text-align: center;
+}
+.footer-ewings-root-logo-img{
+    /* background-color: maroon; */
+    max-width: 100%;
+    object-fit: cover;
+    /* max-height: 100%; */
+    /* margin-bottom: -150px;
+    margin-top: -150px; */
+}
+
+.footer-ewingss-social-btn-mob {
+    background-color: #62A4DC;
+    /* width: 16%;
+    height: 100%; */
+    margin: 4px;
+    padding: 3%;
+    border-radius: 100%;
+    color: white !important;
+    text-align: center !important;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.footer-ewings-social-links-mob {
+    display: flex;
+    /* background-color: maroon; */
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 50%;
+    /* height: 50px; */
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.footer-ewings-social-links-row {
+    /* background-color: silver; */
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
     justify-content: center;
 }
 
 .footer-ewingss-social-btn {
     background-color: #62A4DC;
-    width: 60px;
-    height: 60px;
+    /* width: 16%;
+    height: 100%; */
     margin: 4px;
+    padding: 4%;
     border-radius: 100%;
     color: white !important;
     text-align: center !important;
@@ -93,17 +161,13 @@
     flex-direction: column;
     display: flex;
 }
-.footer-ewingss-social-btn-mob {
-    background-color: #62A4DC;
-    width: 45px;
-    height: 45px;
-    margin: 4px;
-    border-radius: 100%;
-    color: white !important;
-    text-align: center !important;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
+
+.footer-ewings-logo-mob {
+    /* background-color: brown; */
+    min-height: 100%;
+    text-align: center;
+    width: 50%;
+    /* margin-bottom: 10px; */
 }
 
 .lmoa {
@@ -132,18 +196,11 @@
 
 .footer-ewings-logo {
     /* background-color: magenta; */
-    height: fit-content;
-}
-.footer-ewings-logo-mob {
-    /* background-color: magenta; */
-    height: fit-content;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.footer-ewings-root-logo-img{
-    /* background-color: maroon; */
-    width: 100%;
-    margin-bottom: -150px;
-    margin-top: -150px;
+    height: 60%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

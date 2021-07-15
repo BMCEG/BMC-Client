@@ -68,18 +68,6 @@ export default class homepageMob extends Component {
                     <h3 className='bukra-bold'>Our Promise</h3>
                     <h5 className='bukra-regular'>Ewings will personalize and provide you with the best service possible to assist your company in achieving maximum performance and expansion. The value you'll obtain will always be above your expectations with our experts in the marketing feild.</h5>
                     <br></br>
-                    {/* <Carousel>
-                    {/* <Carousel>
-                        {this.state.array.map((el) => (
-
-                        <Carousel.Item className='carousel-item' indicators={false} controls={false} wrap={true}>
-                            <h2>{el.title}</h2>
-                            <br></br>
-                            <h4>{el.post}</h4>
-                        </Carousel.Item>
-                        ))}
-                    </Carousel> */}
-
                 </div>
             </div>
         )

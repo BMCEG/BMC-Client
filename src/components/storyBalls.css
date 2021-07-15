@@ -96,6 +96,16 @@
     text-align: center;
 
 }
+.story-node-mobile-mob {
+    margin:  auto;
+    /* background-color: black; */
+    height: 80px;
+    width: 50%;
+    display: flex;
+    /* background-color: yellow; */
+    text-align: center;
+
+}
 
 .story-node-year {
     transition: all .2s ease-in;

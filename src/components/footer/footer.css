@@ -75,3 +75,12 @@ box-shadow:inset 0 5px 10px -8px #000000;
     color: black !important;
     font-family: 'bukra-bold' !important;
 }
+
+.footer-grid-col {
+    /* background-color: salmon; */
+    text-align: left;
+}
+.footer-link {
+    /* background-color: sandybrown; */
+    text-align: left !important;
+}

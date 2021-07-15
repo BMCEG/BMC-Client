@@ -28,18 +28,20 @@ export default class Service extends Component {
                     <div className='service-page-title-details'>
                         <img src={`${endpoint}/${this.props.logo}`} alt='logo' className='service-details-icon' />
                         <div className='service-details-name'>
-                            <h1 className='bukra-bold'>{this.props.title}</h1>
+                            <Typography variant='h3' component='h3' className='bukra-bold'>
+                                {this.props.title}
+                            </Typography>
                         </div>
                     </div>
                     <br></br>
                     <div className='service-page-content'>
-                        {this.props.title === 'Strategic Planning' ? 
-                        <StrategicPlan /> : this.props.title === 'Marketing Management' ?
-                            <MarketingMgmt /> : this.props.title === 'Finance & Accounting' ?
-                                <Finance /> :  this.props.title === 'Human Resources' ? 
-                                    <HRMgmt /> : this.props.title === 'BMC Tool Box' ?
-                                        <Toolbox /> : null    
-                    }
+                        {this.props.title === 'Strategic Planning' ?
+                            <StrategicPlan /> : this.props.title === 'Marketing Management' ?
+                                <MarketingMgmt /> : this.props.title === 'Finance & Accounting' ?
+                                    <Finance /> : this.props.title === 'Human Resources' ?
+                                        <HRMgmt /> : this.props.title === 'BMC Tool Box' ?
+                                            <Toolbox /> : null
+                        }
                     </div>
                 </div>
                 <div className='service-page-right'>

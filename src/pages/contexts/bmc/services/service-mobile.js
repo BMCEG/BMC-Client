@@ -32,7 +32,9 @@ export default class Service extends Component {
                 <div className='service-page-title-details'>
                         <img src={`${endpoint}/${this.props.logo}`} alt='logo' className='service-details-icon-mobile' />
                         <div className='service-details-name'>
-                            <h1 className='bukra-bold'>{this.props.title}</h1>
+                        <Typography variant='h4' component='h4' className='bukra-bold'>
+                                {this.props.title}
+                            </Typography>
                         </div>
                     </div>
                     <br></br>

@@ -18,33 +18,44 @@ export default class Footer extends Component {
                         <Grid item xs={1}></Grid>
                         <Grid item xs={1}></Grid>
                         <Grid item xs={3}>
-                            <h2 style={{ color: 'black', fontWeight: 'bolder' }} className='bukra-bold'>Business Map Consultants</h2>
-                            <br></br>
-                            <h4 style={{ color: 'black' }} className='bukra-regular'>Lorem Street</h4>
-                            <h4 style={{ color: 'black' }} className='bukra-regular'>New Cairo, Cairo, Egypt</h4>
-                            <br></br>
-                            <h4 style={{ color: 'black' }} className='bukra-regular'>Phone: +021234567890</h4>
-                            <h4 style={{ color: 'black' }} className='bukra-regular'>E-Mail: test@email.com</h4>
+                            <div className="footer-grid-col">
+                                <h2 style={{ color: 'black', fontWeight: 'bolder' }} className='bukra-bold'>Business Map Consultants</h2>
+                                <br></br>
+                                <h4 style={{ color: 'black' }} className='bukra-regular'>Lorem Street</h4>
+                                <h4 style={{ color: 'black' }} className='bukra-regular'>New Cairo, Cairo, Egypt</h4>
+                                <br></br>
+                                <h4 style={{ color: 'black' }} className='bukra-regular'>Phone: +021234567890</h4>
+                                <h4 style={{ color: 'black' }} className='bukra-regular'>E-Mail: test@email.com</h4>
+                            </div>
                         </Grid>
                         <Grid item xs={1}></Grid>
                         <Grid item xs={3}>
-                            <h2 style={{ color: 'black', fontWeight: 'bolder' }} className='bukra-bold'>Our Services</h2>
-                            <br></br>
-                            <Button variant="link" onClick={() => this.setSelectedItem('', 'bmc')} >
-                                <h4 className='bukra-regular'>Multimedia Management</h4>
-                            </Button>
-                            <br></br>
-                            <Button variant="link" onClick={() => this.setSelectedItem('', 'bmc')} >
-                                <h4 className='bukra-regular'>Web Development</h4>
-                            </Button>
-                            <br></br>
-                            <Button variant="link" onClick={() => this.setSelectedItem('', 'bmc')} >
-                                <h4 className='bukra-regular'>Product Management</h4>
-                            </Button>
-                            <br></br>
-                            <Button variant="link" onClick={() => this.setSelectedItem('', 'bmc')} >
-                                <h4 className='bukra-regular'>Marketinv</h4>
-                            </Button>
+                            <div className="footer-grid-col">
+
+                                <h2 style={{ color: 'black', fontWeight: 'bolder' }} className='bukra-bold'>Our Services</h2>
+                                <br></br>
+
+                                    <Button className='footer-link' variant="link" onClick={() => this.setSelectedItem('', 'bmc')} >
+                                        <h4 className='bukra-regular'>Strategic Plan</h4>
+                                    </Button>
+                                <br></br>
+                                <Button variant="link" className='footer-link' onClick={() => this.setSelectedItem('', 'bmc')} >
+                                    <h4 className='bukra-regular'>Marketing Management</h4>
+                                </Button>
+                                <br></br>
+                                <Button variant="link" className='footer-link' onClick={() => this.setSelectedItem('', 'bmc')} >
+                                    <h4 className='bukra-regular'>HR Management</h4>
+                                </Button>
+                                <br></br>
+                                <Button variant="link" className='footer-link' onClick={() => this.setSelectedItem('', 'bmc')} >
+                                    <h4 className='bukra-regular'>Finance and Accounting</h4>
+                                </Button>
+                                <br></br>
+                                <Button variant="link" className='footer-link' onClick={() => this.setSelectedItem('', 'bmc')} >
+                                    <h4 className='bukra-regular'>BMC Toolbox</h4>
+                                </Button>
+                            </div>
+
                         </Grid>
                     </Grid>
                 </div>

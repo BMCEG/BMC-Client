@@ -70,11 +70,11 @@ export default class NavbarBMC extends Component {
                             <img src={`${endpoint}/logo-no-text.png`} alt='home' className='nav-logo-img' />
                         </Button>
                     </div>
-                    <div className="title">
+                    {/* <div className="title">
                         <Button variant="link" href='/' >
                             <h6 className='bukra-medium'>Home</h6>
                         </Button>
-                    </div>
+                    </div> */}
                     <div className="title">
                         <NavbarDropdown size='h6' title="About" items={aboutItems} />
                     </div>
@@ -112,27 +112,27 @@ export default class NavbarBMC extends Component {
                 <div className='nav-bmc-right'>
                     <div className="title" style={{ marginLeft: 'auto' }}>
                         <Button variant="link" href='/blogs' >
-                            <h6><FontAwesomeIcon icon={faFacebook} size={'2x'} /></h6>
+                            <h6><FontAwesomeIcon icon={faFacebook} size={'1x'} /></h6>
                         </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/blogs' >
-                            <h6><FontAwesomeIcon icon={faLinkedin} size={'2x'} /></h6>
+                            <h6><FontAwesomeIcon icon={faLinkedin} size={'1x'} /></h6>
                         </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/blogs' >
-                            <h6><FontAwesomeIcon icon={faYoutube} size={'2x'} /></h6>
+                            <h6><FontAwesomeIcon icon={faYoutube} size={'1x'} /></h6>
                         </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/blogs' >
-                            <h6><FontAwesomeIcon icon={faInstagram} size={'2x'} /></h6>
+                            <h6><FontAwesomeIcon icon={faInstagram} size={'1x'} /></h6>
                         </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/blogs' >
-                            <h6><FontAwesomeIcon icon={faTwitter} size={'2x'} /></h6>
+                            <h6><FontAwesomeIcon icon={faTwitter} size={'1x'} /></h6>
                         </Button>
                     </div>
                     <div className='title nav-logo-ewings'>

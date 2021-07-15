@@ -66,7 +66,8 @@ class Contact extends Component {
                             <div className='contact-form-body-left-info'>
 
                                 <h3  className='bukra-bold'>Location:</h3>
-                                <h4 className='bukra-regular'>A108 Adam Street, New York, NY 535022</h4>
+                                <h4 className='bukra-regular'>A108 Adam Street,</h4>
+                                <h4 className='bukra-regular'>New York, NY 535022</h4>
                             </div>
                             <div className='contact-form-body-left-info'>
                                 <h3 className='bukra-bold'>Email:</h3>

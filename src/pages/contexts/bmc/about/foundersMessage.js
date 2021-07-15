@@ -12,7 +12,7 @@ export default function foundersMessage() {
 
                 </div>
                 <br></br>
-                <div className='bukra-regular'>
+                <div className='bukra-regular message-body'>
                     <Typography align='justify' variant='h5' component='h5' className='bukra-regular'>
                         Welcome to BMC,
                     </Typography>

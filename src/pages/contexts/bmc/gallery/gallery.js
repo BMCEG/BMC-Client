@@ -92,7 +92,7 @@ export default class gallery extends Component {
 
     render() {
         return (
-            <div className='gallery-root' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+            <div className='gallery-root' >
                 {/* <div className='gallery-title'>
                     <h1>Gallery</h1>
                 </div> */}

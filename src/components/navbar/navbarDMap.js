@@ -106,11 +106,11 @@ export default class NavbarDMap extends Component {
                             <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faTwitter} size={'2x'} /></h5>
                         </Button>
                     </div>
-                <div className="nav-ewings-bmc-tab">
-                    <Button variant="link" href='/' >
-                        <img src={`${endpoint}/logo-no-text.png`} alt='home' className='nav-logo-img-bmc' />
-                    </Button>
-                </div>
+                    <div className="nav-ewings-bmc-tab">
+                        <Button variant="link" href='/' >
+                            <img src={`${endpoint}/logo-no-text.png`} alt='home' className='nav-logo-img-bmc' />
+                        </Button>
+                    </div>
                 </div>
             </Navbar>
         )

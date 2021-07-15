@@ -1,5 +1,5 @@
 .whyBMC-root {
-    /* height: 100vh; */
+    height: 100%;
     /* margin-top: 2.9%; */
     /* background-color: lightgray; */
     padding-top: 1%;
@@ -24,10 +24,19 @@
     margin-bottom: 3%;
 }
 
+.whyBMC-grid-row {
+    /* background-color: royalblue; */
+    height: auto;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
 .whyBMC-card {
     background-color: whitesmoke;
-    height: 600px;
-    width: 600px;
+    /* height: auto; */
+    min-height: 70vh !important;
+    max-height: 70vh !important;
+    width: 90%;
     padding: 2%;
     text-align: center;
     display: flex;
@@ -68,9 +77,15 @@
     margin-bottom: 1%;
     font-family: 'bukra-regular' !important;
     line-height: 150% !important;
+    height: 100%;
 
 }
-
+.whyBMC-card-content {
+    max-height: 90%;
+    overflow-y: scroll;
+    /* max-width: 90%; */
+    /* background-color: saddlebrown; */
+}
 .whyBMC-text-img {
     display: flex;
 }
@@ -100,4 +115,11 @@
 .bukra-regular {
     font-family: 'bukra-regular' !important;
     line-height: 150% !important;
+}
+
+.whyBMC-grid-col {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }

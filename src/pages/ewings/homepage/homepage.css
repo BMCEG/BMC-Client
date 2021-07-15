@@ -1,12 +1,20 @@
 .ewings-homepage-text {
     /* background-color: red; */
-    z-index: 0;
-    transform: translateY(-90vh);
-    width: 65%;
+    /* z-index: 0; */
+    /* height: fit-content; */
+    /* transform: translateY(-90vh); */
+    width: 100%;
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+    top: 15%;
     margin: auto;
+    position: absolute;
+    /* overflow-y: scroll; */
     /* position:relative;
     overflow: hidden !important; */
-    /* margin-bottom: -159px; */
+    /* height: 70vh; */
+    height: 100%;
+    /* margin-bottom: 50%; */
 }
 .ewings-homepage-text-mob {
     /* background-color: rgb(170, 169, 169); */
@@ -16,7 +24,7 @@
     margin: auto;
     height: 62%;
     padding: 10px;
-    overflow-y: scroll;
+    overflow-y: hidden;
     color: white;
     /* position:relative;
     overflow: hidden !important; */
@@ -29,21 +37,66 @@
 }
 
 .carousel-control-prev {
-    display: none;
+    transform: translateX(-200px);
+    /* display: none; */
+    
 }
 .carousel-control-next {
-    display: none;
+    transform: translateX(200px);
+    /* display: none; */
 }
-
+.ewings-homepage-root{
+    min-height: 100vh;
+    z-index: -5 !important;
+    background-color: #458CC8;
+}
 .ewings-homepage-root-mob{
     background-color: #4694D6;
-    height: 850px;
+    height: 70%;
+    overflow-y: scroll;
 }
 
 .ewings-player {
-    max-height: 50%;
+    /* max-height: 50%; */
+    /* position: absolute; */
+
+    /* width: 100%; */
+    /* object-fit: cover; */
+
     /* background-color: springgreen; */
     /* padding: 10%; */
     /* height: 100% !important; */
     /* width: 500px !important; */
+}
+
+.ewings-homepage-banner {
+    /* max-height: 110vh; */
+    position: relative;
+    overflow-y: hidden;
+    /* background-color: springgreen; */
+}
+
+.home-service-ewings {
+    /* margin-top: 5%; */
+    margin: 2%;
+    background-color: #116876;
+    box-shadow: 0px 1px 3px #393938;
+    padding: 5%;
+    border-radius: 15px;
+    transition: all .2s;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+
+}
+
+.home-service-text-ewings {
+    border-left: 2px solid white;
+    padding-left: 1%;
+    padding: 2%;
+    /* background-color: dodgerblue; */
+    /* display: block; */
+}
+
+.ewings-color {
+    color: white !important;
 }

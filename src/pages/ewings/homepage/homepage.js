@@ -3,12 +3,15 @@ import ReactPlayer from 'react-player';
 import endpoint from '../../../helpers/api_service';
 import './homepage.css';
 import Carousel from 'react-bootstrap/esm/Carousel';
+import '../../../styles.css'
+import Button from 'react-bootstrap/Button';
+import { Grid, Typography } from "@material-ui/core"
 export default class homepage extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            array : [
+            array: [
                 {
                     title: 'About Us',
                     post: `Ewings is a digital marketing agency that was founded in 2014, we are here to help B2B and B2C companies reach their highest marketing goals. \n\nWe rely on our hardworking team with their years of experience in marketing management to expand, and improve our client’s marketing goals. \n\nWe offer tailored services according to our client's needs and their position in the market, such as, digital marketing, multimedia production, social media and creative content, web development, and media management and buying.`
@@ -37,31 +40,142 @@ export default class homepage extends Component {
     render() {
         return (
             <div className='ewings-homepage-root'>
-                <ReactPlayer
-                    className="react-player"
-                    url={`${endpoint}/ewings-homepage.mp4`}
-                    width="100%"
-                    height="100%"
-                    loop={true}
-                    controls={false}
-                    muted="true"
-                    volume="0"
-                    autoplay
-                    playsinline
-                    playing="true"
-                />
-                <div className='ewings-homepage-text' style={{marginBottom: '-460px'}}>
-                    <Carousel>
-                        {this.state.array.map((el) => (
+                <div className='ewings-homepage-banner'>
+                    <ReactPlayer
+                        className="ewings-player"
+                        url={`${endpoint}/ewings-homepage.mp4`}
+                        width="100%"
+                        height="100%"
+                        loop={true}
+                        controls={false}
+                        muted="true"
+                        volume="0"
+                        autoplay
+                        playsinline
+                        playing="true"
+                    />
+                    <div className='ewings-homepage-text' style={{ marginBottom: '-460px' }}>
+                        <Carousel>
+                            {this.state.array.map((el) => (
 
-                        <Carousel.Item className='carousel-item' indicators={false} controls={false} wrap={true}>
-                            <h2 className='bukra-bold' style={{color:'#103442'}}>{el.title}</h2>
-                            <br></br>
-                            <h3 className='bukra-regular' style={{whiteSpace: 'pre-line', color:'#103442'}}>{el.post}</h3>
-                        </Carousel.Item>
-                        ))}
-                    </Carousel>
+                                <Carousel.Item className='carousel-item' indicators={false} controls={false} wrap={true}>
+                                    <Typography className='bukra-bold' variant='h3' component='h3' style={{ color: '#103442' }}>{el.title}</Typography>
+                                    <br></br>
+                                    <Typography className='bukra-regular' variant='h6' component='h6' style={{ whiteSpace: 'pre-line', color: '#103442' }}>{el.post}</Typography>
+                                </Carousel.Item>
+                            ))}
+                        </Carousel>
+                        <br></br>
 
+                    </div>
+                    <div className="page-margin">
+                        <Grid container className='home-services-grid'>
+                            <Grid item xs={6}>
+                                <div className="home-service-ewings">
+                                    <Grid container>
+                                        <Grid item xs={3}>
+                                            <div className='home-service-icon-base'>
+                                                <img className='home-service-icon' src={`${endpoint}/service-strategic-planning-black.png`} />
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={9}>
+                                            <div className='home-service-text-ewings ewings-color'>
+                                                <h3 className='bukra-bold'>Strategic Plan</h3>
+                                                <h5 className='bukra-regular'>BMC has the aim to provide professional counsel and assistance in the analysis, conception, and formulation of strategies & plans along with the development of the implementation framework that assure client’s sustained survival and long-term growth & profitability.</h5>
+                                            </div>
+                                        </Grid>
+
+                                    </Grid>
+                                    <div style={{ textAlign: 'right' }}>
+
+                                        <Button variant='danger' href='/services/strategic'>Read More</Button>
+                                    </div>
+                                </div>
+                                <div className="home-service-ewings">
+                                    <Grid container>
+                                        <Grid item xs={3}>
+
+                                            <div className='home-service-icon-base'>
+                                                <img className='home-service-icon' src={`${endpoint}/service-hr-black.png`} />
+                                            </div>
+
+                                        </Grid>
+                                        <Grid item xs={9}>
+                                        <div className='home-service-text-ewings ewings-color'>
+                                                <h3 className='bukra-bold'>HR Management</h3>
+                                                <h5 className='bukra-regular'>We provide Human Resources service in support of our client’s vision, mission and values by promoting the concept that employees are the most valuable resource and will be treated as such.</h5>
+                                            </div>
+                                            <div style={{ textAlign: 'right' }}>
+
+                                                <Button variant='danger' href='/services/hr'>Read More</Button>
+                                            </div>
+                                        </Grid>
+                                    </Grid>
+                                </div>
+                                <div className="home-service-ewings">
+                                    <Grid container>
+                                        <Grid item xs={3}>
+                                            <div className='home-service-icon-base'>
+                                                <img className='home-service-icon' src={`${endpoint}/service-toolbox-black.png`} />
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={9}>
+                                        <div className='home-service-text-ewings ewings-color'>
+                                                <h3 className='bukra-bold'>BMC Tool Box</h3>
+                                                <h5 className='bukra-regular'>We are often engaged to provide Custom-tailored solutions,We can help formulate the specific problem or uncover areas that need improvements and then find a comprehensive set of possible solutions to meet the needs of your particular organization.</h5>
+                                            </div>
+                                            <div style={{ textAlign: 'right' }}>
+
+                                                <Button variant='danger' href='/services/toolbox'>Read More</Button>
+                                            </div>
+                                        </Grid>
+                                    </Grid>
+                                </div>
+                            </Grid>
+                            <Grid item xs={6}>
+                            <div className="home-service-ewings">
+                                    <Grid container>
+                                        <Grid item xs={3}>
+                                            <div className='home-service-icon-base'>
+                                                <img className='home-service-icon' src={`${endpoint}/service-marketing-mgmt-black.png`} />
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={9}>
+                                        <div className='home-service-text-ewings ewings-color'>
+                                                <h3 className='bukra-bold'>Marketing Management</h3>
+                                                <h5 className='bukra-regular'>We act as your marketing arm department, we have the right blend of strategists and planners, researchers, designers, thinkers and creatives, detail and big-picture people all dedicated to achieve the goal at the highest quality, on time and within your budget.</h5>
+                                            </div>
+                                            <div style={{ textAlign: 'right' }}>
+
+                                                <Button variant='danger' href='/services/marketingMgmt'>Read More</Button>
+                                            </div>
+                                        </Grid>
+                                    </Grid>
+                                </div>
+                                <div className="home-service-ewings">
+                                    <Grid container>
+                                        <Grid item xs={3}>
+                                            <div className='home-service-icon-base'>
+                                                <img className='home-service-icon' src={`${endpoint}/service-financial-black.png`} />
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={9}>
+                                        <div className='home-service-text-ewings ewings-color'>
+                                                <h3 className='bukra-bold'>Financial and Accounting</h3>
+                                                <h5 className='bukra-regular'>We have the aim to provide a full range of comprehensive high quality services with a modern and practical approach in several fields.</h5>
+                                            </div>
+                                            <div style={{ textAlign: 'right' }}>
+
+                                                <Button variant='danger' href='/services/financial'>Read More</Button>
+                                            </div>
+                                        </Grid>
+                                    </Grid>
+                                </div>
+                            </Grid>
+                        </Grid>
+                        <br></br>
+                        <br></br>
+                    </div>
                 </div>
             </div>
         )

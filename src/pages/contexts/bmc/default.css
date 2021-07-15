@@ -5,6 +5,10 @@
     /* display:flex; */
     /* overflow:auto; */
 }
+.homepage-contact {
+    /* background-color: yellow; */
+    display: flex;
+}
 .default-root-ios {
     padding-top: 22px;
     padding-bottom: 44px;
@@ -92,10 +96,10 @@
     /* background-color: yellowgreen; */
     width: 60%;
     padding: 3%;
-    /* margin: 1%;
+    /* margin: 1%; */
     display: flex;
     flex-direction: column;
-    justify-content: center; */
+    justify-content: center;
     /* overflow-y: scroll; */
 }
 

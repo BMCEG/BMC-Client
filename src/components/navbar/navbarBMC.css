@@ -9,6 +9,10 @@
     color: black;
     position: sticky !important;
     top: 0;
+    	font-size: 100% !important;
+	font: inherit !important;
+    /* z-index: 5 !important; */
+
 }
 
 .nav-bmc-root-mob {
@@ -29,13 +33,15 @@
 .dropdown-ewings-item {
     color: white !important;
     font-family: 'bukra-regular';
-    text-align: center !important;
+    text-align: left !important;
 }
 .nav-bmc-left {
     display: flex;
     min-width: 70%;
     /* background-color: yellow; */
-    /* overflow-x: hidden; */
+    /* overflow-x: hidden; */    	font-size: 100% !important;
+	font: inherit !important;
+
 }
 
 .nav-bmc-right {
@@ -43,7 +49,9 @@
     /* margin-left: auto; */
     text-align: right !important;
     min-width: 30%;
-    /* width: 30%; */
+    /* width: 30%; */    	font-size: 100% !important;
+	font: inherit !important;
+
     /* background-color: darkgreen; */
     /* text-align: right; */
 }

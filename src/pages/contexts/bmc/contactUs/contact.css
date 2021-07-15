@@ -16,7 +16,7 @@
 
 .contact-left {
     /* background-color: green; */
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +25,7 @@
 
 .contact-right {
     /* background-color: greenyellow; */
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,7 +55,7 @@
     /* background-color: mistyrose; */
     /* padding: 1%; */
     box-shadow: 2px 2px 10px gray;
-    width: 31.4% !important;
+    width: 35.4% !important;
     height: 350px !important;
 }
 
@@ -91,13 +91,22 @@
     display: flex;
     width: 100%;
     padding: 1%;
+    display: inline-block;
+    /* vertical-align: top; */
 }
 
 .contact-form-body-left-info {
     margin: auto;
+    /* position: fixed; */
+    /* top: 0 !important; */
     /* background-color: greenyellow; */
-    width: 30%;
-    height: 130px;
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+        height: auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
 }
 
 .contact-form-body-right {

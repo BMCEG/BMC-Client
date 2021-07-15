@@ -158,8 +158,8 @@ export default class App extends Component {
             <>
 
               <Media queries={{
-                mobile: "(max-width: 1260px)",
-                small: "(min-width: 1260px) and (max-width: 1400px)",
+                mobile: "(max-width: 1300px)",
+                small: "(min-width: 1300px) and (max-width: 1400px)",
                 medium: "(min-width: 1400px) and (max-width: 1600px)",
                 large: "(min-width: 1600px)",
 

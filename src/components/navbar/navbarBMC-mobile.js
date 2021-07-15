@@ -94,7 +94,7 @@ export default class NavbarBMC extends Component {
                                     <Dropdown.Item href='/services/strategic'><h6 className='bukra-regular'>Strategic Planning</h6></Dropdown.Item>
                                     <Dropdown.Item href='/services/marketingMgmt'><h6 className='bukra-regular'>Marketing Management</h6></Dropdown.Item>
                                     <Dropdown.Item href='/services/financial'><h6 className='bukra-regular'>Finance and Accounting</h6></Dropdown.Item>
-                                    <Dropdown.Item href='/services/hr'><h6 className='bukra-regular'>Humar Resources</h6></Dropdown.Item>
+                                    <Dropdown.Item href='/services/hr'><h6 className='bukra-regular'>Human Resources</h6></Dropdown.Item>
                                     <Dropdown.Item href='/services/toolbox'><h6 className='bukra-regular'>BMC Toolbox</h6></Dropdown.Item>
                                     <br></br>
                                     <Dropdown.Item href='/partners'><h5 className='bukra-bold'>Clients</h5></Dropdown.Item>

@@ -18,6 +18,13 @@
     margin-right: 10%;
 }
 
+.message-body {
+    /* background-color: seagreen; */
+    height: 93%;
+    overflow-y: scroll;
+    /* margin-bottom: -20px; */
+    
+}
 .founder-text {
     width: 80%;
     /* box-shadow: 2px 0px 5px black; */
