@@ -151,7 +151,7 @@
     
 }
 .story-node-text-ball2 {
-    transform: translate(80px, -52px);
+    transform: translate(95px, -29px);
     border-left: 2px solid black;
     transition: all 5.5s ease-in;
     padding: 3%;
@@ -166,7 +166,7 @@
     
 }
 .story-node-text-ball4 {
-    transform: translate(80px, -52px);
+    transform: translate(95px, -28px);
     border-left: 2px solid black;
     transition: all .2s ease-in;
     padding: 3%;
@@ -181,7 +181,7 @@
     
 }
 .story-node-text-ball6 {
-    transform: translate(80px, -52px);
+    transform: translate(80px, -22px);
     border-left: 2px solid black;
     transition: all .2s ease-in;
     padding: 3%;
@@ -204,13 +204,13 @@
 }
 
 .story-node-text-end {
-    transform: translateX(-405px);
+    transform: translateX(-305px);
     border-right: 2px solid black;
     transition: all .2s ease-in;
     padding: 3%;
     font-family: 'bukra-regular' !important;
 
-    width: 500px;
+    width: 400px;
     /* background-color: cyan; */
     /* background: rgba(76, 175, 80, 0.6); */
     text-align: right !important;
