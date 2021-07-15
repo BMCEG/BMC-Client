@@ -9,8 +9,8 @@
     color: black;
     position: sticky !important;
     top: 0;
-    	font-size: 100% !important;
-	font: inherit !important;
+    font-size: 100% !important;
+    font: inherit !important;
     /* z-index: 5 !important; */
 
 }
@@ -26,21 +26,25 @@
     position: sticky !important;
     top: 0;
 }
+
 .dropdown-ewings {
     color: burlywood !important;
     background-color: #4694D6 !important;
 }
+
 .dropdown-ewings-item {
     color: white !important;
     font-family: 'bukra-regular';
     text-align: left !important;
 }
+
 .nav-bmc-left {
     display: flex;
     min-width: 70%;
     /* background-color: yellow; */
-    /* overflow-x: hidden; */    	font-size: 100% !important;
-	font: inherit !important;
+    /* overflow-x: hidden; */
+    font-size: 100% !important;
+    font: inherit !important;
 
 }
 
@@ -49,8 +53,9 @@
     /* margin-left: auto; */
     text-align: right !important;
     min-width: 30%;
-    /* width: 30%; */    	font-size: 100% !important;
-	font: inherit !important;
+    /* width: 30%; */
+    font-size: 100% !important;
+    font: inherit !important;
 
     /* background-color: darkgreen; */
     /* text-align: right; */
@@ -155,6 +160,7 @@
 .bukra-regular {
     font-family: 'bukra-regular' !important;
 }
+
 .bukra-medium {
     font-family: 'bukra-medium' !important;
 }
@@ -166,7 +172,7 @@
 .nav-bmc-dropdown {
     /* background-color: red !important; */
     /* position: static; */
-    height: 90vh;
+    /* height: 90vh; */
     overflow-y: scroll !important;
     overflow-y: hidden;
 }

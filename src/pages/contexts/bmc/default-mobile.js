@@ -332,7 +332,8 @@ class DefaultPage extends Component {
                                     <span>
                                         <br></br>
                                         <h3 className='bukra-bold'>Location:
-                                            <h5 className='bukra-regular'>A108 Adam Street, New York, NY 535022</h5>
+                                            <h5 className='bukra-regular'>A108 Adam Street,</h5>
+                                            <h5 className='bukra-regular'>New York, NY 535022</h5>
                                         </h3>
                                     </span>
                                     <span>

@@ -77,7 +77,7 @@ export default class floatingBtn extends Component {
                     </a>
                 </div>
                 <Fab variant="extended" className='fab-btn-mobile' onClick={this.handleModalOpen}>
-                    <h6 className='bukra-bold' style={{ fontWeight: 'bold' }}>Request Consultancy</h6>
+                    <h6 className='bukra-bold'>Request Consultancy</h6>
                 </Fab>
                 <Modal
                     open={this.state.modalFlag}
