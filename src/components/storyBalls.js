@@ -30,7 +30,7 @@ export default class storyBalls extends Component {
         switch (ball) {
             case "ball1":
                 this.setState({
-                    ball1Y: -60,
+                    ball1Y: -75,
                     ball1text: "block",
                 });
                 break;
@@ -42,7 +42,7 @@ export default class storyBalls extends Component {
                 break;
             case "ball3":
                 this.setState({
-                    ball3Y: -50,
+                    ball3Y: -58,
                     ball3text: "block",
                 });
                 break;

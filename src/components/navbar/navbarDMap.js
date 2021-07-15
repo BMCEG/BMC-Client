@@ -82,17 +82,17 @@ export default class NavbarDMap extends Component {
 
                 <div className='nav-dmap-right'>
                     <div className="title" style={{ marginLeft: 'auto' }}>
-                        <Button variant="link" href='/blogs' >
+                        <Button variant="link" href='https://www.facebook.com/businessmapconsultants/' >
                             <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faFacebook} size={'2x'} /></h5>
                         </Button>
                     </div>
                     <div className="title">
-                        <Button variant="link" href='/blogs' >
+                        <Button variant="link" href='https://www.linkedin.com/company/businessmapconsultants/'>
                             <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faLinkedin} size={'2x'} /></h5>
                         </Button>
                     </div>
                     <div className="title">
-                        <Button variant="link" href='/blogs' >
+                        <Button variant="link" href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q' >
                             <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faYoutube} size={'2x'} /></h5>
                         </Button>
                     </div>

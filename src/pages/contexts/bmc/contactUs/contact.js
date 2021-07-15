@@ -66,16 +66,17 @@ class Contact extends Component {
                             <div className='contact-form-body-left-info'>
 
                                 <h3  className='bukra-bold'>Location:</h3>
-                                <h4 className='bukra-regular'>A108 Adam Street,</h4>
-                                <h4 className='bukra-regular'>New York, NY 535022</h4>
+                                <h5 className='bukra-regular'>B103 90th Road, 5th Settlement,</h5>
+                                    <h5 className='bukra-regular'>New Cairo, 11835</h5>
                             </div>
                             <div className='contact-form-body-left-info'>
                                 <h3 className='bukra-bold'>Email:</h3>
-                                <h4 className='bukra-regular'>info@example.com</h4>
+                                <h5 className='bukra-regular'>mohamed@bmceg.com</h5>
                             </div>
                             <div className='contact-form-body-left-info'>
                                 <h3 className='bukra-bold'>Call:</h3>
-                                <h4 className='bukra-regular'>+1 5589 55488 55</h4>
+                                <h5 className='bukra-regular'>010 0822 4224</h5>
+                                    <h5 className='bukra-regular'>202 2564 9732</h5>
                             </div>
                         </div>
 

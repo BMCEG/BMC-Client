@@ -90,6 +90,9 @@
     padding-left: 2%;
     padding-right: 2%;
     /* justify-content: end; */
+    word-wrap: break-word;
+    white-space: pre-line;
+
 }
 
 .hr {

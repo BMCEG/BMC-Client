@@ -19,7 +19,7 @@ export default class Footer extends Component {
                             <img src={`${endpoint}/ewings-logo-text.png`} alt='wing-left' className='footer-ewings-root-logo-img' />
                         </div>
                         <div className='footer-ewings-social-links'>
-                            <Button variant="link" href='/blogs'  className='footer-ewingss-social-btn'  >
+                            <Button variant="link" href='https://www.facebook.com/businessmapconsultants/'   className='footer-ewingss-social-btn'  >
                                 <FontAwesomeIcon icon={faFacebook} size={'2x'}  />
                             </Button>
                             <Button variant="link" href='/blogs' className='footer-ewingss-social-btn' >
@@ -28,10 +28,10 @@ export default class Footer extends Component {
                             <Button variant="link" href='/blogs' className='footer-ewingss-social-btn' >
                                 <FontAwesomeIcon icon={faTwitter} size={'2x'}  />
                             </Button>
-                            <Button variant="link" href='/blogs' className='footer-ewingss-social-btn' >
+                            <Button variant="link" href='https://www.linkedin.com/company/businessmapconsultants/' className='footer-ewingss-social-btn' >
                                 <FontAwesomeIcon icon={faLinkedin} size={'2x'}  />
                             </Button>
-                            <Button variant="link" href='/blogs' className='footer-ewingss-social-btn' >
+                            <Button variant="link" href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q' className='footer-ewingss-social-btn' >
                                 <FontAwesomeIcon icon={faYoutube} size={'2x'} />
                             </Button>
                         </div>

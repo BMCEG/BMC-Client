@@ -24,7 +24,7 @@
 }
 .ewings-service-page-left {
     /* background-color: magenta; */
-    width: 50%;
+    width: 40%;
     overflow-y: scroll;
     padding: 1%;
     display: flex;
@@ -55,7 +55,8 @@
 }
 .ewings-service-page-right {
     /* background-color: dodgerblue; */
-    width: 50%;
+    /* margin-left: 15% ; */
+    width: 60%;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -100,6 +101,7 @@
 }
 
 .service-page-img-base {
+    
     /* background-color: gold; */
     height: 100%;
     text-align: center;

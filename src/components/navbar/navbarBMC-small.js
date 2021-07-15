@@ -111,17 +111,17 @@ export default class NavbarBMC extends Component {
                 </div>
                 <div className='nav-bmc-right'>
                     <div className="title" style={{ marginLeft: 'auto' }}>
-                        <Button variant="link" href='/blogs' >
+                        <Button variant="link" href='https://www.facebook.com/businessmapconsultants/' >
                             <h6><FontAwesomeIcon icon={faFacebook} size={'1x'} /></h6>
                         </Button>
                     </div>
                     <div className="title">
-                        <Button variant="link" href='/blogs' >
+                        <Button variant="link" href='https://www.linkedin.com/company/businessmapconsultants/' >
                             <h6><FontAwesomeIcon icon={faLinkedin} size={'1x'} /></h6>
                         </Button>
                     </div>
                     <div className="title">
-                        <Button variant="link" href='/blogs' >
+                        <Button variant="link" href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q'  >
                             <h6><FontAwesomeIcon icon={faYoutube} size={'1x'} /></h6>
                         </Button>
                     </div>

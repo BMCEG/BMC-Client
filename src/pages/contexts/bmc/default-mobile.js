@@ -332,20 +332,21 @@ class DefaultPage extends Component {
                                     <span>
                                         <br></br>
                                         <h3 className='bukra-bold'>Location:
-                                            <h5 className='bukra-regular'>A108 Adam Street,</h5>
-                                            <h5 className='bukra-regular'>New York, NY 535022</h5>
+                                            <h5 className='bukra-regular'>B103 90th Road, 5th Settlement,</h5>
+                                            <h5 className='bukra-regular'>New Cairo, 11835</h5>
                                         </h3>
                                     </span>
                                     <span>
                                         <br></br>
                                         <h3 className='bukra-bold'>Email:
-                                            <h5 className='bukra-regular'>info@example.com</h5>
+                                            <h5 className='bukra-regular'>mohamed@bmceg.com</h5>
                                         </h3>
                                     </span>
                                     <span>
                                         <br></br>
                                         <h3 className='bukra-bold'>Call:
-                                            <h5 className='bukra-regular'>+1 5589 55488 55</h5>
+                                            <h5 className='bukra-regular'>010 0822 4224</h5>
+                                            <h5 className='bukra-regular'>202 2564 9732</h5>
                                         </h3>
                                         <br></br>
                                     </span>
@@ -374,7 +375,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <br></br>
                             </div>
-                                <br></br>
+                            <br></br>
                         </div>
                     </div>
                 }

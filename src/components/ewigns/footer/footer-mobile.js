@@ -17,7 +17,7 @@ export default class FooterEwingsMob extends Component {
                     <div className='footer-ewings-social-links-mob'>
                         <div className='footer-ewings-social-links-row'>
 
-                            <Button variant="link" href='/blogs' className='footer-ewingss-social-btn-mob' >
+                            <Button variant="link" href='https://www.facebook.com/businessmapconsultants/' className='footer-ewingss-social-btn-mob' >
                                 <FontAwesomeIcon icon={faFacebook} size={'lg'} style={{margin:'auto'}} />
                             </Button>
                             <Button variant="link" href='/blogs' className='footer-ewingss-social-btn-mob' >
@@ -26,10 +26,10 @@ export default class FooterEwingsMob extends Component {
                             <Button variant="link" href='/blogs' className='footer-ewingss-social-btn-mob' >
                                 <FontAwesomeIcon icon={faTwitter} size={'lg'} style={{margin:'auto'}} />
                             </Button>
-                            <Button variant="link" href='/blogs' className='footer-ewingss-social-btn-mob' >
+                            <Button variant="link" href='https://www.linkedin.com/company/businessmapconsultants/' className='footer-ewingss-social-btn-mob' >
                                 <FontAwesomeIcon icon={faLinkedin} size={'lg'} style={{margin:'auto'}} />
                             </Button>
-                            <Button variant="link" href='/blogs' className='footer-ewingss-social-btn-mob' >
+                            <Button variant="link" href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q' className='footer-ewingss-social-btn-mob' >
                                 <FontAwesomeIcon icon={faYoutube} size={'lg'} style={{margin:'auto'}} />
                             </Button>
                         </div>

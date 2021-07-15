@@ -27,12 +27,6 @@ export default class Service extends Component {
                 {isMobile && isIOS ?
                     <div className='ewings-service-page-root-ios'>
                         <div className='ewings-service-page-left'>
-                            {/* <div className='service-page-title-details'>
-                        <img src={`${endpoint}/${this.props.logo}`} alt='logo' className='service-details-icon' />
-                        <div className='service-details-name'>
-                        <h1>{this.props.title}</h1>
-                        </div>
-                    </div> */}
                             <div className='ewings-service-page-content'>
                                 {this.props.title === 'Digital Marketing' ?
                                     <Digital /> : this.props.title === 'Multimedia Production' ?
@@ -50,15 +44,8 @@ export default class Service extends Component {
                         </div>
                     </div>
                     :
-
                     <div className='ewings-service-page-root'>
                         <div className='ewings-service-page-left'>
-                            {/* <div className='service-page-title-details'>
-                        <img src={`${endpoint}/${this.props.logo}`} alt='logo' className='service-details-icon' />
-                        <div className='service-details-name'>
-                        <h1>{this.props.title}</h1>
-                        </div>
-                    </div> */}
                             <div className='ewings-service-page-content'>
                                 {this.props.title === 'Digital Marketing' ?
                                     <Digital /> : this.props.title === 'Multimedia Production' ?

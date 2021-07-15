@@ -90,19 +90,19 @@ export default class NavbarDMapMob extends Component {
 
                                 <hr></hr>
                                 <Dropdown.Item>
-                                    <Button variant='link'>
+                                    <Button variant='link' href='https://www.facebook.com/businessmapconsultants/'>
                                         <h5 className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faFacebook} size={'2x'} /></h5>
                                     </Button>
                                     <Button variant='link'>
                                         <h5 className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faTwitter} size={'2x'} /></h5>
                                     </Button>
-                                    <Button variant='link'>
+                                    <Button variant='link' href='https://www.linkedin.com/company/businessmapconsultants/'>
                                         <h5 className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faLinkedin} size={'2x'} /></h5>
                                     </Button>
                                     <Button variant='link'>
                                         <h5 className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faInstagram} size={'2x'} /></h5>
                                     </Button>
-                                    <Button variant='link'>
+                                    <Button variant='link' href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q'>
                                         <h5 className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faYoutube} size={'2x'} /></h5>
                                     </Button>
                                 </Dropdown.Item>

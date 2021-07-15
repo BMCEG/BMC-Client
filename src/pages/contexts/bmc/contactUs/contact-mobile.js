@@ -69,49 +69,50 @@ class Contact extends Component {
                         <span>
                             <br></br>
                             <h3 className='bukra-bold'>Location:
-                                <h5 className='bukra-regular'>A108 Adam Street,</h5>
-                                <h5 className='bukra-regular'>New York, NY 535022</h5>
+                                <h5 className='bukra-regular'>B103 90th Road, 5th Settlement,</h5>
+                                <h5 className='bukra-regular'>New Cairo, 11835</h5>
                             </h3>
                         </span>
                         <span>
                             <br></br>
                             <h3 className='bukra-bold'>Email:
-                                <h5 className='bukra-regular'>info@example.com</h5>
+                                <h5 className='bukra-regular'>mohamed@bmceg.com</h5>
                             </h3>
                         </span>
                         <span>
                             <br></br>
                             <h3 className='bukra-bold'>Call:
-                                <h5 className='bukra-regular'>+1 5589 55488 55</h5>
+                                <h5 className='bukra-regular'>010 0822 4224</h5>
+                                <h5 className='bukra-regular'>202 2564 9732</h5>
                             </h3>
                             <br></br>
                         </span>
                     </div>
 
                 </div>
-                    <div className='contact-form'>
-                        <div className='contact-form-body-right'>
-                            <div className='contact-form-body-names'>
-                                <TextField fullWidth name="contactFirstName" value={this.state.contactFirstName} label="First Name" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} />
-                                <div style={{ width: '2%' }} />
-                                <TextField fullWidth name="contactLastName" value={this.state.contactLastName} label="Last Name" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} />
-                            </div>
-                            <TextField fullWidth name="contactEmail" value={this.state.contactEmail} label="E-Mail" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
-                            <br></br>
-                            <TextField fullWidth name="contactMobile" value={this.state.contactMobile} label="Mobile Number" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
-                            <br></br>
-                            <TextField fullWidth name="contactMessage" value={this.state.contactMessage} label="Message" rows={10} multiline variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
-                            <br></br>
+                <div className='contact-form'>
+                    <div className='contact-form-body-right'>
+                        <div className='contact-form-body-names'>
+                            <TextField fullWidth name="contactFirstName" value={this.state.contactFirstName} label="First Name" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} />
+                            <div style={{ width: '2%' }} />
+                            <TextField fullWidth name="contactLastName" value={this.state.contactLastName} label="Last Name" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} />
                         </div>
-                        <div className='contact-form-btn-base'>
-
-                            <Button variant="danger" onClick={this.handleSubmit} className='contact-form-btn'>
-                                Send Message
-                            </Button>
-                        </div>
+                        <TextField fullWidth name="contactEmail" value={this.state.contactEmail} label="E-Mail" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
+                        <br></br>
+                        <TextField fullWidth name="contactMobile" value={this.state.contactMobile} label="Mobile Number" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
+                        <br></br>
+                        <TextField fullWidth name="contactMessage" value={this.state.contactMessage} label="Message" rows={10} multiline variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
                         <br></br>
                     </div>
+                    <div className='contact-form-btn-base'>
+
+                        <Button variant="danger" onClick={this.handleSubmit} className='contact-form-btn'>
+                            Send Message
+                        </Button>
+                    </div>
+                    <br></br>
                 </div>
+            </div>
         )
     }
 }
