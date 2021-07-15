@@ -75,20 +75,21 @@ export default class homepage extends Component {
                                     <Grid container>
                                         <Grid item xs={3}>
                                             <div className='home-service-icon-base'>
-                                                <img className='home-service-icon' src={`${endpoint}/service-strategic-planning-black.png`} />
+                                                <img className='home-service-icon' src={`${endpoint}/service-strategic-planning.png`} />
                                             </div>
                                         </Grid>
                                         <Grid item xs={9}>
                                             <div className='home-service-text-ewings ewings-color'>
-                                                <h3 className='bukra-bold'>Strategic Plan</h3>
-                                                <h5 className='bukra-regular'>BMC has the aim to provide professional counsel and assistance in the analysis, conception, and formulation of strategies & plans along with the development of the implementation framework that assure client’s sustained survival and long-term growth & profitability.</h5>
+                                                <h3 className='bukra-bold'>Digital Marketing </h3>
+                                                <br></br>
+                                                <h5 className='bukra-regular'>All marketing initiatives that involve an electronic device or the internet are referred to as digital marketing. To engage with present and potential customers, businesses use digital channels such as search engines, social media, email, and their websites.</h5>
                                             </div>
                                         </Grid>
 
                                     </Grid>
                                     <div style={{ textAlign: 'right' }}>
 
-                                        <Button variant='danger' href='/services/strategic'>Read More</Button>
+                                        <Button className='home-service-ewing-btn' href='/services/strategic'>Read More</Button>
                                     </div>
                                 </div>
                                 <div className="home-service-ewings">
@@ -96,18 +97,19 @@ export default class homepage extends Component {
                                         <Grid item xs={3}>
 
                                             <div className='home-service-icon-base'>
-                                                <img className='home-service-icon' src={`${endpoint}/service-hr-black.png`} />
+                                                <img className='home-service-icon' src={`${endpoint}/service-hr.png`} />
                                             </div>
 
                                         </Grid>
                                         <Grid item xs={9}>
-                                        <div className='home-service-text-ewings ewings-color'>
-                                                <h3 className='bukra-bold'>HR Management</h3>
-                                                <h5 className='bukra-regular'>We provide Human Resources service in support of our client’s vision, mission and values by promoting the concept that employees are the most valuable resource and will be treated as such.</h5>
+                                            <div className='home-service-text-ewings ewings-color'>
+                                                <h3 className='bukra-bold'>Multimedia Production</h3>
+                                                <br></br>
+                                                <h5 className='bukra-regular'>Multimedia is a type of media that uses a variety of information content and processing methods (for example, text, audio, graphics, animation, video, and interactivity) to inform or entertain the user.</h5>
                                             </div>
                                             <div style={{ textAlign: 'right' }}>
 
-                                                <Button variant='danger' href='/services/hr'>Read More</Button>
+                                                <Button className='home-service-ewing-btn' href='/services/hr'>Read More</Button>
                                             </div>
                                         </Grid>
                                     </Grid>
@@ -116,38 +118,41 @@ export default class homepage extends Component {
                                     <Grid container>
                                         <Grid item xs={3}>
                                             <div className='home-service-icon-base'>
-                                                <img className='home-service-icon' src={`${endpoint}/service-toolbox-black.png`} />
+                                                <img className='home-service-icon' src={`${endpoint}/service-toolbox.png`} />
                                             </div>
                                         </Grid>
                                         <Grid item xs={9}>
-                                        <div className='home-service-text-ewings ewings-color'>
-                                                <h3 className='bukra-bold'>BMC Tool Box</h3>
-                                                <h5 className='bukra-regular'>We are often engaged to provide Custom-tailored solutions,We can help formulate the specific problem or uncover areas that need improvements and then find a comprehensive set of possible solutions to meet the needs of your particular organization.</h5>
+                                            <div className='home-service-text-ewings ewings-color'>
+                                                <h3 className='bukra-bold'>Social Media and creative Content & Management</h3>
+                                                <br></br>
+                                                <h5 className='bukra-regular'>A social media platform is an online platform that users use to develop social networks or relationships with others that share similar personal or professional interests, hobbies, backgrounds, or real-life connections. Social networks have a huge impact on young people. It's becoming evident that social media has become an integral component of people's lives.</h5>
                                             </div>
                                             <div style={{ textAlign: 'right' }}>
 
-                                                <Button variant='danger' href='/services/toolbox'>Read More</Button>
+                                                <Button className='home-service-ewing-btn' href='/services/toolbox'>Read More</Button>
                                             </div>
                                         </Grid>
                                     </Grid>
                                 </div>
                             </Grid>
                             <Grid item xs={6}>
-                            <div className="home-service-ewings">
+                                <div className="home-service-ewings">
                                     <Grid container>
                                         <Grid item xs={3}>
                                             <div className='home-service-icon-base'>
-                                                <img className='home-service-icon' src={`${endpoint}/service-marketing-mgmt-black.png`} />
+                                                <img className='home-service-icon' src={`${endpoint}/service-marketing-mgmt.png`} />
                                             </div>
                                         </Grid>
                                         <Grid item xs={9}>
-                                        <div className='home-service-text-ewings ewings-color'>
-                                                <h3 className='bukra-bold'>Marketing Management</h3>
-                                                <h5 className='bukra-regular'>We act as your marketing arm department, we have the right blend of strategists and planners, researchers, designers, thinkers and creatives, detail and big-picture people all dedicated to achieve the goal at the highest quality, on time and within your budget.</h5>
+                                            <div className='home-service-text-ewings ewings-color'>
+                                                <h3 className='bukra-bold'>Media planning and buying</h3>
+                                                <br></br>
+                                                <h5 className='bukra-regular'>Any media or advertising agency's two most critical tasks are media planning and buying. An advertising agency's media planning and buying activities decide the combination of media, frequency of the commercial, or awareness campaign for an effective brand promotion at the best price.
+                                                </h5>
                                             </div>
                                             <div style={{ textAlign: 'right' }}>
 
-                                                <Button variant='danger' href='/services/marketingMgmt'>Read More</Button>
+                                                <Button className='home-service-ewing-btn' href='/services/marketingMgmt'>Read More</Button>
                                             </div>
                                         </Grid>
                                     </Grid>
@@ -156,17 +161,18 @@ export default class homepage extends Component {
                                     <Grid container>
                                         <Grid item xs={3}>
                                             <div className='home-service-icon-base'>
-                                                <img className='home-service-icon' src={`${endpoint}/service-financial-black.png`} />
+                                                <img className='home-service-icon' src={`${endpoint}/service-financial.png`} />
                                             </div>
                                         </Grid>
                                         <Grid item xs={9}>
-                                        <div className='home-service-text-ewings ewings-color'>
-                                                <h3 className='bukra-bold'>Financial and Accounting</h3>
-                                                <h5 className='bukra-regular'>We have the aim to provide a full range of comprehensive high quality services with a modern and practical approach in several fields.</h5>
+                                            <div className='home-service-text-ewings ewings-color'>
+                                                <h3 className='bukra-bold'>Web Development</h3>
+                                                <br></br>
+                                                <h5 className='bukra-regular'>Websites serve as a conduit between individuals seeking to contribute information and others seeking to absorb it. If you run a business, having a website to publicize your products and reach out to potential clients on a global scale is nearly a requirement.</h5>
                                             </div>
                                             <div style={{ textAlign: 'right' }}>
 
-                                                <Button variant='danger' href='/services/financial'>Read More</Button>
+                                                <Button className='home-service-ewing-btn' href='/services/financial'>Read More</Button>
                                             </div>
                                         </Grid>
                                     </Grid>

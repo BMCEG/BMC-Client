@@ -172,9 +172,10 @@
 .nav-bmc-dropdown {
     /* background-color: red !important; */
     /* position: static; */
-    /* height: 90vh; */
+    height: 95vh;
+    /* margin-bottom: -40px; */
     overflow-y: scroll !important;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .Lmoa12 {

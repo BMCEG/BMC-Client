@@ -16,6 +16,7 @@
     height: 100%;
     /* margin-bottom: 50%; */
 }
+
 .ewings-homepage-text-mob {
     /* background-color: rgb(170, 169, 169); */
     /* z-index: 0; */
@@ -31,7 +32,10 @@
     /* margin-bottom: -159px; */
 }
 
-.carousel-item {background-color: transparent;}
+.carousel-item {
+    background-color: transparent;
+}
+
 .carousel-indicators {
     display: none !important;
 }
@@ -39,18 +43,21 @@
 .carousel-control-prev {
     transform: translateX(-200px);
     /* display: none; */
-    
+
 }
+
 .carousel-control-next {
     transform: translateX(200px);
     /* display: none; */
 }
-.ewings-homepage-root{
+
+.ewings-homepage-root {
     min-height: 100vh;
     z-index: -5 !important;
     background-color: #458CC8;
 }
-.ewings-homepage-root-mob{
+
+.ewings-homepage-root-mob {
     background-color: #4694D6;
     height: 70%;
     overflow-y: scroll;
@@ -78,9 +85,11 @@
 
 .home-service-ewings {
     /* margin-top: 5%; */
-    margin: 2%;
-    background-color: #116876;
-    box-shadow: 0px 1px 3px #393938;
+    margin: 5%;
+    background-color: #458CC8 !important;
+    box-shadow: 0px 0px 7px 2px rgba(12, 74, 97, 0.65);
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(12, 74, 97, 0.65);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(12, 74, 97, 0.65);
     padding: 5%;
     border-radius: 15px;
     transition: all .2s;
@@ -99,4 +108,8 @@
 
 .ewings-color {
     color: white !important;
+}
+
+.home-service-ewing-btn {
+    background-color: #103442 !important
 }

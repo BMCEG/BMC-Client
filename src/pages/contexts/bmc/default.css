@@ -82,7 +82,7 @@
 .banner-photo-mobile {
     object-fit: cover;
     max-width: 100%;
-    /* height: 100%; */
+    height: 100%;
     /* background-color: darkred; */
     /* width: auto; */
     margin: auto;

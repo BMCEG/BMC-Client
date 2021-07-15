@@ -26,12 +26,13 @@
 }
 
 .nav-dmap-logo {
+    /* background-color: red; */
     width: 100%;
 }
 
 .nav-dmap-left {
     /* background-color: chocolate; */
-    width: 30%;
+    width: 40%;
 }
 
 .nav-dmap-center {
