@@ -6,7 +6,7 @@ import endpoint from '../../../helpers/api_service';
 export default function digital() {
     return (
         <div>
-            <Typography align='justify' style={{ color: 'white' }} className='bukra-bold' variant='h3' component='h3'>
+            <Typography style={{ color: 'white' }} className='bukra-bold' variant='h3' component='h3'>
                 1- Digital Marketing
             </Typography>
             <br></br>

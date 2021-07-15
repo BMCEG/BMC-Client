@@ -6,7 +6,7 @@ import endpoint from '../../../helpers/api_service';
 export default function web() {
     return (
         <div>
-            <Typography align='justify' style={{ color: 'white' }} variant='h3' component='h3' className='bukra-bold'>
+            <Typography style={{ color: 'white' }} variant='h3' component='h3' className='bukra-bold'>
                 5- Web Development
             </Typography>
             <br></br>
