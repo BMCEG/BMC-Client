@@ -26,8 +26,15 @@
 }
 
 .nav-dmap-logo {
-    /* background-color: red; */
-    width: 100%;
+    margin-left: 3% !important;
+    margin-right: 4% !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    /* width: 70%; */
+    max-height: 45px !important;
+    /* height: 100%; */
 }
 
 .nav-dmap-left {
@@ -66,7 +73,7 @@
     /* margin-left: auto; */
     /* background-color: yellow; */
     border-left: 3px solid skyblue;
-    /* padding-left: 10px; */
+    /* padding: 1%; */
     /* padding-right: 30px; */
     /* max-height: 80px; */
     /* max-width: 100px; */
@@ -99,6 +106,7 @@
 
 .title {
     color: black;
+    /* background-color: aqua; */
     margin-right: 2%;
     /* width: 100vw; */
     display: flex;

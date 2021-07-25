@@ -33,7 +33,7 @@ export default class NewPicture extends Component {
     async handleUploadMeida() {
         let media = null;
 
-        const formData = new FormData;
+        const formData = new FormData();
         formData.append('image', this.state.media)
 
         await axios.post(`${endpoint}/pictures/addImage`, formData, {

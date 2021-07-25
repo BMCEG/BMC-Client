@@ -5,7 +5,7 @@ import './gallery.css'
 import Table from 'react-bootstrap/Table';
 import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrash, faPencilAlt } from '@fortawesome/free-solid-svg-icons'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import ReactPlayer from "react-player";
 
 export default class Albums extends Component {

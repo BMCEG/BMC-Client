@@ -1,7 +1,6 @@
 import React from 'react'
 import './strategicPlan.css';
-import { Grid, Typography } from '@material-ui/core';
-import endpoint from '../../helpers/api_service.js'
+import { Typography } from '@material-ui/core';
 
 export default function strategicPlan() {
     return (

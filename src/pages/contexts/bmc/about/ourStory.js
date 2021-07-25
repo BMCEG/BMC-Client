@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "./ourStory.css";
-import { Typography } from "@material-ui/core";
-import Zoom from "@material-ui/core/Zoom";
 import StoryBalls from "../../../../components/storyBalls";
 import endpoint from "../../../../helpers/api_service";
 

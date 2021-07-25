@@ -1,10 +1,8 @@
-import { Grid, TextField } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import React, { Component } from 'react';
 import './footer.css';
 import { Button } from 'react-bootstrap';
 import endpoint from '../../helpers/api_service';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default class Footer extends Component {
     render() {

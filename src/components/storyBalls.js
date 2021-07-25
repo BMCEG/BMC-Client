@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./storyBalls.css";
-import { Zoom } from "@material-ui/core";
 import endpoint from '../helpers/api_service.js';
 
 export default class storyBalls extends Component {
@@ -64,6 +63,8 @@ export default class storyBalls extends Component {
                     ball6text: "block",
                 });
                 break;
+            default:
+                break;
         }
     };
 
@@ -104,6 +105,8 @@ export default class storyBalls extends Component {
                     ball6Y: 0,
                     ball6text: "none",
                 });
+                break;
+            default:
                 break;
         }
     };

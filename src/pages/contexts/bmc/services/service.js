@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import endpoint from '../../../../helpers/api_service';
 import './service.css';
-import { Grid, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 
 import StrategicPlan from '../../../../components/service/strategicPlan.js';
 import MarketingMgmt from '../../../../components/service/marketingMgmt.js';

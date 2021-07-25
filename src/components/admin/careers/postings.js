@@ -4,7 +4,6 @@ import endpoint from '../../../helpers/api_service';
 import './careers.css'
 import Table from 'react-bootstrap/Table';
 import { Button } from 'react-bootstrap';
-import { Modal, Paper } from '@material-ui/core';
 import Moment from 'react-moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash, faPencilAlt } from '@fortawesome/free-solid-svg-icons'

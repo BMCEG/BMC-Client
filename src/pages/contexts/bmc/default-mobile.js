@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
-import { Grid, Typography } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import './default.css';
-// import "react-responsive-carousel/lib/stylesx/carousel.min.css";
 import Carousel from 'react-elastic-carousel';
 import CarouselComp from '../../../components/carousel-mobile'
 import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import endpoint from '../../../helpers/api_service.js';
 import { isMobile, isIOS } from "react-device-detect";
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 import { TextField } from '@material-ui/core';
 
 class DefaultPage extends Component {
@@ -117,7 +116,7 @@ class DefaultPage extends Component {
                             <Grid item xs={6}>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' src={`${endpoint}/service-strategic-planning-black.png`} />
+                                        <img alt='placeholder' className='home-service-icon-mobile' src={`${endpoint}/service-strategic-planning-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>Strategic Plan</h5>
@@ -131,7 +130,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' src={`${endpoint}/service-hr-black.png`} />
+                                        <img  alt='placeholder' className='home-service-icon-mobile' src={`${endpoint}/service-hr-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>HR Management</h5>
@@ -145,7 +144,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' src={`${endpoint}/service-toolbox-black.png`} />
+                                        <img alt='placeholder' className='home-service-icon-mobile' src={`${endpoint}/service-toolbox-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>BMC Tool Box</h5>
@@ -161,7 +160,7 @@ class DefaultPage extends Component {
                             <Grid item xs={6}>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' src={`${endpoint}/service-marketing-mgmt-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-marketing-mgmt-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>Marketing Management</h5>
@@ -175,7 +174,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' src={`${endpoint}/service-marketing-mgmt-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-marketing-mgmt-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>Finance and Accounting</h5>
@@ -217,7 +216,7 @@ class DefaultPage extends Component {
                             <Grid item xs={6}>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' src={`${endpoint}/service-strategic-planning-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-strategic-planning-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>Strategic Plan</h5>
@@ -231,7 +230,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' src={`${endpoint}/service-hr-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-hr-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>HR Management</h5>
@@ -245,7 +244,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' src={`${endpoint}/service-toolbox-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-toolbox-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>BMC Tool Box</h5>
@@ -261,7 +260,7 @@ class DefaultPage extends Component {
                             <Grid item xs={6}>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' src={`${endpoint}/service-marketing-mgmt-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-marketing-mgmt-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>Marketing Management</h5>
@@ -275,7 +274,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' src={`${endpoint}/service-marketing-mgmt-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-marketing-mgmt-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>Finance and Accounting</h5>
@@ -302,10 +301,10 @@ class DefaultPage extends Component {
                             tiltEasing="cubic-bezier(0.110, 1, 1.000, 0.210)"
                             transitionMs={4500}
                         >
-                            {this.state.partners.map((partner) => (
-                                <div className='home-partner'>
+                            {this.state.partners.map((partner, key) => (
+                                <div className='home-partner' key={key}>
                                     <Button variant='link' href='/partners'>
-                                        <img src={`${endpoint}/${partner.logo}`} height='60px' />
+                                        <img alt='placeholder' src={`${endpoint}/${partner.logo}`} height='60px' />
                                     </Button>
                                 </div>
                             ))}
@@ -331,23 +330,22 @@ class DefaultPage extends Component {
 
                                     <span>
                                         <br></br>
-                                        <h3 className='bukra-bold'>Location:
-                                            <h5 className='bukra-regular'>B103 90th Road, 5th Settlement,</h5>
-                                            <h5 className='bukra-regular'>New Cairo, 11835</h5>
-                                        </h3>
+                                        <h3 className='bukra-bold'>Location:</h3>
+                                        <h5 className='bukra-regular'>B103 90th Road, 5th Settlement,</h5>
+                                        <h5 className='bukra-regular'>New Cairo, 11835</h5>
+
                                     </span>
                                     <span>
                                         <br></br>
-                                        <h3 className='bukra-bold'>Email:
-                                            <h5 className='bukra-regular'>mohamed@bmceg.com</h5>
-                                        </h3>
+                                        <h3 className='bukra-bold'>Email:</h3>
+                                        <h5 className='bukra-regular'>mohamed@bmceg.com</h5>
                                     </span>
                                     <span>
                                         <br></br>
-                                        <h3 className='bukra-bold'>Call:
-                                            <h5 className='bukra-regular'>010 0822 4224</h5>
-                                            <h5 className='bukra-regular'>202 2564 9732</h5>
-                                        </h3>
+                                        <h3 className='bukra-bold'>Call:</h3>
+                                        <h5 className='bukra-regular'>010 0822 4224</h5>
+                                        <h5 className='bukra-regular'>202 2564 9732</h5>
+
                                         <br></br>
                                     </span>
                                 </div>
@@ -360,11 +358,11 @@ class DefaultPage extends Component {
                                         <div style={{ width: '2%' }} />
                                         <TextField fullWidth name="contactLastName" value={this.state.contactLastName} label="Last Name" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} />
                                     </div>
-                                    <TextField fullWidth name="contactEmail" value={this.state.contactEmail} label="E-Mail" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
+                                    <TextField name="contactEmail" value={this.state.contactEmail} label="E-Mail" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
                                     <br></br>
-                                    <TextField fullWidth name="contactMobile" value={this.state.contactMobile} label="Mobile Number" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
+                                    <TextField name="contactMobile" value={this.state.contactMobile} label="Mobile Number" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
                                     <br></br>
-                                    <TextField fullWidth name="contactMessage" value={this.state.contactMessage} label="Message" rows={10} multiline variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
+                                    <TextField name="contactMessage" value={this.state.contactMessage} label="Message" rows={10} multiline variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
                                     <br></br>
                                 </div>
                                 <div className='contact-form-btn-base'>

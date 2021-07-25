@@ -5,9 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCircle, faClock } from '@fortawesome/free-solid-svg-icons'
 import moment from 'moment';
 import './blogs.css';
-import Card from 'react-bootstrap/Card';
 import { Button } from 'react-bootstrap';
-import { Redirect } from 'react-router';
 import { Paper, Grid } from '@material-ui/core';
 
 export default class Blogs extends Component {

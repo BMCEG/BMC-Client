@@ -4,9 +4,6 @@ import axios from 'axios';
 import endpoint from '../../../../helpers/api_service.js';
 import ReactPlayer from "react-player";
 import { Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons'
-
 
 export default class gallery extends Component {
     constructor(props) {
@@ -65,7 +62,7 @@ export default class gallery extends Component {
                 let pics = [];
 
                 for (let i = 0; i < res.data.length; i++) {
-                    if (pics == []) {
+                    if (pics === []) {
                         pics = res.data[i].pictures;
                     } else {
                         pics = pics.concat(res.data[i].pictures);
@@ -93,9 +90,6 @@ export default class gallery extends Component {
     render() {
         return (
             <div className='gallery-root' >
-                {/* <div className='gallery-title'>
-                    <h1>Gallery</h1>
-                </div> */}
                 <div className='gallery-body'>
                     <div className='gallery-body-pictures'>
                         {this.state.albumsPicked.map((album) => (
@@ -104,7 +98,7 @@ export default class gallery extends Component {
                                     {picture.type === 'video' ?
                                         <ReactPlayer
                                             className='gallery-picture'
-                                             url={`${endpoint}/${picture.src}`}
+                                            url={`${endpoint}/${picture.src}`}
                                             width="100%"
                                             height="100%"
                                             controls={false}
@@ -113,51 +107,13 @@ export default class gallery extends Component {
                                             playing="true"
                                         />
                                         :
-                                        <img className='gallery-picture' src={`${endpoint}/${picture.src}`} />
+                                        <img className='gallery-picture' alt='placeholder' src={`${endpoint}/${picture.src}`} />
                                     }
                                 </Button>
                             ))
                         ))}
                     </div>
-                    {/* {this.state.albumsPicked.length === 0 && this.state.albumsNotPicked.length === 0 ?
-                        null
-                        :
-                        <div className='gallery-body-albums' style={{ backgroundImage: `url(${endpoint}/bg-four.png)`, backgroundSize: 'cover' }}>
-                            <h4>Albums Picked</h4>
-                            {this.state.albumsPicked.map((album) => (
-                                <div className="gallery-album">
-                                    <div className='gallery-checkbox'>
-                                        <Button variant="danger" onClick={this.handleUnpickAlbum} value={album._id}>
-                                            <FontAwesomeIcon size='1x' icon={faMinusCircle} />
-                                        </Button>
-                                    </div>
-                                    <div className='gallery-album-info'>
-                                        <h3>{album.name}</h3>
-                                        <hr></hr>
-                                        <h5>{album.description}</h5>
-                                    </div>
-                                </div>
 
-                            ))}
-                            <hr></hr>
-                            <h4>Albums Not Picked</h4>
-                            {this.state.albumsNotPicked.map((album) => (
-                                <div className="gallery-album">
-                                    <div className='gallery-checkbox'>
-                                        <Button variant="success" onClick={this.handlePickAlbum} value={album._id}>
-                                            <FontAwesomeIcon size='1x' icon={faPlusCircle} />
-                                        </Button>
-                                        <Checkbox id={album._id} checked={true} onChange={this.handleCheckbox} />
-                                    </div>
-                                    <div className='gallery-album-info'>
-                                        <h3>{album.name}</h3>
-                                        <hr></hr>
-                                        <h5>{album.description}</h5>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    } */}
                 </div>
             </div>
         )

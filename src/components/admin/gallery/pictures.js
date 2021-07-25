@@ -5,7 +5,7 @@ import './gallery.css'
 import Table from 'react-bootstrap/Table';
 import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrash, faPencilAlt } from '@fortawesome/free-solid-svg-icons'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import ReactPlayer from "react-player";
 
 export default class Albums extends Component {
@@ -77,7 +77,7 @@ export default class Albums extends Component {
                                                 playing="true"
                                             />
                                             :
-                                            <img className='picture-table-cell' src={`${endpoint}/${picture.src}`} alt='image' />
+                                            <img className='picture-table-cell' src={`${endpoint}/${picture.src}`} alt='placeholder' />
                                         }
                                     </td>
                                     <td><h5 className="inner-text">{picture.url}</h5></td>

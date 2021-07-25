@@ -6,7 +6,6 @@ import CreateCourse from '../../../components/admin/courses/newCourse.js'
 import Courses from '../../../components/admin/courses/courses.js';
 import CreateTrainer from '../../../components/admin/courses/newTrainer.js'
 import Trainers from '../../../components/admin/courses/trainers.js';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle, faUserGraduate, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons'
 import AdminBtn from '../../../components/admin/admin-btn';
 import endpoint from '../../../helpers/api_service';
@@ -31,7 +30,7 @@ export default class CoursesPanel extends Component {
                 <NavbarAdmin isLoggedIn={true} />
 
                 <div className='admin-courses-root' style={{ backgroundImage: `url(${endpoint}/bg-experts.png)`, backgroundSize: 'cover' }}>
-                    <div className='admin-courses-controls' style={{ backgroundImage: `url(${endpoint}/bg-four.png)`, backgroundSize: 'cover' }}>
+                    <div className='admin-courses-controls'>
                         <div className='admin-courses-controls-btns'>
                             <AdminBtn label={'View Applications'} icon={faUserGraduate} onClick={() => this.handleBtnClick('CoursesApplications')} />
                             <hr></hr>

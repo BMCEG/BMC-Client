@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './expertCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Grid, Paper, Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Button } from '@material-ui/core'
+import { Paper, Typography, Button } from '@material-ui/core'
 import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default class ExpertCard extends Component {

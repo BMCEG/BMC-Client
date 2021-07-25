@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import { Paper, Grid } from '@material-ui/core';
-import { Button } from 'react-bootstrap';
 import './careerOpenings.css';
 import endpoint from '../../../../helpers/api_service.js'
 import axios from 'axios';

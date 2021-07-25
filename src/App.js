@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Homepage from "./pages/homepage/homepage.js";
 import LandingPage from "./pages/landing/landing.js";
 import LandingPageMob from "./pages/landing/landing-mobile.js";
 
@@ -33,13 +31,6 @@ import ServiceMob from './pages/contexts/bmc/services/service-mobile.js'
 import ServiceEwings from './pages/ewings/services/service.js'
 import ServiceEwingsMob from './pages/ewings/services/service-mobile'
 
-// import StrategicPlan from './pages/contexts/bmc/services/strategicPlan.js';
-// import MarketingMgmt from './pages/contexts/bmc/services/marketingMgmt.js';
-// import Branding from './pages/contexts/bmc/services/hrMgmt.js';  
-// import HRManagement from './pages/contexts/bmc/services/hrMgmt';
-// import Financial from './pages/contexts/bmc/services/financial.js';
-// import Toolbox from './pages/contexts/bmc/services/toolbox.js';
-
 import CareerLanding from './pages/contexts/bmc/careers/careerLanding.js';
 import CareerOpenings from './pages/contexts/bmc/careers/careerOpenings';
 import CareerOpeningsMob from './pages/contexts/bmc/careers/careerOpenings-mobile.js';
@@ -62,7 +53,6 @@ import BlogPageMob from './pages/blog/blog-mobile.js';
 
 import DefaultBMC from './pages/contexts/bmc/default.js';
 import DefaultBMCMob from './pages/contexts/bmc/default-mobile';
-import DefaultDMap from './pages/contexts/dmap/default.js';
 
 import AdminPage from './pages/admin/page.js';
 import AdminCreate from './pages/admin/users/users.js';
@@ -87,11 +77,6 @@ import FooterEwingsMob from './components/ewigns/footer/footer-mobile';
 
 import HomepageEwings from './pages/ewings/homepage/homepage.js'
 import HomepageEwingsMob from './pages/ewings/homepage/homepage-mobile'
-
-
-import { Redirect } from 'react-router';
-
-import { createBrowserHistory } from 'history';
 
 import Media from 'react-media';
 export default class App extends Component {
@@ -129,7 +114,15 @@ export default class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route path="/landing/:courseName" exact component={LandingPage} />
+          <Media query='(min-width: 1024px)'>
+            {(matches) => {
+              return matches ?
+                <Route path="/landing/:courseName" exact component={LandingPage} />
+                :
+                <Route path="/landing/:courseName" exact component={LandingPageMob} />
+            }}
+          </Media>
+
 
           <Route path="/admin" exact component={AdminPage} />
 
@@ -416,9 +409,9 @@ export default class App extends Component {
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches.mobile ?
-                  <NavbarDMapMob handleSelectedContext={this.handleSelectedContext} />
-                  :
-                  <NavbarDMap handleSelectedContext={this.handleSelectedContext} />
+                    <NavbarDMapMob handleSelectedContext={this.handleSelectedContext} />
+                    :
+                    <NavbarDMap handleSelectedContext={this.handleSelectedContext} />
                 }}
               </Media>
 
@@ -466,7 +459,7 @@ export default class App extends Component {
                       path='/ewings/services/digital'
                       exact
                       render={() => (
-                        <ServiceEwingsMob logo='service-strategic-planning.png' sideImage='landing-digital.png' title='Digital Marketing' />
+                        <ServiceEwingsMob logo='service-strategic-planning.png' sideImage='landing-digital-mob.png' title='Digital Marketing' />
                       )}
                     />
                 }}
@@ -486,7 +479,7 @@ export default class App extends Component {
                       path='/ewings/services/multimedia'
                       exact
                       render={() => (
-                        <ServiceEwingsMob sideImage='landing-multimedia.png' title='Multimedia Production' />
+                        <ServiceEwingsMob sideImage='landing-multimedia-mob.png' title='Multimedia Production' />
                       )}
                     />
                 }}
@@ -506,7 +499,7 @@ export default class App extends Component {
                       path='/ewings/services/social'
                       exact
                       render={() => (
-                        <ServiceEwingsMob sideImage='landing-social.png' title='Social Media Management' />
+                        <ServiceEwingsMob sideImage='landing-social-mob.png' title='Social Media Management' />
                       )}
                     />
                 }}
@@ -526,7 +519,7 @@ export default class App extends Component {
                       path='/ewings/services/media'
                       exact
                       render={() => (
-                        <ServiceEwingsMob sideImage='landing-media.png' title='Media Planning and Buying' />
+                        <ServiceEwingsMob sideImage='landing-media-mob.png' title='Media Planning and Buying' />
                       )}
                     />
                 }}
@@ -546,7 +539,7 @@ export default class App extends Component {
                       path='/ewings/services/web'
                       exact
                       render={() => (
-                        <ServiceEwingsMob sideImage='landing-web.png' title='Web Development' />
+                        <ServiceEwingsMob sideImage='landing-web-mob.png' title='Web Development' />
                       )}
                     />
                 }}

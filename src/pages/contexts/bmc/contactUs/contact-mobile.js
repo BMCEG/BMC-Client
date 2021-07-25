@@ -4,7 +4,7 @@ import axios from 'axios';
 import endpoint from '../../../../helpers/api_service';
 import './contact.css';
 import { Button } from 'react-bootstrap';
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 class Contact extends Component {
     constructor(props) {
@@ -61,9 +61,6 @@ class Contact extends Component {
                         </Map>
                     </div>
                     <br></br>
-                    {/* <div className='contact-form-body'> */}
-                    {/* <div className='contact-form-body-left'> */}
-                    {/* <div className='contact-form-body-left-info'> */}
                     <div className='contact-form-body-mobile'>
 
                         <span>
@@ -97,11 +94,11 @@ class Contact extends Component {
                             <div style={{ width: '2%' }} />
                             <TextField fullWidth name="contactLastName" value={this.state.contactLastName} label="Last Name" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} />
                         </div>
-                        <TextField fullWidth name="contactEmail" value={this.state.contactEmail} label="E-Mail" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
+                        <TextField name="contactEmail" value={this.state.contactEmail} label="E-Mail" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
                         <br></br>
-                        <TextField fullWidth name="contactMobile" value={this.state.contactMobile} label="Mobile Number" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
+                        <TextField name="contactMobile" value={this.state.contactMobile} label="Mobile Number" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
                         <br></br>
-                        <TextField fullWidth name="contactMessage" value={this.state.contactMessage} label="Message" rows={10} multiline variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
+                        <TextField name="contactMessage" value={this.state.contactMessage} label="Message" rows={10} multiline variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
                         <br></br>
                     </div>
                     <div className='contact-form-btn-base'>

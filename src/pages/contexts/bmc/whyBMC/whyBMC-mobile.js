@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Typography, Grid } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 import './whyBMC.css'
 import endpoint from '../../../../helpers/api_service'
 
@@ -10,7 +10,7 @@ export default class whyBMC extends Component {
                 <div className='whyBMC-page-margin'>
                     <div className='whyBMC-card-mobile'>
                         <div className='whyBMC-subtitle'>
-                            <Typography variant='h4' component='h4' className='bukra-bold'>
+                            <Typography variant='h5' component='h5' className='bukra-bold'>
                                 Outside & Unbiased Eye
                             </Typography>
                         </div>
@@ -23,7 +23,7 @@ export default class whyBMC extends Component {
                     </div>
                     <div className='whyBMC-card-mobile'>
                         <div className='whyBMC-subtitle'>
-                            <Typography variant='h4' component='h4' className='bukra-bold'>
+                            <Typography variant='h5' component='h5' className='bukra-bold'>
                                 An Extra Horsepower
                             </Typography>
                         </div>
@@ -37,7 +37,7 @@ export default class whyBMC extends Component {
                     </div>
                     <div className='whyBMC-card-mobile'>
                         <div className='whyBMC-subtitle'>
-                            <Typography variant='h4' component='h4' className='bukra-bold'>
+                            <Typography variant='h5' component='h5' className='bukra-bold'>
                                 A Catalyst for Change
                             </Typography>
                         </div>
@@ -51,7 +51,7 @@ export default class whyBMC extends Component {
                     </div>
                     <div className='whyBMC-card-mobile'>
                         <div className='whyBMC-subtitle'>
-                            <Typography variant='h4' component='h4' className='bukra-bold'>
+                            <Typography variant='h5' component='h5' className='bukra-bold'>
                                 Specialized Skills
                             </Typography>
                         </div>
@@ -65,7 +65,7 @@ export default class whyBMC extends Component {
                     </div>
                     <div className='whyBMC-card-mobile'>
                         <div className='whyBMC-subtitle'>
-                            <Typography variant='h4' component='h4' className='bukra-bold'>
+                            <Typography variant='h5' component='h5' className='bukra-bold'>
                                 A Safe Zone
                             </Typography>
                         </div>
@@ -78,7 +78,7 @@ export default class whyBMC extends Component {
                     </div>
                     <div className='whyBMC-card-mobile'>
                         <div className='whyBMC-subtitle'>
-                            <Typography variant='h4' component='h4' className='bukra-bold'>
+                            <Typography variant='h5' component='h5' className='bukra-bold'>
                                 Training and Coaching
                             </Typography>
                         </div>

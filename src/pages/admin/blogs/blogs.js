@@ -3,9 +3,7 @@ import './blogs.css'
 import NavbarAdmin from '../../../components/navbar/navbarAdmin.js';
 import CreateBlog from '../../../components/admin/blogs/newBlog.js'
 import BlogsTable from '../../../components/admin/blogs/blogs.js'
-// import CreatePartner from '../../../components/admin/partners/newPartner.js'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusCircle, faUserGraduate, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons'
+import { faUserGraduate, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons'
 import AdminBtn from '../../../components/admin/admin-btn';
 import endpoint from '../../../helpers/api_service';
 
@@ -30,7 +28,7 @@ export default class Blogs extends Component {
                 <NavbarAdmin isLoggedIn={true} />
 
                 <div className='admin-careers-root' style={{ backgroundImage: `url(${endpoint}/bg-experts.png)`, backgroundSize: 'cover' }}>
-                    <div className='admin-careers-controls' style={{ backgroundImage: `url(${endpoint}/bg-four.png)`, backgroundSize: 'cover' }}>
+                    <div className='admin-careers-controls' >
                         <div className='admin-careers-controls-btns'>
                             <AdminBtn label={'Create Blog'} icon={faUserGraduate} onClick={() => this.handleBtnClick('CreateBlog')} />
                             <br></br>

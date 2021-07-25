@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 import './partner.css';
 import endpoint from '../../helpers/api_service';
-import { Paper, Typography } from '@material-ui/core'
-// import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { Button } from 'react-bootstrap';
-
+import { Paper } from '@material-ui/core'
 export default class PartnerCard extends Component {
     constructor(props) {
         super(props);

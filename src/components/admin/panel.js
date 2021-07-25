@@ -7,9 +7,7 @@ import { Grid, Paper } from '@material-ui/core';
 import { Button } from 'react-bootstrap';
 import Moment from 'react-moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faUserPlus, faPenAlt, faImages, faEnvelope, faGraduationCap, faHandshake, faRss, faUserTie, faChartLine } from '@fortawesome/free-solid-svg-icons'
-// import { faPlusSquare, faUser,  } from '@fortawesome/free-regular-svg-icons'
+import { faUserPlus, faPenAlt, faImages, faEnvelope, faGraduationCap, faHandshake, faUserTie, faChartLine } from '@fortawesome/free-solid-svg-icons'
 
 export default class Panel extends Component {
     constructor(props) {

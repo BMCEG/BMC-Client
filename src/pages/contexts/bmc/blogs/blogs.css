@@ -8,6 +8,16 @@
     opacity: 1 !important;
     /* margin-bottom: 3%; */
 }
+.blogs-mob-root {
+    min-height: 100vh;
+    /* background-color: red; */
+    padding-top: 1%;
+    padding-bottom: 8%;
+    margin-right: 10%;
+    margin-left: 10%;
+    opacity: 1 !important;
+    /* margin-bottom: 3%; */
+}
 
 .blogs-img {
     object-fit: cover;

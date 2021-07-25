@@ -1,7 +1,6 @@
 import React from 'react'
 import './digital.css';
-import { Grid, Typography } from '@material-ui/core';
-import endpoint from '../../../helpers/api_service';
+import {  Typography } from '@material-ui/core';
 
 export default function media() {
     return (

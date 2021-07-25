@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import './landing.css';
 import endpoint from '../../helpers/api_service';
-import { Grid } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
 import Moment from 'react-moment';
 import { Button } from 'react-bootstrap';
 
-import CourseApplicationModal from '../../components/course/application.js';
+import CourseApplicationModalMob from '../../components/course/application-mob.js';
 
 export default class Landing extends Component {
 
@@ -57,16 +57,16 @@ export default class Landing extends Component {
                     courseTrainerQualifications: res.data.trainer.qualifications,
                 });
 
-                for(let i = 0; i < res.data.images.length; i++){
-                    if (res.data.images[i].name === 'imageOutline'){
+                for (let i = 0; i < res.data.images.length; i++) {
+                    if (res.data.images[i].name === 'imageOutline') {
                         this.setState({ imageOutlineSrc: res.data.images[i].src })
-                    } else if (res.data.images[i].name === 'imageSchedule'){
+                    } else if (res.data.images[i].name === 'imageSchedule') {
                         this.setState({ imageScheduleSrc: res.data.images[i].src })
-                    } else if (res.data.images[i].name === 'imageMethodology'){
+                    } else if (res.data.images[i].name === 'imageMethodology') {
                         this.setState({ imageMethodologySrc: res.data.images[i].src })
-                    } else if (res.data.images[i].name === 'imageDescription'){
+                    } else if (res.data.images[i].name === 'imageDescription') {
                         this.setState({ imageDescriptionSrc: res.data.images[i].src })
-                    } 
+                    }
                 }
             })
             .catch((err) => {
@@ -76,61 +76,68 @@ export default class Landing extends Component {
 
     render() {
         return (
-            <div className="landing-root" style={{ backgroundImage: `url(${endpoint}/bg-experts.png)`, backgroundSize: 'cover' }}>
-                <div className="landing-grid" style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
-                    <h1 className="bukra-bold">{this.state.courseDetails.displayTitle}</h1>
+            <div className="landing-mob-root" style={{ backgroundImage: `url(${endpoint}/bg-experts.png)`, backgroundSize: 'cover' }}>
+                <div className="landing-mob-grid" style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+                    <Typography className="bukra-bold landing-mob-title" variant='h3' component='h3'>
+                        {this.state.courseDetails.displayTitle}
+                    </Typography>
+                    <br></br>
                     <div className='landing-grid-div'>
                         <div className='landing-grid-text'>
-                            <h2 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Training Desscription</h2>
+                            <h1 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Training Description</h1>
+                            <br></br>
+                            <div className='landing-mob-grid-img-base'>
+                                <img className='landing-grid-img' src={`${endpoint}/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
+                            </div>
+                            <br></br>
                             <h3 className='bukra-regular'>{this.state.courseDetails.description}</h3>
                             <br></br>
-                            <div className='landing-grid-btn-base-left'>
-                                <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
+                            <div className='landing-grid-btn-base'>
+                                <Button variant="danger" className='landing-mob-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
                             </div>
-
-                        </div>
-                        <div className='landing-grid-img-base'>
-                            <img className='landing-grid-img' src={`${endpoint}/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
                         </div>
                     </div>
                     <hr></hr>
                     <div className='landing-grid-div'>
-                        <div className='landing-grid-img-base'>
-                        <img className='landing-grid-img' src={`${endpoint}/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
-                        </div>
                         <div className='landing-grid-text'>
-                            <h2 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Training Outline</h2>
+                            <h1 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Training Outline</h1>
+                            <br></br>
+                            <div className='landing-mob-grid-img-base'>
+                                <img className='landing-grid-img' src={`${endpoint}/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
+                            </div>
+                            <br></br>
                             <h3 className='bukra-regular'>{this.state.courseDetails.outline}</h3>
                             <br></br>
-                            <div className='landing-grid-btn-base-right'>
-                                <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
+                            <div className='landing-grid-btn-base'>
+                                <Button variant="danger" className='landing-mob-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
                             </div>
                         </div>
                     </div>
                     <hr></hr>
                     <div className='landing-grid-div'>
                         <div className='landing-grid-text'>
-                            <h2 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Training Methodology</h2>
+                            <h1 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Training Methodology</h1>
+                            <br></br>
+                            <div className='landing-mob-grid-img-base'>
+                                <img className='landing-grid-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt="Trainer Avatar"></img>
+                            </div>
+                            <br></br>
                             <h3 className='bukra-regular'>{this.state.courseDetails.methedology}</h3>
                             <br></br>
-                            <div className='landing-grid-btn-base-left'>
-                                <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
+                            <div className='landing-grid-btn-base'>
+                                <Button variant="danger" className='landing-mob-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
                             </div>
-                        </div>
-                        <div className='landing-grid-img-base'>
-                        <img className='landing-grid-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt="Trainer Avatar"></img>
                         </div>
                     </div>
                     <hr></hr>
                     <div className='landing-grid-div'>
-                        <div className='landing-grid-img-base'>
-                            <div className="course-trainer-avatar-base">
+                        <div className='landing-grid-text'>
+                            <h1 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Meet the Trainer</h1>
+                            <br></br>
+                            <div className='landing-mob-grid-img-base'>
                                 <img src={`${endpoint}/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
                             </div>
-                        </div>
-                        <div className='landing-grid-text'>
-                            <h2 style={{ textShadow: '2px 2px lightgrey' }} className='bukra-bold'>Meet the Trainer</h2>
-                            <h3 className='bukra-medium'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h3>
+                            <br></br>
                             {this.state.courseTrainerQualifications.map((qual, index) => (
                                 <div key={index} className="course-trainer-qualification">
                                     <h3 className='bukra-regular'>Title: {qual.title}</h3>
@@ -138,57 +145,56 @@ export default class Landing extends Component {
                                 </div>
                             ))}
                             <br></br>
-                            <div className='landing-grid-btn-base-left'>
-                                <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
+                            <div className='landing-grid-btn-base'>
+                                <Button variant="danger" className='landing-mob-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
                             </div>
                         </div>
                     </div>
                     <hr></hr>
+
                     <div className='landing-grid-div'>
-                        <div className='landing-grid-text-dates'>
-                            <h2 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Duration and Fees</h2>
+                        <div className='landing-grid-text'>
+                            <h1 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Duration and Fees</h1>
+                            <br></br>
+                            <div className='landing-mob-grid-img-base'>
+                                <img src={`${endpoint}/${this.state.imageScheduleSrc}`} alt="Trainer Avatar" className="landing-grid-img"></img>
+                            </div>
+                            <br></br>
+
                             {this.state.courseSchedules.map((schedule, index) => (
                                 <div key={index} className="course-schedule">
-                                    <Grid container>
-                                        <Grid xs={4}>
-                                            <h3 className='bukra-medium'>Fees:</h3>
-                                            <h4 className='bukra-regular'>{this.state.courseFees} EGP</h4>
-                                            <h3 className='bukra-medium'>Duration:</h3>
-                                            <h4 className='bukra-regular'>{schedule.duration} Month(s)</h4>
-                                            <h3 className='bukra-medium'>Start Date:</h3>
-                                            <h4 className='bukra-regular'> <Moment format='dddd, DD/MM/YYYY'>
-                                                {schedule.startDate}
-                                            </Moment></h4>
-                                            <h3 className='bukra-medium'>End Date:</h3>
-                                            <h4 className='bukra-regular'> <Moment format='dddd, DD/MM/YYYY'>
-                                                {schedule.endDate}
-                                            </Moment></h4>
-                                        </Grid>
-                                        <Grid xs={8} className="course-schedule-dates-grid">
-                                            {schedule.dates.map((date, index) => (
-                                                <div key={index} className="course-schedule-date">
-                                                    <h5 className='bukra-regular'>Weekday: {date.weekday}</h5>
-                                                    <h5 className='bukra-regular'>Duration: {date.duration} Hours</h5>
-                                                    <h5 className='bukra-regular'>Starts at: {date.startHour}</h5>
-                                                    <h5 className='bukra-regular'>Ends at: {date.endHour}</h5>
-                                                </div>
-                                            ))}
 
-                                        </Grid>
-                                    </Grid>
+                                    <h3 className='bukra-medium'>Fees:</h3>
+                                    <h4 className='bukra-regular'>{this.state.courseFees} EGP</h4>
+                                    <h3 className='bukra-medium'>Duration:</h3>
+                                    <h4 className='bukra-regular'>{schedule.duration} Month(s)</h4>
+                                    <h3 className='bukra-medium'>Start Date:</h3>
+                                    <h4 className='bukra-regular'> <Moment format='dddd, DD/MM/YYYY'>
+                                        {schedule.startDate}
+                                    </Moment></h4>
+                                    <h3 className='bukra-medium'>End Date:</h3>
+                                    <h4 className='bukra-regular'> <Moment format='dddd, DD/MM/YYYY'>
+                                        {schedule.endDate}
+                                    </Moment></h4>
+                                    {schedule.dates.map((date, index) => (
+                                        <div key={index} className="landing-mob-course-schedule-date">
+                                            <h5 className='bukra-regular'>Weekday: {date.weekday}</h5>
+                                            <h5 className='bukra-regular'>Duration: {date.duration} Hours</h5>
+                                            <h5 className='bukra-regular'>Starts at: {date.startHour}</h5>
+                                            <h5 className='bukra-regular'>Ends at: {date.endHour}</h5>
+                                        </div>
+                                    ))}
+
+
                                     {index < this.state.courseSchedules.length ?
-                                        <hr></hr>
+                                        <br></br>
                                         : null}
                                 </div>
                             ))}
-                            {/* <br></br> */}
+                            <div className='landing-grid-btn-base'>
+                                <Button variant="danger" className='landing-mob-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
+                            </div>
                         </div>
-                        <div className='landing-grid-img-base'>
-                        <img className='landing-grid-img' src={`${endpoint}/${this.state.imageScheduleSrc}`} alt="Trainer Avatar"></img>
-                        </div>
-                    </div>
-                    <div className='landing-grid-btn-base'>
-                        <Button variant="danger" className='landing-grid-btn-center' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
                     </div>
                 </div>
 
@@ -200,7 +206,7 @@ export default class Landing extends Component {
                     style={{ display: 'flex' }}
                     aria-describedby="simple-modal-description"
                 >
-                    <CourseApplicationModal course={this.state.courseDetails} />
+                    <CourseApplicationModalMob course={this.state.courseDetails} />
                 </Modal>
             </div>
         )

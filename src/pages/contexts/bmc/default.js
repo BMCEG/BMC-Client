@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import { Grid, Typography } from '@material-ui/core'
 import './default.css';
-// import "react-responsive-carousel/lib/stylesx/carousel.min.css";
 import Carousel from 'react-elastic-carousel';
 import CarouselComp from '../../../components/carousel.js'
 import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import endpoint from '../../../helpers/api_service.js';
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { Map,  Marker, GoogleApiWrapper } from 'google-maps-react';
 import { TextField } from '@material-ui/core';
 class DefaultPage extends Component {
     constructor(props) {
@@ -113,7 +112,7 @@ class DefaultPage extends Component {
                                 <Grid container>
                                     <Grid item xs={3}>
                                         <div className='home-service-icon-base'>
-                                            <img className='home-service-icon' src={`${endpoint}/service-strategic-planning-black.png`} />
+                                            <img className='home-service-icon' alt='placeholder' src={`${endpoint}/service-strategic-planning-black.png`} />
                                         </div>
                                     </Grid>
                                     <Grid item xs={9}>
@@ -133,7 +132,7 @@ class DefaultPage extends Component {
                                 <Grid container>
                                     <Grid item xs={3}>
                                         <div className='home-service-icon-base'>
-                                            <img className='home-service-icon' src={`${endpoint}/service-hr-black.png`} />
+                                            <img className='home-service-icon' alt='placeholder' src={`${endpoint}/service-hr-black.png`} />
                                         </div>
                                     </Grid>
                                     <Grid item xs={9}>
@@ -153,7 +152,7 @@ class DefaultPage extends Component {
                                 <Grid container>
                                     <Grid item xs={3}>
                                         <div className='home-service-icon-base'>
-                                            <img className='home-service-icon' src={`${endpoint}/service-toolbox-black.png`} />
+                                            <img className='home-service-icon' alt='placeholder' src={`${endpoint}/service-toolbox-black.png`} />
                                         </div>
                                     </Grid>
                                     <Grid item xs={9}>
@@ -175,7 +174,7 @@ class DefaultPage extends Component {
                                 <Grid container>
                                     <Grid item xs={3}>
                                         <div className='home-service-icon-base'>
-                                            <img className='home-service-icon' src={`${endpoint}/service-marketing-mgmt-black.png`} />
+                                            <img alt='placeholder' className='home-service-icon' src={`${endpoint}/service-marketing-mgmt-black.png`} />
                                         </div>
                                     </Grid>
                                     <Grid item xs={9}>
@@ -195,7 +194,7 @@ class DefaultPage extends Component {
                                 <Grid container>
                                     <Grid item xs={3}>
                                         <div className='home-service-icon-base'>
-                                            <img className='home-service-icon' src={`${endpoint}/service-financial-black.png`} />
+                                            <img alt='placeholder' className='home-service-icon' src={`${endpoint}/service-financial-black.png`} />
                                         </div>
                                     </Grid>
                                     <Grid item xs={9}>
@@ -230,7 +229,7 @@ class DefaultPage extends Component {
                     {this.state.partners.map((partner) => (
                         <div className='home-partner'>
                             <Button variant='link' href='/partners'>
-                                <img src={`${endpoint}/${partner.logo}`} height='120px' />
+                                <img  alt='placeholder'src={`${endpoint}/${partner.logo}`} height='120px' />
                             </Button>
                         </div>
                     ))}
@@ -251,11 +250,11 @@ class DefaultPage extends Component {
                                     <div style={{ width: '2%' }} />
                                     <TextField fullWidth name="contactLastName" value={this.state.contactLastName} label="Last Name" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} />
                                 </div>
-                                <TextField fullWidth name="contactEmail" value={this.state.contactEmail} label="E-Mail" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
+                                <TextField name="contactEmail" value={this.state.contactEmail} label="E-Mail" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
                                 <br></br>
-                                <TextField fullWidth name="contactMobile" value={this.state.contactMobile} label="Mobile Number" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
+                                <TextField name="contactMobile" value={this.state.contactMobile} label="Mobile Number" variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
                                 <br></br>
-                                <TextField fullWidth name="contactMessage" value={this.state.contactMessage} label="Message" rows={10} multiline variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
+                                <TextField name="contactMessage" value={this.state.contactMessage} label="Message" rows={10} multiline variant="outlined" className="contact-form-input" onChange={this.handleInputChange} fullWidth />
                                 <br></br>
                             </div>
                             <div className='contact-form-btn-base'>

@@ -172,7 +172,7 @@
 .nav-bmc-dropdown {
     /* background-color: red !important; */
     /* position: static; */
-    height: 95vh;
+    /* height: 95vh; */
     /* margin-bottom: -40px; */
     overflow-y: scroll !important;
     /* overflow-y: hidden; */
@@ -181,4 +181,9 @@
 .Lmoa12 {
     /* background-color: #4694D6; */
     height: 100%;
+}
+
+.nav-mob-socials {
+    /* background-color: aqua; */
+    display: flex;
 }

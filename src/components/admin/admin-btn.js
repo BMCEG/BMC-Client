@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusCircle, faChalkboardTeacher, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
 import { Button } from 'react-bootstrap';
-import { Modal, Paper } from '@material-ui/core';
+import { Paper } from '@material-ui/core';
 import './admin-btn.css';
 
 export default class AdminBtn extends Component {

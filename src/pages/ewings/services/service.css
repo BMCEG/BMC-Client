@@ -1,6 +1,6 @@
 .ewings-service-page-root {
     background-color: #4694D6;
-    padding-left: 7%;
+    /* padding-left: 7%; */
     /* padding-right: 7%; */
     display: flex;
     height: 115vh;
@@ -33,9 +33,9 @@
 }
 .ewings-service-page-mob {
     /* background-color: magenta; */
-    width: 90%;
+    /* width: 90%; */
     overflow-y: scroll;
-    padding: 2%;
+    /* padding: 2%; */
     /* padding-right: 6%; */
     text-align: left;
 }
@@ -124,7 +124,26 @@
 
 .ewings-service-page-content {
     /* background-color: snow; */
-    width: 100%;
+    width: 90%;
     height: 80%;
-    /* padding: 1%; */
+    margin: auto;
+    padding: 3%;
+}
+
+.ewings-service-img-base-mobile {
+    /* background-color: blue; */
+    /* width: 50%; */
+    height: 300px !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* padding: 2%; */
+    background-color: rebeccapurple;
+}
+
+.ewings-service-img {
+    width: 100%;
+    /* max-height: 100vh; */
+    /* margin: auto; */
+    object-fit: cover;
 }

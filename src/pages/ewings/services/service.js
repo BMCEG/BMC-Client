@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import endpoint from '../../../helpers/api_service';
 import './service.css';
-import { Grid, Typography } from '@material-ui/core';
-
 import Digital from '../../../components/ewigns/services/digital';
 import Web from '../../../components/ewigns/services/web';
 import Media from '../../../components/ewigns/services/media';

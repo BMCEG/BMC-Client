@@ -4,10 +4,6 @@ import axios from 'axios';
 import endpoint from '../../../../helpers/api_service.js';
 import ReactPlayer from "react-player";
 import { Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons'
-
-
 export default class gallery extends Component {
     constructor(props) {
         super(props);
@@ -65,7 +61,7 @@ export default class gallery extends Component {
                 let pics = [];
 
                 for (let i = 0; i < res.data.length; i++) {
-                    if (pics == []) {
+                    if (pics === []) {
                         pics = res.data[i].pictures;
                     } else {
                         pics = pics.concat(res.data[i].pictures);
@@ -113,7 +109,7 @@ export default class gallery extends Component {
                                             playing="true"
                                         />
                                         :
-                                        <img className='gallery-picture-mob' src={`${endpoint}/${picture.src}`} />
+                                        <img className='gallery-picture-mob' alt='placeholder' src={`${endpoint}/${picture.src}`} />
                                     }
                                 </Button>
                             ))

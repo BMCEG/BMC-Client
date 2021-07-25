@@ -1,6 +1,8 @@
 .landing-root{
     padding: 3%;
-    /* border-radius: 2%; */
+}
+.landing-mob-root{
+    padding: 2%;
 }
 .landing-grid{
     width: 70%;
@@ -9,33 +11,42 @@
     padding:1%;
     box-shadow: 2px 2px 10px black;
 }
+.landing-mob-grid{
+    width: 100%;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 2%;
+    box-shadow: 1px 1px 5px black;
+}
+.landing-mob-title {
+    text-align: center;
+}
 .landing-grid-div{
-    /* width: 70%; */
-    /* margin: auto; */
-    /* background-color: midnightblue; */
-    /* padding:1%; */
     display: flex;
     margin-top: 1%;
     margin-bottom: 1%;
-    /* box-shadow: 2px 2px 10px black; */
 }
 .landing-grid-img-base {
     width: 40%;
-    /* height: 50; */
-    /* margin: auto; */
     text-align: center;
-    /* background-color: orange; */
+    padding:1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.landing-mob-grid-img-base {
+    width: 100%;
+    text-align: center;
     padding:1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .landing-grid-text {
-    width: 60%;
+    /* background-color: yellowgreen; */
+    width: 100%;
     margin-left: 1%;
     margin-right: 1%;
-    /* margin: auto; */
-    /* background-color: lightslategray; */
     padding:1%;
     
 }
@@ -43,8 +54,6 @@
     width: 80%;
     margin-left: 1%;
     margin-right: 1%;
-    /* margin: auto; */
-    /* background-color: lightslategray; */
     padding:1%
 }
 .landing-grid-img {
@@ -52,12 +61,6 @@
     -webkit-animation: fadeIn .5s;
     animation: fadeIn .5s;
 }
-
-
-
-
-
-
 .landing-grid-info {
     background-color: darkslategray;
     color: white;
@@ -68,7 +71,6 @@
 
 }
 .landing-grid-button {
-    /* background-color: lightgreen; */
     padding: 1%;
     margin: 1%;
     flex-direction:column;
@@ -78,46 +80,46 @@
 
 
 .course-schedule{
-    /* background-color: blueviolet; */
     padding: 1%;
     margin: 1%;
 }
 .course-schedule-date {
     display: inline-block;
-    min-width: 15vw;
-    max-width: 15vw;
+    min-width: 10vw;
+    max-width: 10vw;
     background-color: white;
     box-shadow: 2px 2px 10px black;
-
     padding: 4%;
     margin: 1%;
     text-align: center;
-    /* justify-content: right; */
 }
-
+.landing-mob-course-schedule-date {
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px black;
+    padding: 2%;
+    margin: 1%;
+    text-align: center;
+}
 .course-schedule-dates-grid {
-    /* background-color: chartreuse; */
     text-align: center;
 }
 
 .course-trainer-grid-photo {
-    /* background-color: chocolate; */
     display: flex;
     justify-content: center;    
 }
 
 .course-trainer-grid-info {
-    /* background-color: yellow; */
     padding: 1%;
     margin: 1%;
 }
 
 .course-trainer-avatar-base {
-    /* background-color: maroon; */
     margin: 1%;
     padding: 1%;
     width: 100%;
-    /* max-width: 75%; */
     object-fit: contain;
 }
 .course-trainer-avatar {
@@ -125,7 +127,6 @@
     margin: auto;
     border-radius: 100%;
     box-shadow: 2px 5px 10px black;
-    /* background-color: oldlace; */
 }
 
 .course-trainer-qualification {
@@ -150,29 +151,32 @@
       to { opacity: 1; }
 }
 
+.landing-mob-grid-btn-base {
+    padding: 1%;
+    background-color: yellowgreen;
+}
 .landing-grid-btn-base-left {
-    /* background-color: midnightblue; */
     padding: 1%;
     text-align: left;
 }
 .landing-grid-btn-base-right {
-    /* background-color: midnightblue; */
     padding: 1%;
     text-align: right;
 }
 .landing-grid-btn-base {
-    /* background-color: midnightblue; */
     padding: 1%;
     text-align: center;
 }
 
 .landing-grid-btn{
-    /* margin: auto; */
     width: 30%;
     box-shadow: 2px 2px 10px black;
 }
+.landing-mob-grid-btn{
+    width: 50%;
+    box-shadow: 2px 2px 10px black;
+}
 .landing-grid-btn-center{
-    /* margin: au-to; */
     width: 30%;
     height: 100px;
     box-shadow: 2px 2px 10px black;
@@ -191,7 +195,6 @@
 
 .bukra-bold {
     font-family: 'bukra-bold' !important;
-    /* color: yellow; */
 }
 
 .bukra-regular {

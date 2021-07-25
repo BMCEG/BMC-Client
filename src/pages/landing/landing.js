@@ -82,6 +82,7 @@ export default class Landing extends Component {
                     <div className='landing-grid-div'>
                         <div className='landing-grid-text'>
                             <h2 className='bukra-bold' >Training Description</h2>
+                            <br></br>
                             <h3 className='bukra-regular'>{this.state.courseDetails.description}</h3>
                             <br></br>
                             <div className='landing-grid-btn-base-left'>
@@ -100,6 +101,7 @@ export default class Landing extends Component {
                         </div>
                         <div className='landing-grid-text'>
                             <h2 className='bukra-bold' >Training Outline</h2>
+                            <br></br>
                             <h3 className='bukra-regular'>{this.state.courseDetails.outline}</h3>
                             <br></br>
                             <div className='landing-grid-btn-base-right'>
@@ -111,6 +113,7 @@ export default class Landing extends Component {
                     <div className='landing-grid-div'>
                         <div className='landing-grid-text'>
                             <h2 className='bukra-bold' >Training Methodology</h2>
+                            <br></br>
                             <h3 className='bukra-regular'>{this.state.courseDetails.methedology}</h3>
                             <br></br>
                             <div className='landing-grid-btn-base-left'>
@@ -130,6 +133,7 @@ export default class Landing extends Component {
                         </div>
                         <div className='landing-grid-text'>
                             <h2  className='bukra-bold'>Meet the Trainer</h2>
+                            <br></br>
                             <h3 className='bukra-medium'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h3>
                             {this.state.courseTrainerQualifications.map((qual, index) => (
                                 <div key={index} className="course-trainer-qualification">

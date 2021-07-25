@@ -7,7 +7,6 @@ import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import endpoint from '../helpers/api_service';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 export default class floatingBtn extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { TextField, Select, FormControl, MenuItem } from '@material-ui/core';
+import { TextField } from '@material-ui/core';
 import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import endpoint from '../../../helpers/api_service';
@@ -129,7 +129,7 @@ export default class NewAlbum extends Component {
                                                     playing="true"
                                                 />
                                                 :
-                                                <img className='picture-table-cell' src={`${endpoint}/${picture.src}`} alt='image' />
+                                                <img className='picture-table-cell' src={`${endpoint}/${picture.src}`} alt='album' />
                                             }
                                         </td>
                                         <td><h5 className="inner-text">{picture.url}</h5></td>

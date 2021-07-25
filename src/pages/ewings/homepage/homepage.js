@@ -75,7 +75,7 @@ export default class homepage extends Component {
                                     <Grid container>
                                         <Grid item xs={3}>
                                             <div className='home-service-icon-base'>
-                                                <img className='home-service-icon' src={`${endpoint}/service-strategic-planning.png`} />
+                                                <img alt='placeholder' className='home-service-icon' src={`${endpoint}/service-strategic-planning.png`} />
                                             </div>
                                         </Grid>
                                         <Grid item xs={9}>
@@ -97,7 +97,7 @@ export default class homepage extends Component {
                                         <Grid item xs={3}>
 
                                             <div className='home-service-icon-base'>
-                                                <img className='home-service-icon' src={`${endpoint}/service-hr.png`} />
+                                                <img alt='placeholder' className='home-service-icon' src={`${endpoint}/service-hr.png`} />
                                             </div>
 
                                         </Grid>
@@ -118,7 +118,7 @@ export default class homepage extends Component {
                                     <Grid container>
                                         <Grid item xs={3}>
                                             <div className='home-service-icon-base'>
-                                                <img className='home-service-icon' src={`${endpoint}/service-toolbox.png`} />
+                                                <img alt='placeholder' className='home-service-icon' src={`${endpoint}/service-toolbox.png`} />
                                             </div>
                                         </Grid>
                                         <Grid item xs={9}>
@@ -140,7 +140,7 @@ export default class homepage extends Component {
                                     <Grid container>
                                         <Grid item xs={3}>
                                             <div className='home-service-icon-base'>
-                                                <img className='home-service-icon' src={`${endpoint}/service-marketing-mgmt.png`} />
+                                                <img  alt='placeholder' className='home-service-icon' src={`${endpoint}/service-marketing-mgmt.png`} />
                                             </div>
                                         </Grid>
                                         <Grid item xs={9}>
@@ -161,7 +161,7 @@ export default class homepage extends Component {
                                     <Grid container>
                                         <Grid item xs={3}>
                                             <div className='home-service-icon-base'>
-                                                <img className='home-service-icon' src={`${endpoint}/service-financial.png`} />
+                                                <img alt='placeholder' className='home-service-icon' src={`${endpoint}/service-financial.png`} />
                                             </div>
                                         </Grid>
                                         <Grid item xs={9}>

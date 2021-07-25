@@ -5,10 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCircle, faClock } from '@fortawesome/free-solid-svg-icons'
 import moment from 'moment';
 import './blogs.css';
-import Card from 'react-bootstrap/Card';
 import { Button } from 'react-bootstrap';
-import { Redirect } from 'react-router';
-import { Paper, Grid } from '@material-ui/core';
+import { Paper } from '@material-ui/core';
 
 export default class Blogs extends Component {
     constructor(props) {
@@ -48,7 +46,7 @@ export default class Blogs extends Component {
     render() {
         return (
             <div style={{ backgroundImage: `url(${endpoint}/bg-our-story.png)`, backgroundSize: 'cover' }}>
-                <div className="blogs-root">
+                <div className="blogs-mob-root">
                     {/* <h1>Blogs</h1> */}
                     {this.state.blogs.map((blog) => (
                         <Paper className='blogs-card-mobile'>

@@ -63,7 +63,6 @@ export default class Blog extends Component {
     render() {
         return (
             <div style={{ backgroundImage: `url(${endpoint}/bg-our-story.png)`, backgroundSize: 'cover'}}>
-                {/* <NavbarBMC handleSelectedContext={this.setSelectedItem} /> */}
                 <div className="blog-root">
                     <div className='blog-grid'>
                         <div className='blog-img-base'>
@@ -85,8 +84,6 @@ export default class Blog extends Component {
                         <div className='blog-post bukra-regular lspacing'>
                             <h5>{this.state.blog.post}</h5>
                         </div>
-                        {/* <hr></hr> */}
-
                     </div>
                     <div className='recent-blog-grid'>
                         <h3 className='bukra-bold'>Recent Blogs</h3>
@@ -97,7 +94,6 @@ export default class Blog extends Component {
                                     <img src={`${endpoint}/${blog.image}`} alt={blog.title} className='recent-blog-img' />
                                     </Grid>
                                     <Grid item xs={1}>
-
                                     </Grid>
                                     <Grid item xs={6} className="recent-blog-title">
                                         <h4  className='bukra-bold'>{blog.title}</h4>
@@ -112,7 +108,6 @@ export default class Blog extends Component {
 
                     </div>
                 </div>
-                {/* <Footer /> */}
             </div>
         )
     }

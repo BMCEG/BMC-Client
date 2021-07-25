@@ -16,8 +16,8 @@ export default class CarouselComponenet extends Component {
     render() {
         return (
             <Carousel fade style={{ zIndex: -2 }} indicators={false} controls={false} className='carousel-root-mobile'>
-                {this.state.items.map((item) => (
-                    <Carousel.Item>
+                {this.state.items.map((item, key) => (
+                    <Carousel.Item key={key}>
                         <>
                             {this.props.isMobile ?
                                 <div className='carousel-slide-title-mobile-small'>

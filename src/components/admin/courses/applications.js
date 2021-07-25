@@ -3,8 +3,6 @@ import React, { Component } from 'react'
 import endpoint from '../../../helpers/api_service';
 import './courses.css'
 import Table from 'react-bootstrap/Table';
-import { Button } from 'react-bootstrap';
-import { Modal, Paper } from '@material-ui/core';
 import Moment from 'react-moment';
 
 export default class Applications extends Component {

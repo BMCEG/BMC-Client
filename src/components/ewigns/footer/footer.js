@@ -1,4 +1,3 @@
-import { Grid, TextField } from '@material-ui/core';
 import React, { Component } from 'react';
 import './footer.css';
 import { Button } from 'react-bootstrap';
@@ -48,9 +47,8 @@ export default class Footer extends Component {
                 </div>
                 <div className="footer-ewings-root-right">
                     <img src={`${endpoint}/wing-left.png`} alt='wing-left' className='footer-ewings-root-img' />
-
                 </div>
-            </div >
+            </div>
         )
     }
 }

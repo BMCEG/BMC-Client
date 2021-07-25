@@ -1,4 +1,4 @@
-import { Grid, Paper, Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Button } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import React from 'react'
 import './meetTheExperts.css'
 import ExpertCard from '../../../../components/meetTheExperts/expertCard';
@@ -7,10 +7,6 @@ import endpoint from '../../../../helpers/api_service.js';
 export default function meetTheExperts() {
     return (
         <div className="experts-root" style={{ backgroundImage: `url(${endpoint}/bg-experts.png)`, backgroundSize: 'cover' }}>
-            {/* <div className='experts-text-box'>
-
-                <h1>Meet The Experts</h1>
-            </div> */}
             <br></br>
             <Grid container className='experts-grid'>
                 <Grid item xs={6}>

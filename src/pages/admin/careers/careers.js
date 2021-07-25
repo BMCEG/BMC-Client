@@ -4,7 +4,6 @@ import NavbarAdmin from '../../../components/navbar/navbarAdmin.js';
 import JobApplications from '../../../components/admin/careers/applications.js';
 import JobPostings from '../../../components/admin/careers/postings.js'
 import CreateJobPosting from '../../../components/admin/careers/newJobPosting.js'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle, faUserGraduate, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons'
 import AdminBtn from '../../../components/admin/admin-btn';
 import endpoint from '../../../helpers/api_service';
@@ -30,7 +29,7 @@ export default class Careers extends Component {
                 <NavbarAdmin isLoggedIn={true} />
 
                 <div className='admin-careers-root' style={{ backgroundImage: `url(${endpoint}/bg-experts.png)`, backgroundSize: 'cover' }}>
-                    <div className='admin-careers-controls' style={{ backgroundImage: `url(${endpoint}/bg-four.png)`, backgroundSize: 'cover' }}>
+                    <div className='admin-careers-controls' >
                         <div className='admin-careers-controls-btns'>
                             <AdminBtn label={'Create Job Posting'} icon={faUserGraduate} onClick={() => this.handleBtnClick('CreateJobPosting')} />
                             <br></br>

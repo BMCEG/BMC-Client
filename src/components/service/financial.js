@@ -1,7 +1,7 @@
 import React from 'react'
 import './financial.css';
-import { Grid, Typography } from '@material-ui/core';
-import endpoint from '../../helpers/api_service';
+import { Typography } from '@material-ui/core';
+
 export default function marketingMgmt() {
     return (
         <div>

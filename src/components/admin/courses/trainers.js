@@ -62,7 +62,7 @@ export default class Trainers extends Component {
                             {this.state.trainers.map((trainer, index) => (
                                 <tr className="admin-table-row" key={index}>
                                     <td>{index + 1}</td>
-                                    <td width='15%'><img src={`${endpoint}/${trainer.photoUrl}`} alt='image' width='100%' /></td>
+                                    <td width='15%'><img src={`${endpoint}/${trainer.photoUrl}`} alt='trainer' width='100%' /></td>
                                     <td><h5>{trainer.firstName} {trainer.lastName}</h5></td>
                                     <td style={{ width: '15%' }}><div className='admin-contacts-row-btn'>
                                         <Button variant='success' href={`/admin/trainers/${trainer._id}`} style={{ width: '100%' }}>
@@ -74,7 +74,8 @@ export default class Trainers extends Component {
                                             <h6>Delete</h6>
                                         </Button>
                                     </div>
-                                    </td>                                </tr>
+                                    </td>
+                                </tr>
                             ))}
                         </tbody>
                     </Table>

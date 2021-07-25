@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
-import endpoint from '../../helpers/api_service';
 import './toolbox.css';
 
 export default function toolbox() {
@@ -8,11 +6,10 @@ export default function toolbox() {
         <div>
             <div className='toolbox-text'>
                 <h2 className='bukra-bold lspacing'>Feasibility Study</h2>
-                <div className='toolbox-subtitle bukra-bold'>
+                <div className='toolbox-subtitle lspacing bukra-medium'>
                     <h3>What is a Feasibility Study?!</h3>
                 </div>
                 <div className='toolbox-subtitle-body bukra-regular lspacing'>
-
                     <h5>Feasibility study is an assessment tool to assess the viability of a new proposed project or a plan.</h5>
                     <h5>You do it before spending money or time or effort.</h5>
                     <h5>It is to find the answers of many questions: </h5>
@@ -21,12 +18,9 @@ export default function toolbox() {
                     <h5>·     What are the required resources and technologies?</h5>
                     <h5>·     Is it profitable? Is there a demand? How much risk do you encounter?</h5>
                 </div>
-                {/* </div> */}
-                {/* <ReactPlayer className='toolbox-video' url='https://www.youtube.com/watch?v=ysz5S6PUM-U' /> */}
-                {/* <img className='toolbox-img' src='https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=webp&v=1530129081' alt='whyBMC' /> */}
             </div>
             <div className='toolbox-text'>
-                <div className='toolbox-subtitle bukra-bold'>
+                <div className='toolbox-subtitle bukra-medium lspacing'>
                     <h3>What is a Feasibility Study?!</h3>
                 </div>
                 <div className='toolbox-subtitle-body bukra-regular'>
@@ -34,7 +28,7 @@ export default function toolbox() {
                     <h5>By doing this you now are able to conduct the comprehensive feasibility study to your refined proposed project or plan for a comprehensive and detailed study covering all business areas.</h5>
                 </div>
                 <br></br>
-                <div className='toolbox-subtitle bukra-bold'>
+                <div className='toolbox-subtitle bukra-medium lspacing'>
                     <h3>Why do you need to conduct a feasibility study? </h3>
                 </div>
                 <div className='toolbox-subtitle-body bukra-regular'>
@@ -46,9 +40,6 @@ export default function toolbox() {
                     <h5>·     You may need to attract equity investments or funding from banks.</h5>
                 </div>
                 <br></br>
-                {/* <br></br> */}
-                {/* <div className='toolbox-body-inline'> */}
-                {/* <img className='toolbox-img' src='https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=webp&v=1530129081' alt='whyBMC' /> */}
                 <div>
                     <div className='toolbox-text bukra-regular'>
                         <h5>·     You should have a clearly defined outline of one or more alternative business models or scenarios that you want to explore its feasibility.</h5>
@@ -60,7 +51,7 @@ export default function toolbox() {
                         <h5>·     The feasibility study is a critical step in the business assessment process. If properly conducted, it may be the best investment you ever made.</h5>
                         <br></br>
                     </div>
-                    <div className='toolbox-subtitle bukra-bold'>
+                    <div className='toolbox-subtitle bukra-medium lspacing'>
                         <h3>Typical Feasibility study outline </h3>
                     </div>
                     <div className='toolbox-subtitle-body bukra-regular'>
@@ -68,8 +59,6 @@ export default function toolbox() {
                         <h5> However, this may not be a complete listing of the factors that should be considered in your specific situation.</h5>
                     </div>
                 </div>
-                {/* </div> */}
             </div>
-
         </div>)
 }

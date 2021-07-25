@@ -5,8 +5,6 @@ import Albums from '../../../components/admin/gallery/albums.js';
 import AlbumCreate from '../../../components/admin/gallery/newAlbum.js'
 import Pictures from '../../../components/admin/gallery/pictures.js';
 import PictureUpload from '../../../components/admin/gallery/newPicture.js'
-// import Trainers from '../../../components/admin/courses/trainers.js';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle, faUserGraduate, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons'
 import AdminBtn from '../../../components/admin/admin-btn';
 import endpoint from '../../../helpers/api_service';
@@ -32,7 +30,7 @@ export default class GalleryPanel extends Component {
                 <NavbarAdmin isLoggedIn={true} />
 
                 <div className='admin-courses-root' style={{ backgroundImage: `url(${endpoint}/bg-experts.png)`, backgroundSize: 'cover' }}>
-                    <div className='admin-courses-controls' style={{ backgroundImage: `url(${endpoint}/bg-four.png)`, backgroundSize: 'cover' }}>
+                    <div className='admin-courses-controls'>
                         <div className='admin-courses-controls-btns'>
                             <AdminBtn label={'Upload Media'} icon={faChalkboardTeacher} onClick={() => this.handleBtnClick('PictureUpload')} />
                             {/* <br></br> */}

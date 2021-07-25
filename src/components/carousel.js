@@ -15,8 +15,8 @@ export default class CarouselComponenet extends Component {
     render() {
         return (
             <Carousel fade style={{ zIndex: -2 }} indicators={false} controls={false} className='carousel-root'>
-                {this.state.items.map((item) => (
-                    <Carousel.Item>
+                {this.state.items.map((item, key) => (
+                    <Carousel.Item key={key}>
                         <>
                             <div className='carousel-slide-title'>
                                 <Typography variant='h2' component='h2' className='carousel-slide-title-text'>

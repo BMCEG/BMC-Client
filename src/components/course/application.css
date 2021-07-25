@@ -11,7 +11,29 @@
     justify-content: center;
     border-radius: 25px;
 }
+.application-modal-root-mob {
+    background-color: lightgrey;
+    margin: auto;
+    position: relative;
+    /* margin: 10%; */
+    min-height: 60%;
+    padding: 3%;
+    width: 90%;
+    display:flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
 
+.application-mob{
+    display:flex;
+    /* height: 50%; */
+    flex-direction:column;
+    width: 85%;
+    /* padding: 5%; */
+    text-align:center;
+    /* background-color: l ightseagreen; */
+}
 .application{
     display:flex;
     /* height: 50%; */
@@ -40,4 +62,8 @@
 
 .application-btn:hover {
     background-color: slategray !important;
+}
+
+.MuiMenu-list {
+    background-color: white !important;
 }
