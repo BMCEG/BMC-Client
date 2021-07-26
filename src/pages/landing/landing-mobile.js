@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import './landing.css';
 import endpoint from '../../helpers/api_service';
-import { Grid, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
 import Moment from 'react-moment';
 import { Button } from 'react-bootstrap';
@@ -134,7 +134,7 @@ export default class Landing extends Component {
                         <div className='landing-grid-text'>
                             <h1 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Meet the Trainer</h1>
                             <br></br>
-                            <div className='landing-mob-grid-img-base'>
+                            <div className='landing-mob-trainer-img-base '>
                                 <img src={`${endpoint}/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
                             </div>
                             <br></br>
