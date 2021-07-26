@@ -37,7 +37,8 @@ export default class Application extends Component {
 
         await axios.post(`${endpoint}/coursesApplications/create`, applicationDetails)
             .then((res) => {
-                alert('Application Submitted Successfully')
+                alert('Application Submitted Successfully');
+                window.location.reload();
             })
             .catch((err) => {
                 console.log(err);
