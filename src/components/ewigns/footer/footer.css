@@ -98,7 +98,8 @@
     /* background-color: maroon; */
     padding-top: 5%;
     padding-bottom: 1%;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     height: 40%;
     justify-content: center;
     text-align: center;
@@ -154,7 +155,7 @@
     /* width: 16%;
     height: 100%; */
     margin: auto;
-    padding: 4%;
+    padding: 2%;
     border-radius: 100%;
     color: white !important;
     text-align: center !important;

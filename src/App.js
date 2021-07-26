@@ -86,6 +86,7 @@ export default class App extends Component {
     this.state = {
       homepageContext: "",
       navbarContext: "bmc",
+      isLanding: false,
       isMobileDevice: Boolean,
       isLaptop: Boolean
     }
@@ -101,27 +102,26 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-
     if (window.location.href.indexOf("ewings") > -1) {
+      // console.log("henlo")
       this.setState({
         navbarContext: 'ewings'
+      })
+    }
+
+    if (window.location.href.indexOf("landing") > -1) {
+      this.setState({
+        isLanding: true
       })
     }
   }
 
 
   render() {
+    console.log("this.state", this.state)
     return (
       <Router>
         <Switch>
-          <Media query='(min-width: 1024px)'>
-            {(matches) => {
-              return matches ?
-                <Route path="/landing/:courseName" exact component={LandingPage} />
-                :
-                <Route path="/landing/:courseName" exact component={LandingPageMob} />
-            }}
-          </Media>
 
 
           <Route path="/admin" exact component={AdminPage} />
@@ -149,36 +149,45 @@ export default class App extends Component {
 
           {this.state.navbarContext === 'bmc' ?
             <>
-
-              <Media queries={{
-                mobile: "(max-width: 1300px)",
-                small: "(min-width: 1300px) and (max-width: 1400px)",
-                medium: "(min-width: 1400px) and (max-width: 1600px)",
-                large: "(min-width: 1600px)",
-
-              }}>
-                {(matches) => {
-                  return matches.mobile ?
-                    <NavbarBMCMob handleSelectedContext={this.handleSelectedContext} />
-                    :
-                    matches.small ?
-                      <NavbarBMCSmaller handleSelectedContext={this.handleSelectedContext} />
-                      : matches.medium ?
-                        <NavbarBMCSmall handleSelectedContext={this.handleSelectedContext} />
-                        :
-                        <NavbarBMC handleSelectedContext={this.handleSelectedContext} />
-                }}
-              </Media>
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    // <NavbarBMC handleSelectedContext={this.handleSelectedContext} />
-                    <FloatingBtn />
+                    <Route path="/landing/:courseName" exact component={LandingPage} />
                     :
-                    <FloatingBtnMob />
-                  // <NavbarBMCMob handleSelectedContext={this.handleSelectedContext} />
+                    <Route path="/landing/:courseName" exact component={LandingPageMob} />
                 }}
               </Media>
+
+              {this.state.isLanding ? null :
+                <>
+                  <Media queries={{
+                    mobile: "(max-width: 1300px)",
+                    small: "(min-width: 1300px) and (max-width: 1400px)",
+                    medium: "(min-width: 1400px) and (max-width: 1600px)",
+                    large: "(min-width: 1600px)",
+
+                  }}>
+                    {(matches) => {
+                      return matches.mobile ?
+                        <NavbarBMCMob handleSelectedContext={this.handleSelectedContext} />
+                        :
+                        matches.small ?
+                          <NavbarBMCSmaller handleSelectedContext={this.handleSelectedContext} />
+                          : matches.medium ?
+                            <NavbarBMCSmall handleSelectedContext={this.handleSelectedContext} />
+                            :
+                            <NavbarBMC handleSelectedContext={this.handleSelectedContext} />
+                    }}
+                  </Media>
+                  <Media query='(min-width: 1024px)'>
+                    {(matches) => {
+                      return matches ?
+                        <FloatingBtn />
+                        :
+                        <FloatingBtnMob />
+                    }}
+                  </Media>
+                </>}
 
 
               <Media query='(min-width: 1024px)'>
@@ -393,14 +402,16 @@ export default class App extends Component {
                 }}
               </Media>
 
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <FooterBMC />
-                    :
-                    <FooterBMCMob />
-                }}
-              </Media>
+              {this.state.isLanding ? null :
+                <Media query='(min-width: 1024px)'>
+                  {(matches) => {
+                    return matches ?
+                      <FooterBMC />
+                      :
+                      <FooterBMCMob />
+                  }}
+                </Media>
+              }
 
             </>
             :
@@ -408,12 +419,22 @@ export default class App extends Component {
 
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
-                  return matches.mobile ?
-                    <NavbarDMapMob handleSelectedContext={this.handleSelectedContext} />
-                    :
+                  return matches ?
+                    // <FloatingBtn />
                     <NavbarDMap handleSelectedContext={this.handleSelectedContext} />
+                    :
+                    <NavbarDMapMob handleSelectedContext={this.handleSelectedContext} />
+                    // <FloatingBtnMob />
                 }}
               </Media>
+
+
+              {/* <Media query='(min-width: 1024px)'>
+                {(matches) => {
+                  return matches ?
+                    :
+                }}
+              </Media> */}
 
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
