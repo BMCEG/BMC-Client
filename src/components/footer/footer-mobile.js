@@ -22,7 +22,7 @@ export default class Footer extends Component {
                             <h6  className='bukra-regular' style={{ color: 'black' }}>New Cairo, Cairo, Egypt</h6>
                             <br></br>
                             <h6 className='bukra-regular' style={{ color: 'black' }}>Phone: 010 0822 4224</h6>
-                            <h6 className='bukra-regular' style={{ color: 'black' }}>E-Mail: mohamed@bmceg.com</h6>
+                            <h6 className='bukra-regular' style={{ color: 'black' }}>E-Mail: info@bmceg.com</h6>
                         </Grid>
                  
                     </Grid>

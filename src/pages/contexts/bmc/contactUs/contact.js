@@ -61,6 +61,8 @@ class Contact extends Component {
                         </Map>
                     </div>
                     <br></br>
+                    <br></br>
+                    <br></br>
                     <div className='contact-form-body'>
                         <div className='contact-form-body-left'>
                             <div className='contact-form-body-left-info'>
@@ -71,7 +73,7 @@ class Contact extends Component {
                             </div>
                             <div className='contact-form-body-left-info'>
                                 <h3 className='bukra-bold'>Email:</h3>
-                                <h5 className='bukra-regular'>mohamed@bmceg.com</h5>
+                                <h5 className='bukra-regular'>info@bmceg.com</h5>
                             </div>
                             <div className='contact-form-body-left-info'>
                                 <h3 className='bukra-bold'>Call:</h3>

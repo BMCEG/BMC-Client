@@ -3,14 +3,24 @@ import ReactPlayer from 'react-player';
 import endpoint from '../../../helpers/api_service';
 import './homepage.css';
 import Carousel from 'react-bootstrap/esm/Carousel';
+import ClientsCarousel from 'react-elastic-carousel';
 import '../../../styles.css'
 import Button from 'react-bootstrap/Button';
-import { Grid, Typography } from "@material-ui/core"
+import { Grid, Typography } from "@material-ui/core";
+import axios from 'axios';
+
 export default class homepage extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
+            partners: [],
+            breakPoints: [
+                { width: 1, itemsToShow: 1 },
+                { width: 500, itemsToShow: 2 },
+                { width: 768, itemsToShow: 3 },
+                { width: 1200, itemsToShow: 6 },
+            ],
             array: [
                 {
                     title: 'About Us',
@@ -36,6 +46,19 @@ export default class homepage extends Component {
 
         }
     }
+
+    componentDidMount = async () => {
+        await axios.get(`${endpoint}/partners`)
+            .then((res) => {
+                this.setState({
+                    partners: res.data
+                })
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+    }
+
 
     render() {
         return (
@@ -68,6 +91,27 @@ export default class homepage extends Component {
                         <br></br>
 
                     </div>
+
+                    <ClientsCarousel
+                        breakPoints={this.state.breakPoints}
+                        enableMouseSwipe={true}
+                        enableAutoPlay={true}
+                        disableArrowsOnEnd={true}
+                        className="home-partners-ewings"
+                        pagination={false}
+                        easing="cubic-bezier(1,.15,.55,1.54)"
+                        tiltEasing="cubic-bezier(0.110, 1, 1.000, 0.210)"
+                        transitionMs={4500}
+                    >
+                        {this.state.partners.map((partner) => (
+                            <div className='home-partner-ewings'>
+                                <Button variant='link' href='/partners'>
+                                    <img alt='placeholder' className='home-partner-img' src={`${endpoint}/${partner.logo}`} height='120px' />
+                                </Button>
+                            </div>
+                        ))}
+                    </ClientsCarousel>
+
                     <div className="page-margin">
                         <Grid container className='home-services-grid'>
                             <Grid item xs={6}>
@@ -140,7 +184,7 @@ export default class homepage extends Component {
                                     <Grid container>
                                         <Grid item xs={3}>
                                             <div className='home-service-icon-base'>
-                                                <img  alt='placeholder' className='home-service-icon' src={`${endpoint}/service-marketing-mgmt.png`} />
+                                                <img alt='placeholder' className='home-service-icon' src={`${endpoint}/service-marketing-mgmt.png`} />
                                             </div>
                                         </Grid>
                                         <Grid item xs={9}>

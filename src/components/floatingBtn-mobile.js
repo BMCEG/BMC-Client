@@ -70,14 +70,15 @@ export default class floatingBtn extends Component {
     render() {
         return (
             <div className='fab-root-mobile' >
-                <div className='fab-social-mobile'>
-                    <a className='fab-social-btn-mobile' href="tel:01008224224">
-                        <FontAwesomeIcon icon={faPhone} size={'3x'} style={{ color: 'red' }} />
-                    </a>
-                </div>
-                <Fab variant="extended" className='fab-btn-mobile' onClick={this.handleModalOpen}>
+                <Button variant='danger' className='fab-social-mobile' href="tel:01008224224">
+                    <FontAwesomeIcon icon={faPhone} size={'2x'} style={{ color: 'white' }} />
+                </Button>
+                <Button variant='danger' className='fab-social-mobile' onClick={this.handleModalOpen}>
                     <h6 className='bukra-bold'>Request Consultancy</h6>
-                </Fab>
+                </Button>
+                {/* <Fab variant="extended" className='fab-btn-mobile' onClick={this.handleModalOpen}>
+                    <h6 className='bukra-bold'>Request Consultancy</h6>
+                </Fab> */}
                 <Modal
                     open={this.state.modalFlag}
                     onClose={this.handleModalClose}

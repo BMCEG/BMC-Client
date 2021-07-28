@@ -304,7 +304,7 @@ class DefaultPage extends Component {
                             {this.state.partners.map((partner, key) => (
                                 <div className='home-partner' key={key}>
                                     <Button variant='link' href='/partners'>
-                                        <img alt='placeholder' src={`${endpoint}/${partner.logo}`} height='60px' />
+                                        <img alt='placeholder' className='home-partner-img' src={`${endpoint}/${partner.logo}`} height='60px' />
                                     </Button>
                                 </div>
                             ))}
@@ -338,7 +338,7 @@ class DefaultPage extends Component {
                                     <span>
                                         <br></br>
                                         <h3 className='bukra-bold'>Email:</h3>
-                                        <h5 className='bukra-regular'>mohamed@bmceg.com</h5>
+                                        <h5 className='bukra-regular'>info@bmceg.com</h5>
                                     </span>
                                     <span>
                                         <br></br>

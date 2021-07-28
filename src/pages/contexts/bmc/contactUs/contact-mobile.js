@@ -73,7 +73,7 @@ class Contact extends Component {
                         <span>
                             <br></br>
                             <h3 className='bukra-bold'>Email:
-                                <h5 className='bukra-regular'>mohamed@bmceg.com</h5>
+                                <h5 className='bukra-regular'>info@bmceg.com</h5>
                             </h3>
                         </span>
                         <span>

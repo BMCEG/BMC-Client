@@ -6,7 +6,7 @@ import CarouselComp from '../../../components/carousel.js'
 import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import endpoint from '../../../helpers/api_service.js';
-import { Map,  Marker, GoogleApiWrapper } from 'google-maps-react';
+import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 import { TextField } from '@material-ui/core';
 class DefaultPage extends Component {
     constructor(props) {
@@ -25,7 +25,7 @@ class DefaultPage extends Component {
                 { width: 1, itemsToShow: 1 },
                 { width: 500, itemsToShow: 2 },
                 { width: 768, itemsToShow: 3 },
-                { width: 1200, itemsToShow: 4 },
+                { width: 1200, itemsToShow: 6 },
             ],
             carouselItems: [
                 {
@@ -89,10 +89,10 @@ class DefaultPage extends Component {
                 <div className="page-margin">
                     <div className='banner-grid'>
                         <div className='banner-text'>
-                            <Typography variant='h3' component='h3' className='bukra-bold'>
+                            {/* <Typography variant='h3' component='h3' className='bukra-bold'>
                                 Who We Are?!
-                            </Typography>
-                            <Typography variant='h6' component='h6' className='bukra-regular line-spacing'>
+                            </Typography> */}
+                            <Typography variant='h5' component='h5' className='bukra-regular line-spacing'>
                                 We are experts in such broad business tools as Strategic audit, Feasibility studies, research and analysis, Business strategies - Internal business processes – Business development, book keeping, financial audits, Business Manuals, Digital transformation, training courses, among other custom-tailored services.                            </Typography>
                         </div>
                         <div className="banner-photo-base">
@@ -117,7 +117,8 @@ class DefaultPage extends Component {
                                     </Grid>
                                     <Grid item xs={9}>
                                         <div className='home-service-text'>
-                                            <h3 className='bukra-bold'>Strategic Plan</h3>
+                                            {/* <h3 className='bukra-bold'>Strategic Plan</h3> */}
+                                            <Typography variant='h4' style={{ textAlign: 'center' }} component='h4' className='bukra-bold'>Strategic Plan</Typography>
                                             <br></br>
 
                                             <h5 className='bukra-regular'>BMC has the aim to provide professional counsel and assistance in the analysis, conception, and formulation of strategies & plans along with the development of the implementation framework that assure client’s sustained survival and long-term growth & profitability.</h5>
@@ -125,7 +126,7 @@ class DefaultPage extends Component {
                                     </Grid>
                                 </Grid>
                                 <div style={{ textAlign: 'right' }}>
-                                    <Button variant='danger' href='/services/strategic'>Read More</Button>
+                                    <Button variant='danger' className="bukra-regular" href='/services/strategic'>Read More</Button>
                                 </div>
                             </div>
                             <div className="home-service">
@@ -137,13 +138,15 @@ class DefaultPage extends Component {
                                     </Grid>
                                     <Grid item xs={9}>
                                         <div className='home-service-text'>
-                                            <h3 className='bukra-bold'>HR Management</h3>
+                                            <Typography variant='h4' style={{ textAlign: 'center' }} component='h4' className='bukra-bold'>HR Management</Typography>
+
+                                            {/* <h3 className='bukra-bold'>HR Management</h3> */}
                                             <br></br>
 
                                             <h5 className='bukra-regular'>We provide Human Resources service in support of our client’s vision, mission and values by promoting the concept that employees are the most valuable resource and will be treated as such.</h5>
                                         </div>
                                         <div style={{ textAlign: 'right' }}>
-                                            <Button variant='danger' href='/services/hr'>Read More</Button>
+                                            <Button variant='danger' className="bukra-regular" href='/services/hr'>Read More</Button>
                                         </div>
                                     </Grid>
                                 </Grid>
@@ -157,13 +160,13 @@ class DefaultPage extends Component {
                                     </Grid>
                                     <Grid item xs={9}>
                                         <div className='home-service-text'>
-                                            <h3 className='bukra-bold'>BMC Tool Box</h3>
+                                            <Typography variant='h4' style={{ textAlign: 'center' }} component='h4' className='bukra-bold'>BMC Tool Box</Typography>
                                             <br></br>
 
                                             <h5 className='bukra-regular'>We are often engaged to provide Custom-tailored solutions,We can help formulate the specific problem or uncover areas that need improvements and then find a comprehensive set of possible solutions to meet the needs of your particular organization.</h5>
                                         </div>
                                         <div style={{ textAlign: 'right' }}>
-                                            <Button variant='danger' href='/services/toolbox'>Read More</Button>
+                                            <Button variant='danger' className="bukra-regular" href='/services/toolbox'>Read More</Button>
                                         </div>
                                     </Grid>
                                 </Grid>
@@ -179,13 +182,13 @@ class DefaultPage extends Component {
                                     </Grid>
                                     <Grid item xs={9}>
                                         <div className='home-service-text'>
-                                            <h3 className='bukra-bold'>Marketing Management</h3>
+                                            <Typography variant='h4' style={{ textAlign: 'center' }} component='h4' className='bukra-bold'>Marketing Management</Typography>
                                             <br></br>
 
                                             <h5 className='bukra-regular'>We act as your marketing arm department, we have the right blend of strategists and planners, researchers, designers, thinkers and creatives, detail and big-picture people all dedicated to achieve the goal at the highest quality, on time and within your budget.</h5>
                                         </div>
                                         <div style={{ textAlign: 'right' }}>
-                                            <Button variant='danger' href='/services/marketingMgmt'>Read More</Button>
+                                            <Button variant='danger' className="bukra-regular" href='/services/marketingMgmt'>Read More</Button>
                                         </div>
                                     </Grid>
                                 </Grid>
@@ -199,12 +202,12 @@ class DefaultPage extends Component {
                                     </Grid>
                                     <Grid item xs={9}>
                                         <div className='home-service-text'>
-                                            <h3 className='bukra-bold'>Financial and Accounting</h3>
+                                            <Typography variant='h4' style={{ textAlign: 'center' }} component='h4' className='bukra-bold'>Finance & Accounting</Typography>
                                             <br></br>
                                             <h5 className='bukra-regular'>We have the aim to provide a full range of comprehensive high quality services with a modern and practical approach in several fields.</h5>
                                         </div>
                                         <div style={{ textAlign: 'right' }}>
-                                            <Button variant='danger' href='/services/financial'>Read More</Button>
+                                            <Button variant='danger' className="bukra-regular" href='/services/financial'>Read More</Button>
                                         </div>
                                     </Grid>
                                 </Grid>
@@ -229,11 +232,11 @@ class DefaultPage extends Component {
                     {this.state.partners.map((partner) => (
                         <div className='home-partner'>
                             <Button variant='link' href='/partners'>
-                                <img  alt='placeholder'src={`${endpoint}/${partner.logo}`} height='120px' />
+                                <img alt='placeholder' className='home-partner-img' src={`${endpoint}/${partner.logo}`} height='120px' />
                             </Button>
                         </div>
                     ))}
-                </Carousel>)
+                </Carousel>
                 <br></br>
                 <br></br>
                 <br></br>
@@ -264,9 +267,6 @@ class DefaultPage extends Component {
                                 </Button>
                             </div>
                         </div>
-
-
-
                     </div>
                     <div className='contact-right'>
                         <div className='contact-form-location-base'>
@@ -292,7 +292,7 @@ class DefaultPage extends Component {
                                 <div className='contact-form-body-left-info'>
                                     <br></br>
                                     <h4 className='bukra-bold'>Email:</h4>
-                                    <h5 className='bukra-regular'>mohamed@bmceg.com</h5>
+                                    <h5 className='bukra-regular'>info@bmceg.com</h5>
                                 </div>
                                 <div className='contact-form-body-left-info'>
                                     <br></br>

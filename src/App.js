@@ -184,7 +184,7 @@ export default class App extends Component {
                       return matches ?
                         <FloatingBtn />
                         :
-                        <FloatingBtnMob />
+                        null
                     }}
                   </Media>
                 </>}
@@ -408,7 +408,11 @@ export default class App extends Component {
                     return matches ?
                       <FooterBMC />
                       :
-                      <FooterBMCMob />
+                      <>
+                        <FooterBMCMob />
+                        <FloatingBtnMob />
+
+                      </>
                   }}
                 </Media>
               }
@@ -424,7 +428,7 @@ export default class App extends Component {
                     <NavbarDMap handleSelectedContext={this.handleSelectedContext} />
                     :
                     <NavbarDMapMob handleSelectedContext={this.handleSelectedContext} />
-                    // <FloatingBtnMob />
+                  // <FloatingBtnMob />
                 }}
               </Media>
 
