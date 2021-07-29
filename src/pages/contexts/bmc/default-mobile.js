@@ -97,7 +97,7 @@ class DefaultPage extends Component {
                         <div className="page-margin-mobile">
                             <div className='banner-grid-mobile'>
                                 <div className='banner-text-mobile'>
-                                    <h5 className='bukra-bold'>Who Are We?!</h5>
+                                    {/* <h5 className='bukra-bold'>Who Are We?!</h5> */}
                                     <h6 className='bukra-regular'>We are experts in such broad business tools as Strategic audit, Feasibility studies, research and analysis, Business strategies - Internal business processes – Business development, book keeping, financial audits, Business Manuals, Digital transformation, training courses, among other custom-tailored services.</h6>
                                 </div>
                                 <div className="banner-photo-base-mobile">

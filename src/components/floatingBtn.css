@@ -19,7 +19,7 @@
         /* margin-right: 1%; */
         clear: both;
         /* margin-bottom: 1%; */
-        max-height: 8vh;
+        max-height: 80px;
         display: flex;
         z-index: 5 !important;
     }
