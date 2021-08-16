@@ -10,7 +10,7 @@
     /* background-color: blue; */
     margin: auto !important;
     /* width: 85%; */
-    height: 100%;
+    height: 30vh;
     max-width: 85%;
     object-fit: cover;
     box-shadow: 1px 1px 5px black;
@@ -29,6 +29,9 @@
     padding: 1%;
     /* text-align: center; */
     /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .course-list-right-mob{
     padding: 1%;
@@ -71,9 +74,17 @@
 .course-list-row {
     /* background-color: coral; */
     margin-top: 2vh;
+    max-height: 25vh;
 }
 .course-list-btn-mob{
     font-size: 3vw;
     height: 25%;
+    /* background-color: red !important; */
+}
+.course-list-btn{
+    width: fit-content;
+    margin-right: auto;
+    /* width: 30%; */
+    /* height: 25%; */
     /* background-color: red !important; */
 }

@@ -33,10 +33,10 @@ export default class CoursesList extends Component {
                     {this.state.courses.map((course) => (
                         <div className='course-list-row'>
                             <Grid container>
-                                <Grid item xs={6} className='course-list-left'>
+                                <Grid item xs={5} className='course-list-left'>
                                     <img className='course-list-img' src={`${endpoint}/${course.images[0].src}`} />
                                 </Grid>
-                                <Grid item xs={6} className='course-list-right'>
+                                <Grid item xs={7} className='course-list-right'>
                                     <p className='bukra-bold course-title-size' style={{ color: 'white' }}>
                                         {course.displayTitle}
                                     </p>
