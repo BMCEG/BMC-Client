@@ -62,26 +62,25 @@ export default class NavbarDMap extends Component {
 
                     <div className="title">
                         <Button variant="link" onClick={() => { window.location.href = '/ewings' }} >
-                            <h5 style={{ color: '#4694D6' }} >
-                                <img src={`${endpoint}/ewings-full-logo.png`} alt='logo' height='60px' />
-                            </h5>
+                                <img src={`${endpoint}/ewings-full-logo.png`} alt='logo' className='nav-ewings-logo-img' />
                         </Button>
                     </div>
                 </div>
                 <div className='nav-dmap-center'>
 
-                    <div className="title nav-bar-skyblue">
+                    {/* <div className="title nav-bar-skyblue"> */}
                         <NavbarDropdown isEwings={true} title="Services" items={servicesItems} setSelectedItem={this.setSelectedItem} />
-                    </div>
-                    <div className="title gallery-tab">
+                    {/* </div> */}
+                        <Button variant="link" href='/ewings/courses' >
+                            <h4 className='bukra-medium' style={{ color: '#4694D6' }} >Courses</h4>
+                        </Button>
                         <Button variant="link" href='/ewings/gallery' >
                             <h4 className='bukra-medium' style={{ color: '#4694D6' }} >Gallery</h4>
                         </Button>
-                    </div>
                 </div>
 
                 <div className='nav-dmap-right'>
-                    <div className="title" style={{ marginLeft: 'auto' }}>
+                    {/* <div className="title" style={{ marginLeft: 'auto' }}>
                         <Button variant="link" href='https://www.facebook.com/businessmapconsultants/' >
                             <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faFacebook} size={'2x'} /></h5>
                         </Button>
@@ -100,12 +99,34 @@ export default class NavbarDMap extends Component {
                         <Button variant="link" href='/blogs' >
                             <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faInstagram} size={'2x'} /></h5>
                         </Button>
-                    </div>
+                    </div> */}
+
                     <div className="title">
-                        <Button variant="link" href='/blogs' >
-                            <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faTwitter} size={'2x'} /></h5>
+                        <Button className="nav-social-btn" variant="link" href='/blogs' >
+                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faFacebook} className='nav-social-btn-img' />
                         </Button>
                     </div>
+                    <div className="title">
+                        <Button className="nav-social-btn" variant="link" href='/blogs' >
+                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faLinkedin} className='nav-social-btn-img' />
+                        </Button>
+                    </div>
+                    <div className="title">
+                        <Button className="nav-social-btn" variant="link" href='/blogs' >
+                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faYoutube} className='nav-social-btn-img' />
+                        </Button>
+                    </div>
+                    <div className="title">
+                        <Button className="nav-social-btn" variant="link" href='/blogs' >
+                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faInstagram} className='nav-social-btn-img' />
+                        </Button>
+                    </div>
+                    <div className="title">
+                        <Button className="nav-social-btn" variant="link" href='/blogs' >
+                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faTwitter} className='nav-social-btn-img' />
+                        </Button>
+                    </div>
+
                     <div className="nav-ewings-bmc-tab">
                         <Button variant="link" href='/' >
                             <img src={`${endpoint}/logo-no-text.png`} alt='home' className='nav-logo-img-bmc' />

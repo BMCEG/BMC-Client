@@ -41,7 +41,7 @@ export default class navbarDropdown extends Component {
 
                         <Dropdown>
                             <Dropdown.Toggle variant="link" id="dropdown-basic">
-                                <h6 className='bukra-medium'>{this.props.title}</h6>
+                                <p className='bukra-medium'>{this.props.title}</p>
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
                                 {this.state.items.map((item) => (
@@ -62,9 +62,9 @@ export default class navbarDropdown extends Component {
                                     }
                                 </Dropdown.Menu>
                             </Dropdown> :
-                            <Dropdown>
+                            <Dropdown  className='title'>
                                 <Dropdown.Toggle variant="link" id="dropdown-basic">
-                                    <h4 className='bukra-medium'>{this.props.title}</h4>
+                                    <p className='bukra-medium title-size'>{this.props.title}</p>
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
                                     {this.state.items.map((item) => (

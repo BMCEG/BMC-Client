@@ -70,40 +70,43 @@ export default class homepageMob extends Component {
                     <br></br>
                     <hr></hr>
                     {/* <br></br> */}
-                    <div className='home-service-ewings'>
-                        <div className='home-service-text-ewings-mob ewings-color'>
-                            <h3 className='bukra-bold'>Digital Marketing </h3>
-                            <br></br>
-                            <h5 className='bukra-regular'>All marketing initiatives that involve an electronic device or the internet are referred to as digital marketing. To engage with present and potential customers, businesses use digital channels such as search engines, social media, email, and their websites.</h5>
-                        </div>
+                    <div className="home-service-ewings">
+                        <p className='bukra-bold home-service-text-ewings ewings-color' style={{ textAlign: 'center' }}>
+                            Digital Marketing
+                        </p>
+                        <br></br>
+                        <p className='bukra-regular ewings-home-service-text-desc ewings-color'>All marketing initiatives that involve an electronic device or the internet are referred to as digital marketing. To engage with present and potential customers, businesses use digital channels such as search engines, social media, email, and their websites.</p>
                     </div>
-                    <div className='home-service-ewings'>
-                        <div className='home-service-text-ewings-mob ewings-color'>
-                            <h3 className='bukra-bold'>Multimedia Production</h3>
-                            <br></br>
-                            <h5 className='bukra-regular'>Multimedia is a type of media that uses a variety of information content and processing methods (for example, text, audio, graphics, animation, video, and interactivity) to inform or entertain the user.</h5>
-                        </div>
+                    <div className="home-service-ewings">
+                        <p className='bukra-bold home-service-text-ewings ewings-color' style={{ textAlign: 'center' }}>
+                            Multimedia Production
+                        </p>
+                        <br></br>
+                        <p className='bukra-regular ewings-home-service-text-desc ewings-color'>Multimedia is a type of media that uses a variety of information content and processing methods (for example, text, audio, graphics, animation, video, and interactivity) to inform or entertain the user.</p>
+                        <br></br>
                     </div>
-                    <div className='home-service-ewings'>
-                        <div className='home-service-text-ewings-mob ewings-color'>
-                            <h3 className='bukra-bold'>Social Media and creative Content & Management</h3>
-                            <br></br>
-                            <h5 className='bukra-regular'>A social media platform is an online platform that users use to develop social networks or relationships with others that share similar personal or professional interests, hobbies, backgrounds, or real-life connections. Social networks have a huge impact on young people. It's becoming evident that social media has become an integral component of people's lives.</h5>
-                        </div>
+                    <div className="home-service-ewings">
+                        <p className='bukra-bold home-service-text-ewings ewings-color' style={{ textAlign: 'center' }}>
+                            Social Media and Creative Content & Management
+                        </p>
+                        <p className='bukra-regular ewings-home-service-text-desc ewings-color'>A social media platform is an online platform that users use to develop social networks or relationships with others that share similar personal or professional interests, hobbies, backgrounds, or real-life connections. Social networks have a huge impact on young people. It's becoming evident that social media has become an integral component of people's lives.</p>
+                        <br></br>
                     </div>
-                    <div className='home-service-ewings'>
-                        <div className='home-service-text-ewings-mob ewings-color'>
-                            <h3 className='bukra-bold'>Media planning and buying</h3>
-                            <br></br>
-                            <h5 className='bukra-regular'>Any media or advertising agency's two most critical tasks are media planning and buying. An advertising agency's media planning and buying activities decide the combination of media, frequency of the commercial, or awareness campaign for an effective brand promotion at the best price.</h5>
-                        </div>
+                    <div className="home-service-ewings">
+
+                        <p className='bukra-bold home-service-text-ewings ewings-color' style={{ textAlign: 'center' }}>
+                            Media Planning and Buying</p>
+                        <p className='bukra-regular ewings-home-service-text-desc ewings-color'>Any media or advertising agency's two most critical tasks are media planning and buying. An advertising agency's media planning and buying activities decide the combination of media, frequency of the commercial, or awareness campaign for an effective brand promotion at the best price.
+                        </p>
+                        <br></br>
                     </div>
-                    <div className='home-service-ewings'>
-                        <div className='home-service-text-ewings-mob ewings-color'>
-                            <h3 className='bukra-bold'>Web Development</h3>
-                            <br></br>
-                            <h5 className='bukra-regular'>Websites serve as a conduit between individuals seeking to contribute information and others seeking to absorb it. If you run a business, having a website to publicize your products and reach out to potential clients on a global scale is nearly a requirement.</h5>
-                        </div>
+                    <div className="home-service-ewings">
+
+                        <p className='bukra-bold home-service-text-ewings ewings-color' style={{ textAlign: 'center' }}>
+                            Web Development
+                        </p>
+                        <p className='bukra-regular ewings-home-service-text-desc ewings-color'>Websites serve as a conduit between individuals seeking to contribute information and others seeking to absorb it. If you run a business, having a website to publicize your products and reach out to potential clients on a global scale is nearly a requirement.</p>
+                        <br></br>
                     </div>
                 </div>
             </div>

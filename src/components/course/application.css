@@ -1,13 +1,26 @@
 .application-modal-root {
     background-color: lightgrey;
     margin: auto;
-    position: relative;
+    /* position: relative; */
     /* margin: 10%; */
-    min-height: 60%;
+    height: 95vh !important;
     /* padding: 3%; */
     width: 50%;
     display:flex !important;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: center;
+    border-radius: 25px;
+}
+.ewings-application-modal-root {
+    background-color: #fff;
+    margin: auto;
+    /* position: relative; */
+    /* margin: 10%; */
+    height: 95vh !important;
+    /* padding: 3%; */
+    width: 50%;
+    display:flex !important;
+    /* align-items: center; */
     justify-content: center;
     border-radius: 25px;
 }
@@ -23,6 +36,31 @@
     align-items: center;
     justify-content: center;
     border-radius: 25px;
+}
+.ewings-application-modal-root-mob {
+    background-color: #fff;
+    margin: auto;
+    position: relative;
+    /* margin: 10%; */
+    min-height: 60%;
+    padding: 3%;
+    width: 90%;
+    display:flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+.ewings-application-logo{
+    /* background-color: yellow; */
+    width: 100% !important;
+    margin-bottom: 3vh !important;
+
+}
+.bmc-application-logo{
+    /* background-color: yellow; */
+    height: 25vh !important;
+    margin-bottom: 3vh !important;
+
 }
 
 .application-mob{
@@ -45,8 +83,8 @@
 }
 
 .application-form{
-    margin: 1% !important;
-    box-shadow: 2px 2px 5px black;
+    margin: 2% !important;
+    box-shadow: 1px 1px 1px black;
     background-color: white;
 }
 

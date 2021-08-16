@@ -52,6 +52,7 @@ export default class Courses extends Component {
                             <tr>
                                 <th>#</th>
                                 <th>Title</th>
+                                <th>Company</th>
                                 <th>Trainer</th>
                                 <th>Description</th>
                                 <th>Fees</th>
@@ -63,6 +64,7 @@ export default class Courses extends Component {
                                 <tr className="admin-table-row" key={index}>
                                     <td>{index + 1}</td>
                                     <td width='10%'><h5>{course.displayTitle}</h5></td>
+                                    <td width='10%'><h5>{course.company}</h5></td>
                                     <td width='10%'><h5>{course.trainer.firstName} {course.trainer.lastName}</h5></td>
                                     <td><h5>{course.description}</h5></td>
                                     <td><h5>{course.fees}</h5></td>

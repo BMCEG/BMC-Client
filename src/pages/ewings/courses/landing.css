@@ -1,28 +1,28 @@
 .landing-root{
     padding: 3%;
 }
-.ewings-landing-root{
-    background-color: #4694D6 !important;
-}
 .landing-mob-root{
     padding: 2%;
 }
-.landing-grid{
+.ewings-landing-grid{
     width: 70%;
     margin: auto;
-    background-color: whitesmoke;
+    /* background-color: red; */
     padding:1%;
-    box-shadow: 2px 2px 10px black;
+    /* box-shadow: 2px 2px 10px black; */
 }
-.landing-mob-grid{
+.ewings-landing-mob-grid{
     width: 100%;
     margin: auto;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     padding: 2%;
-    box-shadow: 1px 1px 5px black;
+    /* box-shadow: 1px 1px 5px black; */
 }
 .landing-mob-title {
     text-align: center;
+}
+.ewings-course-text{
+    color: white !important;
 }
 .landing-grid-div{
     display: flex;
@@ -207,12 +207,12 @@
 
 @font-face {
     font-family: 'bukra-bold';
-    src: local('bukra-bold'), url(../../fonts/bukra-bold.OTF) format('truetype');
+    src: local('bukra-bold'), url(../../../fonts/bukra-bold.OTF) format('truetype');
 }
 
 @font-face {
     font-family: 'bukra-regular';
-    src: local('bukra-regular'), url(../../fonts/bukra-regular.OTF) format('truetype');
+    src: local('bukra-regular'), url(../../../fonts/bukra-regular.OTF) format('truetype');
 }
 
 .bukra-bold {

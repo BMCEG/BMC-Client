@@ -25,9 +25,9 @@
     }
 
     .fab-btn {
-        background-color: red !important;
-        height: 150px !important;
-        width: 250px !important;
+        background-color: #DC3545 !important;
+        height: 12vh !important;
+        width: 20vw !important;
         padding: 10% !important;
         color: white !important;
         /* border: 1px solid black; */

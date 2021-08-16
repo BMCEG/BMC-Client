@@ -13,7 +13,6 @@ export default class Application extends Component {
         this.handleApply = this.handleApply.bind(this);
 
         this.state = {
-            // courseName: this.props.courseName,
             courses: [],
             course: this.props.course,
 
@@ -37,8 +36,7 @@ export default class Application extends Component {
 
         await axios.post(`${endpoint}/coursesApplications/create`, applicationDetails)
             .then((res) => {
-                alert('Application Submitted Successfully');
-                window.location.reload();
+                alert('Application Submitted Successfully')
             })
             .catch((err) => {
                 console.log(err);
@@ -53,7 +51,7 @@ export default class Application extends Component {
 
 
     async componentDidMount() {
-        await axios.get(`${endpoint}/courses?company=BMC`)
+        await axios.get(`${endpoint}/courses?company=E-Wings`)
             .then((res) => {
                 this.setState({
                     courses: res.data
@@ -66,16 +64,12 @@ export default class Application extends Component {
 
     render() {
         return (
-            <div className="application-modal-root-mob" style={{ backgroundImage: `url(${endpoint}/bg-four.png)`, backgroundSize: 'cover' }}>
-                <div className="application-mob">
-                    <img style={{ margin: 'auto' }} src={`${endpoint}/logo.png`} alt='logo' className='bmc-application-logo' />
-                    <br></br>
+            <div className="ewings-application-modal-root">
+                <div className="application">
+                    <img style={{ margin: 'auto' }} src={`${endpoint}/ewings-full-logo.png`} alt='logo' className='ewings-application-logo' />
                     <TextField name="applicationName" value={this.state.applicationFirstName} label="Name" variant="outlined" className="application-form" onChange={this.handleInputChange} />
-                    <br></br>
                     <TextField name="applicationEmail" value={this.state.applicationEmail} label="E-Mail" variant="outlined" className="application-form" onChange={this.handleInputChange} />
-                    <br></br>
                     <TextField name="applicationMobileNumber" value={this.state.applicationMobileNumber} label="Mobile Number" variant="outlined" className="application-form" onChange={this.handleInputChange} />
-                    <br></br>
                     <FormControl className="application-form" style={{ margin: 5 }}>
                         <InputLabel id="demo-simple-select-required-label" style={{ marginLeft: 10 }}>Training Course</InputLabel>
                         <Select
@@ -96,7 +90,6 @@ export default class Application extends Component {
                         </Select>
 
                     </FormControl>
-                    <br></br>
                     <FormControl style={{ margin: 5 }} className="application-form">
                         <InputLabel id="demo-simple-select-required-label" style={{ marginLeft: 10 }}>Schedule</InputLabel>
                         <Select
@@ -123,7 +116,7 @@ export default class Application extends Component {
 
                     </FormControl>
                     <br></br>
-                    <Button onClick={this.handleApply} className="application-btn">
+                    <Button onClick={this.handleApply} className="application-btn ">
                         Apply
                     </Button>
                 </div>

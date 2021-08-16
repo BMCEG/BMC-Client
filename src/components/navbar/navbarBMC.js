@@ -72,7 +72,7 @@ export default class NavbarBMC extends Component {
                     </div>
                     <div className="title">
                         <Button variant="link" href='/' >
-                            <h4 className='bukra-medium'>Home</h4>
+                            <p className='bukra-medium title-size'>Home</p>
                         </Button>
                     </div>
                     <div className="title">
@@ -80,62 +80,68 @@ export default class NavbarBMC extends Component {
                     </div>
                     <div className="title">
                         <Button variant="link" href='/whyBMC' >
-                            <h4 className='bukra-medium'>Why BMC?!</h4>
+                            <p className='bukra-medium title-size'>Why BMC?!</p>
                         </Button>
                     </div>
                     <div className="title">
-                        <NavbarDropdown title="Consultency Services" items={servicesItems} />
+                        <NavbarDropdown title="Services" items={servicesItems} />
+                    </div>
+                    <div className="title">
+                        <Button variant="link" href='/courses' >
+                            <p className='bukra-medium title-size'>Courses</p>
+                        </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/partners' >
 
-                            <h4 className='bukra-medium'>Clients</h4>
+                            <p className='bukra-medium title-size'>Clients</p>
                         </Button>
 
                     </div>
                     <div className="title">
                         <Button variant="link" href='/careers/openings' >
-                            <h4 className='bukra-medium'>Careers</h4>
+                            <p className='bukra-medium title-size'>Careers</p>
                         </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/blogs' >
-                            <h4 className='bukra-medium'>Blogs</h4>
+                            <p className='bukra-medium title-size'>Blogs</p>
                         </Button>
                     </div>
                     <div className="title">
                         <Button variant="link" href='/contact' >
-                            <h4 className='bukra-medium'>Contact Us</h4>
+                            <p className='bukra-medium title-size'>Contact Us</p>
                         </Button>
                     </div>
                 </div>
                 <div className='nav-bmc-right'>
                     <div className="title" style={{ marginLeft: 'auto' }}>
-                        <Button variant="link" href='https://www.facebook.com/businessmapconsultants/' >
-                            <h5><FontAwesomeIcon icon={faFacebook} size={'2x'} /></h5>
+                        <Button className="nav-social-btn" variant="link" href='https://www.facebook.com/businessmapconsultants/' >
+                            <FontAwesomeIcon icon={faFacebook} className='nav-social-btn-img' />
                         </Button>
                     </div>
                     <div className="title">
-                        <Button variant="link" href='https://www.linkedin.com/company/businessmapconsultants/' >
-                            <h5><FontAwesomeIcon icon={faLinkedin} size={'2x'} /></h5>
+                        <Button className="nav-social-btn" variant="link" href='https://www.linkedin.com/company/businessmapconsultants/' >
+                            <FontAwesomeIcon icon={faLinkedin} className='nav-social-btn-img' />
                         </Button>
                     </div>
                     <div className="title">
-                        <Button variant="link" href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q' >
-                            <h5><FontAwesomeIcon icon={faYoutube} size={'2x'} /></h5>
+                        <Button className="nav-social-btn" variant="link" href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q' >
+                            <FontAwesomeIcon icon={faYoutube} className='nav-social-btn-img' />
                         </Button>
                     </div>
                     <div className="title">
-                        <Button variant="link" href='/blogs' >
-                            <h5><FontAwesomeIcon icon={faInstagram} size={'2x'} /></h5>
+                        <Button className="nav-social-btn" variant="link" href='/blogs'  >
+                            <FontAwesomeIcon icon={faInstagram} className='nav-social-btn-img' />
                         </Button>
                     </div>
                     <div className="title">
-                        <Button variant="link" href='/blogs' >
-                            <h5><FontAwesomeIcon icon={faTwitter} size={'2x'} /></h5>
+                        <Button className="nav-social-btn" variant="link" href='/blogs' >
+                            <FontAwesomeIcon icon={faTwitter} className='nav-social-btn-img' />
                         </Button>
                     </div>
-                    <div className='title nav-logo-ewings'>
+                    <div className='nav-sep' />
+                    <div className='nav-logo-ewings'>
                         <Button variant="link" href='/ewings' >
                             <img src={`${endpoint}/ewings-logo-greyscale.png`} alt='home' className='nav-logo-img-ewings' />
                         </Button>

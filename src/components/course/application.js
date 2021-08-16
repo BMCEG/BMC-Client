@@ -4,7 +4,7 @@ import './application.css';
 import axios from 'axios';
 import endpoint from '../../helpers/api_service';
 import { Button } from 'react-bootstrap';
-
+import Moment from 'react-moment';
 export default class Application extends Component {
     constructor(props) {
         super(props);
@@ -51,7 +51,7 @@ export default class Application extends Component {
 
 
     async componentDidMount() {
-        await axios.get(`${endpoint}/courses/`)
+        await axios.get(`${endpoint}/courses?company=BMC`)
             .then((res) => {
                 this.setState({
                     courses: res.data
@@ -104,7 +104,12 @@ export default class Application extends Component {
                             </MenuItem>
                             {this.state.course.schedules.map((schedule, index) => (
                                 <MenuItem key={index} value={schedule._id}>
-                                    Course starts on {schedule.startDate}
+                                    From: <Moment format='DD/MM/YYYY'>
+                                        {schedule.startDate}
+                                    </Moment>
+                                    - To: <Moment format='DD/MM/YYYY'>
+                                        {schedule.endDate}
+                                    </Moment>
                                 </MenuItem>
                             ))}
                         </Select>

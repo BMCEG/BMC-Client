@@ -25,11 +25,17 @@ import PartnersMessageMob from './pages/contexts/bmc/about/partnersMessage-mobil
 import WhyBMC from './pages/contexts/bmc/whyBMC/whyBMC.js'
 import WhyBMCMob from './pages/contexts/bmc/whyBMC/whyBMC-mobile.js'
 
+import CoursesList from './pages/contexts/bmc/courses/courses.js';
+
 import Service from './pages/contexts/bmc/services/service.js'
 import ServiceMob from './pages/contexts/bmc/services/service-mobile.js'
 
 import ServiceEwings from './pages/ewings/services/service.js'
 import ServiceEwingsMob from './pages/ewings/services/service-mobile'
+
+import CoursesListEwings from './pages/ewings/courses/courses.js';
+import CoursePageEwings from './pages/ewings/courses/landing.js';
+import CoursePageEwingsMob from './pages/ewings/courses/landing-mobile.js';
 
 import CareerLanding from './pages/contexts/bmc/careers/careerLanding.js';
 import CareerOpenings from './pages/contexts/bmc/careers/careerOpenings';
@@ -109,16 +115,17 @@ export default class App extends Component {
       })
     }
 
-    if (window.location.href.indexOf("landing") > -1) {
-      this.setState({
-        isLanding: true
-      })
-    }
+    // if (window.location.pathname.length !== 8 && window.location.href.indexOf("courses") > -1) {
+    //   // console.log(window.location.pathname.length)
+
+    //   this.setState({
+    //     isLanding: true
+    //   })
+    // }
   }
 
 
   render() {
-    console.log("this.state", this.state)
     return (
       <Router>
         <Switch>
@@ -149,19 +156,10 @@ export default class App extends Component {
 
           {this.state.navbarContext === 'bmc' ?
             <>
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path="/landing/:courseName" exact component={LandingPage} />
-                    :
-                    <Route path="/landing/:courseName" exact component={LandingPageMob} />
-                }}
-              </Media>
-
               {this.state.isLanding ? null :
                 <>
                   <Media queries={{
-                    mobile: "(max-width: 1300px)",
+                    mobile: "(max-width: 1024px)",
                     small: "(min-width: 1300px) and (max-width: 1400px)",
                     medium: "(min-width: 1400px) and (max-width: 1600px)",
                     large: "(min-width: 1600px)",
@@ -171,12 +169,7 @@ export default class App extends Component {
                       return matches.mobile ?
                         <NavbarBMCMob handleSelectedContext={this.handleSelectedContext} />
                         :
-                        matches.small ?
-                          <NavbarBMCSmaller handleSelectedContext={this.handleSelectedContext} />
-                          : matches.medium ?
-                            <NavbarBMCSmall handleSelectedContext={this.handleSelectedContext} />
-                            :
-                            <NavbarBMC handleSelectedContext={this.handleSelectedContext} />
+                        <NavbarBMC handleSelectedContext={this.handleSelectedContext} />
                     }}
                   </Media>
                   <Media query='(min-width: 1024px)'>
@@ -198,6 +191,16 @@ export default class App extends Component {
                     <Route path='/' exact component={DefaultBMCMob} />
                 }}
               </Media>
+
+              <Media query='(min-width: 1024px)'>
+                {(matches) => {
+                  return matches ?
+                    <Route path="/courses/:courseName" exact component={LandingPage} />
+                    :
+                    <Route path="/courses/:courseName" exact component={LandingPageMob} />
+                }}
+              </Media>
+
 
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
@@ -362,6 +365,14 @@ export default class App extends Component {
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
+                    <Route path='/courses' exact component={CoursesList} />
+                    :
+                    <Route path='/courses' exact component={CoursesList} />
+                }}
+              </Media>
+              <Media query='(min-width: 1024px)'>
+                {(matches) => {
+                  return matches ?
                     <Route path='/partners' exact component={Partners} />
                     :
                     <Route path='/partners' exact component={PartnersMob} />
@@ -458,6 +469,23 @@ export default class App extends Component {
                         <HomepageEwingsMob />
                       )}
                     />
+                }}
+              </Media>
+              <Media query='(min-width: 1024px)'>
+                {(matches) => {
+                  return matches ?
+                    <Route path='/ewings/courses' exact component={CoursesListEwings} />
+                    :
+                    <Route path='/ewings/courses' exact component={CoursesListEwings} />
+                }}
+              </Media>
+
+              <Media query='(min-width: 1024px)'>
+                {(matches) => {
+                  return matches ?
+                    <Route path='/ewings/courses/:courseName' exact component={CoursePageEwings} />
+                    :
+                    <Route path='/ewings/courses/:courseName' exact component={CoursePageEwingsMob} />
                 }}
               </Media>
 

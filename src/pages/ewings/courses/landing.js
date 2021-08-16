@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import './landing.css';
-import endpoint from '../../helpers/api_service';
+import endpoint from '../../../helpers/api_service';
 import { Grid, Typography } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
 import Moment from 'react-moment';
 import { Button } from 'react-bootstrap';
 
-import CourseApplicationModal from '../../components/course/application.js';
+import CourseApplicationModal from '../../../components/course/application-ewings.js';
 
 export default class Landing extends Component {
 
@@ -76,15 +76,15 @@ export default class Landing extends Component {
 
     render() {
         return (
-            <div className="landing-root" style={{ backgroundImage: `url(${endpoint}/bg-experts.png)`, backgroundSize: 'cover' }}>
-                <div className="landing-grid" style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
-                    {/* <h1 className="bukra-bold">{this.state.courseDetails.displayTitle}</h1> */}
-                    <Typography  variant='h3' component='h3' className='bukra-bold course-header'>{this.state.courseDetails.displayTitle}</Typography>
+            <div className="ewings-landing-root">
+                <div className="ewings-landing-grid">
+                    {/* <h1 className="bukra-bold ewings-course-text">{this.state.courseDetails.displayTitle}</h1> */}
+                    <Typography  variant='h3' component='h3' className='bukra-bold ewings-course-text course-header'>{this.state.courseDetails.displayTitle}</Typography>
                     <div className='landing-grid-div'>
                         <div className='landing-grid-text'>
-                            <h2 className='bukra-bold' >Training Description</h2>
+                            <h2 className='bukra-bold ewings-course-text' >Training Description</h2>
                             <br></br>
-                            <h3 className='bukra-regular'>{this.state.courseDetails.description}</h3>
+                            <h3 className='bukra-regular ewings-course-text'>{this.state.courseDetails.description}</h3>
                             <br></br>
                             <div className='landing-grid-btn-base-left'>
                                 <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
@@ -101,9 +101,9 @@ export default class Landing extends Component {
                         <img className='landing-grid-img' src={`${endpoint}/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
                         </div>
                         <div className='landing-grid-text'>
-                            <h2 className='bukra-bold' >Training Outline</h2>
+                            <h2 className='bukra-bold ewings-course-text' >Training Outline</h2>
                             <br></br>
-                            <h3 className='bukra-regular'>{this.state.courseDetails.outline}</h3>
+                            <h3 className='bukra-regular ewings-course-text'>{this.state.courseDetails.outline}</h3>
                             <br></br>
                             <div className='landing-grid-btn-base-right'>
                                 <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
@@ -113,9 +113,9 @@ export default class Landing extends Component {
                     <hr></hr>
                     <div className='landing-grid-div'>
                         <div className='landing-grid-text'>
-                            <h2 className='bukra-bold' >Training Methodology</h2>
+                            <h2 className='bukra-bold ewings-course-text' >Training Methodology</h2>
                             <br></br>
-                            <h3 className='bukra-regular'>{this.state.courseDetails.methedology}</h3>
+                            <h3 className='bukra-regular ewings-course-text'>{this.state.courseDetails.methedology}</h3>
                             <br></br>
                             <div className='landing-grid-btn-base-left'>
                                 <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
@@ -133,9 +133,9 @@ export default class Landing extends Component {
                             </div>
                         </div>
                         <div className='landing-grid-text'>
-                            <h2  className='bukra-bold'>Meet the Trainer</h2>
+                            <h2  className='bukra-bold ewings-course-text'>Meet the Trainer</h2>
                             <br></br>
-                            <h3 className='bukra-medium'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h3>
+                            <h3 className='bukra-medium ewings-course-text'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h3>
                             {this.state.courseTrainerQualifications.map((qual, index) => (
                                 <div key={index} className="course-trainer-qualification">
                                     <h3 className='bukra-regular'>Title: {qual.title}</h3>
@@ -151,21 +151,21 @@ export default class Landing extends Component {
                     <hr></hr>
                     <div className='landing-grid-div'>
                         <div className='landing-grid-text-dates'>
-                            <h2 className='bukra-bold' >Duration and Fees</h2>
+                            <h2 className='bukra-bold ewings-course-text' >Duration and Fees</h2>
                             {this.state.courseSchedules.map((schedule, index) => (
                                 <div key={index} className="course-schedule">
                                     <Grid container>
                                         <Grid xs={4}>
-                                            <h3 className='bukra-medium'>Fees:</h3>
-                                            <h4 className='bukra-regular'>{this.state.courseFees} EGP</h4>
-                                            <h3 className='bukra-medium'>Duration:</h3>
-                                            <h4 className='bukra-regular'>{schedule.duration} Month(s)</h4>
-                                            <h3 className='bukra-medium'>Start Date:</h3>
-                                            <h4 className='bukra-regular'> <Moment format='dddd, DD/MM/YYYY'>
+                                            <h3 className='bukra-medium ewings-course-text'>Fees:</h3>
+                                            <h4 className='bukra-regular ewings-course-text'>{this.state.courseFees} EGP</h4>
+                                            <h3 className='bukra-medium ewings-course-text'>Duration:</h3>
+                                            <h4 className='bukra-regular ewings-course-text'>{schedule.duration} Month(s)</h4>
+                                            <h3 className='bukra-medium ewings-course-text'>Start Date:</h3>
+                                            <h4 className='bukra-regular ewings-course-text'> <Moment format='dddd, DD/MM/YYYY'>
                                                 {schedule.startDate}
                                             </Moment></h4>
-                                            <h3 className='bukra-medium'>End Date:</h3>
-                                            <h4 className='bukra-regular'> <Moment format='dddd, DD/MM/YYYY'>
+                                            <h3 className='bukra-medium ewings-course-text'>End Date:</h3>
+                                            <h4 className='bukra-regular ewings-course-text'> <Moment format='dddd, DD/MM/YYYY'>
                                                 {schedule.endDate}
                                             </Moment></h4>
                                         </Grid>

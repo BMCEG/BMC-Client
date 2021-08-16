@@ -6,10 +6,11 @@
     display: flex !important;
     /* width: 100%; */
     /* min-width: 100%; */
+    height: 8vh;
     color: black;
     position: sticky !important;
     top: 0;
-    font-size: 100% !important;
+    /* font-size: 100% !important; */
     font: inherit !important;
     /* z-index: 5 !important; */
 
@@ -41,20 +42,23 @@
 .nav-bmc-left {
     display: flex;
     min-width: 70%;
+    max-width: 70%;
     /* background-color: yellow; */
     /* overflow-x: hidden; */
-    font-size: 100% !important;
+    /* font-size: 100% !important; */
     font: inherit !important;
 
 }
 
 .nav-bmc-right {
     display: flex;
+    /* background-color: cornflowerblue; */
     /* margin-left: auto; */
     text-align: right !important;
     min-width: 30%;
+    max-width: 30%;
     /* width: 30%; */
-    font-size: 100% !important;
+    /* font-size: 100% !important; */
     font: inherit !important;
 
     /* background-color: darkgreen; */
@@ -81,31 +85,61 @@
 }
 
 .nav-logo-ewings {
-    border-left: 3px solid darkgray;
     margin-left: 1% !important;
-    align-items: center;
+    /* align-items: center; */
+    /* display: flex; */
+    /* background-color: cornflowerblue; */
+    height: 8vh;
+    /* justify-content: center; */
+}
+.nav-sep {
+    margin-top: 1% !important;
+    /* background-color: cornflowerblue; */
+    border-left: 2px solid #a5a5a5;
+    height: 7vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
+.nav-social-btn {
+    /* background-color: cornflowerblue !important; */
+    /* height: 6vh;; */
+    /* width: 150px; */
+}
+.nav-social-btn-img {
+    /* width: 100vw; */
+    font-size: 1.5vw;
+    /* width: 5rem; */
+    /* background-color: crimson; */
+}
+
 .nav-logo-img-ewings {
-    margin-left: 20px;
-    max-width: 70px !important;
+    /* margin-left: 20px; */
+    /* width: 90%; */
+    height: 7vh;
+    top: 0 !important;
+    /* background-color: coral; */
+    /* max-width: 70px !important; */
 }
 
 .nav-logo-img {
     max-width: 70px !important;
-    height: 60px !important;
+    height: 7vh !important;
     /* object-fit: contain; */
 }
-
+.title-size {
+    font-size: 0.8vw;
+}
 .title {
     color: black !important;
+    /* background-color: crimson; */
     margin-right: 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    width: 5vw !important;
 }
 
 .btn-link {
@@ -118,7 +152,7 @@
 
 .nav-bmc-ewings {
     background-color: maroon;
-    height: 50px;
+    height: 7vh;
     width: 150px;
     display: flex;
 }

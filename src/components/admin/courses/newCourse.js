@@ -47,6 +47,11 @@ export default class NewCourse extends Component {
                 "22:00",
                 "23:00"
             ],
+            companies: [
+                'BMC',
+                'E-Wings'
+            ],
+            company: 'Company Name',
             startHour: '',
             endHour: '',
             scheduleFlag: false,
@@ -159,6 +164,7 @@ export default class NewCourse extends Component {
         const course = {
             "title": this.state.urlName,
             "displayTitle": this.state.courseName,
+            "company": this.state.company,
             'description': this.state.courseDescription,
             'trainer': this.state.courseTrainer,
             'outline': this.state.courseOutline,
@@ -197,6 +203,30 @@ export default class NewCourse extends Component {
                             <br></br>
                             <br></br>
                             <TextField fullWidth variant='outlined' name="urlName" value={this.state.urlName} onChange={this.handleInputChange} label='URL Name' />
+                            <br></br>
+                            <br></br>
+                            <FormControl fullWidth>
+                                
+                            <InputLabel htmlFor="outlined-age-native-simple">Company Name</InputLabel>
+                            <Select
+                                variant="outlined"
+                                
+                                value={this.state.company}
+                                name="company"
+                                label="Company Name"
+                                onChange={this.handleInputChange}
+                                // inputProps={{ 'aria-label': 'Without label' }}
+                                >   
+                                    <MenuItem disabled selected>
+                                        Company Name
+                                    </MenuItem>
+                                {this.state.companies.map((company) => (
+                                    <MenuItem value={company}>
+                                        {company}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                                </FormControl>
                             <br></br>
                             <hr></hr>
                             <h5>Course Description</h5>
