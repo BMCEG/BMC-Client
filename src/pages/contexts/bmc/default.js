@@ -159,7 +159,7 @@ class DefaultPage extends Component {
                                             <img className='home-service-icon' alt='placeholder' src={`${endpoint}/service-toolbox-black.png`} />
                                         </div>
                                     </Grid>
-                                    <Grid item xs={9}>
+                                    <Grid item xs={9} className='home-service-right'>
                                         <div className='home-service-text'>
                                             <p className='bukra-bold home-service-text-title'>
                                                 BMC Tool Box
@@ -185,7 +185,7 @@ class DefaultPage extends Component {
                                             <img alt='placeholder' className='home-service-icon' src={`${endpoint}/service-marketing-mgmt-black.png`} />
                                         </div>
                                     </Grid>
-                                    <Grid item xs={9}>
+                                    <Grid item xs={9} className='home-service-right'>
                                         <div className='home-service-text'>
                                             <p className='bukra-bold home-service-text-title'>
                                                 Marketing Management
@@ -208,7 +208,7 @@ class DefaultPage extends Component {
                                             <img alt='placeholder' className='home-service-icon' src={`${endpoint}/service-financial-black.png`} />
                                         </div>
                                     </Grid>
-                                    <Grid item xs={9}>
+                                    <Grid item xs={9} className='home-service-right'>
                                         <div className='home-service-text'>
                                             <p className='bukra-bold home-service-text-title'>
                                                 Finance & Accounting</p>
