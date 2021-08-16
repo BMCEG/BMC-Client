@@ -18,7 +18,12 @@ export default class CarouselComponenet extends Component {
             <Carousel fade style={{ zIndex: -2 }} indicators={false} controls={false} className='carousel-root-mobile'>
                 {this.state.items.map((item, key) => (
                     <Carousel.Item key={key}>
-                        <>
+                         <div className='carousel-slide-title' style={{backgroundImage: `url(${endpoint}/${item.src})`, backgroundSize: 'cover' }}>
+                                <Typography variant='h3' component='h3' className='carousel-slide-title-text'>
+                                    {item.title}
+                                </Typography>
+                            </div>
+                        {/* <>
                             {this.props.isMobile ?
                                 <div className='carousel-slide-title-mobile-small'>
                                     <Typography variant='h5' component='h5' className='carousel-slide-title-text'>
@@ -38,7 +43,7 @@ export default class CarouselComponenet extends Component {
                                 alt="First slide"
                                 // width="100%"
                             />
-                        </>
+                        </> */}
                     </Carousel.Item>
                 ))}
             </Carousel>)

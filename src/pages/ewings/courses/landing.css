@@ -23,6 +23,9 @@
 }
 .ewings-course-text{
     color: white !important;
+    word-wrap: break-word;
+    white-space: pre-line;
+
 }
 .landing-grid-div{
     display: flex;

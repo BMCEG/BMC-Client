@@ -26,6 +26,7 @@ import WhyBMC from './pages/contexts/bmc/whyBMC/whyBMC.js'
 import WhyBMCMob from './pages/contexts/bmc/whyBMC/whyBMC-mobile.js'
 
 import CoursesList from './pages/contexts/bmc/courses/courses.js';
+import CoursesListMob from './pages/contexts/bmc/courses/courses-mob.js';
 
 import Service from './pages/contexts/bmc/services/service.js'
 import ServiceMob from './pages/contexts/bmc/services/service-mobile.js'
@@ -34,6 +35,7 @@ import ServiceEwings from './pages/ewings/services/service.js'
 import ServiceEwingsMob from './pages/ewings/services/service-mobile'
 
 import CoursesListEwings from './pages/ewings/courses/courses.js';
+import CoursesListEwingsMob from './pages/ewings/courses/courses-mob.js';
 import CoursePageEwings from './pages/ewings/courses/landing.js';
 import CoursePageEwingsMob from './pages/ewings/courses/landing-mobile.js';
 
@@ -367,7 +369,7 @@ export default class App extends Component {
                   return matches ?
                     <Route path='/courses' exact component={CoursesList} />
                     :
-                    <Route path='/courses' exact component={CoursesList} />
+                    <Route path='/courses' exact component={CoursesListMob} />
                 }}
               </Media>
               <Media query='(min-width: 1024px)'>
@@ -476,7 +478,7 @@ export default class App extends Component {
                   return matches ?
                     <Route path='/ewings/courses' exact component={CoursesListEwings} />
                     :
-                    <Route path='/ewings/courses' exact component={CoursesListEwings} />
+                    <Route path='/ewings/courses' exact component={CoursesListEwingsMob} />
                 }}
               </Media>
 

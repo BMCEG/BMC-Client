@@ -11,7 +11,7 @@ export default class FooterEwingsMob extends Component {
             <div className="footer-ewings-root-mob">
                 <div className='footer-ewings-root-center'>
                     <div className='footer-ewings-logo-mob'>
-                        <img src={`${endpoint}/ewings-full-logo.png`} alt='wing-left' width="70%" className='footer-ewings-root-logo-img' />
+                        <img src={`${endpoint}/ewings-full-logo.png`} alt='wing-left' width="70%" className='footer-ewings-root-logo-img-mob' />
                     </div>
                     <div className='footer-ewings-social-links-mob'>
                         <div className='footer-ewings-social-links-row'>

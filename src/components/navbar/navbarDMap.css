@@ -41,6 +41,10 @@
     /* background-color: chocolate; */
     width: 40%;
 }
+.nav-dmap-left-mob {
+    /* background-color: chocolate; */
+    width: 55%;
+}
 
 .nav-dmap-center {
     /* background-color: navy; */
@@ -60,7 +64,7 @@
 
 .nav-dmap-right-mob {
     /* background-color: orange; */
-    width: 80%;
+    width: 40%;
     display: flex;
 }
 

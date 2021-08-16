@@ -31,7 +31,7 @@ export default class NavbarDMapMob extends Component {
     render() {
         return (
             <Navbar className="nav-dmap-root-mob">
-                <div className='nav-dmap-left'>
+                <div className='nav-dmap-left-mob'>
 
                     <div className="title">
                         <Button variant="link" onClick={() => { window.location.href = '/ewings' }} >
@@ -55,6 +55,8 @@ export default class NavbarDMapMob extends Component {
                                 <Dropdown.Item href='/ewings/services/social' ><h6 className='bukra-regular'>Social Media Management</h6></Dropdown.Item>
                                 <Dropdown.Item href='/ewings/services/media' ><h6 className='bukra-regular'>Media Planning and Buying</h6></Dropdown.Item>
                                 <Dropdown.Item href='/ewings/services/web' ><h6 className='bukra-regular'>Web Development</h6></Dropdown.Item>
+                                <br></br>
+                                <Dropdown.Item href='/ewings/courses' ><h5 className='bukra-bold'>Courses</h5></Dropdown.Item>
                                 <br></br>
                                 <Dropdown.Item href='/ewings/gallery' ><h5 className='bukra-bold'>Gallery</h5></Dropdown.Item>
 

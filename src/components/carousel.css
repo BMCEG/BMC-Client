@@ -8,8 +8,8 @@
 .carousel-root-mobile {
     background-color: thistle;
     /* height: 10%; */
-    height: 360px;
-    transform: translateY(-170px);
+    height: 50vh;
+    /* transform: translateY(-170px); */
 }
 
 .carousel-slide-title {

@@ -9,8 +9,9 @@
 .course-list-img{
     /* background-color: blue; */
     margin: auto !important;
-    width: 60%;
-    max-height: 20vh;
+    /* width: 85%; */
+    height: 100%;
+    max-width: 85%;
     object-fit: cover;
     box-shadow: 1px 1px 5px black;
     /* margin: 2%; */
@@ -29,6 +30,17 @@
     /* text-align: center; */
     /* background-color: chartreuse; */
 }
+.course-list-right-mob{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    /* background-color: chartreuse; */
+}
+.course-title-size-mob{
+    font-size: 4vw;
+}
 
 .course-list-desc{
     /* background-color: chocolate; */
@@ -41,11 +53,27 @@
     /* margin-bottom: 10%; */
 
 }
+.course-list-desc-mob{
+    /* background-color: chocolate; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 2.4vw !important;
+    margin-top: 7%;
+
+}
 .course-title-size{
     /* background-color: crimson; */
     font-size: 2vw;
 }
 .course-list-row {
     /* background-color: coral; */
-    margin: 1%;
+    margin-top: 2vh;
+}
+.course-list-btn-mob{
+    font-size: 3vw;
+    height: 25%;
+    /* background-color: red !important; */
 }

@@ -20,7 +20,7 @@ export default class NavbarBMC extends Component {
     render() {
         return (
             <Navbar className="nav-bmc-root-mob" fixed="top">
-                <div className='nav-bmc-left'>
+                <div className='nav-bmc-left-mob'>
                     <div className='title nav-logo-mob'>
                         <Button variant='link' href="/">
                             <img src={`${endpoint}/logo-no-text.png`} alt='home' className='nav-logo-img' />
@@ -31,7 +31,7 @@ export default class NavbarBMC extends Component {
                     <div className="title" style={{ marginLeft: 'auto' }}>
                         <Dropdown>
                             <Dropdown.Toggle variant="link" id="dropdown-basic">
-                                <h5 className='bukra-bold'><FontAwesomeIcon icon={faBars} size={'2x'} /></h5>
+                                <FontAwesomeIcon icon={faBars} size={'2x'} />
                             </Dropdown.Toggle>
                             <Dropdown.Menu align={{ lg: 'left' }} className='nav-bmc-dropdown'>
                                 <div className="Lmoa12">
@@ -51,6 +51,7 @@ export default class NavbarBMC extends Component {
                                     <Dropdown.Item href='/services/hr'><h6 className='bukra-regular'>Human Resources</h6></Dropdown.Item>
                                     <Dropdown.Item href='/services/toolbox'><h6 className='bukra-regular'>BMC Toolbox</h6></Dropdown.Item>
                                     <br></br>
+                                    <Dropdown.Item href='/courses'><h5 className='bukra-bold'>Courses</h5></Dropdown.Item>
                                     <Dropdown.Item href='/partners'><h5 className='bukra-bold'>Clients</h5></Dropdown.Item>
                                     <Dropdown.Item href='/careers/openings'><h5 className='bukra-bold'>Careers</h5></Dropdown.Item>
                                     <Dropdown.Item href='/blogs'><h5 className='bukra-bold'>Blogs</h5></Dropdown.Item>

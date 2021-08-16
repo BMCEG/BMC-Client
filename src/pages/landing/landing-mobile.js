@@ -138,6 +138,9 @@ export default class Landing extends Component {
                                 <img src={`${endpoint}/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
                             </div>
                             <br></br>
+                            <h1 style={{textAlign: 'center'}} className='bukra-bold'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h1>
+                            <br></br>
+
                             {this.state.courseTrainerQualifications.map((qual, index) => (
                                 <div key={index} className="course-trainer-qualification">
                                     <h3 className='bukra-regular'>Title: {qual.title}</h3>

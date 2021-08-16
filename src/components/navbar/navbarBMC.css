@@ -39,6 +39,16 @@
     text-align: left !important;
 }
 
+.nav-bmc-left-mob {
+    display: flex;
+    min-width: 65%;
+    max-width: 65%;
+    /* background-color: yellow; */
+    /* overflow-x: hidden; */
+    /* font-size: 100% !important; */
+    font: inherit !important;
+
+}
 .nav-bmc-left {
     display: flex;
     min-width: 70%;
@@ -81,7 +91,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    /* background-color: yellow; */
+    /* background-color: red; */
 }
 
 .nav-logo-ewings {
@@ -214,7 +224,8 @@
 
 .Lmoa12 {
     /* background-color: #4694D6; */
-    height: 100%;
+    height: 70vh !important;
+    overflow-y: scroll;
 }
 
 .nav-mob-socials {
