@@ -2,7 +2,7 @@
     /* background-color: aquamarine; */
     padding: 1% !important;
     width: 75%;
-    height: 100vh;
+    min-height: 100vh;
     margin: auto;
 }
 
@@ -42,7 +42,9 @@
     /* background-color: chartreuse; */
 }
 .course-title-size-mob{
-    font-size: 4vw;
+    font-size: 4.5vw;
+    line-height: 120% !important;
+
 }
 
 .course-list-desc{
@@ -63,7 +65,7 @@
     -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    font-size: 2.4vw !important;
+    font-size: 2.8vw !important;
     margin-top: 7%;
 
 }
@@ -77,12 +79,14 @@
     max-height: 25vh;
 }
 .course-list-btn-mob{
-    font-size: 3vw;
-    height: 25%;
+    font-size: 2.5vw;
+    /* height: 25%; */
     /* background-color: red !important; */
+    background-color: #85CE4E !important;
 }
 .course-list-btn{
     width: fit-content;
+    background-color: #85CE4E !important;
     margin-right: auto;
     /* width: 30%; */
     /* height: 25%; */

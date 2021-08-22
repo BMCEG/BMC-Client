@@ -39,7 +39,7 @@
 
 .nav-dmap-left {
     /* background-color: chocolate; */
-    width: 40%;
+    width: 34%;
 }
 .nav-dmap-left-mob {
     /* background-color: chocolate; */
@@ -48,18 +48,19 @@
 
 .nav-dmap-center {
     /* background-color: navy; */
-    width: 40%;
+    width: 33%;
     display: flex;
     justify-content: center;
 }
 
 .nav-dmap-right {
     /* background-color: orange; */
-    min-width: 30%;
-    max-width: 30%;
+    /* align-items:  !important; */
+    /* min-width: 30%; */
+    /* width: 33%; */
     display: flex;
     height: 100%;
-    margin-left: auto;
+    margin-left: auto !important;
 }
 
 .nav-dmap-right-mob {

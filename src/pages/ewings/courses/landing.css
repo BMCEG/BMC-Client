@@ -17,7 +17,11 @@
   height: 100vh;
 
 }
+.ewings-landing-root-mob{
+  min-height: 100vh;
+  background-color: #4694D6 !important;
 
+}
 .ewings-landing-mob-grid {
   width: 100%;
   margin: auto;
@@ -31,6 +35,12 @@
 .landing-outline-grid{
     display: flex;
     width: 70%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.landing-outline-grid-mob{
+    /* display: flex; */
+    width: 100%;
     height: 100%;
     /* background-color: yellow; */
 }
@@ -54,6 +64,20 @@
     animation-duration: 1.2s;
     animation-name: slidein;
 }
+.ewings-course-fab-mob{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #95DB30;
+    z-index: 999;
+    margin-right: 4vw;
+    width: 20vw;
+    margin-bottom: 8vh;
+    border-style: hidden;
+    /* height: 5%; */
+    animation-duration: 1.2s;
+    animation-name: slidein;
+}
 @keyframes slidein {
     from {
         transform: translateX(150%);
@@ -65,6 +89,16 @@
       width: 100%; */
     }
   }
+.landing-grid-div-outline-mob {
+  display: flex;
+  /* margin-left: -15%; */
+  margin-top: 3vh !important;
+  padding-top: 5vh;
+  /* width: 140vw; */
+  padding-bottom: 5vh;
+  background-color: white;
+  margin-bottom: 3vh !important;
+}
 .landing-grid-div-outline {
   display: flex;
   /* margin-left: -15%; */
@@ -87,6 +121,19 @@
   margin-top: 2% !important;
   margin-bottom: 1% !important;
   font-size: 3vw !important;
+}
+.course-header-mob {
+    /* background-image: url(); */
+  /* background-color: red; */
+  height: 18vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1%;
+  margin-top: 2% !important;
+  margin-bottom: 1% !important;
+  font-size: 4vw !important;
 }
 .landing-grid-img-base {
   width: 40%;
@@ -137,6 +184,28 @@
   flex-direction: column;
   justify-content: center;
 }
+.training-desc-text-mob {
+  /* background-color: yellowgreen; */
+  width: 100%;
+  /* margin-left: 1% !important; */
+  /* margin-right: 1%; */
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.training-desc-text {
+  /* background-color: yellowgreen; */
+  width: 100%;
+  /* margin-left: 1% !important; */
+  /* margin-right: 1%; */
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .landing-grid-text-dates {
   width: 100%;
   margin-left: 1%;
@@ -163,6 +232,18 @@
   /* background-color: white; */
   justify-content: center;
 }
+.training-outlines-img-base-mob {
+  width: 100%;
+  /* background-color: orange; */
+
+  /* height: fit-content !important; */
+  text-align: center;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: white; */
+  justify-content: center;
+}
 .training-outlines-img{
     height: 100%;
     /* object-fit: cover; */
@@ -172,6 +253,17 @@
   /* height: fit-content !important; */
   text-align: center;
   padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.training-desc-img-base-mob {
+  width: 80%;
+  background-color: rosybrown;
+  margin: auto;
+  /* height: fit-content !important; */
+  /* text-align: center; */
+  /* padding: 1%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -219,6 +311,14 @@
   /* justify-content: space-between; */
   /* background-color: tomato; */
 }
+.course-schedule-mob {
+  /* padding: 1%; */
+  /* margin: 1%; */
+  /* display: flex; */
+  width: 100%;
+  /* justify-content: space-between; */
+  /* background-color: tomato; */
+}
 .ewings-course-weekday{
     /* background-color: white; */
     /* float: left !important; */
@@ -236,12 +336,13 @@
   margin: auto;
   /* text-align: center; */
 }
-.landing-mob-course-schedule-date {
+.landing-mob-course-schedule-date-mob {
   display: inline-block;
   width: 100%;
-  background-color: white;
-  box-shadow: 2px 2px 10px black;
-  padding: 2%;
+  /* background-color: white; */
+  color: white;
+  /* box-shadow: 2px 2px 10px black; */
+  /* padding: 2%; */
   margin: 1%;
   text-align: center;
 }
@@ -370,7 +471,20 @@
   white-space: pre-line;
   font-size: 1.4vw;
 }
+.ewings-course-text-mob {
+  color: white !important;
+  word-wrap: break-word;
+  /* background-color: rosybrown; */
+  /* white-space: pre-line; */
+  font-size: 3.4vw;
+}
 .ewings-course-text-outline {
+  color: white !important;
+  word-wrap: break-word;
+  white-space: pre-line;
+  font-size: 1.8vh;
+}
+.ewings-course-text-outline-mob {
   color: white !important;
   word-wrap: break-word;
   white-space: pre-line;
@@ -387,6 +501,10 @@
 .ewings-subtitle {
   /* background-color: maroon; */
   font-size: 1.8vw !important;
+}
+.ewings-subtitle-mob {
+  /* background-color: maroon; */
+  font-size: 4vw !important;
 }
 
 .ewings-course-list-seperator {
@@ -410,7 +528,28 @@
   /* transform: translateY(-42.5%); */
   
 }
+.training-methodology-img-base-mob {
+  background-color: yellowgreen;
+  width: 80%;
+  /* height: ; */
+  margin: auto;
+  /* border-right: 5px solid white; */
+  text-align: center;
+  /* transform: translateY(-42.5%); */
+  
+}
 
+.training-methodology-img-mob {
+  /* position: absolute; */
+  /* background-color: red; */
+  /* bottom: 0%; */
+  /* display: none; */
+  box-shadow: 0px 24px 5px -24px white;
+  transform: translateY(-20%);
+  width: 100%;
+  /* border: 1px solid red; */
+  margin: auto !important;
+}
 .training-methodology-img {
   position: absolute;
   /* background-color: red; */
@@ -436,12 +575,34 @@
   margin-top: 4%;
   margin-bottom: 4%;
 }
+.training-methodology-seperator-mob {
+  /* height: 100%; */
+  background-color: white;
+  width: 50%;
+  /* margin: auto !important; */
+  position: absolute;
+  transform: translate(27.5%,-10.5vh);
+  /* font-size: 3vw !important; */
+  /* margin-top: 4%;
+  margin-bottom: 4%; */
+}
 
 .training-methodology-text {
   width: 48%;
   /* height: fit-content !important; */
   /* background-color: aqua; */
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.training-methodology-text-mob {
+  width: 100%;
+  /* height: fit-content !important; */
+  /* background-color: aqua; */
+  /* padding-left: 20px; */
+  transform: translateY(-30%);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -459,6 +620,11 @@
 .course-meet-trainer-title{
     text-align: center;
     font-size: 1.4vw;
+    color: #4693D5 !important;
+}
+.course-meet-trainer-title-mob{
+    text-align: center;
+    font-size: 3.4vw;
     color: #4693D5 !important;
 }
 

@@ -7,11 +7,11 @@
     /* background-color: aliceblue; */
     padding: 1% !important;
     width: 75%;
-    /* height: 100vh; */
+    min-height: 100vh;
     margin: auto;
 }
 
-.ewings-course-list-row{
+.ewings-course-list-row-mob{
     /* background-color: aqua; */
 }
 
@@ -25,18 +25,30 @@
     /* background-color: blueviolet; */
     /* text-align: center !; */
     justify-content: center;
-    display: ;
+    /* display: ;  */
 
 }
 
 .ewings-course-list-img{
-    padding: 1%;
+    /* padding: 1%; */
     /* background-color: brown; */
 
     margin: auto !important;
     /* width: 85%; */
     width: 25vw;
-    height: 30vh;
+    /* height: 30vh; */
+    /* max-width: 85%; */
+    object-fit: cover;
+    /* box-shadow: 1px 1px 5px black; */
+}
+.ewings-course-list-img-mob{
+    /* padding: 1%; */
+    /* background-color: brown; */
+
+    margin: auto !important;
+    /* width: 85%; */
+    width: 90%;
+    /* height: 30vh; */
     /* max-width: 85%; */
     object-fit: cover;
     /* box-shadow: 1px 1px 5px black; */

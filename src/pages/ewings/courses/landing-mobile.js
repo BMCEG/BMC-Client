@@ -75,175 +75,110 @@ export default class Landing extends Component {
 
     render() {
         return (
-           <div className="ewings-landing-root">
-                <Button className='ewings-course-fab bukra-regular ' onClick={this.handleApplicationModalOpen}>
+            <div className="ewings-landing-root-mob">
+                <Button className='ewings-course-fab-mob bukra-regular ' onClick={this.handleApplicationModalOpen}>
                     Apply Now
                 </Button>
+
                 <div className="ewings-landing-grid">
-                    {/* <h1 className="bukra-bold ewings-course-text">{this.state.courseDetails.displayTitle}</h1> */}
                     <Typography style={{
                         backgroundImage: `url(${endpoint}/ewings-stamp.png)`,
                         backgroundSize: 'contain',
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'center'
-                    }} variant='h3' component='h3' className='bukra-bold ewings-white-color course-header'>{this.state.courseDetails.displayTitle}</Typography>
-                    <div className='landing-grid-div'>
-                        <div className='training-desc-img-base'>
-                            <img className='training-desc-img' src={`${endpoint}/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
-                        </div>
-                        <div className='training-desc-text'>
-                            <h2 className='bukra-bold ewings-green-color ewings-subtitle' >Training Description</h2>
-                            <br></br>
-                            <h3 className='bukra-regular ewings-course-text'>{this.state.courseDetails.description}</h3>
-                            <br></br>
-                            {/* <div className='landing-grid-btn-base-left'>
-                                <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
-                            </div> */}
-
-                        </div>
-                    </div>
-                    <br></br>
-
+                    }} variant='h3' component='h3' className='bukra-bold ewings-white-color course-header-mob'>{this.state.courseDetails.displayTitle}</Typography>
                 </div>
-                <div className='landing-grid-div-outline'>
+                <div className='training-desc-img-base-mob'>
+                    <img className='training-desc-img' src={`${endpoint}/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
+                </div>
+                <div className='training-desc-text-mob'>
+                    <h2 className='bukra-bold ewings-green-color ewings-subtitle-mob' >Training Description</h2>
+                    <br></br>
+                    <h3 className='bukra-regular ewings-course-text-mob'>{this.state.courseDetails.description}</h3>
+                    <br></br>
+                </div>
+                <div className='landing-grid-div-outline-mob    '>
                     <hr className='ewings-course-list-seperator'></hr>
                     <br></br>
-                    <div className='landing-outline-grid'>
-
-                        <div className='training-desc-text'>
-                            <h2 className='bukra-bold ewings-green-color ewings-subtitle' >Training Outline</h2>
-                            <br></br>
-                            <h3 className='bukra-regular ewings-course-text ewings-blue-color'>{this.state.courseDetails.outline}</h3>
-                            <br></br>
-                        </div>
-                        <div className='training-outlines-img-base'>
+                    <div className='landing-outline-grid-mob'>
+                        <div className='training-outlines-img-base-mob'>
                             <img className='training-desc-img' src={`${endpoint}/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
                         </div>
+
+                        <div className='training-desc-text'>
+                            <h2 className='bukra-bold ewings-green-color ewings-subtitle-mob' >Training Outline</h2>
+                            <br></br>
+                            <h3 className='bukra-regular ewings-course-text-outline-mob ewings-blue-color'>{this.state.courseDetails.outline}</h3>
+                            <br></br>
+                        </div>
                     </div>
                     <br></br>
                     <hr className='ewings-course-list-seperator'></hr>
                 </div>
-                <div className="ewings-landing-grid">
-                    <br></br>
-                    <br></br>
-                    <div className='training-methodology-row'>
-                        <div className='training-methodology-img-base'>
-                            {this.state.courseDetails.title === 'graphic_design' ?
-                            <>
-                            <img className='training-methodology-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt='sds' />
-                            <img className='training-methodology-img-mask' src={`${endpoint}/22222.png`} alt='sds' />
-                            </>
-                            :
-                            <img className='training-methodology-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt='sds' />
-                        }
-                        </div>
-                        <div className='training-methodology-seperator'></div>
-                        <div className='training-methodology-text'>
-                            <h2 className='bukra-bold ewings-white-color ewings-subtitle'>Training Methodology</h2>
-                            <br></br>
-                            <h3 className='bukra-regular ewings-course-text'>{this.state.courseDetails.methedology}</h3>
-                        </div>
+                <div className='training-methodology-img-base-mob'>
+                    <img className='training-methodology-img-mob' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt='sds' />
+                    {/* <hr className='training-methodology-seperator-mob'></hr> */}
+                    <div className='training-methodology-text-mob'>
+                        <h2 className='bukra-bold ewings-white-color ewings-subtitle-mob'>Training Methodology</h2>
+                        <br></br>
+                        <h3 className='bukra-regular ewings-course-text-mob'>{this.state.courseDetails.methedology}</h3>
                     </div>
+                    <br></br>
+                </div>
 
-                    <br></br>
-                    <hr className='ewings-course-list-seperator'></hr>
-                    <br></br>
-                    {/* <div className='landing-grid-div'>
-                        <div className='landing-grid-text'>
-                            <h2 className='bukra-bold ewings-course-text' >Training Methodology</h2>
-                            <br></br>
-                            <h3 className='bukra-regular ewings-course-text'>{this.state.courseDetails.methedology}</h3>
-                            <br></br>
-                            <div className='landing-grid-btn-base-left'>
-                                <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
-                            </div>
+                <div className='landing-grid-div'>
+                    <div className='course-meet-trainer'>
+                        <h2 className='bukra-bold course-meet-trainer-title-mob'>Meet the Trainer</h2>
+                        <br></br>
+                        <br></br>
+                        <div className="course-trainer-avatar-base">
+                            <img src={`${endpoint}/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
                         </div>
-                        <div className='landing-grid-img-base'>
-                            <img className='landing-grid-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt="Trainer Avatar"></img>
-                        </div>
+                        <br></br>
+                        <br></br>
+                        <h3 className='bukra-medium course-meet-trainer-title-mob'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h3>
                     </div>
-                    <hr></hr> */}
-                    <div className='landing-grid-div'>
-                        <div className='course-meet-trainer'>
-                            <h2 className='bukra-bold course-meet-trainer-title'>Meet the Trainer</h2>
+                </div>
+                <br></br>
+                <div className='training-desc-text-mob'>
+                    <h2 className='bukra-bold ewings-green-color ewings-subtitle-mob' >Duration and Fees</h2>
+                    <br></br>
+                    {this.state.courseSchedules.map((schedule, index) => (
+                        <div key={index} className="course-schedule-mob">
+
+                            <h3 className='bukra-medium ewings-course-text-mob'>Fees:</h3>
+                            <h4 className='bukra-regular ewings-course-text-mob'>{this.state.courseFees} EGP</h4>
                             <br></br>
+                            <h3 className='bukra-medium ewings-course-text-mob'>Duration:</h3>
+                            <h4 className='bukra-regular ewings-course-text-mob'>{schedule.duration} Month(s)</h4>
                             <br></br>
-                            <div className="course-trainer-avatar-base">
-                                <img src={`${endpoint}/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
-                            </div>
+                            <h3 className='bukra-medium ewings-course-text-mob'>Start Date:</h3>
+                            <h4 className='bukra-regular ewings-course-text-mob'> <Moment format='dddd, DD/MM/YYYY'>
+                                {schedule.startDate}
+                            </Moment></h4>
                             <br></br>
+                            <h3 className='bukra-medium ewings-course-text-mob'>End Date:</h3>
+                            <h4 className='bukra-regular ewings-course-text-mob'> <Moment format='dddd, DD/MM/YYYY'>
+                                {schedule.endDate}
+                            </Moment></h4>
                             <br></br>
-                            <h3 className='bukra-medium course-meet-trainer-title'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h3>
-                        </div>
-                        {/* <div className='landing-grid-img-base'>
-                        </div>
-                        <div className='landing-grid-text'>
-                            <h2 className='bukra-bold ewings-course-text'>Meet the Trainer</h2>
-                            <br></br>
-                            <h3 className='bukra-medium ewings-course-text'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h3>
-                            {this.state.courseTrainerQualifications.map((qual, index) => (
-                                <div key={index} className="course-trainer-qualification">
-                                    <h3 className='bukra-regular'>Title: {qual.title}</h3>
-                                    <h3 className='bukra-regular'>Brief: {qual.brief}</h3>
+                            <h3 className='bukra-medium ewings-course-text-mob'>Schedule:</h3>
+                            {schedule.dates.map((date, index) => (
+                                <div key={index} className="landing-mob-course-schedule-date-mob">
+                                    <h5 className='bukra-regular'>Weekday: {date.weekday}</h5>
+                                    <h5 className='bukra-regular'>Duration: {date.duration} Hours</h5>
+                                    <h5 className='bukra-regular'>Starts at: {date.startHour}</h5>
+                                    <h5 className='bukra-regular'>Ends at: {date.endHour}</h5>
+                                    <hr></hr>
                                 </div>
                             ))}
-                            <br></br>
-                            <div className='landing-grid-btn-base-left'>
-                                <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
-                            </div>
-                        </div> */}
-                    </div>
-                    <br></br>
-                    <hr className='ewings-course-list-seperator'></hr>
-                    <br></br>
-                    <div className='landing-grid-div'>
-                        <div className='landing-grid-text-dates'>
-                            {/* <h2 className='bukra-bold ewings-course-text' >Duration and Fees</h2> */}
-                            <h2 className='bukra-bold ewings-green-color ewings-subtitle' >Duration and Fees</h2>
-                            <br></br>
-                            {this.state.courseSchedules.map((schedule, index) => (
-                                <div key={index} className="course-schedule">
-                                    <div className='ewings-course-booking-text'>
-                                        <h3 className='bukra-regular ewings-course-booking-info'>Fees:- {this.state.courseFees} EGP</h3>
-                                        <h3 className='bukra-regular ewings-course-booking-info'>Duration:- {schedule.duration} Month(s)</h3>
-                                        <h3 className='bukra-regular ewings-course-booking-info'>Start Date:-  <Moment format='dddd, DD/MM/YYYY'>
-                                            {schedule.startDate}
-                                        </Moment></h3>
-                                        <h5 className='bukra-regular ewings-course-booking-info'>End Date:- <Moment format='dddd, DD/MM/YYYY'>
-                                            {schedule.endDate}
-                                        </Moment></h5>
-                                        {/* <h4 className='bukra-regular ewings-course-text'></h4> */}
-                                        {/* <h3 className='bukra-medium ewings-course-text'>Duration:</h3>
-                                            <h4 className='bukra-regular ewings-course-text'>{schedule.duration} Month(s)</h4>
-                                            <h3 className='bukra-medium ewings-course-text'>Start Date: <Moment format='dddd, DD/MM/YYYY'>
-                                                {schedule.endDate}
-                                            </Moment></h3>
-                                            <h4 className='bukra-regular ewings-course-text'> <Moment format='dddd, DD/MM/YYYY'>
-                                                {schedule.startDate}
-                                            </Moment></h4>
-                                            <h3 className='bukra-medium ewings-course-text'>End Date:</h3>
-                                            <h4 className='bukra-regular ewings-course-text'> <Moment format='dddd, DD/MM/YYYY'>
-                                                {schedule.endDate}
-                                            </Moment></h4> */}
-                                    </div>
-                                    <div className='ewings-course-info'>
-                                        {schedule.dates.map((date, index) => (
-                                            <div key={index} className="ewings-course-schedule-date">
-                                                <h5 className='bukra-regular ewings-course-booking-info'>Weekday: {date.weekday}</h5>
-                                                <h5 className='bukra-regular ewings-course-booking-info'>Duration: {date.duration} Hours</h5>
-                                                <h5 className='bukra-regular ewings-course-booking-info'>Starts at: {date.startHour}</h5>
-                                                <h5 className='bukra-regular ewings-course-booking-info'>Ends at: {date.endHour}</h5>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            ))}
-                            {/* <br></br> */}
+
+
+                            {index < this.state.courseSchedules.length ?
+                                <br></br>
+                                : null}
                         </div>
-                    </div>
-                    {/* <div className='landing-grid-btn-base'>
-                        <Button variant="danger" className='landing-grid-btn-center' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
-                    </div> */}
+                    ))}
                 </div>
 
                 <Modal

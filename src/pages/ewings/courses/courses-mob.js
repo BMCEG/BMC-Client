@@ -30,13 +30,16 @@ export default class CoursesList extends Component {
         return (
             <div className='ewings-courses'>
                 <div className='courses-list-root'>
+                    <div className='ewings-course-list-title'>
+                        <h2 className='bukra-bold course-title-size-mob' style={{ color: 'white' }}>Courses</h2>
+                    </div>
                     {this.state.courses.map((course) => (
-                        <div className='course-list-row'>
+                        <div className='ewings-course-list-row-mob'>
                             <Grid container>
-                                <Grid item xs={7} className='course-list-left'>
-                                    <img className='course-list-img' src={`${endpoint}/${course.images[0].src}`} />
+                                <Grid item xs={5} className='course-list-left'>
+                                    <img className='ewings-course-list-img-mob' src={`${endpoint}/${course.images[0].src}`} />
                                 </Grid>
-                                <Grid item xs={5} className='course-list-right-mob'>
+                                <Grid item xs={7} className='course-list-right-mob'>
                                     <p className='bukra-bold course-title-size-mob' style={{ color: 'white' }}>
                                         {course.displayTitle}
                                     </p>
@@ -45,9 +48,11 @@ export default class CoursesList extends Component {
                                         {course.description}
                                     </p>
                                     <br></br>
-                                    <Button variant='danger' className='course-list-btn bukra-regular' size='sm' href={`/ewings/courses/${course.title}`}>Read More</Button>
+                                    <Button className='course-list-btn-mob bukra-regular' size='sm' href={`/ewings/courses/${course.title}`}>Read More</Button>
                                 </Grid>
                             </Grid>
+                            <br></br>
+                            <hr></hr>
                             <br></br>
                         </div>
                     ))}

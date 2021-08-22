@@ -46,7 +46,7 @@ export default class CoursesList extends Component {
                             <Grid container>
                                 <Grid item xs={6} className='ewings-course-list-left'>
                                     {this.state.courses1.map((course) => (
-                                        <Button variant='link' className='course-container'>
+                                        <Button variant='link' className='course-container' href={`/ewings/courses/${course.title}`}>
                                             <img className='course-img' src={`${endpoint}/${course.images[0].src}`} />
                                             <div className='course-middle'>
                                                 <div className='course-text'>
