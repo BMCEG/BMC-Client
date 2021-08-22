@@ -38,15 +38,8 @@ export default class CoursesList extends Component {
                                     <img className='course-list-img' src={`${endpoint}/${course.images[0].src}`} />
                                 </Grid>
                                 <Grid item xs={6} className='course-list-right'>
-                                    <p className='bukra-bold course-title-size'>
-                                        {course.displayTitle}
-                                        <hr></hr>
-                                    </p>
-                                    <p className='bukra-regular course-list-desc'>
-                                        {course.description}
-                                    </p>
-                                    <br></br>
-                                    <Button variant='danger' className='course-list-btn' href={`/courses/${course.title}`}>Read More</Button>
+                                <img className='course-list-img' src={`${endpoint}/${course.images[0].src}`} />
+
                                 </Grid>
                             </Grid>
                             <br></br>

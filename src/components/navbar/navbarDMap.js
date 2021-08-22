@@ -80,50 +80,29 @@ export default class NavbarDMap extends Component {
                 </div>
 
                 <div className='nav-dmap-right'>
-                    {/* <div className="title" style={{ marginLeft: 'auto' }}>
-                        <Button variant="link" href='https://www.facebook.com/businessmapconsultants/' >
-                            <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faFacebook} size={'2x'} /></h5>
+                    <div className="title">
+                        <Button className="ewings-nav-social-btn" variant="link" href='/blogs' >
+                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faFacebook} className='ewings-nav-social-btn-img' />
                         </Button>
                     </div>
                     <div className="title">
-                        <Button variant="link" href='https://www.linkedin.com/company/businessmapconsultants/'>
-                            <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faLinkedin} size={'2x'} /></h5>
+                        <Button className="ewings-nav-social-btn" variant="link" href='/blogs' >
+                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faLinkedin} className='ewings-nav-social-btn-img' />
                         </Button>
                     </div>
                     <div className="title">
-                        <Button variant="link" href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q' >
-                            <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faYoutube} size={'2x'} /></h5>
+                        <Button className="ewings-nav-social-btn" variant="link" href='/blogs' >
+                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faYoutube} className='ewings-nav-social-btn-img' />
                         </Button>
                     </div>
                     <div className="title">
-                        <Button variant="link" href='/blogs' >
-                            <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faInstagram} size={'2x'} /></h5>
-                        </Button>
-                    </div> */}
-
-                    <div className="title">
-                        <Button className="nav-social-btn" variant="link" href='/blogs' >
-                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faFacebook} className='nav-social-btn-img' />
+                        <Button className="ewings-nav-social-btn" variant="link" href='/blogs' >
+                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faInstagram} className='ewings-nav-social-btn-img' />
                         </Button>
                     </div>
                     <div className="title">
-                        <Button className="nav-social-btn" variant="link" href='/blogs' >
-                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faLinkedin} className='nav-social-btn-img' />
-                        </Button>
-                    </div>
-                    <div className="title">
-                        <Button className="nav-social-btn" variant="link" href='/blogs' >
-                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faYoutube} className='nav-social-btn-img' />
-                        </Button>
-                    </div>
-                    <div className="title">
-                        <Button className="nav-social-btn" variant="link" href='/blogs' >
-                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faInstagram} className='nav-social-btn-img' />
-                        </Button>
-                    </div>
-                    <div className="title">
-                        <Button className="nav-social-btn" variant="link" href='/blogs' >
-                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faTwitter} className='nav-social-btn-img' />
+                        <Button className="ewings-nav-social-btn" variant="link" href='/blogs' >
+                            <FontAwesomeIcon style={{ color: '#4694D6' }}  icon={faTwitter} className='ewings-nav-social-btn-img' />
                         </Button>
                     </div>
 

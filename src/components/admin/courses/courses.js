@@ -31,7 +31,7 @@ export default class Courses extends Component {
     }
 
     async componentDidMount() {
-        await axios.get(`${endpoint}/courses/`)
+        await axios.get(`${endpoint}/courses?company=all`)
             .then((res) => {
                 this.setState({
                     courses: res.data

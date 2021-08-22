@@ -10,16 +10,25 @@ export default class CoursesList extends Component {
         super(props);
 
         this.state = {
-            courses: [],
+            courses1: [],
+            courses2: [],
         }
     }
 
     async componentDidMount() {
         await axios.get(`${endpoint}/courses?company=E-Wings`)
             .then((res) => {
+                const half = Math.ceil(res.data.length / 2);
+
+                const firstHalf = res.data.slice(0, half)
+                const secondHalf = res.data.slice(half, res.data.length)
+
                 this.setState({
-                    courses: res.data,
+                    courses1: firstHalf,
+                    courses2: secondHalf,
                 })
+                console.log(this.state)
+
             })
             .catch((err) => {
                 console.log(err);
@@ -29,28 +38,50 @@ export default class CoursesList extends Component {
     render() {
         return (
             <div className='ewings-courses'>
-                <div className='courses-list-root'>
-                    {this.state.courses.map((course) => (
-                        <div className='course-list-row'>
+                <div className='ewings-courses-list-root'>
+                    <div className='ewings-course-list-title'>
+                        <h2 className='bukra-bold' style={{ color: 'white' }}>Courses</h2>
+                    </div>
+                        <div className='ewings-course-list-row'>
                             <Grid container>
-                                <Grid item xs={5} className='course-list-left'>
-                                    <img className='course-list-img' src={`${endpoint}/${course.images[0].src}`} />
+                                <Grid item xs={6} className='ewings-course-list-left'>
+                                    {this.state.courses1.map((course) => (
+                                        <Button variant='link' className='course-container'>
+                                            <img className='course-img' src={`${endpoint}/${course.images[0].src}`} />
+                                            <div className='course-middle'>
+                                                <div className='course-text'>
+                                                    <p className='bukra-bold course-list-name'>
+                                                        {course.displayTitle}
+                                                    </p>
+                                                    <p className='bukra-regular course-list-desc'>
+                                                        {course.description}
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </Button>
+                                    ))}
                                 </Grid>
-                                <Grid item xs={7} className='course-list-right'>
-                                    <p className='bukra-bold course-title-size' style={{ color: 'white' }}>
-                                        {course.displayTitle}
-                                    </p>
-                                    <hr></hr>
-                                    <p className='bukra-regular course-list-desc' style={{ color: 'white' }}>
-                                        {course.description}
-                                    </p>
-                                    <br></br>
-                                    <Button variant='danger' className='course-list-btn bukra-regular' href={`/ewings/courses/${course.title}`}>Read More</Button>
+                                <Grid item xs={6} className='ewings-course-list-right'>
+                                    {this.state.courses2.map((course) => (
+                                        <Button variant='link' className='course-container' href={`/ewings/courses/${course.title}`}>
+                                            <img className='course-img' src={`${endpoint}/${course.images[0].src}`} />
+                                            <div className='course-middle'>
+                                                <div className='course-text'>
+                                                    <p className='bukra-bold course-list-name'>
+                                                        {course.displayTitle}
+                                                    </p>
+                                                    <p className='bukra-regular course-list-desc'>
+                                                        {course.description}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </Button>
+                                    ))}
                                 </Grid>
                             </Grid>
                             <br></br>
                         </div>
-                    ))}
                 </div>
             </div>
         )

@@ -478,7 +478,7 @@ export default class App extends Component {
                   return matches ?
                     <Route path='/ewings/courses' exact component={CoursesListEwings} />
                     :
-                    <Route path='/ewings/courses' exact component={CoursesListEwingsMob} />
+                    <Route path='/ewings/courses' exact component={CoursesListEwings} />
                 }}
               </Media>
 

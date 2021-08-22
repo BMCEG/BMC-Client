@@ -33,6 +33,11 @@ export default class NavbarBMC extends Component {
             path: "/about/story",
             nav: 'bmc'
         },
+        {
+            displayTitle: "Why BMC?!",
+            path: "/whyBMC",
+            nav: 'bmc'
+        },
         ];
 
         const servicesItems = [{
@@ -78,11 +83,11 @@ export default class NavbarBMC extends Component {
                     <div className="title">
                         <NavbarDropdown title="About" items={aboutItems} />
                     </div>
-                    <div className="title">
+                    {/* <div className="title">
                         <Button variant="link" href='/whyBMC' >
                             <p className='bukra-medium title-size'>Why BMC?!</p>
                         </Button>
-                    </div>
+                    </div> */}
                     <div className="title">
                         <NavbarDropdown title="Services" items={servicesItems} />
                     </div>

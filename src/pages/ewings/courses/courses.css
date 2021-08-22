@@ -1,3 +1,121 @@
 .ewings-courses{
+  height: auto;
     background-color: #4694D6 !important;
 }
+
+.ewings-courses-list-root{
+    /* background-color: aliceblue; */
+    padding: 1% !important;
+    width: 75%;
+    /* height: 100vh; */
+    margin: auto;
+}
+
+.ewings-course-list-row{
+    /* background-color: aqua; */
+}
+
+.ewings-course-list-left{
+    /* background-color: bisque; */
+    text-align: center;
+
+}
+
+.ewings-course-list-right{
+    /* background-color: blueviolet; */
+    /* text-align: center !; */
+    justify-content: center;
+    display: ;
+
+}
+
+.ewings-course-list-img{
+    padding: 1%;
+    /* background-color: brown; */
+
+    margin: auto !important;
+    /* width: 85%; */
+    width: 25vw;
+    height: 30vh;
+    /* max-width: 85%; */
+    object-fit: cover;
+    /* box-shadow: 1px 1px 5px black; */
+}
+
+.ewings-course-list-img:hover{
+    /* background-color: chartreuse; */
+}
+
+
+
+
+.course-container {
+    position: relative;
+    width: 30vw;
+    margin: auto;
+    /* padding: 1%; */
+    overflow: hidden
+    /* background-color: maroon; */
+  }
+  
+  .course-img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    max-width: 30vw;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .course-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    /* background-color: maroon; */
+width: 100% !important;
+height: 100% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .course-container:hover .course-img {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+  
+  .course-container:hover .course-middle {
+    opacity: 1;
+  }
+  
+  .course-text {
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    height: 100% !important;
+    /* width: 30vw !important; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 32px;
+}
+
+.course-list-name{
+    font-size: 2vw;
+    color: white;
+
+  }
+.course-list-desc{
+    font-size: 1vw;
+    color: white;
+
+  }
+
+  .ewings-course-list-title{
+      text-align: center;
+      padding: 16px 32px;
+      font-size: 2vw;
+
+  }
