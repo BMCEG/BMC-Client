@@ -12,15 +12,13 @@
   /* box-shadow: 2px 2px 10px black; */
 }
 
-.ewings-height{
+.ewings-height {
   /* background-color: moccasin; */
-  height: 100vh;
-
-}
-.ewings-landing-root-mob{
   min-height: 100vh;
-  background-color: #4694D6 !important;
-
+}
+.ewings-landing-root-mob {
+  min-height: 100vh;
+  background-color: #4694d6 !important;
 }
 .ewings-landing-mob-grid {
   width: 100%;
@@ -32,63 +30,72 @@
 .landing-mob-title {
   text-align: center;
 }
-.landing-outline-grid{
-    display: flex;
-    width: 70%;
-    height: 100%;
-    /* background-color: yellow; */
+.landing-outline-grid {
+  display: flex;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 100%;
+  /* background-color: yellow; */
 }
-.landing-outline-grid-mob{
-    /* display: flex; */
-    width: 100%;
-    height: 100%;
-    /* background-color: yellow; */
+.landing-outline-grid-mob {
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  /* background-color: yellow; */
 }
 .landing-grid-div {
   display: flex;
-  margin-top: 3vh !important;
+  padding-top: 3vh !important;
   /* background-color: maroon; */
-  margin-bottom: 3vh !important;
+  padding-bottom: 3vh !important;
 }
-.ewings-course-fab{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: #95DB30;
-    z-index: 999;
-    margin-right: 2vw;
-    width: 20vw;
-    margin-bottom: 2vw;
-    border-style: hidden;
-    height: 5%;
-    animation-duration: 1.2s;
-    animation-name: slidein;
+.ewings-course-fab {
+  position: sticky;
+  top: 100vh;
+  left: 100vw;
+  background-color: #95db30;
+  z-index: 999;
+  margin-right: 2vw;
+  width: 10vw;
+  margin-bottom: 2vw;
+  border-style: hidden;
+  height: 5vh;
+  animation-duration: 1.2s;
+  animation-name: slidein;
+  transition: 0.2s;
+  
 }
-.ewings-course-fab-mob{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: #95DB30;
-    z-index: 999;
-    margin-right: 4vw;
-    width: 20vw;
-    margin-bottom: 8vh;
-    border-style: hidden;
-    /* height: 5%; */
-    animation-duration: 1.2s;
-    animation-name: slidein;
+.ewings-course-fab:hover{
+  width: 20vw;
+  /* height: 8vh; */
+
+}
+.ewings-course-fab-mob {
+  position: sticky;
+  top: 100vh;
+  left: 100vw;
+  background-color: #95db30;
+  z-index: 999;
+  margin-right: 4vw;
+  width: 20vw;
+  margin-bottom: 8vh;
+  border-style: hidden;
+  /* height: 5%; */
+  animation-duration: 1.2s;
+  animation-name: slidein;
 }
 @keyframes slidein {
-    from {
-        transform: translateX(150%);
-    }
-    
-    to {
-        transform: translateX(0);
-      /* margin-left: 0%;
-      width: 100%; */
-    }
+  from {
+    transform: translateX(150%);
   }
+
+  to {
+    transform: translateX(0);
+    /* margin-left: 0%;
+      width: 100%; */
+  }
+}
 .landing-grid-div-outline-mob {
   display: flex;
   /* margin-left: -15%; */
@@ -110,7 +117,7 @@
   margin-bottom: 3vh !important;
 }
 .course-header {
-    /* background-image: url(); */
+  /* background-image: url(); */
   /* background-color: chocolate; */
   height: 18vh;
   display: flex;
@@ -118,12 +125,12 @@
   justify-content: center;
   text-align: center;
   padding: 1%;
-  margin-top: 2% !important;
+  /* margin-top: 2% !important; */
   margin-bottom: 1% !important;
   font-size: 3vw !important;
 }
 .course-header-mob {
-    /* background-image: url(); */
+  /* background-image: url(); */
   /* background-color: red; */
   height: 18vh;
   display: flex;
@@ -244,9 +251,9 @@
   /* background-color: white; */
   justify-content: center;
 }
-.training-outlines-img{
-    height: 100%;
-    /* object-fit: cover; */
+.training-outlines-img {
+  height: 100%;
+  /* object-fit: cover; */
 }
 .training-desc-img-base {
   width: 50%;
@@ -256,6 +263,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background-color: yellow; */
 }
 .training-desc-img-base-mob {
   width: 80%;
@@ -263,18 +271,18 @@
   margin: auto;
   /* height: fit-content !important; */
   /* text-align: center; */
-  /* padding: 1%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .training-desc-img {
   /* box-shadow: 2px 2px 10px black; */
+  /* padding: 1%; */
   -webkit-animation: fadeIn 0.5s;
   animation: fadeIn 0.5s;
   /* max-height: 30vh; */
-  height: auto;
-  object-fit: cover;
+  /* height: auto; */
+  /* object-fit: cover; */
 }
 
 .landing-grid-info {
@@ -294,13 +302,13 @@
   text-align: center;
 }
 
-.ewings-course-booking-text{
-    /* background-color: tomato; */
-    /* background-color: blueviolet; */
-    display: flex;
-    width: 33.3%;
-    flex-direction: column;
-    justify-content: center;
+.ewings-course-booking-text {
+  /* background-color: tomato; */
+  /* background-color: blueviolet; */
+  display: flex;
+  width: 33.3%;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .course-schedule {
@@ -319,22 +327,21 @@
   /* justify-content: space-between; */
   /* background-color: tomato; */
 }
-.ewings-course-weekday{
-    /* background-color: white; */
-    /* float: left !important; */
-    /* width: 100% !important; */
+.ewings-course-weekday {
+  /* background-color: white; */
+  /* float: left !important; */
+  /* width: 100% !important; */
 }
-.ewings-course-schedule-date{
+.ewings-course-schedule-date {
   display: inline-block;
   /* min-width: 10vw; */
   border-left: 2px solid white;
-
   /* max-width: 10vw; */
   /* background-color: white; */
   /* box-shadow: 2px 2px 10px black; */
-  padding: 4%;
+  padding: 2%;
   margin: auto;
-  /* text-align: center; */
+  text-align: center;
 }
 .landing-mob-course-schedule-date-mob {
   display: inline-block;
@@ -459,7 +466,7 @@
 }
 
 .ewings-green-color {
-  color: #95DB30 !important;
+  color: #95db30 !important;
 }
 .ewings-white-color {
   color: #fff !important;
@@ -482,7 +489,7 @@
   color: white !important;
   word-wrap: break-word;
   white-space: pre-line;
-  font-size: 1.8vh;
+  font-size: 1.4vw;
 }
 .ewings-course-text-outline-mob {
   color: white !important;
@@ -495,7 +502,8 @@
   color: white !important;
   word-wrap: break-word;
   white-space: pre-line;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
+  
 }
 
 .ewings-subtitle {
@@ -514,7 +522,7 @@
 }
 
 .training-methodology-row {
-  background-color: #95DB30;
+  background-color: #95db30;
   padding: 2.28vw;
   display: flex;
   justify-content: center;
@@ -526,7 +534,6 @@
   border-right: 5px solid white;
   text-align: center;
   /* transform: translateY(-42.5%); */
-  
 }
 .training-methodology-img-base-mob {
   background-color: yellowgreen;
@@ -536,7 +543,6 @@
   /* border-right: 5px solid white; */
   text-align: center;
   /* transform: translateY(-42.5%); */
-  
 }
 
 .training-methodology-img-mob {
@@ -581,7 +587,7 @@
   width: 50%;
   /* margin: auto !important; */
   position: absolute;
-  transform: translate(27.5%,-10.5vh);
+  transform: translate(27.5%, -10.5vh);
   /* font-size: 3vw !important; */
   /* margin-top: 4%;
   margin-bottom: 4%; */
@@ -607,31 +613,30 @@
   flex-direction: column;
   justify-content: center;
 }
-.ewings-blue-color{
-    color: #4693D5 !important;
+.ewings-blue-color {
+  color: #4693d5 !important;
+}
+.course-meet-trainer {
+  background-color: white;
+  margin: auto;
+  padding: 3%;
+  border-radius: 15px;
+}
+.course-meet-trainer-title {
+  text-align: center;
+  font-size: 1.4vw;
+  color: #4693d5 !important;
+}
+.course-meet-trainer-title-mob {
+  text-align: center;
+  font-size: 3.4vw;
+  color: #4693d5 !important;
+}
 
-}
-.course-meet-trainer{
-    background-color: white;
-    margin: auto;
-    padding: 3%;
-    border-radius: 15px;
-}
-.course-meet-trainer-title{
-    text-align: center;
-    font-size: 1.4vw;
-    color: #4693D5 !important;
-}
-.course-meet-trainer-title-mob{
-    text-align: center;
-    font-size: 3.4vw;
-    color: #4693D5 !important;
-}
-
-.ewings-course-info{
-    /* background-color: orange; */
-    display: flex;
-    width: 66.7%;
-    display: flex !important;
-    /* justify-content: space-between !important; */
+.ewings-course-info {
+  /* background-color: orange; */
+  /* display: flex; */
+  width: 66.7%;
+  display: flex !important;
+  /* justify-content: space-between !important; */
 }

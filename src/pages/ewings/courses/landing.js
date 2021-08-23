@@ -7,12 +7,16 @@ import Modal from '@material-ui/core/Modal';
 import Moment from 'react-moment';
 import { Button } from 'react-bootstrap';
 import CourseApplicationModal from '../../../components/course/application-ewings.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+
 export default class Landing extends Component {
 
     constructor(props) {
         super(props);
         this.handleApplicationModalOpen = this.handleApplicationModalOpen.bind(this);
         this.handleApplicationModalClose = this.handleApplicationModalClose.bind(this);
+        this.handleFabHover = this.handleFabHover.bind(this);
 
         this.state = {
             courseName: props.match.params.courseName,
@@ -28,7 +32,14 @@ export default class Landing extends Component {
             imageOutlineSrc: '',
 
             applicationModalFlag: false,
+            isFabHover: false,
         }
+    }
+
+    handleFabHover = async () => {
+        this.setState({
+            isFabHover: !this.state.isFabHover
+        })
     }
 
     handleApplicationModalOpen = async () => {
@@ -75,9 +86,15 @@ export default class Landing extends Component {
     render() {
         return (
             <div className="ewings-landing-root">
-                <Button className='ewings-course-fab bukra-regular ' onClick={this.handleApplicationModalOpen}>
-                    Apply Now
-                </Button>
+                {this.state.isFabHover ?
+                    <Button className='ewings-course-fab bukra-regular ' onMouseLeave={this.handleFabHover} onMouseOver={this.handleFabHover} onClick={this.handleApplicationModalOpen}>
+                        Apply Now
+                    </Button>
+                    :
+                    <Button className='ewings-course-fab bukra-regular ' onMouseLeave={this.handleFabHover} onMouseOver={this.handleFabHover} onClick={this.handleApplicationModalOpen}>
+                        <FontAwesomeIcon icon={faPlus} size='2x' />
+                    </Button>
+                }
                 <div className="ewings-landing-grid ewings-height">
                     {/* <h1 className="bukra-bold ewings-course-text">{this.state.courseDetails.displayTitle}</h1> */}
                     <Typography style={{
@@ -126,29 +143,29 @@ export default class Landing extends Component {
                     <br></br>
                     <br></br>
 
-                        <div className='training-methodology-row'>
-                            <div className='training-methodology-img-base'>
-                                {this.state.courseDetails.title === 'graphic_design' ?
-                                    <>
-                                        <img className='training-methodology-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt='sds' />
-                                        <img className='training-methodology-img-mask' src={`${endpoint}/22222.png`} alt='sds' />
-                                    </>
-                                    :
+                    <div className='training-methodology-row'>
+                        <div className='training-methodology-img-base'>
+                            {this.state.courseDetails.title === 'graphic_design' ?
+                                <>
                                     <img className='training-methodology-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt='sds' />
-                                }
-                            </div>
-                            <div className='training-methodology-seperator'></div>
-                            <div className='training-methodology-text'>
-                                <h2 className='bukra-bold ewings-white-color ewings-subtitle'>Training Methodology</h2>
-                                <br></br>
-                                <h3 className='bukra-regular ewings-course-text'>{this.state.courseDetails.methedology}</h3>
-                            </div>
+                                    <img className='training-methodology-img-mask' src={`${endpoint}/22222.png`} alt='sds' />
+                                </>
+                                :
+                                <img className='training-methodology-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt='sds' />
+                            }
                         </div>
+                        <div className='training-methodology-seperator'></div>
+                        <div className='training-methodology-text'>
+                            <h2 className='bukra-bold ewings-white-color ewings-subtitle'>Training Methodology</h2>
+                            <br></br>
+                            <h3 className='bukra-regular ewings-course-text'>{this.state.courseDetails.methedology}</h3>
+                        </div>
+                    </div>
 
-                        <br></br>
-                        <hr className='ewings-course-list-seperator'></hr>
-                        <br></br>
-                        {/* <div className='landing-grid-div'>
+                    <br></br>
+                    <hr className='ewings-course-list-seperator'></hr>
+                    <br></br>
+                    {/* <div className='landing-grid-div'>
                         <div className='landing-grid-text'>
                         <h2 className='bukra-bold ewings-course-text' >Training Methodology</h2>
                         <br></br>
@@ -163,20 +180,20 @@ export default class Landing extends Component {
                         </div>
                         </div>
                     <hr></hr> */}
-                        <div className='landing-grid-div'>
-                            <div className='course-meet-trainer'>
-                                <h2 className='bukra-bold course-meet-trainer-title'>Meet the Trainer</h2>
-                                <br></br>
-                                <br></br>
-                                <div className="course-trainer-avatar-base">
-                                    <img src={`${endpoint}/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
-                                </div>
-                                <br></br>
-                                <br></br>
-                                <h3 className='bukra-medium course-meet-trainer-title'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h3>
+                    <div className='landing-grid-div'>
+                        <div className='course-meet-trainer'>
+                            <h2 className='bukra-bold course-meet-trainer-title'>Meet the Trainer</h2>
+                            <br></br>
+                            <br></br>
+                            <div className="course-trainer-avatar-base">
+                                <img src={`${endpoint}/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
                             </div>
+                            <br></br>
+                            <br></br>
+                            <h3 className='bukra-medium course-meet-trainer-title'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h3>
                         </div>
-                        {/* <div className='landing-grid-img-base'>
+                    </div>
+                    {/* <div className='landing-grid-img-base'>
                         </div>
                         <div className='landing-grid-text'>
                         <h2 className='bukra-bold ewings-course-text'>Meet the Trainer</h2>
@@ -193,7 +210,7 @@ export default class Landing extends Component {
                                 <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
                             </div>
                         </div> */}
-                    
+
                     <br></br>
                     <hr className='ewings-course-list-seperator'></hr>
                     <br></br>
@@ -261,3 +278,4 @@ export default class Landing extends Component {
         )
     }
 }
+
