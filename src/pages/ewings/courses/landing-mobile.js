@@ -89,9 +89,10 @@ export default class Landing extends Component {
                     }} variant='h3' component='h3' className='bukra-bold ewings-white-color course-header-mob'>{this.state.courseDetails.displayTitle}</Typography>
                 </div>
                 <div className='training-desc-img-base-mob'>
-                    <img className='training-desc-img' src={`${endpoint}/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
+                    <img className='training-desc-img-mob' src={`${endpoint}/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
                 </div>
                 <div className='training-desc-text-mob'>
+                    <br></br>
                     <h2 className='bukra-bold ewings-green-color ewings-subtitle-mob' >Training Description</h2>
                     <br></br>
                     <h3 className='bukra-regular ewings-course-text-mob'>{this.state.courseDetails.description}</h3>
@@ -102,7 +103,7 @@ export default class Landing extends Component {
                     <br></br>
                     <div className='landing-outline-grid-mob'>
                         <div className='training-outlines-img-base-mob'>
-                            <img className='training-desc-img' src={`${endpoint}/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
+                            <img className='training-desc-img-mob' src={`${endpoint}/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
                         </div>
 
                         <div className='training-desc-text'>
