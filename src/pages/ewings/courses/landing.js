@@ -92,7 +92,7 @@ export default class Landing extends Component {
                     </Button>
                     :
                     <Button className='ewings-course-fab bukra-regular ' onMouseLeave={this.handleFabHover} onMouseOver={this.handleFabHover} onClick={this.handleApplicationModalOpen}>
-                        <FontAwesomeIcon icon={faPlus} size='2x' />
+                        <FontAwesomeIcon icon={faPlus} />
                     </Button>
                 }
                 <div className="ewings-landing-grid ewings-height">

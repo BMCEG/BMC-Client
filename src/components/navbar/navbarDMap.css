@@ -40,6 +40,10 @@
 .nav-dmap-left {
     /* background-color: chocolate; */
     width: 34%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
 }
 .nav-dmap-left-mob {
     /* background-color: chocolate; */
@@ -80,7 +84,7 @@
     /* background-color: yellow; */
     /* padding: 1%; */
     /* padding-right: 30px; */
-    height: 6vh;
+    /* height: 6vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,8 +95,12 @@
 
 .nav-ewings-logo-img{
     /* max-width: 70px !important; */
-    height: 6vh !important;
+    max-height: 6vh;
+    /* background-color: yellow; */
+    margin-right: 100%;
     /* object-fit: contain; */
+    /* height: 60%; */
+
 }
 .nav-logo-img-bmc {
     margin-left: 1% !important;
@@ -131,6 +139,17 @@
     flex-wrap: wrap;
     /* justify-content: center; */
     align-items: center;
+}
+.title-ewings-logo {
+    color: black;
+    /* background-color: aqua; */
+    /* margin-right: 1%; */
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 100%; */
+    /* align-items: center; */
 }
 
 /* .btn-link {
