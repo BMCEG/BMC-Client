@@ -28,18 +28,15 @@ export default class FooterTop extends Component {
 
                             <div className='footer-top__content__left'>
                                 <div className='footer-top__content__left__row'>
-                                    <Button variant='link' className='bmcfooter__center__social__btn'>
+                                    <Button variant='link' className='bmcfooter__center__social__btn'  href='https://www.facebook.com/businessmapconsultants/'>
                                         <img src={`${endpoint}/Icons 2-01.png`} className='footer-top__center__social__btn__img' />
                                     </Button>
-
-                                    <Button variant='link' className='bmcfooter__center__social__btn'>
+                                    <Button variant='link' className='bmcfooter__center__social__btn'  href='https://www.linkedin.com/company/businessmapconsultants/'>
                                         <img src={`${endpoint}/Icons 2-02.png`} className='footer-top__center__social__btn__img' />
                                     </Button>
-
-                                    <Button variant='link' className='bmcfooter__center__social__btn'>
+                                    <Button variant='link' className='bmcfooter__center__social__btn' href="tel:01008224224">
                                         <img src={`${endpoint}/Icons 2-03.png`} className='footer-top__center__social__btn__img' />
                                     </Button>
-
                                 </div>
                             </div>
                             <div className='footer-top__content__center'>

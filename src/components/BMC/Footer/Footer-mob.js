@@ -19,19 +19,19 @@ export default class FooterMob extends Component {
                         <img src={`${endpoint}/Logo (1).png`} className='bmcfooterMob__row__img' />
                         <br></br>
                         <div className='bmcfooter__center__social'>
-                            <Button variant='link' className='bmcfooter__center__social__btn'>
+                            <Button variant='link' className='bmcfooter__center__social__btn' href='https://www.facebook.com/businessmapconsultants/'>
                                 <img src={`${endpoint}/Facebook.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
-                            <Button variant='link' className='bmcfooter__center__social__btn'>
+                            <Button variant='link' className='bmcfooter__center__social__btn'  href='https://www.instagram.com/businessmapconsultants/'>
                                 <img src={`${endpoint}/Instagram.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
-                            <Button variant='link' className='bmcfooter__center__social__btn'>
+                            <Button variant='link' className='bmcfooter__center__social__btn'  href='https://www.twitter.com/businessmapconsultants/'>
                                 <img src={`${endpoint}/Twitter.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
-                            <Button variant='link' className='bmcfooter__center__social__btn'>
+                            <Button variant='link' className='bmcfooter__center__social__btn' href='https://www.linkedin.com/company/businessmapconsultants/'>
                                 <img src={`${endpoint}/Linkedin.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
-                            <Button variant='link' className='bmcfooter__center__social__btn'>
+                            <Button variant='link' className='bmcfooter__center__social__btn' href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q'>
                                 <img src={`${endpoint}/Youtube.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
                         </div>

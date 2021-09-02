@@ -1,6 +1,6 @@
 .bmcnav__root {
   background-color: #bdbdbd;
-  height: 111px;
+  height: 8vh;
   position: sticky !important;
   top: 0;
   display: flex;
@@ -19,7 +19,7 @@
 }
 .bmcnav__logo--mob {
   /* background-color: blueviolet; */
-  height: 65px;
+  height: 100%;
   /* max-height: 8vh; */
 }
 .bmcnav__divider {

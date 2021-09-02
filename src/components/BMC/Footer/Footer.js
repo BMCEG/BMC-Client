@@ -27,19 +27,19 @@ export default class Footer extends Component {
                         </div>
                         <br></br>
                         <div className='bmcfooter__center__social'>
-                            <Button variant='link' className='bmcfooter__center__social__btn'>
+                            <Button variant='link' className='bmcfooter__center__social__btn'  href='https://www.facebook.com/businessmapconsultants/'>  
                                 <img src={`${endpoint}/Facebook.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
-                            <Button variant='link' className='bmcfooter__center__social__btn'>
+                            <Button variant='link' className='bmcfooter__center__social__btn'  href='https://www.instagram.com/businessmapconsultants/'>
                                 <img src={`${endpoint}/Instagram.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
-                            <Button variant='link' className='bmcfooter__center__social__btn'>
+                            <Button variant='link' className='bmcfooter__center__social__btn'  href='https://www.twitter.com/businessmapconsultants/'>
                                 <img src={`${endpoint}/Twitter.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
-                            <Button variant='link' className='bmcfooter__center__social__btn'>
+                            <Button variant='link' className='bmcfooter__center__social__btn'  href='https://www.linkedin.com/company/businessmapconsultants/'>
                                 <img src={`${endpoint}/Linkedin.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
-                            <Button variant='link' className='bmcfooter__center__social__btn'>
+                            <Button variant='link' className='bmcfooter__center__social__btn' href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q'>
                                 <img src={`${endpoint}/Youtube.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
                         </div>
@@ -50,7 +50,7 @@ export default class Footer extends Component {
                     <div className='bmcfooter__row__right'>
                         <Typography className='bmcfooter__right__info'>
                             <span>
-                                <Button variant='link' className='bmcfooter__right__info__btn'>
+                                <Button variant='link' className='bmcfooter__right__info__btn' href='https://www.google.com/maps/place/Business+Map+Consultants/@30.0151101,31.4275996,15z/data=!4m2!3m1!1s0x0:0xffc8e216cb0f68c6?sa=X&ved=2ahUKEwjFo_vboeDyAhXHgVwKHaiCA8QQ_BIwGXoECGAQBQ'>
                                     <img src={`${endpoint}/Location.png`} className='bmcfooter__center__social__btn__img' />
                                 </Button>
                                 B103 90th Road, 5th
@@ -59,7 +59,7 @@ export default class Footer extends Component {
                         </Typography>
                         <br></br>
                         <Typography className='bmcfooter__right__info'>
-                            <span>                            <Button variant='link' className='bmcfooter__right__info__btn'>
+                            <span>                            <Button variant='link' className='bmcfooter__right__info__btn' href="tel:01008224224">
                                 <img src={`${endpoint}/Phone.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
 
