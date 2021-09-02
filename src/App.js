@@ -1,14 +1,36 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import BMCHomepage from './pages/BMC/Homepage/Homepage.js';
+import BMCHomepageMob from './pages/BMC/Homepage/Homepage-Mob.js';
+
+import FounderMessage from './pages/BMC/About/FounderMessage/FounderMessage.js';
+import PartnersMessage from './pages/BMC/About/PartnersMessage/PartnersMessage.js';
+import WhyBMC from './pages/BMC/About/whyBMC/whyBMC.js';
+import WhyBMCMob from './pages/BMC/About/whyBMC/whyBMC-mob.js';
+
+import MarketingMGMT from './pages/BMC/services/MarketingMGMT/MarketingMGMT.js';
+import StrategicPlanning from './pages/BMC/services/StrategicPlanning/StrategicPlanning.js';
+import Finance from './pages/BMC/services/Finance/Finance.js';
+import Toolbox from './pages/BMC/services/Toolbox/Toolbox.js';
+import Clients from './pages/BMC/Clients/Clients.js';
+import Contact from './pages/BMC/Contact/Contact.js';
+import ContactMob from './pages/BMC/Contact/Contact-Mob.js';
+import Blogs from './pages/BMC/Blogs/Blogs.js';
+import Blog from './pages/BMC/Blogs/Blog.js';
+import Consultations from './pages/BMC/Consultations/Consultations.js';
+import Careers from './pages/BMC/Careers/Careers.js';
+import JobPost from './pages/BMC/Careers/JobPost.js';
+import Courses from './pages/BMC/Courses/Courses.js';
+import Course from './pages/BMC/Courses/Course.js';
+
 import LandingPage from "./pages/landing/landing.js";
 import LandingPageMob from "./pages/landing/landing-mobile.js";
 
-import NavbarBMC from './components/navbar/navbarBMC.js';
-import NavbarBMCSmall from './components/navbar/navbarBMC-small.js';
-import NavbarBMCSmaller from './components/navbar/navbarBMC-smaller.js';
-import NavbarBMCMob from './components/navbar/navbarBMC-mobile';
-import FooterBMC from './components/footer/footer.js';
+import NavbarBMC from './components/BMC/Navbar/Navbar.js';
+import NavbarBMCMob from './components/BMC/Navbar/Navbar-Mob.js';
+import FooterBMC from './components/BMC/Footer/Footer.js';
+import FooterTop from './components/BMC/Footer/Footer-Top.js';
 import FooterBMCMob from './components/footer/footer-mobile';
 
 import FloatingBtn from './components/floatingBtn.js';
@@ -19,14 +41,12 @@ import FoundersMessageMob from './pages/contexts/bmc/about/foundersMessage-mobil
 import OurStory from './pages/contexts/bmc/about/ourStory.js';
 import OurStoryMob from './pages/contexts/bmc/about/ourStory-mobile.js';
 import MeetTheExperts from './pages/contexts/bmc/about/meetTheExperts.js';
-import PartnersMessage from './pages/contexts/bmc/about/partnersMessage.js';
-import PartnersMessageMob from './pages/contexts/bmc/about/partnersMessage-mobile.js';
 
-import WhyBMC from './pages/contexts/bmc/whyBMC/whyBMC.js'
-import WhyBMCMob from './pages/contexts/bmc/whyBMC/whyBMC-mobile.js'
+// import WhyBMC from './pages/contexts/bmc/whyBMC/whyBMC.js'
+// import WhyBMCMob from './pages/contexts/bmc/whyBMC/whyBMC-mobile.js'
 
-import CoursesList from './pages/contexts/bmc/courses/courses.js';
-import CoursesListMob from './pages/contexts/bmc/courses/courses-mob.js';
+// import CoursesList from './pages/contexts/bmc/courses/courses.js';
+// import CoursesListMob from './pages/contexts/bmc/courses/courses-mob.js';
 
 import Service from './pages/contexts/bmc/services/service.js'
 import ServiceMob from './pages/contexts/bmc/services/service-mobile.js'
@@ -40,24 +60,13 @@ import CoursePageEwings from './pages/ewings/courses/landing.js';
 import CoursePageEwingsMob from './pages/ewings/courses/landing-mobile.js';
 
 import CareerLanding from './pages/contexts/bmc/careers/careerLanding.js';
-import CareerOpenings from './pages/contexts/bmc/careers/careerOpenings';
-import CareerOpeningsMob from './pages/contexts/bmc/careers/careerOpenings-mobile.js';
 import CareerListing from './pages/contexts/bmc/careers/careerListing.js';
 import CareerListingMob from './pages/contexts/bmc/careers/careerListing-mobile.js';
 
 import Gallery from './pages/contexts/bmc/gallery/gallery.js';
 import GalleryMob from './pages/contexts/bmc/gallery/gallery-mob.js';
 
-import Partners from './pages/contexts/bmc/partners/partners.js';
-import PartnersMob from './pages/contexts/bmc/partners/partners-mobile.js';
 
-import Contact from './pages/contexts/bmc/contactUs/contact.js';
-import ContactMob from './pages/contexts/bmc/contactUs/contact-mobile.js';
-
-import Blogs from './pages/contexts/bmc/blogs/blogs.js';
-import BlogsMob from './pages/contexts/bmc/blogs/blogs-mobile.js';
-import BlogPage from './pages/blog/blog.js';
-import BlogPageMob from './pages/blog/blog-mobile.js';
 
 import DefaultBMC from './pages/contexts/bmc/default.js';
 import DefaultBMCMob from './pages/contexts/bmc/default-mobile';
@@ -87,6 +96,8 @@ import HomepageEwings from './pages/ewings/homepage/homepage.js'
 import HomepageEwingsMob from './pages/ewings/homepage/homepage-mobile'
 
 import Media from 'react-media';
+import HR from './pages/BMC/services/HR/HR.js';
+import FooterMob from './components/BMC/Footer/Footer-mob.js';
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -177,7 +188,8 @@ export default class App extends Component {
                   <Media query='(min-width: 1024px)'>
                     {(matches) => {
                       return matches ?
-                        <FloatingBtn />
+                        // <FloatingBtn />
+                        null
                         :
                         null
                     }}
@@ -188,18 +200,34 @@ export default class App extends Component {
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route path='/' exact component={DefaultBMC} />
+                    <Route path='/temp' exact component={BMCHomepage} />
                     :
-                    <Route path='/' exact component={DefaultBMCMob} />
+                    <Route path='/temp' exact component={BMCHomepage} />
+                }}
+              </Media>
+              <Media query='(min-width: 1024px)'>
+                {(matches) => {
+                  return matches ?
+                    <Route path='/temp/fm' exact component={Finance} />
+                    :
+                    <Route path='/temp/fm' exact component={Finance} />
+                }}
+              </Media>
+              <Media query='(min-width: 1024px)'>
+                {(matches) => {
+                  return matches ?
+                    <Route path='/' exact component={BMCHomepage} />
+                    :
+                    <Route path='/' exact component={BMCHomepageMob} />
                 }}
               </Media>
 
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route path="/courses/:courseName" exact component={LandingPage} />
+                    <Route path="/courses/:courseName" exact component={Course} />
                     :
-                    <Route path="/courses/:courseName" exact component={LandingPageMob} />
+                    <Route path="/courses/:courseName" exact component={Course} />
                 }}
               </Media>
 
@@ -209,16 +237,16 @@ export default class App extends Component {
                   return matches ?
                     <Route path='/about/partners' exact component={PartnersMessage} />
                     :
-                    <Route path='/about/partners' exact component={PartnersMessageMob} />
+                    <Route path='/about/partners' exact component={PartnersMessage} />
                 }}
               </Media>
 
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route path='/about/founder' exact component={FoundersMessage} />
+                    <Route path='/about/founder' exact component={FounderMessage} />
                     :
-                    <Route path='/about/founder' exact component={FoundersMessageMob} />
+                    <Route path='/about/founder' exact component={FounderMessage} />
                 }}
               </Media>
 
@@ -242,7 +270,7 @@ export default class App extends Component {
                 }}
               </Media>
 
-              <Media query='(min-width: 1024px)'>
+              {/* <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
                     <Route
@@ -261,105 +289,67 @@ export default class App extends Component {
                       )}
                     />
                 }}
-              </Media>
+              </Media> */}
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route
-                      path='/services/marketingMgmt'
-                      exact
-                      render={() => (
-                        <Service logo='service-marketing-mgmt.png' sideImage='landing-marketing-mgmt.jpg' title='Marketing Management' />
-                      )}
-                    />
+                    <Route path='/services/marketingMgmt' exact component={MarketingMGMT} />
                     :
-                    <Route
-                      path='/services/marketingMgmt'
-                      exact
-                      render={() => (
-                        <ServiceMob logo='service-marketing-mgmt.png' sideImage='landing-marketing-mgmt.jpg' title='Marketing Management' />
-                      )}
-                    />
+                    <Route path='/services/marketingMgmt' exact component={MarketingMGMT} />
                 }}
               </Media>
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route
-                      path='/services/financial'
-                      exact
-                      render={() => (
-                        <Service logo='service-financial.png' sideImage='landing-financial.jpg' title='Finance & Accounting' />
-                      )}
-                    />
+                    <Route path='/services/strategic' exact component={StrategicPlanning} />
                     :
-                    <Route
-                      path='/services/financial'
-                      exact
-                      render={() => (
-                        <ServiceMob logo='service-financial.png' sideImage='landing-financial.jpg' title='Finance & Accounting' />
-                      )}
-                    />
+                    <Route path='/services/strategic' exact component={StrategicPlanning} />
                 }}
               </Media>
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route
-                      path='/services/hr'
-                      exact
-                      render={() => (
-                        <Service logo='service-hr.png' sideImage='landing-hr.jpg' title='Human Resources' />
-                      )}
-                    />
+                    <Route path='/services/financial' exact component={Finance} />
                     :
-                    <Route
-                      path='/services/hr'
-                      exact
-                      render={() => (
-                        <ServiceMob logo='service-hr.png' sideImage='landing-hr.jpg' title='Human Resources' />
-                      )}
-                    />
+                    <Route path='/services/financial' exact component={Finance} />
                 }}
               </Media>
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route
-                      path='/services/toolbox'
-                      exact
-                      render={() => (
-                        <Service logo='service-business-tool-box.png' sideImage='landing-toolbox.png' title='BMC Tool Box' />
-                      )}
-                    />
+                    <Route path='/services/hr' exact component={HR} />
                     :
-                    <Route
-                      path='/services/toolbox'
-                      exact
-                      render={() => (
-                        <ServiceMob logo='service-business-tool-box.png' sideImage='landing-toolbox.png' title='BMC Tool Box' />
-                      )}
-                    />
+                    <Route path='/services/hr' exact component={HR} />
                 }}
               </Media>
-              <Route path='/careers' exact component={CareerLanding} />
 
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route path='/careers/openings/:postingID' exact component={CareerListing} />
+                    <Route path='/services/toolbox' exact component={Toolbox} />
+                    :
+                    <Route path='/services/toolbox' exact component={Toolbox} />
+                }}
+              </Media>
+
+              {/* <Route path='/careers' exact component={CareerLanding} /> */}
+
+              <Media query='(min-width: 1024px)'>
+                {(matches) => {
+                  return matches ?
+                    <Route path='/careers/:postingID' exact component={JobPost} />
                     // <Route path='/careers/openings' exact component={CareerOpenings} />
                     :
-                    <Route path='/careers/openings/:postingID' exact component={CareerListingMob} />
+                    <Route path='/careers/:postingID' exact component={JobPost} />
                   // <Route path='/careers/openings' exact component={CareerOpeningsMob} />
                 }}
               </Media>
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route path='/careers/openings' exact component={CareerOpenings} />
+                    <Route path='/careers' exact component={Careers} />
                     :
-                    <Route path='/careers/openings' exact component={CareerOpeningsMob} />
+                    <Route path='/careers' exact component={Careers} />
                 }}
               </Media>
 
@@ -367,17 +357,25 @@ export default class App extends Component {
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route path='/courses' exact component={CoursesList} />
+                    <Route path='/courses' exact component={Courses} />
                     :
-                    <Route path='/courses' exact component={CoursesListMob} />
+                    <Route path='/courses' exact component={Courses} />
                 }}
               </Media>
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route path='/partners' exact component={Partners} />
+                    <Route path='/partners' exact component={Clients} />
                     :
-                    <Route path='/partners' exact component={PartnersMob} />
+                    <Route path='/partners' exact component={Clients} />
+                }}
+              </Media>
+              <Media query='(min-width: 1024px)'>
+                {(matches) => {
+                  return matches ?
+                    <Route path='/consultations' exact component={Consultations} />
+                    :
+                    <Route path='/consultations' exact component={Consultations} />
                 }}
               </Media>
 
@@ -402,16 +400,16 @@ export default class App extends Component {
                     // <Route path='/partners' exact component={Partners} />
                     <Route path='/blogs' exact component={Blogs} />
                     :
-                    <Route path='/blogs' exact component={BlogsMob} />
+                    <Route path='/blogs' exact component={Blogs} />
                   // <Route path='/partners' exact component={PartnersMob} />      
                 }}
               </Media>
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route path='/blogs/:blogID' exact component={BlogPage} />
+                    <Route path='/blogs/:blogID' exact component={Blog} />
                     :
-                    <Route path='/blogs/:blogID' exact component={BlogPageMob} />
+                    <Route path='/blogs/:blogID' exact component={Blog} />
                 }}
               </Media>
 
@@ -419,11 +417,14 @@ export default class App extends Component {
                 <Media query='(min-width: 1024px)'>
                   {(matches) => {
                     return matches ?
-                      <FooterBMC />
+                      // <>
+                        /* <FooterTop /> */
+                        <FooterBMC />
+                      // </>
                       :
                       <>
-                        <FooterBMCMob />
-                        <FloatingBtnMob />
+                        <FooterMob />
+                        {/* <FloatingBtnMob /> */}
 
                       </>
                   }}

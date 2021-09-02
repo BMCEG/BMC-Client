@@ -204,7 +204,7 @@
 }
 
 .rec-arrow {
-    display: none !important;
+    /* display: none !important; */
 }
 
 .home-partner:hover {

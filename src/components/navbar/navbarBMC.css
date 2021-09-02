@@ -1,8 +1,8 @@
 .nav-bmc-root {
-    background-color: whitesmoke;
-    box-shadow: 1px 1px 5px #393938 !important;
-    padding-left: 1%;
-    padding-right: 1%;
+    background-color: #bdbdbd;
+    /* box-shadow: 1px 1px 5px #393938 !important; */
+    /* padding-left: 1%; */
+    /* padding-right: 1%; */
     display: flex !important;
     /* width: 100%; */
     /* min-width: 100%; */
@@ -43,7 +43,8 @@
     display: flex;
     min-width: 65%;
     max-width: 65%;
-    /* background-color: yellow; */
+    height: 100% !important;
+    background-color: yellow;
     /* overflow-x: hidden; */
     /* font-size: 100% !important; */
     font: inherit !important;

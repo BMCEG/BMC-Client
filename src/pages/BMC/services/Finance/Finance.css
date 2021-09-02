@@ -1,0 +1,153 @@
+.finance-accounting__root {
+  min-height: 100vh;
+  background-color: #f8fafb;
+}
+
+.finance-accounting__title {
+  background-color: #d5d7d7;
+  display: flex;
+  margin-top: 2vh;
+}
+
+.finance-accounting__title-font {
+  color: black;
+  background-color: #f8fafb;
+  font-family: "bukra-bold" !important;
+  margin: auto !important;
+}
+.finance-accounting__banner {
+  /* background-color: chartreuse; */
+  /* max-height: 400px; */
+  /* margin-top: 2%;
+  margin-bottom: 2%; */
+}
+.finance-accounting__banner-img {
+  width: 100%;
+  -webkit-animation: fadeIn 0.8s;
+  animation: fadeIn 0.8s;
+
+  /* height: 400px; */
+  object-fit: cover;
+}
+
+.finance-accounting__subtitle-font {
+  color: black;
+  width: 100%;
+  margin-left: 10% !important;
+  font-family: "bukra-bold" !important;
+}
+
+.finance-accounting__subtitle {
+  display: flex;
+}
+.finance-accounting_subtitle-border {
+  background-color: #dcddde;
+  width: 150% !important;
+}
+.finance-accounting__body--left {
+  background-color: #dcddde;
+  /* max-height: 40px; */
+  width: 50%;
+  margin-right: 3%;
+}
+.finance-accounting__body--right {
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .finance-accounting__body--left {
+    width: 25% !important;
+  }
+  .finance-accounting__body--right {
+    /* background-color: #DCDDDE; */
+    /* max-height: 40px; */
+    width: 55% !important;
+    /* margin-right: 3%; */
+  }
+}
+.finance-accounting__body--right {
+  /* background-color: sandybrown; */
+  width: 35%;
+}
+.finance-accounting__heading {
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 18px !important;
+}
+.finance-accounting__body {
+  width: 65%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.finance-accounting__body--text {
+  font-family: "bukra-regular" !important;
+  padding: 1%;
+  font-size: 14px !important;
+}
+.finance-accounting__body_canvas {
+  background-color: #d5d7d7;
+  width: 70%;
+  padding: 5%;
+  margin: auto;
+}
+.finance-accounting__body--text--card {
+  text-align: left;
+  /* color: white; */
+}
+.finance-accounting__body--text--card--heading {
+  text-align: left;
+  color: white;
+  font-family: "bukra-bold" !important;
+}
+.finance-accounting__img--base {
+  text-align: center;
+}
+.finance-accounting__body__img__border-left {
+  background-color: #636363;
+  width: 20%;
+  height: 5vh;
+  z-index: -3 !important;
+  transform: translate(-5%, 45%);
+}
+.finance-accounting__body__img__border-right {
+  background-color: #636363;
+  width: 20%;
+  height: 5vh;
+  margin-left: auto;
+  transform: translate(0%, -45%);
+  z-index: 2;
+}
+.finance-accounting__img {
+  height: 400px;
+  width: 75%;
+  object-fit: cover;
+  margin: auto !important;
+  z-index: 1;
+}
+@media screen and (min-width: 400px) {
+  .finance-accounting__heading {
+    font-size: 25px !important;
+  }
+  .finance-accounting__body--text {
+    font-size: 18px !important;
+  }
+}
+@media screen and (min-width: 800px) {
+  .finance-accounting__heading {
+    font-size: 36px !important;
+  }
+  .finance-accounting__body--text {
+    font-size: 20px !important;
+  }
+}
+
+@font-face {
+  font-family: "bukra-bold";
+  src: local("bukra-bold"),
+    url(../../../../fonts/bukra-bold.OTF) format("truetype");
+}
+@font-face {
+  font-family: "bukra-regular";
+  src: local("bukra-regular"),
+    url(../../../../fonts/bukra-regular.OTF) format("truetype");
+}

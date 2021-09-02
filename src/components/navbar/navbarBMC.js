@@ -41,6 +41,27 @@ export default class NavbarBMC extends Component {
         ];
 
         const servicesItems = [{
+            displayTitle: "Business Mentoring & Guidance",
+            // path: '/services/'
+            nav: "bmc"
+        },
+        {
+            displayTitle: "Corporate Governance",
+            nav: 'bmc'
+        },
+        {
+            displayTitle: "BMC Tool Box",
+            path: "/services/toolbox",
+            nav: 'bmc'
+        },
+        {
+            displayTitle: "Training and Developments",
+            path: "/courses",
+            nav: 'bmc'
+        },
+    ]
+
+        const businessMentoringItems = [{
             displayTitle: "Strategic Plan",
             path: "/services/strategic",
             nav: 'bmc'
@@ -60,11 +81,7 @@ export default class NavbarBMC extends Component {
             path: "/services/financial",
             nav: 'bmc'
         },
-        {
-            displayTitle: "BMC Tool Box",
-            path: "/services/toolbox",
-            nav: 'bmc'
-        },
+       
         ];
 
         return (
@@ -91,11 +108,11 @@ export default class NavbarBMC extends Component {
                     <div className="title">
                         <NavbarDropdown title="Services" items={servicesItems} />
                     </div>
-                    <div className="title">
+                    {/* <div className="title">
                         <Button variant="link" href='/courses' >
                             <p className='bukra-medium title-size'>Courses</p>
                         </Button>
-                    </div>
+                    </div> */}
                     <div className="title">
                         <Button variant="link" href='/partners' >
 

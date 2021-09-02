@@ -96,12 +96,12 @@ export default class homepage extends Component {
                         breakPoints={this.state.breakPoints}
                         enableMouseSwipe={true}
                         enableAutoPlay={true}
-                        disableArrowsOnEnd={true}
+                        disableArrowsOnEnd={false}
                         className="home-partners-ewings"
                         pagination={false}
-                        easing="cubic-bezier(1,.15,.55,1.54)"
-                        tiltEasing="cubic-bezier(0.110, 1, 1.000, 0.210)"
-                        transitionMs={4500}
+                        // easing="cubic-bezier(1,.15,.55,1.54)"
+                        // tiltEasing="cubic-bezier(0.110, 1, 1.000, 0.210)"
+                        // transitionMs={4500}
                     >
                         {this.state.partners.map((partner) => (
                             <div className='home-partner-ewings'>

@@ -1,0 +1,59 @@
+.clients__root {
+  min-height: 100vh;
+  background-color: #f8fafb;
+}
+
+.clients__header {
+  background-color: #d5d7d7;
+  display: flex;
+  margin-top: 2vh;
+}
+.clients__header--font {
+  color: black;
+  background-color: #f8fafb;
+  font-family: "bukra-bold" !important;
+  margin: auto !important;
+}
+.clients__header--font--size {
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 18px !important;
+}
+.clients_row {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    /* background-color: tomato; */
+    /* max-height: 70px; */
+}
+.clients__client {
+  padding: 1%;
+  background-color: burlywood;
+}
+.clients__client__img {
+  background-color: cadetblue;
+  height: 100%;
+}
+
+@media screen and (min-width: 400px) {
+  .clients__header--font--size {
+    font-size: 25px !important;
+  }
+}
+@media screen and (min-width: 800px) {
+  .clients__header--font--size {
+    font-size: 36px !important;
+  }
+}
+
+@font-face {
+  font-family: "bukra-bold";
+  src: local("bukra-bold"),
+    url(../../../fonts/bukra-bold.OTF) format("truetype");
+}
+@font-face {
+  font-family: "bukra-regular";
+  src: local("bukra-regular"),
+    url(../../../fonts/bukra-regular.OTF) format("truetype");
+}

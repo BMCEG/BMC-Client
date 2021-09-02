@@ -124,7 +124,18 @@ export default class ourStory extends Component {
 
   render() {
     return (
-      <div style={{ backgroundImage: `url(${endpoint}/bg-our-story.png)`, backgroundSize: 'cover', backgroundPositionX: '-290px' }}>
+      <div className="ourStory-root-mob">
+                <br></br>
+                <br></br>
+                <br></br>
+                <div className='strategic-planning__title'>
+                    <Typography className='strategic-planning__heading strategic-planning__title-font '>
+                        OUR STORY
+                    </Typography>
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
         <Accordion expanded={this.state.panel1} onChange={() => this.handleChange('panel1')}>
           <AccordionSummary
             // expandIcon={<ExpandMoreIcon />}
@@ -143,7 +154,7 @@ export default class ourStory extends Component {
             </div>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography variant='h6' component='h6' className='bukra-regular'>
+            <Typography variant='h6' component='h6' className='bukra-regular '>
               Since inception, we have advised, planned and managed
               investments valued over 6.5 billion EGP specializing in
               real-estate development and construction and trading

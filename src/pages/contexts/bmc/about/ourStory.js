@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./ourStory.css";
+import '../../../BMC/services/StrategicPlanning/StrategicPlanning.css'
 import StoryBalls from "../../../../components/storyBalls";
 import endpoint from "../../../../helpers/api_service";
-
+import { Typography } from "@material-ui/core";
 export default class ourStory extends Component {
   constructor(props) {
     super(props);
@@ -51,10 +52,18 @@ export default class ourStory extends Component {
 
   render() {
     return (
-      <div className="ourStory-root" style={{ backgroundImage:`url(${endpoint}/bg-our-story.png)`, backgroundSize: 'cover', backgroundPositionY: '-355px' }}>
-        {/* <div className="ourStory-text-box">
-          <h1>OUR STORY</h1>
-        </div> */}
+      <div className="ourStory-root">
+                <br></br>
+                <br></br>
+                <br></br>
+                <div className='strategic-planning__title'>
+                    <Typography className='strategic-planning__heading strategic-planning__title-font '>
+                        OUR STORY
+                    </Typography>
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
         <div className="ourStory-balls">
           <StoryBalls />
         </div>

@@ -22,6 +22,8 @@ export default class storyBalls extends Component {
             ball5text: "none",
             ball6Y: 0,
             ball6text: "none",
+            ballHoverFlag: false,
+            ballHovered: ''
         };
     }
 
@@ -31,36 +33,48 @@ export default class storyBalls extends Component {
                 this.setState({
                     ball1Y: -75,
                     ball1text: "block",
+                    ballHoverFlag: true,
+                    ballHovered: '1'
                 });
                 break;
             case "ball2":
                 this.setState({
                     ball2Y: 75,
                     ball2text: "block",
+                    ballHoverFlag: true,
+                    ballHovered: '2'
                 });
                 break;
             case "ball3":
                 this.setState({
                     ball3Y: -58,
                     ball3text: "block",
+                    ballHoverFlag: true,
+                    ballHovered: '3'
                 });
                 break;
             case "ball4":
                 this.setState({
                     ball4Y: 85,
                     ball4text: "block",
+                    ballHoverFlag: true,
+                    ballHovered: '4'
                 });
                 break;
             case "ball5":
                 this.setState({
                     ball5Y: -50,
                     ball5text: "block",
+                    ballHoverFlag: true,
+                    ballHovered: '5'
                 });
                 break;
             case "ball6":
                 this.setState({
                     ball6Y: 70,
                     ball6text: "block",
+                    ballHoverFlag: true,
+                    ballHovered: '6'
                 });
                 break;
             default:
@@ -74,36 +88,48 @@ export default class storyBalls extends Component {
                 this.setState({
                     ball1Y: 0,
                     ball1text: "none",
+                    ballHoverFlag: false,
+                    ballHovered: ''
                 });
                 break;
             case "ball2":
                 this.setState({
                     ball2Y: 0,
                     ball2text: "none",
+                    ballHoverFlag: false,
+                    ballHovered: ''
                 });
                 break;
             case "ball3":
                 this.setState({
                     ball3Y: 0,
                     ball3text: "none",
+                    ballHoverFlag: false,
+                    ballHovered: ''
                 });
                 break;
             case "ball4":
                 this.setState({
                     ball4Y: 0,
                     ball4text: "none",
+                    ballHoverFlag: false,
+                    ballHovered: ''
                 });
                 break;
             case "ball5":
                 this.setState({
                     ball5Y: 0,
                     ball5text: "none",
+                    ballHoverFlag: false,
+                    ballHovered: ''
                 });
                 break;
             case "ball6":
                 this.setState({
                     ball6Y: 0,
                     ball6text: "none",
+                    ballHoverFlag: false,
+                    ballHovered: ''
                 });
                 break;
             default:
@@ -115,79 +141,157 @@ export default class storyBalls extends Component {
             <div className="story-board">
                 <div className="story-top">
                     <div className="story-node">
-                        <div
-                            className="story-node-year bukra-bold"
-                            style={{
-                                transform: `translate(0px, ${this.state.ball1Y}px)`,
-                            }}>
-                            <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>2014</h2>
+                        {this.state.ballHoverFlag && this.state.ballHovered !== '1' ?
                             <div
+                                className="story-node-year bukra-bold fadeOut"
                                 style={{
-                                    display: `${this.state.ball1text}`,
-                                    // transform: `translate(0px, ${this.state.ball1Y}px)`
+                                    transform: `translate(0px, ${this.state.ball1Y}px)`,
                                 }}>
-                                <div className="story-node-text">
-                                    <h3>
-                                        Since inception, we have advised, planned and managed
-                                        investments valued over 6.5 billion EGP specializing in
-                                        real-estate development and construction and trading
-                                        industries
-                                    </h3>
+                                <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
+                                    2014
+                                </h2>
+                                <div
+                                    style={{
+                                        display: `${this.state.ball1text}`,
+                                    }}>
+                                    <div className="story-node-text">
+                                        <h3>
+                                            Since inception, we have advised, planned and managed
+                                            investments valued over 6.5 billion EGP specializing in
+                                            real-estate development and construction and trading
+                                            industries
+                                        </h3>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            :
+                            <div
+                                className="story-node-year bukra-bold fadeIn"
+                                style={{
+                                    transform: `translate(0px, ${this.state.ball1Y}px)`,
+                                }}>
+                                <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
+                                    2014
+                                </h2>
+                                <div
+                                    style={{
+                                        display: `${this.state.ball1text}`,
+                                    }}>
+                                    <div className="story-node-text">
+                                        <h3>
+                                            Since inception, we have advised, planned and managed
+                                            investments valued over 6.5 billion EGP specializing in
+                                            real-estate development and construction and trading
+                                            industries
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        }
                     </div>
                     <div className="line-hidden"></div>
                     <div className="story-node"></div>
                     <div className="line-hidden"></div>
                     <div className="story-node">
-                        <div
-                            className="story-node-year bukra-bold"
-                            style={{
-                                transform: `translate(0px, ${this.state.ball3Y}px)`,
-                            }}>
-                            <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
-                                2016-2017
-                            </h2>
+                        {this.state.ballHoverFlag && this.state.ballHovered !== '3' ?
                             <div
+                                className="story-node-year bukra-bold fadeOut"
                                 style={{
-                                    display: `${this.state.ball3text}`,
-                                    // transform: `translate(0px, ${this.state.ball1Y}px)`
+                                    transform: `translate(0px, ${this.state.ball3Y}px)`,
                                 }}>
-                                <div className="story-node-text">
-                                    <h3>
-                                        Widen our scope of services to include Financial advisory,
-                                        serving new sectors like import & export, supporting
-                                        startups and entrepreneurs.
-                                    </h3>
+                                <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
+                                    2016-2017
+                                </h2>
+                                <div
+                                    style={{
+                                        display: `${this.state.ball3text}`,
+                                        // transform: `translate(0px, ${this.state.ball1Y}px)`
+                                    }}>
+                                    <div className="story-node-text">
+                                        <h3>
+                                            Widen our scope of services to include Financial advisory,
+                                            serving new sectors like import & export, supporting
+                                            startups and entrepreneurs.
+                                        </h3>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            :
+                            <div
+                                className="story-node-year bukra-bold fadeIn"
+                                style={{
+                                    transform: `translate(0px, ${this.state.ball3Y}px)`,
+                                }}>
+                                <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
+                                    2016-2017
+                                </h2>
+                                <div
+                                    style={{
+                                        display: `${this.state.ball3text}`,
+                                        // transform: `translate(0px, ${this.state.ball1Y}px)`
+                                    }}>
+                                    <div className="story-node-text">
+                                        <h3>
+                                            Widen our scope of services to include Financial advisory,
+                                            serving new sectors like import & export, supporting
+                                            startups and entrepreneurs.
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        }
                     </div>
                     <div className="line-hidden"></div>
                     <div className="story-node"></div>
                     <div className="line-hidden"></div>
                     <div className="story-node">
-                        <div
-                            className="story-node-year bukra-bold"
-                            style={{
-                                transform: `translate(0px, ${this.state.ball5Y}px)`,
-                            }}>
-                            <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>2020</h2>
+                        {this.state.ballHoverFlag && this.state.ballHovered !== '5' ?
                             <div
+                                className="story-node-year bukra-bold fadeOut"
                                 style={{
-                                    display: `${this.state.ball5text}`,
-                                    // transform: `translate(0px, ${this.state.ball1Y}px)`
+                                    transform: `translate(0px, ${this.state.ball5Y}px)`,
                                 }}>
-                                <div className="story-node-text">
-                                    <h3>
-                                        Dealing with COVID 19 Pandemic with all our business clients
-                                        to pass this critical period with tailored crisis management
-                                        solutions for each sector and industry.
-                                    </h3>
+                                <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
+                                    2020
+                                </h2>
+                                <div
+                                    style={{
+                                        display: `${this.state.ball5text}`,
+                                        // transform: `translate(0px, ${this.state.ball1Y}px)`
+                                    }}>
+                                    <div className="story-node-text">
+                                        <h3>
+                                            Dealing with COVID 19 Pandemic with all our business clients
+                                            to pass this critical period with tailored crisis management
+                                            solutions for each sector and industry.
+                                        </h3>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            :
+                            <div
+                                className="story-node-year bukra-bold fadeIn"
+                                style={{
+                                    transform: `translate(0px, ${this.state.ball5Y}px)`,
+                                }}>
+                                <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
+                                    2020
+                                </h2>
+                                <div
+                                    style={{
+                                        display: `${this.state.ball5text}`,
+                                        // transform: `translate(0px, ${this.state.ball1Y}px)`
+                                    }}>
+                                    <div className="story-node-text">
+                                        <h3>
+                                            Dealing with COVID 19 Pandemic with all our business clients
+                                            to pass this critical period with tailored crisis management
+                                            solutions for each sector and industry.
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        }
                     </div>
                     <div className="line-hidden"></div>
                     <div className="story-node"></div>
@@ -262,45 +366,81 @@ export default class storyBalls extends Component {
                     <div className="story-node"></div>
                     <div className="line-hidden"></div>
                     <div className="story-node">
-                        <div className="story-node-year bukra-bold">
-                            <h2
-                                className="story-node-year-bottom"
-                                style={{
-                                    textAlign: "left",
-                                    paddingLeft: "1%",
-                                    transform: `translate(0px, ${this.state.ball2Y}px)`, paddingTop: '3%'
-                                }}>
-                                2015
-                            </h2>
-                            <div
-                                style={{
-                                    display: `${this.state.ball2text}`,
-                                }}>
-                                <div className="story-node-text-ball2">
-                                    <h3>
-                                        More industries included in the manufacturing and
-                                        agricultural sector ordering feasibility studies and setup for
-                                        factories in cosmeceuticals, detergents, food, and packing
-                                    </h3>
+                        {this.state.ballHoverFlag && this.state.ballHovered !== '2' ?
+                            <div className="story-node-year bukra-bold fadeOut">
+                                <h2
+                                    className="story-node-year-bottom"
+                                    style={{
+                                        textAlign: "left",
+                                        paddingLeft: "1%",
+                                        transform: `translate(0px, ${this.state.ball2Y}px)`, paddingTop: '3%'
+                                    }}>2015
+                                </h2>
+                                <div
+                                    style={{
+                                        display: `${this.state.ball2text}`,
+                                    }}>
+                                    <div className="story-node-text-ball2">
+                                        <h3>
+                                            More industries included in the manufacturing and
+                                            agricultural sector ordering feasibility studies and setup for
+                                            factories in cosmeceuticals, detergents, food, and packing
+                                        </h3>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            : <div className="story-node-year bukra-bold fadeIn">
+                                <h2
+                                    className="story-node-year-bottom"
+                                    style={{
+                                        textAlign: "left",
+                                        paddingLeft: "1%",
+                                        transform: `translate(0px, ${this.state.ball2Y}px)`, paddingTop: '3%'
+                                    }}>2015
+                                </h2>
+                                <div
+                                    style={{
+                                        display: `${this.state.ball2text}`,
+                                    }}>
+                                    <div className="story-node-text-ball2">
+                                        <h3>
+                                            More industries included in the manufacturing and
+                                            agricultural sector ordering feasibility studies and setup for
+                                            factories in cosmeceuticals, detergents, food, and packing
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        }
                     </div>
                     <div className="line-hidden"></div>
                     <div className="story-node"></div>
                     <div className="line-hidden"></div>
                     <div className="story-node">
                         <div className="story-node-year bukra-bold">
-                            <h2
-                                className="story-node-year-bottom"
-                                style={{
-                                    textAlign: "left",
-                                    paddingLeft: "1%"
-                                    , paddingTop: '3%',
-                                    transform: `translate(0px, ${this.state.ball4Y}px)`,
-                                }}>
-                                2018-2019
-                            </h2>
+                            {this.state.ballHoverFlag && this.state.ballHovered !== '4' ?
+                                <h2
+                                    className="story-node-year-bottom fadeOut"
+                                    style={{
+                                        textAlign: "left",
+                                        paddingLeft: "1%"
+                                        , paddingTop: '3%',
+                                        transform: `translate(0px, ${this.state.ball4Y}px)`,
+                                    }}>
+                                    2018-2019
+                                </h2>
+                                :
+                                <h2
+                                    className="story-node-year-bottom fadeIn"
+                                    style={{
+                                        textAlign: "left",
+                                        paddingLeft: "1%"
+                                        , paddingTop: '3%',
+                                        transform: `translate(0px, ${this.state.ball4Y}px)`,
+                                    }}>
+                                    2018-2019
+                                </h2>
+                            }
                             <div
                                 style={{
                                     display: `${this.state.ball4text}`,
@@ -321,11 +461,23 @@ export default class storyBalls extends Component {
                     <div className="story-node">
                         <div
                             className="story-node-year bukra-bold">
-                            <h2
-                                className="story-node-year-bottom"
-                                style={{
-                                    textAlign: "left", paddingLeft: "1%", transform: `translate(100px, ${this.state.ball6Y}px)`, paddingTop: '3%',
-                                }}>2021</h2>
+                            {this.state.ballHoverFlag && this.state.ballHovered !== '6' ?
+                                <h2
+                                    className="story-node-year-bottom fadeOut"
+                                    style={{
+                                        textAlign: "left", paddingLeft: "1%", transform: `translate(100px, ${this.state.ball6Y}px)`, paddingTop: '3%',
+                                    }}>
+                                    2021
+                                </h2>
+                                :
+                                <h2
+                                    className="story-node-year-bottom fadeIn"
+                                    style={{
+                                        textAlign: "left", paddingLeft: "1%", transform: `translate(100px, ${this.state.ball6Y}px)`, paddingTop: '3%',
+                                    }}> 2021
+                                </h2>
+
+                            }
                             <div
                                 style={{
                                     display: `${this.state.ball6text}`,

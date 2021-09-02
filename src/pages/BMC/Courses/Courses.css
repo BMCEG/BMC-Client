@@ -1,0 +1,74 @@
+.courses__root {
+  min-height: 100vh;
+  background-color: #f8fafb;
+}
+.courses__list {
+  display: flex;
+  width: 85%;
+  /* background-color: crimson; */
+  margin: auto;
+}
+
+.courses__list__left {
+  width: 65%;
+  margin: auto;
+  /* background-color: seagreen; */
+  height: 100%;
+  padding: 4vmin;
+}
+.courses__list__right {
+  width: 65%;
+  /* background-color: seagreen; */
+  height: 100%;
+  padding: 4vmin;
+}
+
+.courses__list__course__info--header--size {
+  font-size: 26px !important;
+}
+.courses__list__course__info--exp--size {
+  font-size: 18px !important;
+}
+@media screen and (max-width: 1050px) {
+  .courses__list__course__info--header--size {
+    font-size: 23px !important;
+  }
+  .courses__list__course__info--exp--size {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .courses__list__course__info--header--size {
+    font-size: 21px !important;
+  }
+  .courses__list__course__info--exp--size {
+    font-size: 14px !important;
+  }
+  .courses__list__left {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .courses__list__course__info--header--size {
+    font-size: 19px !important;
+  }
+  .courses__list__course__info--exp--size {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .courses__list__course__info--header--size {
+    font-size: 16px !important;
+  }
+  .courses__list__course__info--exp--size {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .courses__list__course__info--header--size {
+    font-size: 15px !important;
+  }
+  .courses__list__course__info--exp--size {
+    font-size: 11px !important;
+  }
+}

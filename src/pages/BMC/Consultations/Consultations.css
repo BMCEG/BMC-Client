@@ -1,0 +1,36 @@
+.consultations__root{
+    min-height: 100vh;
+    background-color: #f8fafb;
+}
+
+.consultations__body{
+    width: 60%;
+    margin: auto;
+}
+
+.consultations__body__subtitle{
+    font-family: 'bukra-bold' !important;
+    margin-bottom: 2vmin;
+    font-size: 20px !important;
+}
+
+@media screen and (max-width: 850px) {
+    .consultations__body{
+        width: 80% !important;
+    }
+    .consultations__body__subtitle{
+        font-size: 17px !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .consultations__body__subtitle{
+        font-size: 15px !important;
+    }
+}
+.consultations__body__form__row{
+    display: flex;
+    justify-content: center;
+}
+.consultations__body__form__divider{
+    width: 1%;
+}
