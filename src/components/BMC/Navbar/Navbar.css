@@ -12,7 +12,9 @@
   width: 72px !important;
 }
 .bmcnav__logo {
-  height: 65px;
+  /* background-color: darkgoldenrod; */
+  max-height: 7vh !important;
+  /* min-height: 5vh !important; */
 }
 .bmcnav__logo--ewings {
   max-height: 8vh;
@@ -42,6 +44,7 @@
 .bmcnav__btn {
   /* background-color: crimson !important; */
   /* min-width: 144px !important; */
+  /* height: 100%; */
 
   font-family: "bukra-bold" !important;
 }
