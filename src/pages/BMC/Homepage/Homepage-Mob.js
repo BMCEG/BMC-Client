@@ -80,7 +80,7 @@ export default class HomepageMob extends Component {
                     <Carousel fade className="bmchome__banner__carousel" controls={false}>
                         <Carousel.Item>
                             <div className='bmchome__banner__carousel--item' style={{ backgroundImage: `url(${endpoint}/Homepage-Header-1.png)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
-                                <Typography className='bmchome__banner__carousel--text  bmchome__banner__carousel--text--size'>
+                                <Typography className='bmchome__banner__carousel--text--white  bmchome__banner__carousel--text--size'>
                                     GOAL
                                     <br></br>
                                     {/* </Typography>

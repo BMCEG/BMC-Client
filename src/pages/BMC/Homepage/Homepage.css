@@ -77,6 +77,17 @@
   flex-direction: column;
   justify-content: center;
   font-family: "bukra-bold" !important;
+  color: black;
+}
+.bmchome__banner__carousel--text--white {
+  /* background-color: darkorange; */
+  width: 75%;
+  margin: auto !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "bukra-bold" !important;
   color: white;
 }
 .bmchome__banner__carousel--text--size {
