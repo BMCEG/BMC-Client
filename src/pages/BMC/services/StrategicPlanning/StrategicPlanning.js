@@ -114,7 +114,7 @@ export default class StrategicPlanning extends Component {
                 <br></br>
                 <div className='strategic-planning__img--base'>
                     <div className='strategic-planning__body__img__border-left'></div>
-                    <img className='strategic-planning__img--ta7t' src={`${endpoint}/SP-Ta7t.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__img--ta7t' src={`${endpoint}/SP-marketing.png`} alt='Marketing Mgmt' />
                     <div className='strategic-planning__body__img__border-right'></div>
                 </div>
                 <br></br>
