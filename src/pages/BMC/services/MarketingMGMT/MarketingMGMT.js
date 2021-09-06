@@ -9,11 +9,14 @@ export default class MarketingMGMT extends Component {
         return (
             <div className='marketing-mgmt__root'>
                 <br></br>
-                <div className='marketing-mgmt__title'>
+                <br></br>
+                <br></br>
+                <div className='strategic-planning__title'>
                     <Typography className='marketing-mgmt__heading marketing-mgmt__title-font '>
                         Marketing Management
                     </Typography>
                 </div>
+                <br></br>
                 <br></br>
                 <br></br>
                 <div className='marketing-mgmt__banner'>

@@ -1,6 +1,7 @@
 .ourStory-root {
-    height: 950px;
-    padding-top: 3%;
+    min-height: 100vh;
+    /* height: 950px; */
+    /* padding-top: 3%; */
     background-color: #f8fafb;
     /* background-color: blanchedalmond; */
     /* padding-top: 3%; */

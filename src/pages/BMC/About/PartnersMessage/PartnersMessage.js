@@ -9,11 +9,14 @@ export default class PartnersMessage extends Component {
         return (
             <div className='partners__root'>
                 <br></br>
+                <br></br>
+                <br></br>
                 <div className='strategic-planning__title'>
                     <Typography className='strategic-planning__heading strategic-planning__title-font '>
                     PARTNERS' MESSAGE
                     </Typography>
                 </div>
+                <br></br>
                 <br></br>
                 <br></br>
                 <div className='strategic-planning__banner'>

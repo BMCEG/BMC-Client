@@ -10,11 +10,13 @@ export default class HR extends Component {
             <div className='hr__root'>
                 <br></br>
                 <br></br>
-                <div className='hr__title'>
+                <br></br>
+                <div className='strategic-planning__title'>
                     <Typography className='hr__title--font hr__heading'>
                         HR Management
                     </Typography>
                 </div>
+                <br></br>
                 <br></br>
                 <br></br>
                 <div className='hr__body'>

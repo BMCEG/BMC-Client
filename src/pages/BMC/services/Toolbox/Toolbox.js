@@ -10,11 +10,14 @@ export default class Toolbox extends Component {
         return (
             <div className='toolbox__root'>
                 <br></br>
-                <div className='toolbox__header'>
+                <br></br>
+                <br></br>
+                <div className='strategic-planning__title'>
                     <Typography className='toolbox__header--font toolbox__header--font--size'>
                         BMC Toolbox
                     </Typography>
                 </div>
+                <br></br>
                 <br></br>
                 <br></br>
                 <div className='strategic-planning__banner'>

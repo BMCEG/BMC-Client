@@ -9,7 +9,9 @@ export default class Finance extends Component {
         return (
             <div className='finance-accounting__root'>
                 <br></br>
-                <div className='finance-accounting__title'>
+                <br></br>
+                <br></br>
+                <div className='strategic-planning__title'>
                     <Typography className='finance-accounting__heading finance-accounting__title-font '>
                         Finance & Accounting
                     </Typography>

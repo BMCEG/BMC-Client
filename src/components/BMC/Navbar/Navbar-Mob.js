@@ -12,9 +12,6 @@ export default class NavbarMob extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            selectedItem: ""
-        }
     }
 
     render() {
@@ -43,12 +40,19 @@ export default class NavbarMob extends Component {
                                     <br></br>
                                     {/* <br></br> */}
                                     <Dropdown.Item><h5 className='bukra-bold'>Services:</h5></Dropdown.Item>
+                                    <br></br>
+                                    <Dropdown.Item disabled><h6 className='bukra-regular'>Business Mentoring and Guidance:
+                                        </h6></Dropdown.Item>
+                                    {/* <br></br> */}
+
                                     <Dropdown.Item href='/services/strategic'><h6 className='bukra-regular'>Strategic Planning</h6></Dropdown.Item>
                                     <Dropdown.Item href='/services/marketingMgmt'><h6 className='bukra-regular'>Marketing Management</h6></Dropdown.Item>
                                     <Dropdown.Item href='/services/financial'><h6 className='bukra-regular'>Finance and Accounting</h6></Dropdown.Item>
-                                    <Dropdown.Item href='/services/hr'><h6 className='bukra-regular'>Human Resources</h6></Dropdown.Item>
-                                    <Dropdown.Item href='/services/toolbox'><h6 className='bukra-regular'>BMC Toolbox</h6></Dropdown.Item>
+                                    <Dropdown.Item href='/services/hr'><h6 className='bukra-regular'>Human Resources<hr></hr></h6></Dropdown.Item>
+                                    
+                                    <Dropdown.Item href='/services/corporate'><h5 className='bukra-regular'>Corporate Governance</h5></Dropdown.Item>
                                     <Dropdown.Item href='/courses'><h5 className='bukra-regular'>Training and Development</h5></Dropdown.Item>
+                                    <Dropdown.Item href='/services/toolbox'><h6 className='bukra-regular'>BMC Toolbox</h6></Dropdown.Item>
                                     <br></br>
                                     {/* <Dropdown.Item href='/partners'><h5 className='bukra-bold'>Clients</h5></Dropdown.Item> */}
                                     <Dropdown.Item href='/consultations'><h5 className='bukra-bold'>Consultations</h5></Dropdown.Item>
