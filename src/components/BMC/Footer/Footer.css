@@ -343,6 +343,8 @@
 
 .footer-top__left {
   max-height: 90px;
+  transform: translateX(10px);
+
   /* background-color: yellow; */
 }
 @media screen and (max-width: 450px) {
@@ -356,6 +358,7 @@
 
 .footer-top__right {
   max-height: 90px;
+  transform: translateX(-10px);
   /* background-color: yellow; */
 }
 
