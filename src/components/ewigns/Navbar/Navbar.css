@@ -20,9 +20,11 @@
 .ewingsnav__bmc__logo {
   max-height: 6vh;
 }
-.bmcnav__logo--mob {
+.ewingsnav__logo--mob {
   /* background-color: blueviolet !important; */
   max-height: 100%;
+  /* margin-top: auto; */
+  /* margin-bottom: auto; */
   /* max-height: 8vh; */
 }
 .ewingsnav__divider {

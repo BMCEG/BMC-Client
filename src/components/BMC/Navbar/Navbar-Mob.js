@@ -19,7 +19,7 @@ export default class NavbarMob extends Component {
         return (
             <Navbar className="bmcnav__root" fixed="top">
                 <div className='bmcnav__left--mob'>
-                    <Button variant='link' className='bmcnav__btn bmcnav__btn--size' href='/'>
+                <Button variant='link' className='bmcnav__btn bmcnav__btn--size' href='/'>
                         <img src={`${endpoint}/Logo (1).png`} className='bmcnav__logo--mob' />
                     </Button>
                 </div>
@@ -30,7 +30,7 @@ export default class NavbarMob extends Component {
                                 <FontAwesomeIcon color='black' icon={faBars} size={'2x'} />
                             </Dropdown.Toggle>
                             <Dropdown.Menu align={{ lg: 'left' }} className='nav-bmc-dropdown'>
-                                <div className="Lmoa12">
+                                <div className="nav__dropdown">
                                     <Dropdown.Item href='/' ><Typography className='bukra-bold'>Home</Typography></Dropdown.Item>
                                     <hr></hr>
                                     <Dropdown.Item><Typography className='bukra-bold'>About:</Typography></Dropdown.Item>
@@ -42,13 +42,13 @@ export default class NavbarMob extends Component {
                                     <Dropdown.Item><Typography className='bukra-bold'>Services:</Typography></Dropdown.Item>
                                     {/* <br></br> */}
                                     <Dropdown.Item disabled><Typography className='bukra-regular'>Business Mentoring and Guidance:
-                                        </Typography></Dropdown.Item>
+                                    </Typography></Dropdown.Item>
 
                                     <Dropdown.Item href='/services/strategic'><Typography className='bukra-regular'>Strategic Planning</Typography></Dropdown.Item>
                                     <Dropdown.Item href='/services/marketingMgmt'><Typography className='bukra-regular'>Marketing Management</Typography></Dropdown.Item>
                                     <Dropdown.Item href='/services/financial'><Typography className='bukra-regular'>Finance and Accounting</Typography></Dropdown.Item>
                                     <Dropdown.Item href='/services/hr'><Typography className='bukra-regular'>Human Resources<hr></hr></Typography></Dropdown.Item>
-                                    
+
                                     <Dropdown.Item href='/services/corporate'><Typography className='bukra-regular'>Corporate Governance</Typography></Dropdown.Item>
                                     <Dropdown.Item href='/courses'><Typography className='bukra-regular'>Training and Development</Typography></Dropdown.Item>
                                     <Dropdown.Item href='/services/toolbox'><Typography className='bukra-regular'>BMC Toolbox</Typography></Dropdown.Item>
