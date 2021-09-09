@@ -95,9 +95,7 @@ export default class Landing extends Component {
                         <FontAwesomeIcon icon={faPlus} />
                     </Button>
                 }
-                <div className="ewings-landing-grid ewings-height">
-                    {/* <h1 className="bukra-bold ewings-course-text">{this.state.courseDetails.displayTitle}</h1> */}
-                    <Typography style={{
+                <div className="ewings-landing-grid ewings-height"><Typography style={{
                         backgroundImage: `url(${endpoint}/ewings-stamp.png)`,
                         backgroundSize: 'contain',
                         backgroundRepeat: 'no-repeat',
@@ -110,12 +108,8 @@ export default class Landing extends Component {
                         <div className='training-desc-text'>
                             <h2 className='bukra-bold ewings-green-color ewings-subtitle' >Training Description</h2>
                             <br></br>
-                            <h3 className='bukra-regular ewings-course-text'>{this.state.courseDetails.description}</h3>
+                            <h3 className='bukra-regular ewings__home__banner__body'>{this.state.courseDetails.description}</h3>
                             <br></br>
-                            {/* <div className='landing-grid-btn-base-left'>
-                                <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
-                            </div> */}
-
                         </div>
                     </div>
                     <br></br>
@@ -129,7 +123,7 @@ export default class Landing extends Component {
                         <div className='training-desc-text'>
                             <h2 className='bukra-bold ewings-green-color ewings-subtitle' >Training Outline</h2>
                             <br></br>
-                            <h3 className='bukra-regular ewings-course-text-outline ewings-blue-color'>{this.state.courseDetails.outline}</h3>
+                            <h3 className='bukra-regular ewings__home__banner__body ewings-blue-color'>{this.state.courseDetails.outline}</h3>
                             <br></br>
                         </div>
                         <div className='training-outlines-img-base'>
@@ -158,28 +152,13 @@ export default class Landing extends Component {
                         <div className='training-methodology-text'>
                             <h2 className='bukra-bold ewings-white-color ewings-subtitle'>Training Methodology</h2>
                             <br></br>
-                            <h3 className='bukra-regular ewings-course-text'>{this.state.courseDetails.methedology}</h3>
+                            <Typography style={{color:'white'}} className='bukra-regular ewings__home__banner__body' >{this.state.courseDetails.methedology}</Typography>
                         </div>
                     </div>
 
                     <br></br>
                     <hr className='ewings-course-list-seperator'></hr>
                     <br></br>
-                    {/* <div className='landing-grid-div'>
-                        <div className='landing-grid-text'>
-                        <h2 className='bukra-bold ewings-course-text' >Training Methodology</h2>
-                        <br></br>
-                        <h3 className='bukra-regular ewings-course-text'>{this.state.courseDetails.methedology}</h3>
-                        <br></br>
-                        <div className='landing-grid-btn-base-left'>
-                        <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
-                        </div>
-                        </div>
-                        <div className='landing-grid-img-base'>
-                        <img className='landing-grid-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt="Trainer Avatar"></img>
-                        </div>
-                        </div>
-                    <hr></hr> */}
                     <div className='landing-grid-div'>
                         <div className='course-meet-trainer'>
                             <h2 className='bukra-bold course-meet-trainer-title'>Meet the Trainer</h2>
@@ -193,30 +172,11 @@ export default class Landing extends Component {
                             <h3 className='bukra-medium course-meet-trainer-title'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h3>
                         </div>
                     </div>
-                    {/* <div className='landing-grid-img-base'>
-                        </div>
-                        <div className='landing-grid-text'>
-                        <h2 className='bukra-bold ewings-course-text'>Meet the Trainer</h2>
-                        <br></br>
-                            <h3 className='bukra-medium ewings-course-text'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h3>
-                            {this.state.courseTrainerQualifications.map((qual, index) => (
-                                <div key={index} className="course-trainer-qualification">
-                                    <h3 className='bukra-regular'>Title: {qual.title}</h3>
-                                    <h3 className='bukra-regular'>Brief: {qual.brief}</h3>
-                                </div>
-                            ))}
-                            <br></br>
-                            <div className='landing-grid-btn-base-left'>
-                                <Button variant="danger" className='landing-grid-btn' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
-                            </div>
-                        </div> */}
-
                     <br></br>
                     <hr className='ewings-course-list-seperator'></hr>
                     <br></br>
                     <div className='landing-grid-div'>
                         <div className='landing-grid-text-dates'>
-                            {/* <h2 className='bukra-bold ewings-course-text' >Duration and Fees</h2> */}
                             <h2 className='bukra-bold ewings-green-color ewings-subtitle' >Duration and Fees</h2>
                             <br></br>
                             {this.state.courseSchedules.map((schedule, index) => (
@@ -230,19 +190,6 @@ export default class Landing extends Component {
                                         <h5 className='bukra-regular ewings-course-booking-info'>End Date:- <Moment format='dddd, DD/MM/YYYY'>
                                             {schedule.endDate}
                                         </Moment></h5>
-                                        {/* <h4 className='bukra-regular ewings-course-text'></h4> */}
-                                        {/* <h3 className='bukra-medium ewings-course-text'>Duration:</h3>
-                                            <h4 className='bukra-regular ewings-course-text'>{schedule.duration} Month(s)</h4>
-                                            <h3 className='bukra-medium ewings-course-text'>Start Date: <Moment format='dddd, DD/MM/YYYY'>
-                                                {schedule.endDate}
-                                            </Moment></h3>
-                                            <h4 className='bukra-regular ewings-course-text'> <Moment format='dddd, DD/MM/YYYY'>
-                                                {schedule.startDate}
-                                            </Moment></h4>
-                                            <h3 className='bukra-medium ewings-course-text'>End Date:</h3>
-                                            <h4 className='bukra-regular ewings-course-text'> <Moment format='dddd, DD/MM/YYYY'>
-                                                {schedule.endDate}
-                                            </Moment></h4> */}
                                     </div>
                                     <div className='ewings-course-info'>
                                         {schedule.dates.map((date, index) => (
@@ -256,12 +203,8 @@ export default class Landing extends Component {
                                     </div>
                                 </div>
                             ))}
-                            {/* <br></br> */}
-                        </div>
+                          </div>
                     </div>
-                    {/* <div className='landing-grid-btn-base'>
-                        <Button variant="danger" className='landing-grid-btn-center' onClick={this.handleApplicationModalOpen}> Apply for Training </Button>
-                    </div> */}
                 </div>
 
                 <Modal

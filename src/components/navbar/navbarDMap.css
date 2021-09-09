@@ -1,6 +1,6 @@
 .nav-dmap-root {
     background-color: white;
-    box-shadow: 1px 1px 5px #393938 !important;
+    /* box-shadow: 1px 1px 5px #393938 !important; */
     padding-left: 1%;
     padding-right: 1%;
     display: flex !important;

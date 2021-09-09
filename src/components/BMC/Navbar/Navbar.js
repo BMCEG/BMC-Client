@@ -6,6 +6,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import endpoint from '../../../helpers/api_service';
 export default class Navbar2 extends Component {
+    constructor(props) {
+        super(props)
+        this.handleMouseEnter = this.handleMouseEnter.bind(this);
+        this.handleMouseLeave = this.handleMouseLeave.bind(this);
+
+    }
+
+    handleMouseEnter(e) {
+        console.log("here")
+        // alert(e.target.name)
+        document.getElementById(e).click();
+
+    }
+    handleMouseLeave(e){
+        document.getElementById(e + '-menu').classList.add('dropdown__fadeOut')
+        document.getElementById(e).click();
+
+    }
+
     render() {
         return (
             <Navbar className='bmcnav__root' fixed='top'>
@@ -19,46 +38,46 @@ export default class Navbar2 extends Component {
                     Home
                 </Button>
                 <div className='bmcnav__space' /> */}
-                <Dropdown>
-                    <Dropdown.Toggle variant="link" className='bmcnav__btn bmcnav__btn--size'>
+                <Dropdown name='about-toggle' onMouseEnter={() => this.handleMouseEnter('about-toggle')} onMouseLeave={() => this.handleMouseLeave('about-toggle')}>
+                    <Dropdown.Toggle variant="link" id="about-toggle" className='bmcnav__btn bmcnav__btn--size'>
                         About
                     </Dropdown.Toggle>
-                    <Dropdown.Menu>
+                    <Dropdown.Menu id='about-toggle-menu' className='dropdown__menu'>
                         {/* {this.state.items.map((item) => ( */}
                         <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/about/founder'>Founder's Message</Dropdown.Item>
-                        <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/about/partners'><h5>Partners' Message</h5></Dropdown.Item>
-                        <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/about/story'><h5>Our Story</h5></Dropdown.Item>
-                        <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/whyBMC'><h5>Why BMC</h5></Dropdown.Item>
+                        <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/about/partners'>Partners' Message</Dropdown.Item>
+                        <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/about/story'>Our Story</Dropdown.Item>
+                        <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/whyBMC'>Why BMC</Dropdown.Item>
                         {/* )) */}
                         {/* } */}
                     </Dropdown.Menu>
                 </Dropdown>
                 <div className='bmcnav__space' />
-                <Dropdown>
-                    <Dropdown.Toggle variant="link" className='bmcnav__btn bmcnav__btn--size'>
+                <Dropdown  name='services-toggle' onMouseEnter={() => this.handleMouseEnter('services-toggle')} onMouseLeave={() => this.handleMouseLeave('services-toggle')} >
+                    <Dropdown.Toggle id="services-toggle" variant="link" className='bmcnav__btn bmcnav__btn--size'>
                         Services
                     </Dropdown.Toggle>
-                    <Dropdown.Menu>
+                    <Dropdown.Menu id="services-toggle-menu" className='dropdown__menu'>
 
                         {/* <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size'> */}
-                        <Dropdown>
-                            <Dropdown.Toggle variant="link" className='bmcnav__dropdown__item bmcnav__dropdown__item--nested bmcnav__btn--size'>
+                        <Dropdown name='mentoring-toggle' onMouseEnter={() => this.handleMouseEnter('mentoring-toggle')} onMouseLeave={() => this.handleMouseLeave('mentoring-toggle')}>
+                            <Dropdown.Toggle id="mentoring-toggle" variant="link" className='bmcnav__dropdown__item bmcnav__dropdown__item--nested bmcnav__btn--size'>
                                 Business Mentoring & Guidance
                             </Dropdown.Toggle>
-                            <Dropdown.Menu align="right" className='bmcnav__dropdown__menu--nested'>
+                            <Dropdown.Menu id='mentoring-toggle-menu' align="right" className='bmcnav__dropdown__menu--nested'>
                                 <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/strategic'>Strategic Planning</Dropdown.Item>
-                                <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/marketingMgmt'><h5>Marketing Management</h5></Dropdown.Item>
-                                <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/hr'><h5>HR Management</h5></Dropdown.Item>
-                                <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/financial'><h5>Finance & Accoutning</h5></Dropdown.Item>
+                                <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/marketingMgmt'>Marketing Management</Dropdown.Item>
+                                <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/hr'>HR Management</Dropdown.Item>
+                                <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/financial'>Finance & Accoutning</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         {/* </Dropdown.Item> */}
 
                         <Dropdown.Item variant="link" className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/corporate'>Corporate Governance</Dropdown.Item>
 
-                        <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/toolbox'><h5>BMC Toolbox</h5></Dropdown.Item>
+                        <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/toolbox'>BMC Toolbox</Dropdown.Item>
 
-                        <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/courses'><h5>Training & Development</h5></Dropdown.Item>
+                        <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/courses'>Training & Development</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
                 {/* <div className='bmcnav__space' />

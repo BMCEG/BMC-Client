@@ -63,7 +63,7 @@ export default class Consultations extends Component {
                 <br></br>
                 <div className='strategic-planning__title'>
                     <Typography className='strategic-planning__heading strategic-planning__title-font '>
-                        CONSULTATINOS
+                        CONSULTATIONS
                     </Typography>
                 </div>
                 <br></br>

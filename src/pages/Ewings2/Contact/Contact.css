@@ -1,8 +1,6 @@
-.ewings__contact__root {
+.contact__root {
   min-height: 100vh;
-  margin-top: 15%;
-  /* margin-bottom: 15%; */
-  /* background-color: #f2f2f2; */
+  background-color: #f8fafb;
 }
 
 .contact__root__contact {

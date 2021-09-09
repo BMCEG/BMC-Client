@@ -12,6 +12,11 @@
 .ewings-height {
   min-height: 100vh;
 }
+.ewings-landing-root {
+  min-height: 100vh;
+  position: relative;
+  background-color: #4694d6 !important;
+}
 .ewings-landing-root-mob {
   min-height: 100vh;
   position: relative;

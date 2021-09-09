@@ -41,13 +41,13 @@
 }
 
 .carousel-control-prev {
-    transform: translateX(-200px);
+    /* transform: translateX(-200px); */
     /* display: none; */
 
 }
 
 .carousel-control-next {
-    transform: translateX(200px);
+    /* transform: translateX(200px); */
     /* display: none; */
 }
 

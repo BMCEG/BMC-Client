@@ -48,7 +48,7 @@ export default class CoursesList extends Component {
                                         {course.description}
                                     </p>
                                     <br></br>
-                                    <Button className='course-list-btn-mob bukra-regular' size='sm' href={`/ewings/courses/${course.title}`}>Read More</Button>
+                                    <Button className='ewings__home__services__card__btn' size='sm' href={`/ewings/courses/${course.title}`}>Read More</Button>
                                 </Grid>
                             </Grid>
                             <br></br>

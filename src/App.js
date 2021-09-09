@@ -3,6 +3,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import BMCHomepage from './pages/BMC/Homepage/Homepage.js';
 import BMCHomepageMob from './pages/BMC/Homepage/Homepage-Mob.js';
+import NavbarBMC from './components/BMC/Navbar/Navbar.js';
+import NavbarBMCMob from './components/BMC/Navbar/Navbar-Mob.js';
+import FooterBMC from './components/BMC/Footer/Footer.js';
+import FooterEWings from './components/ewigns/Footer/Footer.js';
+import NavbarEwings from './components/ewigns/Navbar/Navbar.js';
+import NavbarEwingsMob from './components/ewigns/Navbar/Navbar-Mob';
 
 import FounderMessage from './pages/BMC/About/FounderMessage/FounderMessage.js';
 import PartnersMessage from './pages/BMC/About/PartnersMessage/PartnersMessage.js';
@@ -13,63 +19,47 @@ import MarketingMGMT from './pages/BMC/services/MarketingMGMT/MarketingMGMT.js';
 import StrategicPlanning from './pages/BMC/services/StrategicPlanning/StrategicPlanning.js';
 import Finance from './pages/BMC/services/Finance/Finance.js';
 import Toolbox from './pages/BMC/services/Toolbox/Toolbox.js';
+
 import Clients from './pages/BMC/Clients/Clients.js';
+
 import Contact from './pages/BMC/Contact/Contact.js';
 import ContactMob from './pages/BMC/Contact/Contact-Mob.js';
+
 import Blogs from './pages/BMC/Blogs/Blogs.js';
 import Blog from './pages/BMC/Blogs/Blog.js';
+
 import Consultations from './pages/BMC/Consultations/Consultations.js';
+
 import Careers from './pages/BMC/Careers/Careers.js';
 import JobPost from './pages/BMC/Careers/JobPost.js';
+
 import Courses from './pages/BMC/Courses/Courses.js';
 import Course from './pages/BMC/Courses/Course.js';
 
-import LandingPage from "./pages/landing/landing.js";
-import LandingPageMob from "./pages/landing/landing-mobile.js";
-
-import NavbarBMC from './components/BMC/Navbar/Navbar.js';
-import NavbarBMCMob from './components/BMC/Navbar/Navbar-Mob.js';
-import FooterBMC from './components/BMC/Footer/Footer.js';
-import FooterTop from './components/BMC/Footer/Footer-Top.js';
-import FooterBMCMob from './components/footer/footer-mobile';
-
-import FloatingBtn from './components/floatingBtn.js';
-import FloatingBtnMob from './components/floatingBtn-mobile.js';
-
-import FoundersMessage from './pages/contexts/bmc/about/foundersMessage.js';
-import FoundersMessageMob from './pages/contexts/bmc/about/foundersMessage-mobile.js';
 import OurStory from './pages/contexts/bmc/about/ourStory.js';
 import OurStoryMob from './pages/contexts/bmc/about/ourStory-mobile.js';
 import MeetTheExperts from './pages/contexts/bmc/about/meetTheExperts.js';
 
-// import WhyBMC from './pages/contexts/bmc/whyBMC/whyBMC.js'
-// import WhyBMCMob from './pages/contexts/bmc/whyBMC/whyBMC-mobile.js'
 
-// import CoursesList from './pages/contexts/bmc/courses/courses.js';
-// import CoursesListMob from './pages/contexts/bmc/courses/courses-mob.js';
+import EwingsHomepage from './pages/Ewings2/Homepage/Homepage.js';
 
-import Service from './pages/contexts/bmc/services/service.js'
-import ServiceMob from './pages/contexts/bmc/services/service-mobile.js'
+import DigitalMarketing from './pages/Ewings2/Services/DigitalMarketing/DigitalMarketing.js'
+import MultimediaProd from './pages/Ewings2/Services/MultimediaProd/MultimediaProd.js';
+import SocialMediaMGMT from './pages/Ewings2/Services/SocialMediaMGMT/SocialMediaMGMT.js';
+import MediaPlanning from './pages/Ewings2/Services/MediaPlanning/MediaPlanning.js';
+import WebDevelopment from './pages/Ewings2/Services/WebDevelopment/WebDevelopment.js';
 
-import ServiceEwings from './pages/ewings/services/service.js'
-import ServiceEwingsMob from './pages/ewings/services/service-mobile'
+import ContactEwings from './pages/Ewings2/Contact/Contact.js';
 
 import CoursesListEwings from './pages/ewings/courses/courses.js';
 import CoursesListEwingsMob from './pages/ewings/courses/courses-mob.js';
 import CoursePageEwings from './pages/ewings/courses/landing.js';
 import CoursePageEwingsMob from './pages/ewings/courses/landing-mobile.js';
 
-import CareerLanding from './pages/contexts/bmc/careers/careerLanding.js';
-import CareerListing from './pages/contexts/bmc/careers/careerListing.js';
-import CareerListingMob from './pages/contexts/bmc/careers/careerListing-mobile.js';
 
 import Gallery from './pages/contexts/bmc/gallery/gallery.js';
 import GalleryMob from './pages/contexts/bmc/gallery/gallery-mob.js';
 
-
-
-import DefaultBMC from './pages/contexts/bmc/default.js';
-import DefaultBMCMob from './pages/contexts/bmc/default-mobile';
 
 import AdminPage from './pages/admin/page.js';
 import AdminCreate from './pages/admin/users/users.js';
@@ -86,18 +76,10 @@ import AdminPartnerPage from './pages/admin/partners/partner.js';
 import AdminContacts from './pages/admin/contacts/contacts.js';
 import AdminRequests from './pages/admin/requests/requests.js';
 
-import NavbarDMap from './components/navbar/navbarDMap.js';
-import NavbarDMapMob from './components/navbar/navbarDMap-mobile.js';
-import FooterEwings from './components/ewigns/footer/footer.js';
-import FooterEwingsMob from './components/ewigns/footer/footer-mobile';
-
-
-import HomepageEwings from './pages/ewings/homepage/homepage.js'
-import HomepageEwingsMob from './pages/ewings/homepage/homepage-mobile'
-
 import Media from 'react-media';
 import HR from './pages/BMC/services/HR/HR.js';
 import FooterMob from './components/BMC/Footer/Footer-mob.js';
+import FooterEwingsMob from './components/ewigns/Footer/Footer-mob.js';
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -418,8 +400,8 @@ export default class App extends Component {
                   {(matches) => {
                     return matches ?
                       // <>
-                        /* <FooterTop /> */
-                        <FooterBMC />
+                      /* <FooterTop /> */
+                      <FooterBMC />
                       // </>
                       :
                       <>
@@ -439,9 +421,10 @@ export default class App extends Component {
                 {(matches) => {
                   return matches ?
                     // <FloatingBtn />
-                    <NavbarDMap handleSelectedContext={this.handleSelectedContext} />
+                    <NavbarEwings />
                     :
-                    <NavbarDMapMob handleSelectedContext={this.handleSelectedContext} />
+                    // <NavbarDMapMob handleSelectedContext={this.handleSelectedContext} />
+                    <NavbarEwingsMob />
                   // <FloatingBtnMob />
                 }}
               </Media>
@@ -461,7 +444,7 @@ export default class App extends Component {
                       path='/ewings'
                       exact
                       render={() => (
-                        <HomepageEwings />
+                        <EwingsHomepage />
                       )}
                     />
                     :
@@ -469,7 +452,7 @@ export default class App extends Component {
                       path='/ewings'
                       exact
                       render={() => (
-                        <HomepageEwingsMob />
+                        <EwingsHomepage />
                       )}
                     />
                 }}
@@ -503,107 +486,60 @@ export default class App extends Component {
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route
-                      path='/ewings/services/digital'
-                      exact
-                      render={() => (
-                        <ServiceEwings sideImage='landing-digital.png' title='Digital Marketing' />
-                      )}
-                    />
+                    <Route path='/ewings/services/digital' exact component={DigitalMarketing} />
                     :
-                    <Route
-                      path='/ewings/services/digital'
-                      exact
-                      render={() => (
-                        <ServiceEwingsMob logo='service-strategic-planning.png' sideImage='landing-digital-mob.png' title='Digital Marketing' />
-                      )}
-                    />
+                    <Route path='/ewings/services/digital' exact component={DigitalMarketing} />
                 }}
               </Media>
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route
-                      path='/ewings/services/multimedia'
-                      exact
-                      render={() => (
-                        <ServiceEwings sideImage='landing-multimedia.png' title='Multimedia Production' />
-                      )}
-                    />
+                    <Route path='/ewings/services/multimedia' exact component={MultimediaProd} />
                     :
-                    <Route
-                      path='/ewings/services/multimedia'
-                      exact
-                      render={() => (
-                        <ServiceEwingsMob sideImage='landing-multimedia-mob.png' title='Multimedia Production' />
-                      )}
-                    />
+                    <Route path='/ewings/services/multimedia' exact component={MultimediaProd} />
+                }}
+              </Media>
+
+
+
+              <Media query='(min-width: 1024px)'>
+                {(matches) => {
+                  return matches ?
+                    <Route path='/ewings/services/social' exact component={SocialMediaMGMT} />
+                    :
+                    <Route path='/ewings/services/social' exact component={SocialMediaMGMT} />
                 }}
               </Media>
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route
-                      path='/ewings/services/social'
-                      exact
-                      render={() => (
-                        <ServiceEwings sideImage='landing-social.png' title='Social Media Management' />
-                      )}
-                    />
+                    <Route path='/ewings/services/media' exact component={MediaPlanning} />
                     :
-                    <Route
-                      path='/ewings/services/social'
-                      exact
-                      render={() => (
-                        <ServiceEwingsMob sideImage='landing-social-mob.png' title='Social Media Management' />
-                      )}
-                    />
+                    <Route path='/ewings/services/media' exact component={MediaPlanning} />
                 }}
               </Media>
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route
-                      path='/ewings/services/media'
-                      exact
-                      render={() => (
-                        <ServiceEwings sideImage='landing-media.png' title='Media Planning and Buying' />
-                      )}
-                    />
+                    <Route path='/ewings/services/web' exact component={WebDevelopment} />
                     :
-                    <Route
-                      path='/ewings/services/media'
-                      exact
-                      render={() => (
-                        <ServiceEwingsMob sideImage='landing-media-mob.png' title='Media Planning and Buying' />
-                      )}
-                    />
+                    <Route path='/ewings/services/web' exact component={WebDevelopment} />
                 }}
               </Media>
               <Media query='(min-width: 1024px)'>
                 {(matches) => {
                   return matches ?
-                    <Route
-                      path='/ewings/services/web'
-                      exact
-                      render={() => (
-                        <ServiceEwings sideImage='landing-web.png' title='Web Development' />
-                      )}
-                    />
+                    <Route path='/ewings/contact' exact component={ContactEwings} />
                     :
-                    <Route
-                      path='/ewings/services/web'
-                      exact
-                      render={() => (
-                        <ServiceEwingsMob sideImage='landing-web-mob.png' title='Web Development' />
-                      )}
-                    />
+                    <Route path='/ewings/contact' exact component={ContactEwings} />
                 }}
               </Media>
+
+
               <Media query='(min-width: 1440px)'>
                 {(matches) => {
                   return matches ?
-                    <FooterEwings />
+                    <FooterEWings />
                     :
                     <FooterEwingsMob />
                 }}

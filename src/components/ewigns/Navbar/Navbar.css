@@ -1,5 +1,5 @@
-.bmcnav__root {
-  background-color: #bdbdbd;
+.ewingsnav__root {
+  background-color: #f2f2f2;
   height: 8vh;
   position: sticky !important;
   top: 0;
@@ -17,20 +17,20 @@
   /* min-height: 5vh !important; */
 }
 
-.bmcnav__logo--ewings {
-  max-height: 8vh;
+.ewingsnav__bmc__logo {
+  max-height: 6vh;
 }
 .bmcnav__logo--mob {
   /* background-color: blueviolet !important; */
   max-height: 100%;
   /* max-height: 8vh; */
 }
-.bmcnav__divider {
+.ewingsnav__divider {
   margin-left: 72px !important;
   margin-right: 42px !important;
   width: 1px !important;
   height: 60%;
-  background-color: black !important;
+  background-color: #4694d6 !important;
 }
 .bmcnav__left--mob {
   display: flex;
@@ -49,7 +49,7 @@
 
   font-family: "bukra-bold" !important;
 }
-.bmcnav__btn--size {
+.ewingsnav__btn--size {
   font-size: 16px !important;
   color: black !important;
 }
