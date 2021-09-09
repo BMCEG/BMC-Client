@@ -23,7 +23,7 @@ export default class NavbarMob extends Component {
                         <img src={`${endpoint}/Logo (1).png`} className='bmcnav__logo--mob' />
                     </Button>
                 </div>
-                <div className='nav-bmc-right'>
+                <div className='nav-dmap-right-mob'>
                     <div className="title" style={{ marginLeft: 'auto' }}>
                         <Dropdown>
                             <Dropdown.Toggle variant="link" id="dropdown-basic">

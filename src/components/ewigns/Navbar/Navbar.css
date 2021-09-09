@@ -4,8 +4,9 @@
   position: sticky !important;
   top: 0;
   display: flex;
+  width: 100%;
   justify-content: center;
-  /* width: 100%; */
+  /* max-width: 100vw; */
   justify-content: space-between !important;
 }
 .bmcnav__space {
@@ -35,10 +36,16 @@
   height: 60%;
   background-color: #4694d6 !important;
 }
+.nav-dmap-right-mob{
+  width: 35%;
+  text-align: right;
+  /* background-color: blueviolet; */
+  
+}
 .bmcnav__left--mob {
   display: flex;
-  /* min-width: 65%;
-  max-width: 65%; */
+  /* /* min-width: 65%; */
+  width: 65%;
   height: 100% !important;
   /* background-color: yellow !important; */
   /* overflow-x: hidden; */

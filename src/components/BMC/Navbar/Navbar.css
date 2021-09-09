@@ -5,7 +5,7 @@
   top: 0;
   display: flex;
   justify-content: center;
-  /* width: 100%; */
+  width: 100%;
   justify-content: space-between !important;
 }
 .bmcnav__space {
@@ -37,14 +37,10 @@
 }
 .bmcnav__left--mob {
   display: flex;
-  /* min-width: 65%;
-  max-width: 65%; */
-  /* height: 1vh !important; */
-  /* height: 100% !important; */
-  /* background-color: yellow !important; */
-  /* overflow-x: hidden; */
-  /* font-size: 100% !important; */
-  /* font: inherit !important; */
+  width: 65%;
+  height: 100% !important;
+  text-align: left !important;
+
 }
 .bmcnav__btn {
   /* background-color: crimson !important; */
