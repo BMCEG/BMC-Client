@@ -19,7 +19,7 @@ export default class NavbarMob extends Component {
         return (
             <Navbar className="bmcnav__root" fixed="top">
                 <div className='bmcnav__left--mob'>
-                <Button variant='link' className='bmcnav__btn bmcnav__btn--size' href='/'>
+                <Button variant='link' className='bmcnav__btn__logo bmcnav__btn--size' href='/'>
                         <img src={`${endpoint}/Logo (1).png`} className='bmcnav__logo--mob' />
                     </Button>
                 </div>
