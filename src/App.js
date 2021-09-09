@@ -6,7 +6,7 @@ import BMCHomepageMob from './pages/BMC/Homepage/Homepage-Mob.js';
 import NavbarBMC from './components/BMC/Navbar/Navbar.js';
 import NavbarBMCMob from './components/BMC/Navbar/Navbar-Mob.js';
 import FooterBMC from './components/BMC/Footer/Footer.js';
-import FooterEWings from './components/ewigns/Footer/Footer.js';
+import FooterEwings from './components/ewigns/Footer/Footer.js';
 import NavbarEwings from './components/ewigns/Navbar/Navbar.js';
 import NavbarEwingsMob from './components/ewigns/Navbar/Navbar-Mob';
 
@@ -539,7 +539,7 @@ export default class App extends Component {
               <Media query='(min-width: 1440px)'>
                 {(matches) => {
                   return matches ?
-                    <FooterEWings />
+                    <FooterEwings />
                     :
                     <FooterEwingsMob />
                 }}
