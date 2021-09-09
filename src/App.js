@@ -6,7 +6,7 @@ import BMCHomepageMob from './pages/BMC/Homepage/Homepage-Mob.js';
 import NavbarBMC from './components/BMC/Navbar/Navbar.js';
 import NavbarBMCMob from './components/BMC/Navbar/Navbar-Mob.js';
 import FooterBMC from './components/BMC/Footer/Footer.js';
-import FooterEwings from './components/ewigns/Footer/Footer.js';
+import FooterEwings from './components/ewigns/footer/footer.js';
 import NavbarEwings from './components/ewigns/Navbar/Navbar.js';
 import NavbarEwingsMob from './components/ewigns/Navbar/Navbar-Mob';
 
@@ -79,7 +79,7 @@ import AdminRequests from './pages/admin/requests/requests.js';
 import Media from 'react-media';
 import HR from './pages/BMC/services/HR/HR.js';
 import FooterMob from './components/BMC/Footer/Footer-mob.js';
-import FooterEwingsMob from './components/ewigns/Footer/Footer-mob.js';
+import FooterEwingsMob from './components/ewigns/footer/footer-mob.js';
 export default class App extends Component {
   constructor(props) {
     super(props);
