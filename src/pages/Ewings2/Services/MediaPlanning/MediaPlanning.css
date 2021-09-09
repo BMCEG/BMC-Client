@@ -9,3 +9,11 @@
     /* margin-left: auto !important; */
     /* display: flex; */
 }
+
+.ewings__media__banner__img{
+    width: 100%;
+    min-height: 420px;
+    object-position: 50% 50%;
+    /* justify-content: end; */
+    object-fit: cover;
+}
