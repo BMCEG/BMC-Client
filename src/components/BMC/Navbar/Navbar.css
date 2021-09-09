@@ -22,11 +22,16 @@
 }
 .bmcnav__logo--mob {
   /* max-height: 5.5vh; */
-  max-height: 100% !important;
+  /* max-height: 100% !important; */
   /* object-fit: contain !important;   */
-  /* background-color: blueviolet !important; */
-  /* max-height: 100%; */
+  background-color: blueviolet !important;
+  max-height: 100%;
+  /* margin-right: auto !important; */
+  text-align: left !important;
+  /* just: left !important; */
   /* max-height: 8vh; */
+  max-width: 100%;
+  object-fit: contain;
 }
 .bmcnav__divider {
   margin-left: 72px !important;
@@ -52,7 +57,7 @@
   font-family: "bukra-bold" !important;
 }
 .bmcnav__btn__logo {
-  /* background-color: darkcyan !important; */
+  /* background-color: darkcyan !impo rtant; */
   text-align: left !important;
   min-width: 144px !important;
   /* width: 100%; */
