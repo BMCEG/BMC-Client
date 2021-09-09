@@ -22,7 +22,8 @@
 }
 .bmcnav__logo--mob {
   /* max-height: 5.5vh; */
-  height: 100%;
+  max-height: 100% !important;
+  object-fit: contain !important;  
   /* background-color: blueviolet !important; */
   /* max-height: 100%; */
   /* max-height: 8vh; */

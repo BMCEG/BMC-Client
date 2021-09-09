@@ -21,10 +21,9 @@
   max-height: 6vh;
 }
 .ewingsnav__logo--mob {
+  max-height: 100% !important;
+  object-fit: contain !important;  
   /* background-color: blueviolet !important; */
-  max-height: 100%;
-width: 100%;
-/* background-color: blue; */
   /* margin-top: auto; */
   /* margin-bottom: auto; */
   /* max-height: 8vh; */
@@ -79,7 +78,7 @@ width: 100%;
   animation: fadeIn 0.5s;
 }
 
-.dropdown__fadeOut{
+.dropdown__fadeOut {
   -webkit-animation: fadeOut 0.5s;
   animation: fadeOut 0.5s;
 }
@@ -133,7 +132,7 @@ width: 100%;
     opacity: 0;
     z-index: -5500 !important;
   }
-  50%{
+  50% {
     /* transform: translateX(-50%); */
     opacity: 0;
   }
@@ -169,4 +168,3 @@ width: 100%;
   src: local("bukra-regular"),
     url(../../../fonts/bukra-regular.OTF) format("truetype");
 }
-
