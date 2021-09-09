@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Footer.css';
+import './footer.css';
 import endpoint from '../../../helpers/api_service';
 import { Button } from 'react-bootstrap';
 

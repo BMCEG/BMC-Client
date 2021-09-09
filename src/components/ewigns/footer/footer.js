@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Footer.css';
+import './footer.css';
 import endpoint from '../../../helpers/api_service';
 import { Typography } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
