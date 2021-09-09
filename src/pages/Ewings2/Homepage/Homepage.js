@@ -307,7 +307,13 @@ export default class Homepage extends Component {
                                 backgroundSize: 'cover'
                             }}
                             >
-                                <div className='ewings__home__services__card__name'>
+                                <div className='ewings__home__services__card__name' style={{
+                                    backgroundImage: `url(${endpoint}/ewings__service__bg.png)`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
+
+                                }}>
                                     <Typography className='ewings__home__services__card__name--font'>
                                         DIGITAL MARKETING
                                     </Typography>
@@ -321,7 +327,8 @@ export default class Homepage extends Component {
                             </div>
                         </div>
                     </div>
-                    <br></br>                    <div className='ewings__home__services__row--mob'>
+                    <br></br>
+                    <div className='ewings__home__services__row--mob'>
 
                         <div className='ewings__home__services__service--mob'>
                             <div className='ewings__home__services__card' style={{
@@ -331,7 +338,13 @@ export default class Homepage extends Component {
                                 backgroundSize: 'cover'
                             }}
                             >
-                                <div className='ewings__home__services__card__name'>
+                                <div className='ewings__home__services__card__name' style={{
+                                    backgroundImage: `url(${endpoint}/ewings__service__bg.png)`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
+
+                                }}>
                                     <Typography className='ewings__home__services__card__name--font'>
                                         {/* <div className='ewings__home__services__card__name--overlay' /> */}
                                         MULTIMEDIA PRODUCTION
@@ -356,7 +369,13 @@ export default class Homepage extends Component {
                                 backgroundSize: 'cover'
                             }}
                             >
-                                <div className='ewings__home__services__card__name'>
+                                <div className='ewings__home__services__card__name' style={{
+                                    backgroundImage: `url(${endpoint}/ewings__service__bg.png)`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
+
+                                }}>
                                     <Typography className='ewings__home__services__card__name--font'>
                                         {/* <div className='ewings__home__services__card__name--overlay' /> */}
                                         SOCIAL MEDIA MANAGEMENT
@@ -380,7 +399,13 @@ export default class Homepage extends Component {
                                 backgroundSize: 'cover'
                             }}
                             >
-                                <div className='ewings__home__services__card__name'>
+                                <div className='ewings__home__services__card__name' style={{
+                                    backgroundImage: `url(${endpoint}/ewings__service__bg.png)`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
+
+                                }}>
                                     <Typography className='ewings__home__services__card__name--font'>
                                         {/* <div className='ewings__home__services__card__name--overlay' /> */}
                                         MEDIA PLANNING
@@ -407,7 +432,13 @@ export default class Homepage extends Component {
                                 backgroundSize: 'cover'
                             }}
                             >
-                                <div className='ewings__home__services__card__name'>
+                                <div className='ewings__home__services__card__name' style={{
+                                    backgroundImage: `url(${endpoint}/ewings__service__bg.png)`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
+
+                                }}>
                                     <Typography className='ewings__home__services__card__name--font'>
                                         {/* <div className='ewings__home__services__card__name--overlay' /> */}
                                         WEB
@@ -436,7 +467,13 @@ export default class Homepage extends Component {
                                 backgroundSize: 'cover'
                             }}
                             >
-                                <div className='ewings__home__services__card__name'>
+                                <div className='ewings__home__services__card__name' style={{
+                                    backgroundImage: `url(${endpoint}/ewings__service__bg.png)`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
+
+                                }}>
                                     <Typography className='ewings__home__services__card__name--font'>
                                         DIGITAL MARKETING
                                     </Typography>
@@ -449,7 +486,11 @@ export default class Homepage extends Component {
                                 </Button>
                             </div>
                         </div>
-                        <div className='ewings__home__services__service'>
+                        <div className='ewings__home__services__service' style={{
+                            backgroundImage: `url(${endpoint}/ewings__service__bg.png)`,
+                            backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat'
+                        }}>
                             <div className='ewings__home__services__card' style={{
                                 backgroundImage: `url(${endpoint}/Multimedia-Production.png)`,
                                 backgroundRepeat: 'no-repeat',
@@ -457,7 +498,13 @@ export default class Homepage extends Component {
                                 backgroundSize: 'cover'
                             }}
                             >
-                                <div className='ewings__home__services__card__name'>
+                                <div className='ewings__home__services__card__name' style={{
+                                    backgroundImage: `url(${endpoint}/ewings__service__bg.png)`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
+
+                                }}>
                                     <Typography className='ewings__home__services__card__name--font'>
                                         {/* <div className='ewings__home__services__card__name--overlay' /> */}
                                         MULTIMEDIA PRODUCTION
@@ -479,7 +526,13 @@ export default class Homepage extends Component {
                                 backgroundSize: 'cover'
                             }}
                             >
-                                <div className='ewings__home__services__card__name'>
+                                <div className='ewings__home__services__card__name' style={{
+                                    backgroundImage: `url(${endpoint}/ewings__service__bg.png)`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
+
+                                }}>
                                     <Typography className='ewings__home__services__card__name--font'>
                                         {/* <div className='ewings__home__services__card__name--overlay' /> */}
                                         SOCIAL MEDIA MANAGEMENT
@@ -504,7 +557,13 @@ export default class Homepage extends Component {
                                 backgroundSize: 'cover'
                             }}
                             >
-                                <div className='ewings__home__services__card__name'>
+                                <div className='ewings__home__services__card__name' style={{
+                                    backgroundImage: `url(${endpoint}/ewings__service__bg.png)`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
+
+                                }}>
                                     <Typography className='ewings__home__services__card__name--font'>
                                         {/* <div className='ewings__home__services__card__name--overlay' /> */}
                                         MEDIA PLANNING
@@ -528,7 +587,13 @@ export default class Homepage extends Component {
                                 backgroundSize: 'cover'
                             }}
                             >
-                                <div className='ewings__home__services__card__name'>
+                                <div className='ewings__home__services__card__name' style={{
+                                    backgroundImage: `url(${endpoint}/ewings__service__bg.png)`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
+
+                                }}>
                                     <Typography className='ewings__home__services__card__name--font'>
                                         {/* <div className='ewings__home__services__card__name--overlay' /> */}
                                         WEB
@@ -572,9 +637,9 @@ export default class Homepage extends Component {
                     pagination={false}
                 >
                     {this.state.clients.map((client) => (
-                        <div className='home-partner-ewings'>
+                        <div className='ewingshome__client'>
                             <Button variant='link' href='/partners'>
-                                <img alt='placeholder' className='home-partner-img' src={`${endpoint}/${client.logo}`} height='120px' />
+                                <img alt='placeholder' className='ewingshome__client__img' src={`${endpoint}/${client.logo}`} height='120px' />
                             </Button>
                         </div>
                     ))}

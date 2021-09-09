@@ -16,10 +16,10 @@ export default class FooterMob extends Component {
                         <img src={`${endpoint}/Logo-W.png`} className='bmcfooterMob__row__img' />
                         <br></br>
                         <div className='bmcfooter__center__social'>
-                            <Button variant='link' className='bmcfooter__center__social__btn' target="_blank" href='https://www.facebook.com/businessmapconsultants/'>
+                            <Button variant='link' className='bmcfooter__center__social__btn' target="_blank" href='https://www.facebook.com/Ewings-103947045332006'>
                                 <img src={`${endpoint}/ewings-Icons-04.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
-                            <Button variant='link' className='bmcfooter__center__social__btn' target="_blank" href='https://www.instagram.com/businessmapconsultants/'>
+                            <Button variant='link' className='bmcfooter__center__social__btn' target="_blank" href='https://instagram.com/ewings_creative?utm_medium=copy_link'>
                                 <img src={`${endpoint}/ewings-Icons-05.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
                             <Button variant='link' className='bmcfooter__center__social__btn' target="_blank" href='https://www.twitter.com/businessmapconsultants/'>

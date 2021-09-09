@@ -6,6 +6,7 @@ import { Button } from 'react-bootstrap';
 import endpoint from '../../../helpers/api_service';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Typography } from '@material-ui/core';
 import { faYoutube, faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Dropdown from 'react-bootstrap/Dropdown'
 export default class NavbarMob extends Component {
@@ -26,59 +27,38 @@ export default class NavbarMob extends Component {
                     <div className="title" style={{ marginLeft: 'auto' }}>
                         <Dropdown>
                             <Dropdown.Toggle variant="link" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faBars} size={'2x'} />
+                                <FontAwesomeIcon color='black' icon={faBars} size={'2x'} />
                             </Dropdown.Toggle>
                             <Dropdown.Menu align={{ lg: 'left' }} className='nav-bmc-dropdown'>
                                 <div className="Lmoa12">
-                                    <Dropdown.Item href='/' ><h5 className='bukra-bold'>Home</h5></Dropdown.Item>
+                                    <Dropdown.Item href='/' ><Typography className='bukra-bold'>Home</Typography></Dropdown.Item>
                                     <hr></hr>
-                                    <Dropdown.Item><h5 className='bukra-bold'>About:</h5></Dropdown.Item>
-                                    <Dropdown.Item href='/about/founder' ><h6 className='bukra-regular'>Founder's Message</h6></Dropdown.Item>
-                                    <Dropdown.Item href='/about/partners' ><h6 className='bukra-regular'>Partners' Message</h6></Dropdown.Item>
-                                    <Dropdown.Item href='/about/story' ><h6 className='bukra-regular'>Our Story</h6></Dropdown.Item>
-                                    <Dropdown.Item href='/whyBMC' ><h5 className='bukra-regular'>Why BMC?!</h5></Dropdown.Item>
+                                    <Dropdown.Item><Typography className='bukra-bold'>About:</Typography></Dropdown.Item>
+                                    <Dropdown.Item href='/about/founder' ><Typography className='bukra-regular'>Founder's Message</Typography></Dropdown.Item>
+                                    <Dropdown.Item href='/about/partners' ><Typography className='bukra-regular'>Partners' Message</Typography></Dropdown.Item>
+                                    <Dropdown.Item href='/about/story' ><Typography className='bukra-regular'>Our Story</Typography></Dropdown.Item>
+                                    <Dropdown.Item href='/whyBMC' ><Typography className='bukra-regular'>Why BMC?!</Typography></Dropdown.Item>
                                     <br></br>
+                                    <Dropdown.Item><Typography className='bukra-bold'>Services:</Typography></Dropdown.Item>
                                     {/* <br></br> */}
-                                    <Dropdown.Item><h5 className='bukra-bold'>Services:</h5></Dropdown.Item>
-                                    <br></br>
-                                    <Dropdown.Item disabled><h6 className='bukra-regular'>Business Mentoring and Guidance:
-                                        </h6></Dropdown.Item>
-                                    {/* <br></br> */}
+                                    <Dropdown.Item disabled><Typography className='bukra-regular'>Business Mentoring and Guidance:
+                                        </Typography></Dropdown.Item>
 
-                                    <Dropdown.Item href='/services/strategic'><h6 className='bukra-regular'>Strategic Planning</h6></Dropdown.Item>
-                                    <Dropdown.Item href='/services/marketingMgmt'><h6 className='bukra-regular'>Marketing Management</h6></Dropdown.Item>
-                                    <Dropdown.Item href='/services/financial'><h6 className='bukra-regular'>Finance and Accounting</h6></Dropdown.Item>
-                                    <Dropdown.Item href='/services/hr'><h6 className='bukra-regular'>Human Resources<hr></hr></h6></Dropdown.Item>
+                                    <Dropdown.Item href='/services/strategic'><Typography className='bukra-regular'>Strategic Planning</Typography></Dropdown.Item>
+                                    <Dropdown.Item href='/services/marketingMgmt'><Typography className='bukra-regular'>Marketing Management</Typography></Dropdown.Item>
+                                    <Dropdown.Item href='/services/financial'><Typography className='bukra-regular'>Finance and Accounting</Typography></Dropdown.Item>
+                                    <Dropdown.Item href='/services/hr'><Typography className='bukra-regular'>Human Resources<hr></hr></Typography></Dropdown.Item>
                                     
-                                    <Dropdown.Item href='/services/corporate'><h5 className='bukra-regular'>Corporate Governance</h5></Dropdown.Item>
-                                    <Dropdown.Item href='/courses'><h5 className='bukra-regular'>Training and Development</h5></Dropdown.Item>
-                                    <Dropdown.Item href='/services/toolbox'><h6 className='bukra-regular'>BMC Toolbox</h6></Dropdown.Item>
+                                    <Dropdown.Item href='/services/corporate'><Typography className='bukra-regular'>Corporate Governance</Typography></Dropdown.Item>
+                                    <Dropdown.Item href='/courses'><Typography className='bukra-regular'>Training and Development</Typography></Dropdown.Item>
+                                    <Dropdown.Item href='/services/toolbox'><Typography className='bukra-regular'>BMC Toolbox</Typography></Dropdown.Item>
                                     <br></br>
-                                    {/* <Dropdown.Item href='/partners'><h5 className='bukra-bold'>Clients</h5></Dropdown.Item> */}
-                                    <Dropdown.Item href='/consultations'><h5 className='bukra-bold'>Consultations</h5></Dropdown.Item>
-                                    <Dropdown.Item href='/careers'><h5 className='bukra-bold'>Careers</h5></Dropdown.Item>
-                                    <Dropdown.Item href='/blogs'><h5 className='bukra-bold'>Blogs</h5></Dropdown.Item>
-                                    <Dropdown.Item href='/contact'><h5 className='bukra-bold'>Contact Us</h5></Dropdown.Item>
+                                    <Dropdown.Item href='/consultations'><Typography className='bukra-bold'>Consultations</Typography></Dropdown.Item>
+                                    <Dropdown.Item href='/careers'><Typography className='bukra-bold'>Careers</Typography></Dropdown.Item>
+                                    <Dropdown.Item href='/blogs'><Typography className='bukra-bold'>Blogs</Typography></Dropdown.Item>
+                                    <Dropdown.Item href='/contact'><Typography className='bukra-bold'>Contact Us</Typography></Dropdown.Item>
                                     <hr></hr>
-                                    {/* <div className='nav-mob-socials'>
-                                        <Button variant='link' href='https://www.facebook.com/businessmapconsultants/' >
-                                            <h5 className='bukra-bold'><FontAwesomeIcon icon={faFacebook} size={'2x'} /></h5>
-                                        </Button>
-                                        <Button variant='link'>
-                                            <h5 className='bukra-bold'><FontAwesomeIcon icon={faTwitter} size={'2x'} /></h5>
-                                        </Button>
-                                        <Button variant='link'>
-                                            <h5 className='bukra-bold'><FontAwesomeIcon icon={faInstagram} size={'2x'} /></h5>
-                                        </Button>
-                                        <Button variant='link' href='https://www.linkedin.com/company/businessmapconsultants/'>
-                                            <h5 className='bukra-bold'><FontAwesomeIcon icon={faLinkedin} size={'2x'} /></h5>
-                                        </Button>
-                                        <Button variant='link' href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q'>
-                                            <h5 className='bukra-bold'><FontAwesomeIcon icon={faYoutube} size={'2x'} /></h5>
-                                        </Button>
-                                    </div>
-                                    <hr></hr> */}
-                                    <Dropdown.Item href='/ewings'><h5 className='bukra-bold'>Ewings</h5></Dropdown.Item>
+                                    <Dropdown.Item href='/ewings'><Typography className='bukra-bold'>Ewings</Typography></Dropdown.Item>
                                 </div>
                             </Dropdown.Menu>
                         </Dropdown>

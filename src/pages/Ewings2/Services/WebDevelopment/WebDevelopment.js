@@ -10,18 +10,15 @@ export default class WebDevelopment extends Component {
                 <div className='ewings__digitalM__banner'>
                     <img className='ewings__multimediaProd__banner__img' src={`${endpoint}/Web-H.png`} alt='banner' />
                     <div className='ewings__banner__title' style={{
-                        backgroundImage: `url(${endpoint}/ewings-header.png  )`,
+                        backgroundImage: `url(${endpoint}/ewings-header.png)`,
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'center',
                         backgroundPositionY: 'center'
                     }}>
-                        <div className='ewings__stamp' style={{ backgroundImage: `url(${endpoint}/ewings-stamp.png)`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPositionX: 'center' }}>
-
-                            <Typography className='ewings__home__title--font ewings__home__services__title__header'>
-                                WEB DEVELOPMENT
-                            </Typography>
-                        </div>
+                        <Typography className='ewings__home__title--font ewings__home__services__title__header'>
+                            WEB DEVELOPMENT
+                        </Typography>
                     </div>
                 </div>
                 <div className='ewings__digitalM__body'>

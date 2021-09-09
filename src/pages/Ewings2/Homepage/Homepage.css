@@ -19,7 +19,7 @@
   /* background-color: blue; */
   /* height: 50vh; */
   /* display: ; */
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,12 +33,15 @@
   /* background-color: darkgreen; */
   /* height: 100% !important; */
 }
-
+.carousel-indicators li{
+  /* color: black !important; */
+  background-color: #4694d6;
+}
 .ewings__home__banner__carousel--item {
   padding: 1%;
   /* background-color: darkgoldenrod; */
   /* height: 100vh !important; */
-  /* height: 60vh; */
+  min-height: 60vh;
   display: flex;
   justify-content: center;
 }
@@ -359,12 +362,13 @@
 .ewings__home__services__card__name {
   height: 30%;
   margin-top: auto;
+  /* z-index: 80; */
   /* background-color: blue; */
 }
 .ewings__home__services__card__name--font {
   font-family: "bukra-bold" !important;
   height: 100%;
-  background-color: rgba(70, 148, 214, 0.8); /* Black background with opacity */
+  /* background-color: rgba(70, 148, 214, 0.8); Black background with opacity */
   font-size: 23px !important;
   color: white;
   padding: 3vmin;
@@ -460,4 +464,26 @@
   justify-content: center;
   /* box-shadow: 0px 1px 3px #393938; */
   overflow-x: scroll;
+}
+
+.ewingshome__client {
+  margin: auto;
+  /* background-color: yellow; */
+  /* height: 100%; */
+  margin-top: 3%;
+  width: 120px;
+  text-align: center;
+  transition: transform .2s;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.ewingshome__client:hover {
+  transform: scale(1.1);
+}
+
+.ewingshome__client__img {
+  /* background-color: yellow; */
+  object-fit: contain;
+  width: 100%;
+
 }

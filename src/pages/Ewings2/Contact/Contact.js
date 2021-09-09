@@ -56,12 +56,10 @@ export default class Contact extends Component {
                         backgroundPositionX: 'center',
                         backgroundPositionY: 'center'
                     }}>
-                        <div className='ewings__stamp' style={{ backgroundImage: `url(${endpoint}/ewings-stamp.png)`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPositionX: 'center' }}>
 
                             <Typography className='ewings__home__title--font ewings__home__services__title__header'>
                                 CONTACT US
                             </Typography>
-                        </div>
                     </div>
                 </div>
                 <br></br>
@@ -97,10 +95,6 @@ export default class Contact extends Component {
                             </div>
                         </div>
                         {/* <div className='bmchome__contact__right'> */}
-                      <br></br>
-                      <br></br>
-                      <br></br>
-                      <br></br>
                         {/* </div> */}
                     </div>
                 </MediaQuery>
@@ -135,9 +129,15 @@ export default class Contact extends Component {
                         <div className='bmchome__contact__right'>
                             <iframe className='bmchome__contact__map' src="https://maps.google.com/maps?q=30.015124,%2031.427728&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
+                        <br></br>
+
                     </div>
                 </MediaQuery>
                 </div>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
             </div>
         )
     }

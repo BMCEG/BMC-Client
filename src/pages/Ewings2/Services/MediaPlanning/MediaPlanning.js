@@ -15,13 +15,11 @@ export default class MediaPlanning extends Component {
                         backgroundPositionX: 'center',
                         backgroundPositionY: 'center'
                     }}>
-                        <div className='ewings__stamp' style={{ backgroundImage: `url(${endpoint}/ewings-stamp.png)`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPositionX: 'center' }}>
 
-                            <Typography className='ewings__home__title--font ewings__home__services__title__header'>
-                                MEDIA PLANNING AND BUYING
-                            </Typography>
-                        </div>
-                    </div>s
+                        <Typography className='ewings__home__title--font ewings__home__services__title__header'>
+                            MEDIA PLANNING AND BUYING
+                        </Typography>
+                    </div>
                 </div>
                 <div className='ewings__digitalM__body'>
                     <img className='ewings__mediaPlanning__body__ball__img__top-right' src={`${endpoint}/Ball.png`} alt='ball' />
@@ -75,10 +73,10 @@ export default class MediaPlanning extends Component {
 
                 </div>
                 <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
             </div>
         )
     }

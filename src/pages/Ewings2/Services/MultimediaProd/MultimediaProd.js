@@ -16,12 +16,10 @@ export default class MultimediaProd extends Component {
                         backgroundPositionX: 'center',
                         backgroundPositionY: 'center'
                     }}>
-                        <div className='ewings__stamp' style={{ backgroundImage: `url(${endpoint}/ewings-stamp.png)`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPositionX: 'center' }}>
 
-                            <Typography className='ewings__home__title--font ewings__home__services__title__header'>
-                                MULTIMEDIA PRODUCTION
-                            </Typography>
-                        </div>
+                        <Typography className='ewings__home__title--font ewings__home__services__title__header'>
+                            MULTIMEDIA PRODUCTION
+                        </Typography>
                     </div>
                 </div>
                 <div className='ewings__digitalM__body'>
@@ -142,10 +140,10 @@ export default class MultimediaProd extends Component {
                     {/* </div> */}
                 </div>
                 <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
 
             </div>
         )

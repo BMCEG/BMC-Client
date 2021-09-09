@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube, faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Dropdown from 'react-bootstrap/Dropdown'
+import { Typography } from '@material-ui/core';
 export default class NavbarMob extends Component {
     constructor(props) {
         super(props);
@@ -26,43 +27,43 @@ export default class NavbarMob extends Component {
                     <div className="title" style={{ marginLeft: 'auto' }}>
                         <Dropdown>
                             <Dropdown.Toggle variant="link" id="dropdown-basic">
-                                <h5><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faBars} size={'2x'} /></h5>
+                                <Typography><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faBars} size={'2x'} /></Typography>
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu align={{ lg: 'left' }}>
-                                <Dropdown.Item href='/ewings' ><h5 className='bukra-bold'>Home</h5></Dropdown.Item>
+                                <Dropdown.Item href='/ewings' ><Typography className='bukra-bold'>Home</Typography></Dropdown.Item>
                                 <hr></hr>
-                                <Dropdown.Item><h5 className='bukra-bold'>Services:</h5></Dropdown.Item>
+                                <Dropdown.Item><Typography className='bukra-bold'>Services:</Typography></Dropdown.Item>
                                 <Dropdown.Item href='/ewings/services/digital' ><h6 className='bukra-regular'>Digital Marketing</h6></Dropdown.Item>
                                 <Dropdown.Item href='/ewings/services/multimedia' ><h6 className='bukra-regular'>Multimedia Productions</h6></Dropdown.Item>
                                 <Dropdown.Item href='/ewings/services/social' ><h6 className='bukra-regular'>Social Media Management</h6></Dropdown.Item>
                                 <Dropdown.Item href='/ewings/services/media' ><h6 className='bukra-regular'>Media Planning and Buying</h6></Dropdown.Item>
                                 <Dropdown.Item href='/ewings/services/web' ><h6 className='bukra-regular'>Web Development</h6></Dropdown.Item>
                                 <br></br>
-                                <Dropdown.Item href='/ewings/courses' ><h5 className='bukra-bold'>Courses</h5></Dropdown.Item>
-                                <br></br>
-                                <Dropdown.Item href='/ewings/gallery' ><h5 className='bukra-bold'>Gallery</h5></Dropdown.Item>
+                                <Dropdown.Item href='/ewings/courses' ><Typography className='bukra-bold'>Courses</Typography></Dropdown.Item>
+                                {/* <br></br>
+                                <Dropdown.Item href='/ewings/gallery' ><Typography className='bukra-bold'>Gallery</Typography></Dropdown.Item> */}
 
                                 <hr></hr>
                                 <Dropdown.Item>
-                                    <Button variant='link' href='https://www.facebook.com/businessmapconsultants/'>
-                                        <h5 className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faFacebook} size={'2x'} /></h5>
+                                    <Button variant='link' href='https://www.facebook.com/Ewings-103947045332006'>
+                                        <Typography className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faFacebook} size={'2x'} /></Typography>
                                     </Button>
                                     <Button variant='link'>
-                                        <h5 className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faTwitter} size={'2x'} /></h5>
+                                        <Typography className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faTwitter} size={'2x'} /></Typography>
                                     </Button>
                                     <Button variant='link' href='https://www.linkedin.com/company/businessmapconsultants/'>
-                                        <h5 className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faLinkedin} size={'2x'} /></h5>
+                                        <Typography className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faLinkedin} size={'2x'} /></Typography>
                                     </Button>
-                                    <Button variant='link'>
-                                        <h5 className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faInstagram} size={'2x'} /></h5>
+                                    <Button variant='link' href='https://www.instagram.com/ewings_creative/?utm_medium=copy_link'>
+                                        <Typography className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faInstagram} size={'2x'} /></Typography>
                                     </Button>
                                     <Button variant='link' href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q'>
-                                        <h5 className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faYoutube} size={'2x'} /></h5>
+                                        <Typography className='bukra-bold'><FontAwesomeIcon style={{ color: '#4694D6' }} icon={faYoutube} size={'2x'} /></Typography>
                                     </Button>
                                 </Dropdown.Item>
                                 <hr></hr>
-                                <Dropdown.Item href='/' ><h5 className='bukra-bold'>BMC</h5></Dropdown.Item>
+                                <Dropdown.Item href='/' ><Typography className='bukra-bold'>BMC</Typography></Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </div>
