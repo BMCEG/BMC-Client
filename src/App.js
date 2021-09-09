@@ -79,7 +79,7 @@ import AdminRequests from './pages/admin/requests/requests.js';
 import Media from 'react-media';
 import HR from './pages/BMC/services/HR/HR.js';
 import FooterMob from './components/BMC/Footer/Footer-mob.js';
-import FooterEwingsMob from './components/ewigns/footer/footer-mob.js';
+import FooterEwingsMob from './components/ewigns/footer/Footer-mob.js';
 export default class App extends Component {
   constructor(props) {
     super(props);
