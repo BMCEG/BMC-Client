@@ -7,20 +7,14 @@ import endpoint from '../../../helpers/api_service';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Typography } from '@material-ui/core';
-import { faYoutube, faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Dropdown from 'react-bootstrap/Dropdown'
 export default class NavbarMob extends Component {
-    constructor(props) {
-        super(props);
-
-    }
-
     render() {
         return (
             <Navbar className="bmcnav__root" fixed="top">
                 <div className='bmcnav__left--mob'>
                 <Button variant='link' className='bmcnav__btn__logo bmcnav__btn--size' href='/'>
-                        <img src={`${endpoint}/Logo (1).png`} className='bmcnav__logo--mob' />
+                        <img alt='nav' src={`${endpoint}/Logo (1).png`} className='bmcnav__logo--mob' />
                     </Button>
                 </div>
                 <div className='nav-dmap-right-mob'>

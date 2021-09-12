@@ -86,7 +86,7 @@ export default class Contact extends Component {
                             </div>
                         </div>
                         <div className='bmchome__contact__right'>
-                            <iframe className='bmchome__contact__map' src="https://maps.google.com/maps?q=30.015124,%2031.427728&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <iframe title='9' className='bmchome__contact__map' src="https://maps.google.com/maps?q=30.015124,%2031.427728&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                         </div>
                     </div>
                     <br></br>

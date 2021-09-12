@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react'
 import './Careers.css'
-import axios from 'axios'
 import { Typography } from '@material-ui/core'
 import endpoint from '../../../helpers/api_service'
 import FooterTop from '../../../components/BMC/Footer/Footer-Top'

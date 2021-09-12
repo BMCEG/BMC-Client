@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import './landing.css';
 import endpoint from '../../../helpers/api_service';
-import { Grid, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
 import Moment from 'react-moment';
 import { Button } from 'react-bootstrap';

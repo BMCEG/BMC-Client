@@ -19,11 +19,11 @@ export default class Clients extends Component {
             .then((res) => {
                 let clients = [];
 
-                res.data.map((client) => {
+                res.data.map((client) => (
                     clients.push({
                         src: `${endpoint}/${client.logo}`
                     })
-                })
+                ))
 
                 this.setState({
                     clients

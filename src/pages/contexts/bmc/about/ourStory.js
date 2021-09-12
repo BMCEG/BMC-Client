@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./ourStory.css";
 import '../../../BMC/services/StrategicPlanning/StrategicPlanning.css'
 import StoryBalls from "../../../../components/storyBalls";
-import endpoint from "../../../../helpers/api_service";
+// import endpoint from "../../../../helpers/api_service";
 import { Typography } from "@material-ui/core";
 export default class ourStory extends Component {
   constructor(props) {

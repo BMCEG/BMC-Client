@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 import './Footer.css';
 import endpoint from '../../../helpers/api_service';
 import { Button } from 'react-bootstrap';
-import { Typography } from '@material-ui/core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faLocationArrow, faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 export default class FooterMob extends Component {
     render() {
         return (
@@ -16,23 +12,23 @@ export default class FooterMob extends Component {
             }}>
                 <div className='bmcfooterMob__row'>
                     <div className='bmcfooterMob__row__left'>
-                        <img src={`${endpoint}/Logo (1).png`} className='bmcfooterMob__row__img' />
+                        <img alt='nav'src={`${endpoint}/Logo (1).png`} className='bmcfooterMob__row__img' />
                         <br></br>
                         <div className='bmcfooter__center__social'>
                             <Button variant='link' className='bmcfooter__center__social__btn' href='https://www.facebook.com/businessmapconsultants/'>
-                                <img src={`${endpoint}/Facebook.png`} className='bmcfooter__center__social__btn__img' />
+                                <img alt='nav'src={`${endpoint}/Facebook.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
                             <Button variant='link' className='bmcfooter__center__social__btn'  href='https://www.instagram.com/businessmapconsultants/'>
-                                <img src={`${endpoint}/Instagram.png`} className='bmcfooter__center__social__btn__img' />
+                                <img alt='nav'src={`${endpoint}/Instagram.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
                             <Button variant='link' className='bmcfooter__center__social__btn'  href='https://www.twitter.com/businessmapconsultants/'>
-                                <img src={`${endpoint}/Twitter.png`} className='bmcfooter__center__social__btn__img' />
+                                <img alt='nav'src={`${endpoint}/Twitter.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
                             <Button variant='link' className='bmcfooter__center__social__btn' href='https://www.linkedin.com/company/businessmapconsultants/'>
-                                <img src={`${endpoint}/Linkedin.png`} className='bmcfooter__center__social__btn__img' />
+                                <img alt='nav'src={`${endpoint}/Linkedin.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
                             <Button variant='link' className='bmcfooter__center__social__btn' href='https://www.youtube.com/channel/UCEt1Yu5e7dPdrkpk23HZN6Q'>
-                                <img src={`${endpoint}/Youtube.png`} className='bmcfooter__center__social__btn__img' />
+                                <img alt='nav'src={`${endpoint}/Youtube.png`} className='bmcfooter__center__social__btn__img' />
                             </Button>
                         </div>
                     </div>

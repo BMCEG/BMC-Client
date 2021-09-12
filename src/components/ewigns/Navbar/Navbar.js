@@ -31,7 +31,7 @@ export default class Navbar2 extends Component {
             <Navbar className='ewingsnav__root' fixed='top'>
                 <div className='bmcnav__space' />
                 <Button variant='link' className='bmcnav__btn ewingsnav__btn--size' href='/ewings'>
-                    <img src={`${endpoint}/ewings-full-logo.png`} className='bmcnav__logo' />
+                    <img alt='nav'src={`${endpoint}/ewings-full-logo.png`} className='bmcnav__logo' />
                 </Button>
                 {/* <div className='bmcnav__space' /> */}
                 <div className='bmcnav__space' />
@@ -64,7 +64,7 @@ export default class Navbar2 extends Component {
                 <div className='ewingsnav__divider'></div>
                 <Button variant='link' className='bmcnav__btn ewingsnav__btn--size' href='/'>
 
-                    <img src={`${endpoint}/logo-no-text.png`} className='ewingsnav__bmc__logo' />
+                    <img alt='nav'src={`${endpoint}/logo-no-text.png`} className='ewingsnav__bmc__logo' />
                 </Button>
                 <div className='bmcnav__space' />
             </Navbar>

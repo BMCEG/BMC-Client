@@ -636,8 +636,8 @@ export default class Homepage extends Component {
                     className="ewingshome__clients"
                     pagination={false}
                 >
-                    {this.state.clients.map((client) => (
-                        <div className='ewingshome__client'>
+                    {this.state.clients.map((client, index) => (
+                        <div key={index} className='ewingshome__client'>
                             <Button variant='link' href='/partners'>
                                 <img alt='placeholder' className='ewingshome__client__img' src={`${endpoint}/${client.logo}`} height='120px' />
                             </Button>
@@ -649,7 +649,7 @@ export default class Homepage extends Component {
                 <br></br>
                 <MediaQuery maxWidth={900}>
                     <div className='ewingshome__contact--mob'>
-                        <iframe className='ewingshome__contact__map--mob' src="https://maps.google.com/maps?q=30.015124,%2031.427728&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <iframe title='1' className='ewingshome__contact__map--mob' src="https://maps.google.com/maps?q=30.015124,%2031.427728&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                         <br></br>
                         <br></br>
                         <br></br>
@@ -675,8 +675,6 @@ export default class Homepage extends Component {
                                 </Button>
                             </div>
                         </div>
-                        {/* <div className='bmchome__contact__right'> */}
-                        {/* </div> */}
                     </div>
                 </MediaQuery>
                 <MediaQuery minWidth={900}>
@@ -708,7 +706,7 @@ export default class Homepage extends Component {
                             </div>
                         </div>
                         <div className='bmchome__contact__right'>
-                            <iframe className='bmchome__contact__map' src="https://maps.google.com/maps?q=30.015124,%2031.427728&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <iframe title='2' className='bmchome__contact__map' src="https://maps.google.com/maps?q=30.015124,%2031.427728&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                         </div>
                     </div>
                 </MediaQuery>

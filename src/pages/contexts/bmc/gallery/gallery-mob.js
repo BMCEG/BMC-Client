@@ -28,9 +28,9 @@ export default class gallery extends Component {
         let newAlbumsUnpicked = this.state.albumsNotPicked.filter((album) => {
             if (album._id !== id) {
                 return album;
-            } else {
-                newAlbumsPicked.unshift(album);
             }
+            newAlbumsPicked.unshift(album);
+            return false
         })
 
         this.setState({
@@ -44,9 +44,9 @@ export default class gallery extends Component {
         let newAlbumsPicked = this.state.albumsPicked.filter((album) => {
             if (album._id !== id) {
                 return album;
-            } else {
-                newAlbumsUnpicked.push(album);
             }
+            newAlbumsUnpicked.push(album);
+            return false
         })
 
         this.setState({
@@ -100,7 +100,7 @@ export default class gallery extends Component {
                                     {picture.type === 'video' ?
                                         <ReactPlayer
                                             className='gallery-picture'
-                                             url={`${endpoint}/${picture.src}`}
+                                            url={`${endpoint}/${picture.src}`}
                                             width="100%"
                                             height="100%"
                                             controls={false}

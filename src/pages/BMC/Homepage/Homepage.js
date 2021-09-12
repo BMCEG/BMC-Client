@@ -3,7 +3,7 @@ import './Homepage.css';
 import { TextField } from '@material-ui/core';
 import axios from 'axios';
 import Carousel from 'react-bootstrap/Carousel'
-import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { GoogleApiWrapper } from 'google-maps-react';
 import ClientsCarousel from 'react-elastic-carousel';
 import FooterTop from '../../../components/BMC/Footer/Footer-Top';
 import { Typography } from '@material-ui/core';
@@ -254,8 +254,8 @@ class Homepage extends Component {
                     className="bmchome__clients"
                     pagination={false}
                 >
-                    {this.state.clients.map((client) => (
-                        <div className='home-partner-ewings'>
+                    {this.state.clients.map((client, index) => (
+                        <div key={index} className='home-partner-ewings'>
                             <Button variant='link' href='/partners'>
                                 <img alt='placeholder' className='home-partner-img' src={`${endpoint}/${client.logo}`} height='120px' />
                             </Button>
@@ -295,7 +295,7 @@ class Homepage extends Component {
                         </div>
                     </div>
                     <div className='bmchome__contact__right'>
-                        <iframe className='bmchome__contact__map' src="https://maps.google.com/maps?q=30.015124,%2031.427728&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <iframe title='5' className='bmchome__contact__map' src="https://maps.google.com/maps?q=30.015124,%2031.427728&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                     </div>
                 </div>
                 <br></br>

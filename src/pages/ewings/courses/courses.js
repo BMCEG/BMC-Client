@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './courses.css';
 import axios from 'axios';
 import endpoint from '../../../helpers/api_service';
-import { Grid, Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { Button } from 'react-bootstrap';
 
 export default class CoursesList extends Component {
@@ -48,7 +48,7 @@ export default class CoursesList extends Component {
                                 {this.state.courses1.map((course) => (
                                     <>
                                         <Button variant='link' className='course-container' href={`/ewings/courses/${course.title}`}>
-                                            <img className='course-img' src={`${endpoint}/${course.images[3].src}`} />
+                                            <img className='course-img' alt={`${course.title}`} src={`${endpoint}/${course.images[3].src}`} />
                                             <div className='course-middle'>
                                                 <div className='course-text'>
                                                     <p className='bukra-bold course-list-name'>
@@ -70,7 +70,7 @@ export default class CoursesList extends Component {
                                 {this.state.courses2.map((course) => (
                                     <>
                                         <Button variant='link' className='course-container' href={`/ewings/courses/${course.title}`}>
-                                            <img className='course-img' src={`${endpoint}/${course.images[3].src}`} />
+                                            <img className='course-img' alt={`${course.title}`} src={`${endpoint}/${course.images[3].src}`} />
                                             <div className='course-middle'>
                                                 <div className='course-text'>
                                                     <p className='bukra-bold course-list-name'>
@@ -84,7 +84,7 @@ export default class CoursesList extends Component {
                                         </Button>
                                         <br></br>
                                         <br></br>
-\                                    </>
+                                        \                                    </>
                                 ))}
                             </Grid>
                         </Grid>

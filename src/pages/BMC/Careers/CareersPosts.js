@@ -44,7 +44,7 @@ export default class CareersPosts extends Component {
                     {this.state.posts1.map((post) => (
                         <>
                             <div className='careers__posts__post'>
-                                <img className='careers__posts__post__img' src={`${endpoint}/marketing-header.png`} />
+                                <img alt={post.title} className='careers__posts__post__img' src={`${endpoint}/marketing-header.png`} />
                                 <div className='careers__posts__post__info'>
                                     <div>
                                         <Typography className='careers__posts__post__info--header careers__posts__post__info--header--size'>
@@ -71,7 +71,7 @@ export default class CareersPosts extends Component {
                     {this.state.posts1.map((post) => (
                         <>
                             <div className='careers__posts__post'>
-                                <img className='careers__posts__post__img' src={`${endpoint}/marketing-header.png`} />
+                                <img alt={post.title} className='careers__posts__post__img' src={`${endpoint}/marketing-header.png`} />
                                 <div className='careers__posts__post__info'>
                                     <div>
                                         <Typography className='careers__posts__post__info--header careers__posts__post__info--header--size'>
@@ -99,7 +99,7 @@ export default class CareersPosts extends Component {
                     {this.state.posts.map((post) => (
                         <>
                             <div className='careers__posts__post'>
-                                <img className='careers__posts__post__img' src={`${endpoint}/marketing-header.png`} />
+                                <img alt={post.title} className='careers__posts__post__img' src={`${endpoint}/marketing-header.png`} />
                                 <div className='careers__posts__post__info'>
                                     <div>
                                         <Typography className='careers__posts__post__info--header careers__posts__post__info--header--size'>

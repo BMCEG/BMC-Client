@@ -59,7 +59,7 @@ export default class ContactMob extends Component {
                 <br></br>
                 <div className='contact__root__contact--mob'>
                     <div className='bmchome__contact__right--mob'>
-                        <iframe className='bmchome__contact__map' src="https://maps.google.com/maps?q=30.015124,%2031.427728&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <iframe className='bmchome__contact__map' src="https://maps.google.com/maps?q=30.015124,%2031.427728&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                     </div>
                     <br></br>
                     <div className='bmchome__contact__left--mob'>

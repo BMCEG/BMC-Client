@@ -29,9 +29,9 @@ export default class gallery extends Component {
         let newAlbumsUnpicked = this.state.albumsNotPicked.filter((album) => {
             if (album._id !== id) {
                 return album;
-            } else {
-                newAlbumsPicked.unshift(album);
             }
+            newAlbumsPicked.unshift(album);
+            return false;
         })
 
         this.setState({
@@ -45,9 +45,11 @@ export default class gallery extends Component {
         let newAlbumsPicked = this.state.albumsPicked.filter((album) => {
             if (album._id !== id) {
                 return album;
-            } else {
-                newAlbumsUnpicked.push(album);
             }
+            // } else {
+                newAlbumsUnpicked.push(album);
+                return false;
+            // }
         })
 
         this.setState({

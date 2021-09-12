@@ -10,17 +10,12 @@ import { faYoutube, faTwitter, faFacebook, faInstagram, faLinkedin } from '@fort
 import Dropdown from 'react-bootstrap/Dropdown'
 import { Typography } from '@material-ui/core';
 export default class NavbarMob extends Component {
-    constructor(props) {
-        super(props);
-
-    }
-
     render() {
         return (
             <Navbar className="ewingsnav__root" fixed="top">
                 <div className='bmcnav__left--mob'>
                     <Button variant='link' className='bmcnav__btn__logo bmcnav__btn--size' href='/'>
-                        <img src={`${endpoint}/ewings-full-logo.png`} className='bmcnav__logo--mob' />
+                        <img alt='nav'src={`${endpoint}/ewings-full-logo.png`} className='bmcnav__logo--mob' />
                     </Button>
                 </div>
 

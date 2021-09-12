@@ -70,47 +70,52 @@ export default class Course extends Component {
 
     render() {
         return (
-            <div className='courses__root'>
-                <br></br>
-                <br></br>
-                <Typography className='strategic-planning__heading bukra-regular ' style={{ textAlign: 'center' }}>
-                    {this.state.courseDetails.title}
-                </Typography>
-                <div className='strategic-planning__title'>
-                    <Typography className='strategic-planning__heading strategic-planning__title-font '>
-                        {this.state.courseDetails.displayTitle}
+            <>
+                <div className='courses__root'>
+                    <br></br>
+                    <br></br>
+                    <Typography className='strategic-planning__heading bukra-regular ' style={{ textAlign: 'center' }}>
+                        {this.state.courseDetails.title}
                     </Typography>
-                </div>
-                <Typography className='strategic-planning__heading bukra-regular ' style={{ textAlign: 'center' }}>
-                    {this.state.courseDetails.title}
-                </Typography>
-                <br></br>
-                <br></br>
-                <br></br>
-                <div className='strategic-planning__banner'>
-                    <img className='strategic-planning__banner-img' src={`${endpoint}/SP-H.png`} alt='Marketing Mgmt' />
-                </div>
-                <br></br>
-                <div className='job__divider' />
-                <br></br>
-                <div className='finance-accounting__subtitle'>
-                    <div className='finance-accounting__body--left'>
-                        <div className='finance-accounting_subtitle-border'></div>
+                    <div className='strategic-planning__title'>
+                        <Typography className='strategic-planning__heading strategic-planning__title-font '>
+                            {this.state.courseDetails.displayTitle}
+                        </Typography>
                     </div>
-                    <div className='finance-accounting__body--right'>
-                        <div>
-                            <Typography className='strategic-planning__heading strategic-planning__body--text--card--heading'>
-                            Training Description
-                            </Typography>
-                            <Typography className='strategic-planning__body--text strategic-planning__body--text--card'>
-                                {this.state.courseDetails.description}
-                            </Typography>
+                    <Typography className='strategic-planning__heading bukra-regular ' style={{ textAlign: 'center' }}>
+                        {this.state.courseDetails.title}
+                    </Typography>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div className='strategic-planning__banner'>
+                        <img className='strategic-planning__banner-img' src={`${endpoint}/SP-H.png`} alt='Marketing Mgmt' />
+                    </div>
+                    <br></br>
+                    <div className='job__divider' />
+                    <br></br>
+                    <div className='finance-accounting__subtitle'>
+                        <div className='finance-accounting__body--left'>
+                            <div className='finance-accounting_subtitle-border'></div>
+                        </div>
+                        <div className='finance-accounting__body--right'>
+                            <div>
+                                <Typography className='strategic-planning__heading strategic-planning__body--text--card--heading'>
+                                    Training Description
+                                </Typography>
+                                <Typography className='strategic-planning__body--text strategic-planning__body--text--card'>
+                                    {this.state.courseDetails.description}
+                                </Typography>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='job__divider' />
+                    <div className='job__divider' />
 
-            </div>
+                    <br></br>
+                    <br></br>
+                </div>
+                <FooterTop />
+            </>
         )
     }
 }

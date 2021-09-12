@@ -27,6 +27,26 @@
   width: 70%;
   margin: auto;
 }
+.home-partner-ewings {
+  margin: auto;
+  /* background-color: yellow; */
+  /* height: 100%; */
+  margin-top: 3%;
+  width: 120px;
+  text-align: center;
+  transition: transform .2s;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.home-partner-ewings:hover {
+  transform: scale(1.1);
+}
+.home-partner-img {
+  /* background-color: yellow; */
+  object-fit: contain;
+  width: 100%;
+
+}
 .bmchome__service__below {
   width: 70%;
   margin: auto;

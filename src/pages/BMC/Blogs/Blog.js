@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './Blogs.css';
 import endpoint from '../../../helpers/api_service';
 import axios from 'axios';
-import { Button } from 'react-bootstrap';
 import { Typography } from '@material-ui/core';
 import FooterTop from '../../../components/BMC/Footer/Footer-Top.js';
 import Moment from 'react-moment';
