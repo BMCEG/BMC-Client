@@ -24,7 +24,7 @@ export default class Service extends Component {
     render() {
         return (
 
-            <div className="founder-root-mobile" style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+            <div className="founder-root-mobile" style={{ backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover' }}>
                 <div className='founder-img-base-mobile'>
                     <img className='founder-img' src={`${endpoint}/images/${this.props.sideImage}`} alt='service' />
                 </div>
@@ -54,7 +54,7 @@ export default class Service extends Component {
             </div>
 
 
-            // <div className='service-page-root' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+            // <div className='service-page-root' style={{ backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover' }}>
             //     <div className='service-page-left'>
             //         <div className='service-page-title-details'>
             //             <img src={`${endpoint}/images/${this.props.logo}`} alt='logo' className='service-details-icon' />

@@ -82,7 +82,7 @@ export default class Landing extends Component {
 
                 <div className="ewings-landing-grid">
                     <Typography style={{
-                        backgroundImage: `url(${endpoint}/imagesewings-stamp.png)`,
+                        backgroundImage: `url(${endpoint}/images/ewings-stamp.png)`,
                         backgroundSize: 'contain',
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'center'

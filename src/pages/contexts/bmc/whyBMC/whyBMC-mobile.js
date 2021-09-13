@@ -6,7 +6,7 @@ import endpoint from '../../../../helpers/api_service'
 export default class whyBMC extends Component {
     render() {
         return (
-            <div className='whyBMC-root' style={{ backgroundImage: `url(${endpoint}/imagesbg-our-story.png)`, backgroundSize: 'cover' }}>
+            <div className='whyBMC-root' style={{ backgroundImage: `url(${endpoint}/images/bg-our-story.png)`, backgroundSize: 'cover' }}>
                 <div className='whyBMC-page-margin'>
                     <div className='whyBMC-card-mobile'>
                         <div className='whyBMC-subtitle'>

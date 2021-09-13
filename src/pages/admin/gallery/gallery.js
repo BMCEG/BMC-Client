@@ -29,7 +29,7 @@ export default class GalleryPanel extends Component {
             <>
                 <NavbarAdmin isLoggedIn={true} />
 
-                <div className='admin-courses-root' style={{ backgroundImage: `url(${endpoint}/imagesbg-experts.png)`, backgroundSize: 'cover' }}>
+                <div className='admin-courses-root' style={{ backgroundImage: `url(${endpoint}/images/bg-experts.png)`, backgroundSize: 'cover' }}>
                     <div className='admin-courses-controls'>
                         <div className='admin-courses-controls-btns'>
                             <AdminBtn label={'Upload Media'} icon={faChalkboardTeacher} onClick={() => this.handleBtnClick('PictureUpload')} />

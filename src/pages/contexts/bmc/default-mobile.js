@@ -310,7 +310,7 @@ class DefaultPage extends Component {
                             ))}
                         </Carousel>
                         <br></br>
-                        <div className="contact-root-mobile" style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+                        <div className="contact-root-mobile" style={{ backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover' }}>
                             <div className='contact-left'>
                                 <div className='contact-form-location-base-mobile'>
                                     <Map google={this.props.google}

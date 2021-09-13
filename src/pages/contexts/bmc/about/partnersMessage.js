@@ -5,7 +5,7 @@ import endpoint from '../../../../helpers/api_service.js';
 
 export default function partnersMessage() {
     return (
-        <div className="partner-root" style={{backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover'}}>
+        <div className="partner-root" style={{backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover'}}>
             <div className='partner-text'>
                 <div className="partner-text-box">
                     <h1>PARTNERS' MESSAGE</h1>

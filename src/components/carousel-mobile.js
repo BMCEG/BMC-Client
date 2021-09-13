@@ -18,7 +18,7 @@ export default class CarouselComponenet extends Component {
             <Carousel fade style={{ zIndex: -2 }} indicators={false} controls={false} className='carousel-root-mobile'>
                 {this.state.items.map((item, key) => (
                     <Carousel.Item key={key}>
-                         <div className='carousel-slide-title' style={{backgroundImage: `url(${endpoint}/images${item.src})`, backgroundSize: 'cover' }}>
+                         <div className='carousel-slide-title' style={{backgroundImage: `url(${endpoint}/images/${item.src})`, backgroundSize: 'cover' }}>
                                 <Typography variant='h3' component='h3' className='carousel-slide-title-text'>
                                     {item.title}
                                 </Typography>

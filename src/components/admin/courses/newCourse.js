@@ -196,7 +196,7 @@ export default class NewCourse extends Component {
     render() {
         return (
             <div className='course-create-root'>
-                <div className="course-create-base" style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+                <div className="course-create-base" style={{ backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover' }}>
                     <div className='course-create-form'>
                         <div className='course-create-form-left'>
                             <TextField fullWidth variant='outlined' name="courseName" value={this.state.courseName} onChange={this.handleInputChange} label='Course Name' />
@@ -305,7 +305,7 @@ export default class NewCourse extends Component {
                                     className='course-create-modal'
                                     aria-describedby="simple-modal-description"
                                 >
-                                    <div className='course-create-modal-body' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+                                    <div className='course-create-modal-body' style={{ backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover' }}>
                                         <div className='course-create-modal-body-left'>
                                             <h5>Start Date</h5>
                                             <TextField fullWidth type='date' variant='outlined' name="startDate" value={this.state.startDate} onChange={this.handleInputChange} />

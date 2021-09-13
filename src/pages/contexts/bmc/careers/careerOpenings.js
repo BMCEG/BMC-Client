@@ -34,12 +34,12 @@ export default class CareerOpenings extends Component {
 
     render() {
         return (
-            <div className='career-opening-root' style={{ backgroundImage: `url(${endpoint}/imagesbg-our-story.png)`, backgroundSize: 'cover' }}>
+            <div className='career-opening-root' style={{ backgroundImage: `url(${endpoint}/images/bg-our-story.png)`, backgroundSize: 'cover' }}>
                 <div className='career-opening-margin'>
                     <Grid container>
                         <Grid item xs={6}>
                             {this.state.openings1.map((opening) => (
-                                <Paper className="career-opening-card" style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+                                <Paper className="career-opening-card" style={{ backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover' }}>
                                     <h4 className='bukra-bold'>{opening.title} ({opening.type})</h4>
                                     <h5 className='bukra-regular'>{opening.description}</h5>
                                     <hr></hr>
@@ -56,7 +56,7 @@ export default class CareerOpenings extends Component {
                         </Grid>
                         <Grid item xs={6}>
                             {this.state.openings2.map((opening) => (
-                                <Paper className="career-opening-card" style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+                                <Paper className="career-opening-card" style={{ backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover' }}>
                                     <h4 className='bukra-bold'>{opening.title} ({opening.type})</h4>
                                     <h5 className='bukra-regular'>{opening.description}</h5>
                                     <hr></hr>

@@ -98,7 +98,7 @@ export default class floatingBtn extends Component {
                     className='fab-form-modal'
                     aria-describedby="simple-modal-description"
                 >
-                    <div className='fab-form' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+                    <div className='fab-form' style={{ backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover' }}>
                         <TextField fullWidth variant='outlined' label='Name' name='requestName' value={this.state.requestName} onChange={this.handleInputChange} />
                         <br></br>
                         <br></br>

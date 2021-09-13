@@ -62,7 +62,7 @@ export default class Blog extends Component {
     }
     render() {
         return (
-            <div style={{ backgroundImage: `url(${endpoint}/imagesbg-our-story.png)`, backgroundSize: 'cover'}}>
+            <div style={{ backgroundImage: `url(${endpoint}/images/bg-our-story.png)`, backgroundSize: 'cover'}}>
                 <div className="blog-root">
                     <div className='blog-grid'>
                         <div className='blog-img-base'>

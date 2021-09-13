@@ -280,13 +280,13 @@ export default class Homepage extends Component {
 
                 {/* <br></br> */}
                 <div className='ewings__home__services__title' style={{
-                    backgroundImage: `url(${endpoint}/imagesewings-header.png  )`,
+                    backgroundImage: `url(${endpoint}/images/ewings-header.png  )`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPositionX: 'center',
                     backgroundPositionY: 'center'
                 }}>
-                    <div className='ewings__home__stamp' style={{ backgroundImage: `url(${endpoint}/imagesewings-stamp.png)`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPositionX: 'center' }}>
+                    <div className='ewings__home__stamp' style={{ backgroundImage: `url(${endpoint}/images/ewings-stamp.png)`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPositionX: 'center' }}>
 
                         <Typography className='ewings__home__title--font ewings__home__services__title__header'>
                             OUR SERVICES
@@ -301,14 +301,14 @@ export default class Homepage extends Component {
                     <div className='ewings__home__services__row--mob'>
                         <div className='ewings__home__services__service--mob'>
                             <div className='ewings__home__services__card' style={{
-                                backgroundImage: `url(${endpoint}/imagesDigital-Marketing.png)`,
+                                backgroundImage: `url(${endpoint}/images/Digital-Marketing.png)`,
                                 backgroundRepeat: 'no-repeat',
                                 backgroundPositionX: 'center',
                                 backgroundSize: 'cover'
                             }}
                             >
                                 <div className='ewings__home__services__card__name' style={{
-                                    backgroundImage: `url(${endpoint}/imagesewings__service__bg.png)`,
+                                    backgroundImage: `url(${endpoint}/images/ewings__service__bg.png)`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     backgroundRepeat: 'no-repeat',
@@ -332,14 +332,14 @@ export default class Homepage extends Component {
 
                         <div className='ewings__home__services__service--mob'>
                             <div className='ewings__home__services__card' style={{
-                                backgroundImage: `url(${endpoint}/imagesMultimedia-Production.png)`,
+                                backgroundImage: `url(${endpoint}/images/Multimedia-Production.png)`,
                                 backgroundRepeat: 'no-repeat',
                                 backgroundPositionX: 'center',
                                 backgroundSize: 'cover'
                             }}
                             >
                                 <div className='ewings__home__services__card__name' style={{
-                                    backgroundImage: `url(${endpoint}/imagesewings__service__bg.png)`,
+                                    backgroundImage: `url(${endpoint}/images/ewings__service__bg.png)`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     backgroundRepeat: 'no-repeat',
@@ -363,14 +363,14 @@ export default class Homepage extends Component {
 
                         <div className='ewings__home__services__service--mob'>
                             <div className='ewings__home__services__card' style={{
-                                backgroundImage: `url(${endpoint}/imagesSocial-Media-Management.png)`,
+                                backgroundImage: `url(${endpoint}/images/Social-Media-Management.png)`,
                                 backgroundRepeat: 'no-repeat',
                                 backgroundPositionX: 'center',
                                 backgroundSize: 'cover'
                             }}
                             >
                                 <div className='ewings__home__services__card__name' style={{
-                                    backgroundImage: `url(${endpoint}/imagesewings__service__bg.png)`,
+                                    backgroundImage: `url(${endpoint}/images/ewings__service__bg.png)`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     backgroundRepeat: 'no-repeat',
@@ -393,14 +393,14 @@ export default class Homepage extends Component {
                     <br></br>                    <div className='ewings__home__services__row--mob'>
                         <div className='ewings__home__services__service--mob'>
                             <div className='ewings__home__services__card' style={{
-                                backgroundImage: `url(${endpoint}/imagesMedia-planning.png)`,
+                                backgroundImage: `url(${endpoint}/images/Media-planning.png)`,
                                 backgroundRepeat: 'no-repeat',
                                 backgroundPositionX: 'center',
                                 backgroundSize: 'cover'
                             }}
                             >
                                 <div className='ewings__home__services__card__name' style={{
-                                    backgroundImage: `url(${endpoint}/imagesewings__service__bg.png)`,
+                                    backgroundImage: `url(${endpoint}/images/ewings__service__bg.png)`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     backgroundRepeat: 'no-repeat',
@@ -426,14 +426,14 @@ export default class Homepage extends Component {
 
                         <div className='ewings__home__services__service--mob'>
                             <div className='ewings__home__services__card' style={{
-                                backgroundImage: `url(${endpoint}/imagesWeb-Development.png)`,
+                                backgroundImage: `url(${endpoint}/images/Web-Development.png)`,
                                 backgroundRepeat: 'no-repeat',
                                 backgroundPositionX: 'center',
                                 backgroundSize: 'cover'
                             }}
                             >
                                 <div className='ewings__home__services__card__name' style={{
-                                    backgroundImage: `url(${endpoint}/imagesewings__service__bg.png)`,
+                                    backgroundImage: `url(${endpoint}/images/ewings__service__bg.png)`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     backgroundRepeat: 'no-repeat',
@@ -461,14 +461,14 @@ export default class Homepage extends Component {
                     <div className='ewings__home__services__row'>
                         <div className='ewings__home__services__service'>
                             <div className='ewings__home__services__card' style={{
-                                backgroundImage: `url(${endpoint}/imagesDigital-Marketing.png)`,
+                                backgroundImage: `url(${endpoint}/images/Digital-Marketing.png)`,
                                 backgroundRepeat: 'no-repeat',
                                 backgroundPositionX: 'center',
                                 backgroundSize: 'cover'
                             }}
                             >
                                 <div className='ewings__home__services__card__name' style={{
-                                    backgroundImage: `url(${endpoint}/imagesewings__service__bg.png)`,
+                                    backgroundImage: `url(${endpoint}/images/ewings__service__bg.png)`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     backgroundRepeat: 'no-repeat',
@@ -487,19 +487,19 @@ export default class Homepage extends Component {
                             </div>
                         </div>
                         <div className='ewings__home__services__service' style={{
-                            backgroundImage: `url(${endpoint}/imagesewings__service__bg.png)`,
+                            backgroundImage: `url(${endpoint}/images/ewings__service__bg.png)`,
                             backgroundSize: 'cover',
                             backgroundRepeat: 'no-repeat'
                         }}>
                             <div className='ewings__home__services__card' style={{
-                                backgroundImage: `url(${endpoint}/imagesMultimedia-Production.png)`,
+                                backgroundImage: `url(${endpoint}/images/Multimedia-Production.png)`,
                                 backgroundRepeat: 'no-repeat',
                                 backgroundPositionX: 'center',
                                 backgroundSize: 'cover'
                             }}
                             >
                                 <div className='ewings__home__services__card__name' style={{
-                                    backgroundImage: `url(${endpoint}/imagesewings__service__bg.png)`,
+                                    backgroundImage: `url(${endpoint}/images/ewings__service__bg.png)`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     backgroundRepeat: 'no-repeat',
@@ -520,14 +520,14 @@ export default class Homepage extends Component {
                         </div>
                         <div className='ewings__home__services__service'>
                             <div className='ewings__home__services__card' style={{
-                                backgroundImage: `url(${endpoint}/imagesSocial-Media-Management.png)`,
+                                backgroundImage: `url(${endpoint}/images/Social-Media-Management.png)`,
                                 backgroundRepeat: 'no-repeat',
                                 backgroundPositionX: 'center',
                                 backgroundSize: 'cover'
                             }}
                             >
                                 <div className='ewings__home__services__card__name' style={{
-                                    backgroundImage: `url(${endpoint}/imagesewings__service__bg.png)`,
+                                    backgroundImage: `url(${endpoint}/images/ewings__service__bg.png)`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     backgroundRepeat: 'no-repeat',
@@ -551,14 +551,14 @@ export default class Homepage extends Component {
                     <div className='ewings__home__services__row'>
                         <div className='ewings__home__services__service'>
                             <div className='ewings__home__services__card' style={{
-                                backgroundImage: `url(${endpoint}/imagesMedia-planning.png)`,
+                                backgroundImage: `url(${endpoint}/images/Media-planning.png)`,
                                 backgroundRepeat: 'no-repeat',
                                 backgroundPositionX: 'center',
                                 backgroundSize: 'cover'
                             }}
                             >
                                 <div className='ewings__home__services__card__name' style={{
-                                    backgroundImage: `url(${endpoint}/imagesewings__service__bg.png)`,
+                                    backgroundImage: `url(${endpoint}/images/ewings__service__bg.png)`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     backgroundRepeat: 'no-repeat',
@@ -581,14 +581,14 @@ export default class Homepage extends Component {
                         </div>
                         <div className='ewings__home__services__service'>
                             <div className='ewings__home__services__card' style={{
-                                backgroundImage: `url(${endpoint}/imagesWeb-Development.png)`,
+                                backgroundImage: `url(${endpoint}/images/Web-Development.png)`,
                                 backgroundRepeat: 'no-repeat',
                                 backgroundPositionX: 'center',
                                 backgroundSize: 'cover'
                             }}
                             >
                                 <div className='ewings__home__services__card__name' style={{
-                                    backgroundImage: `url(${endpoint}/imagesewings__service__bg.png)`,
+                                    backgroundImage: `url(${endpoint}/images/ewings__service__bg.png)`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     backgroundRepeat: 'no-repeat',
@@ -613,13 +613,13 @@ export default class Homepage extends Component {
                 </MediaQuery>
                 <br></br>
                 <div className='ewings__home__services__title' style={{
-                    backgroundImage: `url(${endpoint}/imagesewings-header.png  )`,
+                    backgroundImage: `url(${endpoint}/images/ewings-header.png  )`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPositionX: 'center',
                     backgroundPositionY: 'center'
                 }}>
-                    <div className='ewings__home__stamp' style={{ backgroundImage: `url(${endpoint}/imagesewings-stamp.png)`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPositionX: 'center' }}>
+                    <div className='ewings__home__stamp' style={{ backgroundImage: `url(${endpoint}/images/ewings-stamp.png)`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPositionX: 'center' }}>
                         <Typography className='ewings__home__title--font ewings__home__services__title__header'>
                             TRUSTED BY
                         </Typography>

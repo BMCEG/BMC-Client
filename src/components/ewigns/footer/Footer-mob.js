@@ -7,7 +7,7 @@ export default class FooterMob extends Component {
     render() {
         return (
             <div className='bmcfooterMob__root' style={{
-                backgroundImage: `url(${endpoint}/imagesEwings-Footer.png)`,
+                backgroundImage: `url(${endpoint}/images/Ewings-Footer.png)`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover'
             }}>

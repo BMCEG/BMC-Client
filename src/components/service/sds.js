@@ -5,7 +5,7 @@ import endpoint from '../../../../helpers/api_service.js'
 
 export default function strategicPlan() {
     return (
-        <div className="strategic-planning-root" style={{backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover'}}>
+        <div className="strategic-planning-root" style={{backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover'}}>
             <div className='strategic-planning-text'>
                 <div className='strategic-planning-details'>
 

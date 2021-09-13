@@ -4,7 +4,7 @@ import { Typography } from '@material-ui/core';
 import endpoint from '../../../../helpers/api_service.js';
 export default function foundersMessage() {
     return (
-        <div className="founder-root-mobile" style={{backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover'}}>
+        <div className="founder-root-mobile" style={{backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover'}}>
             <div className='founder-img-base-mobile'>
                 <img className='founder-img' src={`${endpoint}/images/landing-founder.png`} alt='Founder Message' />
             </div>

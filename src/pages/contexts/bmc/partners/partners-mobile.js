@@ -34,7 +34,7 @@ export default class Partners extends Component {
 
     render() {
         return (
-            <div className='partners-root' style={{ backgroundImage: `url(${endpoint}/imagesbg-experts.png)`, backgroundSize: 'cover' }}>
+            <div className='partners-root' style={{ backgroundImage: `url(${endpoint}/images/bg-experts.png)`, backgroundSize: 'cover' }}>
                 <div className='partners-body'>
                     <Grid container>
                         <Grid item xs={6}>

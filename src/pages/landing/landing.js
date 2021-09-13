@@ -76,8 +76,8 @@ export default class Landing extends Component {
 
     render() {
         return (
-            <div className="landing-root" style={{ backgroundImage: `url(${endpoint}/imagesbg-experts.png)`, backgroundSize: 'cover' }}>
-                <div className="landing-grid" style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+            <div className="landing-root" style={{ backgroundImage: `url(${endpoint}/images/bg-experts.png)`, backgroundSize: 'cover' }}>
+                <div className="landing-grid" style={{ backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover' }}>
                     {/* <h1 className="bukra-bold">{this.state.courseDetails.displayTitle}</h1> */}
                     <Typography  variant='h3' component='h3' className='bukra-bold course-header'>{this.state.courseDetails.displayTitle}</Typography>
                     <div className='landing-grid-div'>

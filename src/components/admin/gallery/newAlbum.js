@@ -85,7 +85,7 @@ export default class NewAlbum extends Component {
     render() {
         return (
             <div className='trainer-create-root'>
-                <div className='media-create-base' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+                <div className='media-create-base' style={{ backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover' }}>
                     <div className='media-create-form'>
                         <TextField variant='outlined' name='name' label='Album Name' value={this.state.name} onChange={this.handleInputChange} fullWidth />
                         <br></br>

@@ -48,7 +48,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className="contact-root" style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+            <div className="contact-root" style={{ backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover' }}>
                 <div className='contact-left'>
                     <div className='contact-form-location-base'>
                         <Map google={this.props.google}

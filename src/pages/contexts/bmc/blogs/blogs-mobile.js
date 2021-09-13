@@ -45,7 +45,7 @@ export default class Blogs extends Component {
 
     render() {
         return (
-            <div style={{ backgroundImage: `url(${endpoint}/imagesbg-our-story.png)`, backgroundSize: 'cover' }}>
+            <div style={{ backgroundImage: `url(${endpoint}/images/bg-our-story.png)`, backgroundSize: 'cover' }}>
                 <div className="blogs-mob-root">
                     {/* <h1>Blogs</h1> */}
                     {this.state.blogs.map((blog) => (

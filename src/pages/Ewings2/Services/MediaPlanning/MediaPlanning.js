@@ -9,7 +9,7 @@ export default class MediaPlanning extends Component {
                 <div className='ewings__digitalM__banner'>
                     <img className='ewings__media__banner__img' src={`${endpoint}/images/MediaPlanning-H.png`} alt='banner' />
                     <div className='ewings__banner__title' style={{
-                        backgroundImage: `url(${endpoint}/imagesewings-header.png  )`,
+                        backgroundImage: `url(${endpoint}/images/ewings-header.png  )`,
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'center',

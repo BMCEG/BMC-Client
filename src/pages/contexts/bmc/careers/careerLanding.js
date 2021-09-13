@@ -6,11 +6,11 @@ import endpoint from '../../../../helpers/api_service.js'
 
 export default function careerLanding() {
     return (
-        <div className="career-landing-root" style={{ backgroundImage: `url(${endpoint}/imagesbg-our-story.png)`, backgroundSize: 'cover' }}>
+        <div className="career-landing-root" style={{ backgroundImage: `url(${endpoint}/images/bg-our-story.png)`, backgroundSize: 'cover' }}>
             {/* <div className='career-landing-title career-landing-margins'>
                 <h1>CAREERS</h1>
             </div> */}
-            <div className='career-landing-banner' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+            <div className='career-landing-banner' style={{ backgroundImage: `url(${endpoint}/images/bg-founder.png)`, backgroundSize: 'cover' }}>
                 <div className='career-landing-banner-text'>
                     <h1>Join Our Team At</h1>
                     <h1>Business Map Consultants</h1>

@@ -29,7 +29,7 @@ export default class CoursesList extends Component {
 
     render() {
         return (
-            <div style={{ backgroundImage: `url(${endpoint}/imagesbg-our-story.png)`, backgroundSize: 'cover' }}>
+            <div style={{ backgroundImage: `url(${endpoint}/images/bg-our-story.png)`, backgroundSize: 'cover' }}>
                 <div className='courses-list-root'>
                     {this.state.courses.map((course) => (
                         <div className='course-list-row'>

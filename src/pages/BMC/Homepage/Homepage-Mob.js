@@ -77,7 +77,7 @@ export default class HomepageMob extends Component {
                     {/* <img className='bmchome__banner-img' src={`${endpoint}/images/strategic-banner.jpeg`} alt='Marketing Mgmt' /> */}
                     <Carousel fade className="bmchome__banner__carousel" controls={false}>
                         <Carousel.Item>
-                            <div className='bmchome__banner__carousel--item' style={{ backgroundImage: `url(${endpoint}/imagesHomepage-Header-1.png)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+                            <div className='bmchome__banner__carousel--item' style={{ backgroundImage: `url(${endpoint}/images/Homepage-Header-1.png)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                                 <Typography className='bmchome__banner__carousel--text--white  bmchome__banner__carousel--text--size'>
                                     GOAL
                                     <br></br>
@@ -88,7 +88,7 @@ export default class HomepageMob extends Component {
                             </div>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <div className='bmchome__banner__carousel--item' style={{ backgroundImage: `url(${endpoint}/imagesHomepage-Header-2.png)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+                            <div className='bmchome__banner__carousel--item' style={{ backgroundImage: `url(${endpoint}/images/Homepage-Header-2.png)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                                 <Typography className='bmchome__banner__carousel--text bmchome__banner__carousel--text--size'>
                                     MARKETING
                                     <br></br>
@@ -97,7 +97,7 @@ export default class HomepageMob extends Component {
                             </div>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <div className='bmchome__banner__carousel--item' style={{ backgroundImage: `url(${endpoint}/imagesHomepage-Header-3.png)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+                            <div className='bmchome__banner__carousel--item' style={{ backgroundImage: `url(${endpoint}/images/Homepage-Header-3.png)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                                 <Typography className='bmchome__banner__carousel--text bmchome__banner__carousel--text--size'>
                                     EFFICIENCY IN
                                     <br></br>

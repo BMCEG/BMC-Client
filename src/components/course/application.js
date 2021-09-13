@@ -64,7 +64,7 @@ export default class Application extends Component {
 
     render() {
         return (
-            <div className="application-modal-root" style={{ backgroundImage: `url(${endpoint}/imagesbg-four.png)`, backgroundSize: 'cover' }}>
+            <div className="application-modal-root" style={{ backgroundImage: `url(${endpoint}/images/bg-four.png)`, backgroundSize: 'cover' }}>
                 <div className="application">
                     <img style={{ margin: 'auto' }} src={`${endpoint}/images/logo.png`} alt='logo' height='250px' />
                     <TextField name="applicationName" value={this.state.applicationFirstName} label="Name" variant="outlined" className="application-form" onChange={this.handleInputChange} />
