@@ -6,7 +6,7 @@ import endpoint from '../../../../helpers/api_service'
 export default class whyBMC extends Component {
     render() {
         return (
-            <div className='whyBMC-root' style={{ backgroundImage: `url(${endpoint}/bg-our-story.png)`, backgroundSize: 'cover' }}>
+            <div className='whyBMC-root' style={{ backgroundImage: `url(${endpoint}/imagesbg-our-story.png)`, backgroundSize: 'cover' }}>
                 {/* <div className='whyBMC-text-box'>
                     <h1>Why BMC?!</h1>
                 </div> */}
@@ -15,7 +15,7 @@ export default class whyBMC extends Component {
                         <Grid item xs={4} className='whyBMC-grid-col'>
                             <div className="whyBMC-grid-row">
 
-                                <div className='whyBMC-card' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+                                <div className='whyBMC-card' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                                     <div className='whyBMC-card-content'>
                                         <div className='whyBMC-subtitle'>
 
@@ -34,7 +34,7 @@ export default class whyBMC extends Component {
                             </div>
                             <div className="whyBMC-grid-row">
 
-                                <div className='whyBMC-card' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+                                <div className='whyBMC-card' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                                     <div className='whyBMC-card-content'>
                                         <div className='whyBMC-subtitle'>
 
@@ -56,7 +56,7 @@ export default class whyBMC extends Component {
                         <Grid item xs={4} className='whyBMC-grid-col'>
                             <div className="whyBMC-grid-row">
 
-                                <div className='whyBMC-card' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+                                <div className='whyBMC-card' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                                     <div className='whyBMC-card-content'>
                                         <div className='whyBMC-subtitle'>
 
@@ -76,7 +76,7 @@ export default class whyBMC extends Component {
                             </div>
                             <div className="whyBMC-grid-row">
 
-                                <div className='whyBMC-card' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+                                <div className='whyBMC-card' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                                     <div className='whyBMC-card-content'>
                                         <div className='whyBMC-subtitle'>
 
@@ -97,7 +97,7 @@ export default class whyBMC extends Component {
                         <Grid item xs={4} className='whyBMC-grid-col'>
                             <div className="whyBMC-grid-row">
 
-                                <div className='whyBMC-card' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+                                <div className='whyBMC-card' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                                     <div className='whyBMC-card-content'>
                                         <div className='whyBMC-subtitle'>
 
@@ -116,7 +116,7 @@ export default class whyBMC extends Component {
                             </div>
                             <div className="whyBMC-grid-row">
 
-                                <div className='whyBMC-card' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+                                <div className='whyBMC-card' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                                     <div className='whyBMC-card-content'>
 
                                         <div className='whyBMC-subtitle'>

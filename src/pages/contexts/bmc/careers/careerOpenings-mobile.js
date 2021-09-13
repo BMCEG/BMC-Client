@@ -26,7 +26,7 @@ export default class CareerOpenings extends Component {
 
     render() {
         return (
-            <div className='career-opening-root-mob' style={{ backgroundImage: `url(${endpoint}/bg-our-story.png)`, backgroundSize: 'cover' }}>
+            <div className='career-opening-root-mob' style={{ backgroundImage: `url(${endpoint}/imagesbg-our-story.png)`, backgroundSize: 'cover' }}>
                 {/* <div className='career-opening-margin'> */}
                 {this.state.openings.map((opening) => (
                     // <h3>ss</h3>

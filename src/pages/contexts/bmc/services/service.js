@@ -23,7 +23,7 @@ export default class Service extends Component {
 
     render() {
         return (
-            <div className='service-page-root' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+            <div className='service-page-root' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                 <div className='service-page-left'>
                     <div className='service-page-title-details'>
                         <img src={`${endpoint}/images/${this.props.logo}`} alt='logo' className='service-details-icon' />

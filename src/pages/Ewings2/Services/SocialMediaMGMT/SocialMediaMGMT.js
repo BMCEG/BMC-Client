@@ -10,7 +10,7 @@ export default class SocialMediaMGMT extends Component {
                 <div className='ewings__digitalM__banner'>
                     <img className='ewings__social__banner__img' src={`${endpoint}/images/SocialMedia-H.png`} alt='banner' />
                     <div className='ewings__banner__title' style={{
-                        backgroundImage: `url(${endpoint}/ewings-header.png  )`,
+                        backgroundImage: `url(${endpoint}/imagesewings-header.png  )`,
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'center',

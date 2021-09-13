@@ -66,7 +66,7 @@ export default class Application extends Component {
 
     render() {
         return (
-            <div className="application-modal-root-mob" style={{ backgroundImage: `url(${endpoint}/bg-four.png)`, backgroundSize: 'cover' }}>
+            <div className="application-modal-root-mob" style={{ backgroundImage: `url(${endpoint}/imagesbg-four.png)`, backgroundSize: 'cover' }}>
                 <div className="application-mob">
                     <img style={{ margin: 'auto' }} src={`${endpoint}/images/logo.png`} alt='logo' className='bmc-application-logo' />
                     <br></br>

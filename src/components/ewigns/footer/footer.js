@@ -7,7 +7,7 @@ export default class Footer extends Component {
     render() {
         return (
             <div className='bmcfooter__root' style={{
-                backgroundImage: `url(${endpoint}/Ewings-Footer.png)`,
+                backgroundImage: `url(${endpoint}/imagesEwings-Footer.png)`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
                 backgroundPositionY: 'center'

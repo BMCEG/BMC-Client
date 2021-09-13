@@ -27,7 +27,7 @@ export default class Blogs extends Component {
             <>
                 <NavbarAdmin isLoggedIn={true} />
 
-                <div className='admin-careers-root' style={{ backgroundImage: `url(${endpoint}/bg-experts.png)`, backgroundSize: 'cover' }}>
+                <div className='admin-careers-root' style={{ backgroundImage: `url(${endpoint}/imagesbg-experts.png)`, backgroundSize: 'cover' }}>
                     <div className='admin-careers-controls' >
                         <div className='admin-careers-controls-btns'>
                             <AdminBtn label={'Create Blog'} icon={faUserGraduate} onClick={() => this.handleBtnClick('CreateBlog')} />

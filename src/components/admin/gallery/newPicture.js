@@ -65,7 +65,7 @@ export default class NewPicture extends Component {
     render() {
         return (
             <div className='trainer-create-root'>
-                <div className='media-create-base' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+                <div className='media-create-base' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                     <div className='media-create-form'>
                         <form encType="multipart/form-data">
                             <input

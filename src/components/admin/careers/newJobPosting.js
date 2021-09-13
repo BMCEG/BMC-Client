@@ -86,7 +86,7 @@ export default class NewPosting extends Component {
     render() {
         return (
             <div className='trainer-create-root'>
-                <div className='trainer-create-base' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+                <div className='trainer-create-base' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                     <div className='trainer-create-form'>
                         <div className='trainer-create-form-left'>
                             <TextField variant='outlined' name='jobTitle' label='Job Title' value={this.state.jobTitle} onChange={this.handleInputChange} fullWidth />

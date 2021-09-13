@@ -76,8 +76,8 @@ export default class Landing extends Component {
 
     render() {
         return (
-            <div className="landing-mob-root" style={{ backgroundImage: `url(${endpoint}/bg-experts.png)`, backgroundSize: 'cover' }}>
-                <div className="landing-mob-grid" style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+            <div className="landing-mob-root" style={{ backgroundImage: `url(${endpoint}/imagesbg-experts.png)`, backgroundSize: 'cover' }}>
+                <div className="landing-mob-grid" style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                     <Typography className="bukra-bold landing-mob-title" variant='h3' component='h3'>
                         {this.state.courseDetails.displayTitle}
                     </Typography>

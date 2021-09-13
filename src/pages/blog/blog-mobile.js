@@ -62,7 +62,7 @@ export default class Blog extends Component {
     }
     render() {
         return (
-            <div style={{ backgroundImage: `url(${endpoint}/bg-our-story.png)`, backgroundSize: 'cover'}}>
+            <div style={{ backgroundImage: `url(${endpoint}/imagesbg-our-story.png)`, backgroundSize: 'cover'}}>
                 {/* <NavbarBMC handleSelectedContext={this.setSelectedItem} /> */}
                 <div className="blog-root-mobile">
                     <div className='blog-grid-mobile'>

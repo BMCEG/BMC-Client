@@ -72,7 +72,7 @@ export default class NewPartner extends Component {
     render() {
         return (
             <div className='trainer-create-root'>
-                <div className='trainer-create-base' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+                <div className='trainer-create-base' style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                     <div className='trainer-create-form'>
                         <div className='trainer-create-form-left'>
                             <TextField variant='outlined' name='partnerName' label='Partner Name' value={this.state.partnerName} onChange={this.handleInputChange} fullWidth />

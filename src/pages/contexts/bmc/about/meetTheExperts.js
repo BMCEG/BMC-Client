@@ -6,7 +6,7 @@ import endpoint from '../../../../helpers/api_service.js';
 
 export default function meetTheExperts() {
     return (
-        <div className="experts-root" style={{ backgroundImage: `url(${endpoint}/bg-experts.png)`, backgroundSize: 'cover' }}>
+        <div className="experts-root" style={{ backgroundImage: `url(${endpoint}/imagesbg-experts.png)`, backgroundSize: 'cover' }}>
             <br></br>
             <Grid container className='experts-grid'>
                 <Grid item xs={6}>

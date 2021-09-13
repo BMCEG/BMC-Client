@@ -118,7 +118,7 @@ export default class gallery extends Component {
                     {/* {this.state.albumsPicked.length === 0 && this.state.albumsNotPicked.length === 0 ?
                         null
                         :
-                        <div className='gallery-body-albums' style={{ backgroundImage: `url(${endpoint}/bg-four.png)`, backgroundSize: 'cover' }}>
+                        <div className='gallery-body-albums' style={{ backgroundImage: `url(${endpoint}/imagesbg-four.png)`, backgroundSize: 'cover' }}>
                             <h4>Albums Picked</h4>
                             {this.state.albumsPicked.map((album) => (
                                 <div className="gallery-album">

@@ -50,7 +50,7 @@ export default class Contact extends Component {
             <div className='ewings__contact__root'>
                 <div className='ewings__digitalM__banner'>
                     <div className='ewings__banner__title' style={{
-                        backgroundImage: `url(${endpoint}/ewings-header.png  )`,
+                        backgroundImage: `url(${endpoint}/imagesewings-header.png  )`,
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'center',

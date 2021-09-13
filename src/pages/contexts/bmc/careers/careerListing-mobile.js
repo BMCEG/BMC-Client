@@ -92,11 +92,11 @@ export default class CareerListing extends Component {
 
     render() {
         return (
-            <div className='career-listing-root' style={{ backgroundImage: `url(${endpoint}/bg-our-story.png)`, backgroundSize: 'cover' }}>
+            <div className='career-listing-root' style={{ backgroundImage: `url(${endpoint}/imagesbg-our-story.png)`, backgroundSize: 'cover' }}>
                 {/* <div className='career-listing-title'>
                     <h1>CAREERS</h1>
                 </div> */}
-                <div className='career-listing-details'style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+                <div className='career-listing-details'style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                     <h2 className='bukra-bold'>{this.state.listing.title}</h2>
                     <hr></hr>
                     <div>

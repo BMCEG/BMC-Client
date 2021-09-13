@@ -22,8 +22,8 @@ export default class OpeningMob extends Component {
 
     render() {
         return (
-            // <div className="career-opening-card" style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
-            <Accordion className="career-opening-card-mobile" expanded={this.state.isExpanded} onChange={() => this.handleChange('panel')} style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
+            // <div className="career-opening-card" style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
+            <Accordion className="career-opening-card-mobile" expanded={this.state.isExpanded} onChange={() => this.handleChange('panel')} style={{ backgroundImage: `url(${endpoint}/imagesbg-founder.png)`, backgroundSize: 'cover' }}>
                 <AccordionSummary
                     // expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2bh-content"
