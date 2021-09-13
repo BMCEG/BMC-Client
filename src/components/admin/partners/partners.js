@@ -63,7 +63,7 @@ export default class Partners extends Component {
                             {this.state.partners.map((partner, index) => (
                                 <tr className="admin-table-row" key={index}>
                                     <td>{index + 1}</td>
-                                    <td><h5><img src={`${endpoint}/${partner.logo}`} alt='logo' width="100vw" /></h5></td>
+                                    <td><h5><img src={`${endpoint}/images/${partner.logo}`} alt='logo' width="100vw" /></h5></td>
                                     <td><h5>{partner.name}</h5></td>
                                     <td><h5>{partner.description}</h5></td>
                                     <td><h5>{partner.url}</h5></td>

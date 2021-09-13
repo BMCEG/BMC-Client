@@ -144,7 +144,7 @@ export default class ourStory extends Component {
           >
             <div className="story-node-mobile-mob">
               <img
-               src={`${endpoint}/our-story-2014.png`}
+               src={`${endpoint}/images/our-story-2014.png`}
                 alt="ds"
                 className="story-ball-mobile"
               />
@@ -171,7 +171,7 @@ export default class ourStory extends Component {
           >
             <div className="story-node-mobile-mob">
               <img
-                src={`${endpoint}/our-story-2015.png`}
+                src={`${endpoint}/images/our-story-2015.png`}
                 alt="ds"
                 className="story-ball-mobile"
               />
@@ -197,7 +197,7 @@ export default class ourStory extends Component {
           >
             <div className="story-node-mobile-mob">
               <img
-                src={`${endpoint}/our-story-2016.png`}
+                src={`${endpoint}/images/our-story-2016.png`}
                 alt="ds"
                 className="story-ball-mobile"
               />
@@ -223,7 +223,7 @@ export default class ourStory extends Component {
           >
             <div className="story-node-mobile-mob">
               <img
-                src={`${endpoint}/our-story-2018.png`}
+                src={`${endpoint}/images/our-story-2018.png`}
                 alt="ds"
                 className="story-ball-mobile"
               />
@@ -249,7 +249,7 @@ export default class ourStory extends Component {
           >
             <div className="story-node-mobile-mob">
               <img
-                src={`${endpoint}/our-story-2020.png`}
+                src={`${endpoint}/images/our-story-2020.png`}
                 alt="ds"
                 className="story-ball-mobile"
               />
@@ -275,7 +275,7 @@ export default class ourStory extends Component {
           >
             <div className="story-node-mobile-mob">
               <img
-                src={`${endpoint}/our-story-2021.png`}
+                src={`${endpoint}/images/our-story-2021.png`}
                 alt="ds"
                 className="story-ball-mobile"
               />

@@ -8,7 +8,7 @@ export default class MultimediaProd extends Component {
         return (
             <div className='ewings__digitalM__root'>
                 <div className='ewings__digitalM__banner'>
-                    <img className='ewings__multimediaProd__banner__img' src={`${endpoint}/MultiProd-H.png`} alt='banner' />
+                    <img className='ewings__multimediaProd__banner__img' src={`${endpoint}/images/MultiProd-H.png`} alt='banner' />
                     <div className='ewings__banner__title' style={{
                         backgroundImage: `url(${endpoint}/ewings-header.png  )`,
                         backgroundSize: 'cover',
@@ -39,8 +39,8 @@ export default class MultimediaProd extends Component {
 
                         <div className='ewings__digitalM__body__inline'>
                             <div className='ewings__digitalM__body__inline__img--base'>
-                                <img className='ewings__digitalM__body__inline__img' src={`${endpoint}/MultiProd-IMG-1.png`} alt='digital marketing' />
-                                <img className='ewings__digitalM__body__ball__img__bottom-left' src={`${endpoint}/Ball.png`} alt='ball' />
+                                <img className='ewings__digitalM__body__inline__img' src={`${endpoint}/images/MultiProd-IMG-1.png`} alt='digital marketing' />
+                                <img className='ewings__digitalM__body__ball__img__bottom-left' src={`${endpoint}/images/Ball.png`} alt='ball' />
                             </div>
                             <div className='ewings__digitalM__body__inlline__text--base'>
                                 <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>
@@ -57,8 +57,8 @@ export default class MultimediaProd extends Component {
                         </div>
                     </MediaQuery>
                     <MediaQuery maxWidth={1050}>
-                        <img className='ewings__digitalM__body__inline__img' src={`${endpoint}/MultiProd-IMG-1.png`} alt='digital marketing' />
-                        <img className='ewings__digitalM__body__ball__img__bottom-left' src={`${endpoint}/Ball.png`} alt='ball' />
+                        <img className='ewings__digitalM__body__inline__img' src={`${endpoint}/images/MultiProd-IMG-1.png`} alt='digital marketing' />
+                        <img className='ewings__digitalM__body__ball__img__bottom-left' src={`${endpoint}/images/Ball.png`} alt='ball' />
                         <div className='ewings__digitalM__body__inlline__text--base--mob'>
                             <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>
                                 Elements of Multimedia System:
@@ -103,8 +103,8 @@ export default class MultimediaProd extends Component {
 
                         <div className='ewings__digitalM__body__inline'>
                             <div className='ewings__digitalM__body__inline__img--base'>
-                                <img className='ewings__digitalM__body__inline__img' src={`${endpoint}/MultiProd-IMG-2.png`} alt='digital marketing' />
-                                <img className='ewings__digitalM__body__ball__img__bottom-left' src={`${endpoint}/Ball.png`} alt='ball' />
+                                <img className='ewings__digitalM__body__inline__img' src={`${endpoint}/images/MultiProd-IMG-2.png`} alt='digital marketing' />
+                                <img className='ewings__digitalM__body__ball__img__bottom-left' src={`${endpoint}/images/Ball.png`} alt='ball' />
                             </div>
                             <div className='ewings__digitalM__body__inlline__text--base'>
                                 <Typography className='ewings__digitalM__body__inlline__text ewings__digitalM__body__text bmchome__services__text--size'>
@@ -120,8 +120,8 @@ export default class MultimediaProd extends Component {
                         </div>
                     </MediaQuery>
                     <MediaQuery maxWidth={1050}>
-                        <img className='ewings__digitalM__body__inline__img' src={`${endpoint}/MultiProd-IMG-2.png`} alt='digital marketing' />
-                        <img className='ewings__digitalM__body__ball__img__bottom-left' src={`${endpoint}/Ball.png`} alt='ball' />
+                        <img className='ewings__digitalM__body__inline__img' src={`${endpoint}/images/MultiProd-IMG-2.png`} alt='digital marketing' />
+                        <img className='ewings__digitalM__body__ball__img__bottom-left' src={`${endpoint}/images/Ball.png`} alt='ball' />
                         <div className='ewings__digitalM__body__inlline__text--base--mob'>
 
                             <Typography className='ewings__digitalM__body__inlline__text ewings__digitalM__body__text bmchome__services__text--size'>

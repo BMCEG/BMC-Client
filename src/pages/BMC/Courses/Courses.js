@@ -59,7 +59,7 @@ export default class Courses extends Component {
                             {this.state.posts1.map((post) => (
                                 <>
                                     <div className='careers__posts__post'>
-                                        <img alt={post.title} className='careers__posts__post__img' src={`${endpoint}/${post.images[0].src}`} />
+                                        <img alt={post.title} className='careers__posts__post__img' src={`${endpoint}/images/${post.images[0].src}`} />
                                         <div className='careers__posts__post__info'>
                                             <div>
                                                 <Typography className='careers__posts__post__info--header courses__list__course__info--header--size'>
@@ -85,7 +85,7 @@ export default class Courses extends Component {
                             {this.state.posts2.map((post) => (
                                 <>
                                     <div className='careers__posts__post'>
-                                    <img alt={post.title} className='careers__posts__post__img' src={`${endpoint}/${post.images[0].src}`} />
+                                    <img alt={post.title} className='careers__posts__post__img' src={`${endpoint}/images/${post.images[0].src}`} />
                                         <div className='careers__posts__post__info'>
                                             <div>
                                                 <Typography className='careers__posts__post__info--header courses__list__course__info--header--size'>
@@ -118,7 +118,7 @@ export default class Courses extends Component {
                             {this.state.posts.map((post) => (
                                 <>
                                     <div className='careers__posts__post'>
-                                        <img alt={post.title} className='careers__posts__post__img' src={`${endpoint}/${post.images[0].src}`} />
+                                        <img alt={post.title} className='careers__posts__post__img' src={`${endpoint}/images/${post.images[0].src}`} />
                                         <div className='careers__posts__post__info'>
                                             <div>
                                                 <Typography className='careers__posts__post__info--header courses__list__course__info--header--size'>

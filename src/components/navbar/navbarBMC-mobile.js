@@ -23,7 +23,7 @@ export default class NavbarBMC extends Component {
                 <div className='nav-bmc-left-mob'>
                     <div className='title nav-logo-mob'>
                         <Button variant='link' href="/">
-                            <img src={`${endpoint}/logo-no-text.png`} alt='home' className='nav-logo-img' />
+                            <img src={`${endpoint}/images/logo-no-text.png`} alt='home' className='nav-logo-img' />
                         </Button>
                     </div>
                 </div>

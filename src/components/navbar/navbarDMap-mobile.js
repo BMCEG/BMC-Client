@@ -35,7 +35,7 @@ export default class NavbarDMapMob extends Component {
 
                     <div className="title">
                         <Button variant="link" onClick={() => { window.location.href = '/ewings' }} >
-                                <img src={`${endpoint}/ewings-full-logo.png`} alt='logo' className='nav-dmap-logo' />
+                                <img src={`${endpoint}/images/ewings-full-logo.png`} alt='logo' className='nav-dmap-logo' />
                         </Button>
                     </div>
                 </div>

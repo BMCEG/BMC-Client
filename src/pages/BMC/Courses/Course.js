@@ -89,7 +89,7 @@ export default class Course extends Component {
                     <br></br>
                     <br></br>
                     <div className='strategic-planning__banner'>
-                        <img className='strategic-planning__banner-img' src={`${endpoint}/SP-H.png`} alt='Marketing Mgmt' />
+                        <img className='strategic-planning__banner-img' src={`${endpoint}/images/SP-H.png`} alt='Marketing Mgmt' />
                     </div>
                     <br></br>
                     <div className='job__divider' />

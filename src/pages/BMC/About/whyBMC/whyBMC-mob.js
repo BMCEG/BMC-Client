@@ -18,7 +18,7 @@ export default class whyBMCMob extends Component {
                 <br></br>
                 <br></br>
                 <div className='strategic-planning__banner'>
-                    <img className='strategic-planning__banner-img' src={`${endpoint}/whybmc-h.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__banner-img' src={`${endpoint}/images/whybmc-h.png`} alt='Marketing Mgmt' />
                 </div>
                 <br></br>
                 <br></br>
@@ -28,7 +28,7 @@ export default class whyBMCMob extends Component {
                 <br></br>
                 <div className='whybmc__service--top' />
                 <div className='whybmc__service--row--mob'>
-                    <img src={`${endpoint}/whybmc-1.png`} alt='service' className='whybmc__service--img--mob' />
+                    <img src={`${endpoint}/images/whybmc-1.png`} alt='service' className='whybmc__service--img--mob' />
                     <div className='whybmc__service--info--mob'>
                         <Typography className='whybmc__service--header whybmc__heading'>
                             Outside & Unbiased Eye
@@ -46,7 +46,7 @@ export default class whyBMCMob extends Component {
                 <br></br>
                 <div className='whybmc__service--top' />
                 <div className='whybmc__service--row--mob'>
-                    <img src={`${endpoint}/whybmc-2.png`} alt='service' className='whybmc__service--img--mob' />
+                    <img src={`${endpoint}/images/whybmc-2.png`} alt='service' className='whybmc__service--img--mob' />
                     <div className='whybmc__service--info--mob'>
                         <Typography className='whybmc__service--header whybmc__heading'>
                             Specialized Skills
@@ -66,7 +66,7 @@ export default class whyBMCMob extends Component {
                 <br></br>
                 <div className='whybmc__service--top' />
                 <div className='whybmc__service--row--mob'>
-                    <img src={`${endpoint}/whybmc-3.png`} alt='service' className='whybmc__service--img--mob' />
+                    <img src={`${endpoint}/images/whybmc-3.png`} alt='service' className='whybmc__service--img--mob' />
                     <div className='whybmc__service--info--mob'>
                         <Typography className='whybmc__service--header whybmc__heading'>
                             Training and Coaching
@@ -84,7 +84,7 @@ export default class whyBMCMob extends Component {
                 <br></br>
                 <div className='whybmc__service--top' />
                 <div className='whybmc__service--row--mob'>
-                    <img src={`${endpoint}/whybmc-4.png`} alt='service' className='whybmc__service--img--mob' />
+                    <img src={`${endpoint}/images/whybmc-4.png`} alt='service' className='whybmc__service--img--mob' />
                     <div className='whybmc__service--info--mob'>
                         <Typography className='whybmc__service--header whybmc__heading'>
                             A Catalyst for Change
@@ -102,7 +102,7 @@ export default class whyBMCMob extends Component {
                 <br></br>
                 <div className='whybmc__service--top' />
                 <div className='whybmc__service--row--mob'>
-                    <img src={`${endpoint}/whybmc-5.png`} alt='service' className='whybmc__service--img--mob' />
+                    <img src={`${endpoint}/images/whybmc-5.png`} alt='service' className='whybmc__service--img--mob' />
                     <div className='whybmc__service--info--mob'>
                         <Typography className='whybmc__service--header whybmc__heading'>
                             A Safe Zone
@@ -120,7 +120,7 @@ export default class whyBMCMob extends Component {
                 <br></br>
                 <div className='whybmc__service--top' />
                 <div className='whybmc__service--row--mob'>
-                    <img src={`${endpoint}/whybmc-6.png`} alt='service' className='whybmc__service--img--mob' />
+                    <img src={`${endpoint}/images/whybmc-6.png`} alt='service' className='whybmc__service--img--mob' />
                     <div className='whybmc__service--info--mob'>
                         <Typography className='whybmc__service--header whybmc__heading'>
                             An Extra Horsepower

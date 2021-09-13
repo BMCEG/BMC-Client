@@ -69,7 +69,7 @@ export default class Application extends Component {
         return (
             <div className="ewings-application-modal-root-mob">
                 <div className="application-mob">
-                    <img style={{ margin: 'auto' }} src={`${endpoint}/ewings-full-logo.png`} alt='logo' className='ewings-application-logo' />
+                    <img style={{ margin: 'auto' }} src={`${endpoint}/images/ewings-full-logo.png`} alt='logo' className='ewings-application-logo' />
                     <br></br>
                     <br></br>
                     <TextField name="applicationName" value={this.state.applicationFirstName} label="Name" variant="outlined" className="application-form" onChange={this.handleInputChange} />

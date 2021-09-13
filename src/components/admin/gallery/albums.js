@@ -77,7 +77,7 @@ export default class Albums extends Component {
                                                     playing="true"
                                                 />
                                                 :
-                                                <img className='picture-table-cell' src={`${endpoint}/${pic.src}`} alt='img' />
+                                                <img className='picture-table-cell' src={`${endpoint}/images/${pic.src}`} alt='img' />
                                             }
                                             <hr></hr>
                                         </div>

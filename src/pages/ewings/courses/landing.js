@@ -103,7 +103,7 @@ export default class Landing extends Component {
                     }} variant='h3' component='h3' className='bukra-bold ewings-white-color course-header'>{this.state.courseDetails.displayTitle}</Typography>
                     <div className='landing-grid-div'>
                         <div className='training-desc-img-base'>
-                            <img className='training-desc-img' src={`${endpoint}/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
+                            <img className='training-desc-img' src={`${endpoint}/images/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
                         </div>
                         <div className='training-desc-text'>
                             <h2 className='bukra-bold ewings-green-color ewings-subtitle' >Training Description</h2>
@@ -127,7 +127,7 @@ export default class Landing extends Component {
                             <br></br>
                         </div>
                         <div className='training-outlines-img-base'>
-                            <img className='training-desc-img' src={`${endpoint}/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
+                            <img className='training-desc-img' src={`${endpoint}/images/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
                         </div>
                     </div>
                     <br></br>
@@ -141,11 +141,11 @@ export default class Landing extends Component {
                         <div className='training-methodology-img-base'>
                             {this.state.courseDetails.title === 'graphic_design' ?
                                 <>
-                                    <img className='training-methodology-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt='sds' />
-                                    <img className='training-methodology-img-mask' src={`${endpoint}/22222.png`} alt='sds' />
+                                    <img className='training-methodology-img' src={`${endpoint}/images/${this.state.imageMethodologySrc}`} alt='sds' />
+                                    <img className='training-methodology-img-mask' src={`${endpoint}/images/22222.png`} alt='sds' />
                                 </>
                                 :
-                                <img className='training-methodology-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt='sds' />
+                                <img className='training-methodology-img' src={`${endpoint}/images/${this.state.imageMethodologySrc}`} alt='sds' />
                             }
                         </div>
                         <div className='training-methodology-seperator'></div>
@@ -165,7 +165,7 @@ export default class Landing extends Component {
                             <br></br>
                             <br></br>
                             <div className="course-trainer-avatar-base">
-                                <img src={`${endpoint}/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
+                                <img src={`${endpoint}/images/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
                             </div>
                             <br></br>
                             <br></br>

@@ -31,7 +31,7 @@ export default function careerLanding() {
                 </div>
                 <div className='career-landing-banner-img-base'>
 
-                    <img className='career-landing-banner-img' src={`${endpoint}/logo.png`} alt='Career Landing Banner' />
+                    <img className='career-landing-banner-img' src={`${endpoint}/images/logo.png`} alt='Career Landing Banner' />
                 </div>
             </div>
             <br></br>

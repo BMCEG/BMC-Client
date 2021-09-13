@@ -20,7 +20,7 @@ export default class FounderMessage extends Component {
                 <br></br>
                 <br></br>
                 <div className='strategic-planning__banner'>
-                    <img className='founder-message__banner-img' src={`${endpoint}/landing-founder.png`} alt='Founder Message' />
+                    <img className='founder-message__banner-img' src={`${endpoint}/images/landing-founder.png`} alt='Founder Message' />
                 </div>
                 <br></br>
                 <br></br>
@@ -57,7 +57,7 @@ export default class FounderMessage extends Component {
                     </Typography>
                     <br></br>
                     <br></br>
-                    <img className='founder-message__sig' src={`${endpoint}/signature.png`} alt='sig' />
+                    <img className='founder-message__sig' src={`${endpoint}/images/signature.png`} alt='sig' />
                     <Typography className='foudner-message__text'>
                         Mohamed Nasr,
                     </Typography>
@@ -93,7 +93,7 @@ export default class FounderMessage extends Component {
                         </Typography>
                         <br></br>
                         <br></br>
-                        <img className='founder-message__sig' src={`${endpoint}/signature.png`} alt='sig' />
+                        <img className='founder-message__sig' src={`${endpoint}/images/signature.png`} alt='sig' />
                         <Typography className='foudner-message__text'>
                             Mohamed Nasr,
                         </Typography>

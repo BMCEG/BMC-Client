@@ -39,7 +39,7 @@ export default class CarouselComponenet extends Component {
                             }
                             <img
                                 className="carousel-slide-img"
-                                src={`${endpoint}/${item.src}`}
+                                src={`${endpoint}/images/${item.src}`}
                                 alt="First slide"
                                 // width="100%"
                             />

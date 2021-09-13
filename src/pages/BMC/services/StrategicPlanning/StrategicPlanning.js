@@ -21,7 +21,7 @@ export default class StrategicPlanning extends Component {
                 <br></br>
                 <br></br>
                 <div className='strategic-planning__banner'>
-                    <img className='strategic-planning__banner-img' src={`${endpoint}/SP-H.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__banner-img' src={`${endpoint}/images/SP-H.png`} alt='Marketing Mgmt' />
                 </div>
                 <br></br>
                 <br></br>
@@ -56,7 +56,7 @@ export default class StrategicPlanning extends Component {
                 <br></br>
                 <div className='strategic-planning__img--base'>
                     <div className='strategic-planning__body__img__border-left'></div>
-                    <img className='strategic-planning__img' src={`${endpoint}/SP-2.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__img' src={`${endpoint}/images/SP-2.png`} alt='Marketing Mgmt' />
                     <Typography className='toolbox__banner__caption toolbox__banner__caption--font toolbox__header--font--size'>
                         Why do we need strategic planning?
 
@@ -114,7 +114,7 @@ export default class StrategicPlanning extends Component {
                 <br></br>
                 <div className='strategic-planning__img--base'>
                     <div className='strategic-planning__body__img__border-left'></div>
-                    <img className='strategic-planning__img--ta7t' src={`${endpoint}/SP-marketing.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__img--ta7t' src={`${endpoint}/images/SP-marketing.png`} alt='Marketing Mgmt' />
                     <div className='strategic-planning__body__img__border-right'></div>
                 </div>
                 <br></br>

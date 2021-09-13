@@ -74,7 +74,7 @@ export default class HomepageMob extends Component {
             <div className='bmchome-root'>
                 {/* <br></br> */}
                 <div className='bmchome__banner'>
-                    {/* <img className='bmchome__banner-img' src={`${endpoint}/strategic-banner.jpeg`} alt='Marketing Mgmt' /> */}
+                    {/* <img className='bmchome__banner-img' src={`${endpoint}/images/strategic-banner.jpeg`} alt='Marketing Mgmt' /> */}
                     <Carousel fade className="bmchome__banner__carousel" controls={false}>
                         <Carousel.Item>
                             <div className='bmchome__banner__carousel--item' style={{ backgroundImage: `url(${endpoint}/Homepage-Header-1.png)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
@@ -133,7 +133,7 @@ export default class HomepageMob extends Component {
                 <br></br>
                 <div className='bmchome__service__row'>
                     {/* <div className='bmchome__service__row__img'> */}
-                    <img className='bmchome__service__row__img' src={`${endpoint}/Strategic-Plan.png`} alt='service' />
+                    <img className='bmchome__service__row__img' src={`${endpoint}/images/Strategic-Plan.png`} alt='service' />
                     <div className='bmchome__service__row__details'>
                         <Typography className='bmchome__service__row__details--header'>
                             Strategic Plan
@@ -155,7 +155,7 @@ export default class HomepageMob extends Component {
                 <br></br>
                 <div className='bmchome__service__row'>
                     {/* <div className='bmchome__service__row__img'> */}
-                    <img className='bmchome__service__row__img' src={`${endpoint}/Marketing-Management.png`} alt='service' />
+                    <img className='bmchome__service__row__img' src={`${endpoint}/images/Marketing-Management.png`} alt='service' />
                     <div className='bmchome__service__row__details'>
                         <Typography className='bmchome__service__row__details--header'>
                             Marketing Management
@@ -177,7 +177,7 @@ export default class HomepageMob extends Component {
                 <br></br>
                 <div className='bmchome__service__row'>
                     {/* <div className='bmchome__service__row__img'> */}
-                    <img className='bmchome__service__row__img' src={`${endpoint}/HR-Management.png`} alt='service' />
+                    <img className='bmchome__service__row__img' src={`${endpoint}/images/HR-Management.png`} alt='service' />
                     <div className='bmchome__service__row__details'>
                         <Typography className='bmchome__service__row__details--header'>
                             HR Management
@@ -198,7 +198,7 @@ export default class HomepageMob extends Component {
                 <br></br>
                 <br></br>
                 <div className='bmchome__service__row'>
-                    <img className='bmchome__service__row__img' src={`${endpoint}/Finance-&-Accounting.png`} alt='service' />
+                    <img className='bmchome__service__row__img' src={`${endpoint}/images/Finance-&-Accounting.png`} alt='service' />
                     <div className='bmchome__service__row__details'>
                         <Typography className='bmchome__service__row__details--header'>
                             Finance & Accounting
@@ -217,7 +217,7 @@ export default class HomepageMob extends Component {
                 <br></br>
                 <br></br>
                 <div className='bmchome__service__row'>
-                    <img className='bmchome__service__row__img' src={`${endpoint}/BMC-Tool-Box.png`} alt='service' />
+                    <img className='bmchome__service__row__img' src={`${endpoint}/images/BMC-Tool-Box.png`} alt='service' />
                     <div className='bmchome__service__row__details'>
                         <Typography className='bmchome__service__row__details--header'>
                             BMC Tool Box
@@ -257,7 +257,7 @@ export default class HomepageMob extends Component {
                     {this.state.clients.map((client, index) => (
                         <div key={index} className='home-partner-ewings'>
                             <Button variant='link' href='/partners'>
-                                <img alt='placeholder' className='home-partner-img' src={`${endpoint}/${client.logo}`} height='120px' />
+                                <img alt='placeholder' className='home-partner-img' src={`${endpoint}/images/${client.logo}`} height='120px' />
                             </Button>
                         </div>
                     ))}

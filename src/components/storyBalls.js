@@ -299,7 +299,7 @@ export default class storyBalls extends Component {
                 <div className="story-balls">
                     <div className="story-node">
                         <img
-                            src={`${endpoint}/our-story-2014.png`}
+                            src={`${endpoint}/images/our-story-2014.png`}
                             alt="ds"
                             className="story-ball"
                             onMouseOver={() => this.handleMouseOver("ball1")}
@@ -310,7 +310,7 @@ export default class storyBalls extends Component {
 
                     <div className="story-node">
                         <img
-                            src={`${endpoint}/our-story-2015.png`}
+                            src={`${endpoint}/images/our-story-2015.png`}
                             alt="ds"
                             className="story-ball"
                             onMouseOver={() => this.handleMouseOver("ball2")}
@@ -321,7 +321,7 @@ export default class storyBalls extends Component {
 
                     <div className="story-node">
                         <img
-                            src={`${endpoint}/our-story-2016.png`}
+                            src={`${endpoint}/images/our-story-2016.png`}
                             alt="ds"
                             className="story-ball"
                             onMouseOver={() => this.handleMouseOver("ball3")}
@@ -332,7 +332,7 @@ export default class storyBalls extends Component {
                     <div class="line"></div>
                     <div className="story-node">
                         <img
-                            src={`${endpoint}/our-story-2018.png`}
+                            src={`${endpoint}/images/our-story-2018.png`}
                             alt="ds"
                             className="story-ball"
                             onMouseOver={() => this.handleMouseOver("ball4")}
@@ -343,7 +343,7 @@ export default class storyBalls extends Component {
 
                     <div className="story-node">
                         <img
-                            src={`${endpoint}/our-story-2020.png`}
+                            src={`${endpoint}/images/our-story-2020.png`}
                             alt="ds"
                             className="story-ball"
                             onMouseOver={() => this.handleMouseOver("ball5")}
@@ -354,7 +354,7 @@ export default class storyBalls extends Component {
                     <div class="line"></div>
                     <div className="story-node">
                         <img
-                            src={`${endpoint}/our-story-2021.png`}
+                            src={`${endpoint}/images/our-story-2021.png`}
                             alt="ds"
                             className="story-ball"
                             onMouseOver={() => this.handleMouseOver("ball6")}

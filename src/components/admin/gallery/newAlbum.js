@@ -129,7 +129,7 @@ export default class NewAlbum extends Component {
                                                     playing="true"
                                                 />
                                                 :
-                                                <img className='picture-table-cell' src={`${endpoint}/${picture.src}`} alt='album' />
+                                                <img className='picture-table-cell' src={`${endpoint}/images/${picture.src}`} alt='album' />
                                             }
                                         </td>
                                         <td><h5 className="inner-text">{picture.url}</h5></td>

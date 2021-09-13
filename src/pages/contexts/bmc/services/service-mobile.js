@@ -26,11 +26,11 @@ export default class Service extends Component {
 
             <div className="founder-root-mobile" style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
                 <div className='founder-img-base-mobile'>
-                    <img className='founder-img' src={`${endpoint}/${this.props.sideImage}`} alt='service' />
+                    <img className='founder-img' src={`${endpoint}/images/${this.props.sideImage}`} alt='service' />
                 </div>
                 <div className='founder-text-mobile'>
                 <div className='service-page-title-details'>
-                        <img src={`${endpoint}/${this.props.logo}`} alt='logo' className='service-details-icon-mobile' />
+                        <img src={`${endpoint}/images/${this.props.logo}`} alt='logo' className='service-details-icon-mobile' />
                         <div className='service-details-name'>
                         <Typography variant='h4' component='h4' className='bukra-bold'>
                                 {this.props.title}
@@ -57,7 +57,7 @@ export default class Service extends Component {
             // <div className='service-page-root' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
             //     <div className='service-page-left'>
             //         <div className='service-page-title-details'>
-            //             <img src={`${endpoint}/${this.props.logo}`} alt='logo' className='service-details-icon' />
+            //             <img src={`${endpoint}/images/${this.props.logo}`} alt='logo' className='service-details-icon' />
             //             <div className='service-details-name'>
             //                 <h1>{this.props.title}</h1>
             //             </div>
@@ -75,7 +75,7 @@ export default class Service extends Component {
             //     </div>
             //     <div className='service-page-right'>
             //         <div className='service-page-img-base'>
-            //             <img src={`${endpoint}/${this.props.sideImage}`} alt='Img' className='service-page-img' />
+            //             <img src={`${endpoint}/images/${this.props.sideImage}`} alt='Img' className='service-page-img' />
             //         </div>
             //     </div>
             // </div>

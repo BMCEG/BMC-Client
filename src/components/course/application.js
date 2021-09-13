@@ -66,7 +66,7 @@ export default class Application extends Component {
         return (
             <div className="application-modal-root" style={{ backgroundImage: `url(${endpoint}/bg-four.png)`, backgroundSize: 'cover' }}>
                 <div className="application">
-                    <img style={{ margin: 'auto' }} src={`${endpoint}/logo.png`} alt='logo' height='250px' />
+                    <img style={{ margin: 'auto' }} src={`${endpoint}/images/logo.png`} alt='logo' height='250px' />
                     <TextField name="applicationName" value={this.state.applicationFirstName} label="Name" variant="outlined" className="application-form" onChange={this.handleInputChange} />
                     <TextField name="applicationEmail" value={this.state.applicationEmail} label="E-Mail" variant="outlined" className="application-form" onChange={this.handleInputChange} />
                     <TextField name="applicationMobileNumber" value={this.state.applicationMobileNumber} label="Mobile Number" variant="outlined" className="application-form" onChange={this.handleInputChange} />

@@ -62,7 +62,7 @@ export default class NavbarDMap extends Component {
 
                     <div className="title-ewings-logo">
                         <Button variant="link" onClick={() => { window.location.href = '/ewings' }} >
-                                <img src={`${endpoint}/ewings-full-logo.png`} alt='logo' className='nav-ewings-logo-img' />
+                                <img src={`${endpoint}/images/ewings-full-logo.png`} alt='logo' className='nav-ewings-logo-img' />
                         </Button>
                     </div>
                 </div>
@@ -108,7 +108,7 @@ export default class NavbarDMap extends Component {
 
                     <div className="nav-ewings-bmc-tab">
                         <Button variant="link" href='/' >
-                            <img src={`${endpoint}/logo-no-text.png`} alt='home' className='nav-logo-img-bmc' />
+                            <img src={`${endpoint}/images/logo-no-text.png`} alt='home' className='nav-logo-img-bmc' />
                         </Button>
                     </div>
                 </div>

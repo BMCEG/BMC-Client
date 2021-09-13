@@ -92,7 +92,7 @@ export default class homepageMob extends Component {
                             {this.state.partners.map((partner, key) => (
                                 <div className='home-partner' key={key}>
                                     <Button variant='link' href='/partners'>
-                                        <img alt='placeholder' className='home-partner-img' src={`${endpoint}/${partner.logo}`} height='60px' />
+                                        <img alt='placeholder' className='home-partner-img' src={`${endpoint}/images/${partner.logo}`} height='60px' />
                                     </Button>
                                 </div>
                             ))}

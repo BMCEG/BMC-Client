@@ -8,7 +8,7 @@ export default class WebDevelopment extends Component {
         return (
             <div className='ewings__digitalM__root'>
                 <div className='ewings__digitalM__banner'>
-                    <img className='ewings__multimediaProd__banner__img' src={`${endpoint}/Web-H.png`} alt='banner' />
+                    <img className='ewings__multimediaProd__banner__img' src={`${endpoint}/images/Web-H.png`} alt='banner' />
                     <div className='ewings__banner__title' style={{
                         backgroundImage: `url(${endpoint}/ewings-header.png)`,
                         backgroundSize: 'cover',
@@ -25,9 +25,9 @@ export default class WebDevelopment extends Component {
                     <MediaQuery maxWidth={1050}>
 
                         <div className='ewings__web__inline__img--base'>
-                            <img className='ewings__digitalM__body__ball__img__top-left' src={`${endpoint}/Ball.png`} alt='ball' />
+                            <img className='ewings__digitalM__body__ball__img__top-left' src={`${endpoint}/images/Ball.png`} alt='ball' />
 
-                            <img src={`${endpoint}/Web-IMG-1.png`} alt='web development' className='ewings__web__inline__img' />
+                            <img src={`${endpoint}/images/Web-IMG-1.png`} alt='web development' className='ewings__web__inline__img' />
                         </div>
                         <br></br>
                         <div className='ewings__web__inline__text'>
@@ -48,9 +48,9 @@ export default class WebDevelopment extends Component {
 
                         <div className='ewings__web__inline'>
                             <div className='ewings__web__inline__img--base'>
-                                <img className='ewings__digitalM__body__ball__img__top-left' src={`${endpoint}/Ball.png`} alt='ball' />
+                                <img className='ewings__digitalM__body__ball__img__top-left' src={`${endpoint}/images/Ball.png`} alt='ball' />
 
-                                <img src={`${endpoint}/Web-IMG-1.png`} alt='web development' className='ewings__web__inline__img' />
+                                <img src={`${endpoint}/images/Web-IMG-1.png`} alt='web development' className='ewings__web__inline__img' />
                             </div>
                             <div className='ewings__web__inline__text'>
                                 <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>

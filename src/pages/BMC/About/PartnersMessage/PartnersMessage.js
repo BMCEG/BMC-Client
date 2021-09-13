@@ -20,7 +20,7 @@ export default class PartnersMessage extends Component {
                 <br></br>
                 <br></br>
                 <div className='strategic-planning__banner'>
-                    <img className='strategic-planning__banner-img' src={`${endpoint}/Slide-1.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__banner-img' src={`${endpoint}/images/Slide-1.png`} alt='Marketing Mgmt' />
                 </div>
                 <br></br>
                 <br></br>
@@ -49,7 +49,7 @@ export default class PartnersMessage extends Component {
                 <br></br>
                 <div className='strategic-planning__img--base'>
                     <div className='strategic-planning__body__img__border-left'></div>
-                    <img className='strategic-planning__img' src={`${endpoint}/Slide-2.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__img' src={`${endpoint}/images/Slide-2.png`} alt='Marketing Mgmt' />
                     <div className='strategic-planning__body__img__border-right'></div>
                 </div>
                 <br></br>
@@ -72,7 +72,7 @@ export default class PartnersMessage extends Component {
                 <br></br>
                 <div className='strategic-planning__img--base'>
                     <div className='strategic-planning__body__img__border-left'></div>
-                    <img className='strategic-planning__img' src={`${endpoint}/Slide-3.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__img' src={`${endpoint}/images/Slide-3.png`} alt='Marketing Mgmt' />
                     <div className='strategic-planning__body__img__border-right'></div>
                 </div>
                 <br></br>
@@ -92,7 +92,7 @@ export default class PartnersMessage extends Component {
                 <br></br>
                 <div className='strategic-planning__img--base'>
                     <div className='strategic-planning__body__img__border-left'></div>
-                    <img className='strategic-planning__img' src={`${endpoint}/Slide-4.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__img' src={`${endpoint}/images/Slide-4.png`} alt='Marketing Mgmt' />
                     <div className='strategic-planning__body__img__border-right'></div>
                 </div>
                 <br></br>

@@ -12,7 +12,7 @@ export default class Footer extends Component {
                         {/* <Grid item xs={1}></Grid> */}
                         <Grid item xs={1}></Grid>
                         <Grid item xs={4} className='footer-logo-base'>
-                            <img className='footer-logo-mob' src={`${endpoint}/bmc-name.png`} alt='logo' />
+                            <img className='footer-logo-mob' src={`${endpoint}/images/bmc-name.png`} alt='logo' />
                         </Grid>
                         <Grid item xs={1}></Grid>
                         <Grid item xs={6} className="footer-mob-text">

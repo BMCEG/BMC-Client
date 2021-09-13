@@ -21,7 +21,7 @@ export default class Toolbox extends Component {
                 <br></br>
                 <br></br>
                 <div className='strategic-planning__banner'>
-                    <img className='strategic-planning__banner-img' src={`${endpoint}/BMCTB-H.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__banner-img' src={`${endpoint}/images/BMCTB-H.png`} alt='Marketing Mgmt' />
                 </div>
                 <br></br>
                 <br></br>
@@ -54,7 +54,7 @@ export default class Toolbox extends Component {
                 <br></br>
                 <div className='strategic-planning__img--base'>
                     <div className='strategic-planning__body__img__border-left'></div>
-                    <img className='strategic-planning__img' src={`${endpoint}/BMCTB-2.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__img' src={`${endpoint}/images/BMCTB-2.png`} alt='Marketing Mgmt' />
                     <Typography className='toolbox__banner__caption toolbox__banner__caption--font toolbox__header--font--size'>
                     What is a Feasibility Study?
                     </Typography>
@@ -120,7 +120,7 @@ export default class Toolbox extends Component {
                 <br></br>
                 <div className='strategic-planning__img--base'>
                     <div className='strategic-planning__body__img__border-left'></div>
-                    <img className='strategic-planning__img' src={`${endpoint}/BMCTB-Ta7t.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__img' src={`${endpoint}/images/BMCTB-Ta7t.png`} alt='Marketing Mgmt' />
                     <Typography className='toolbox__banner__caption toolbox__banner__caption--font toolbox__header--font--size'>
                         Typical Feasibility study outline
                     </Typography>

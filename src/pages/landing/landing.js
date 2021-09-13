@@ -92,13 +92,13 @@ export default class Landing extends Component {
 
                         </div>
                         <div className='landing-grid-img-base'>
-                            <img className='landing-grid-img' src={`${endpoint}/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
+                            <img className='landing-grid-img' src={`${endpoint}/images/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
                         </div>
                     </div>
                     <hr></hr>
                     <div className='landing-grid-div'>
                         <div className='landing-grid-img-base'>
-                        <img className='landing-grid-img' src={`${endpoint}/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
+                        <img className='landing-grid-img' src={`${endpoint}/images/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
                         </div>
                         <div className='landing-grid-text'>
                             <h2 className='bukra-bold' >Training Outline</h2>
@@ -122,14 +122,14 @@ export default class Landing extends Component {
                             </div>
                         </div>
                         <div className='landing-grid-img-base'>
-                        <img className='landing-grid-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt="Trainer Avatar"></img>
+                        <img className='landing-grid-img' src={`${endpoint}/images/${this.state.imageMethodologySrc}`} alt="Trainer Avatar"></img>
                         </div>
                     </div>
                     <hr></hr>
                     <div className='landing-grid-div'>
                         <div className='landing-grid-img-base'>
                             <div className="course-trainer-avatar-base">
-                                <img src={`${endpoint}/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
+                                <img src={`${endpoint}/images/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
                             </div>
                         </div>
                         <div className='landing-grid-text'>
@@ -189,7 +189,7 @@ export default class Landing extends Component {
                             {/* <br></br> */}
                         </div>
                         <div className='landing-grid-img-base'>
-                        <img className='landing-grid-img' src={`${endpoint}/${this.state.imageScheduleSrc}`} alt="Trainer Avatar"></img>
+                        <img className='landing-grid-img' src={`${endpoint}/images/${this.state.imageScheduleSrc}`} alt="Trainer Avatar"></img>
                         </div>
                     </div>
                     <div className='landing-grid-btn-base'>

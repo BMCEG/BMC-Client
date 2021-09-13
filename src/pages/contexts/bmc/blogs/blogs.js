@@ -55,7 +55,7 @@ export default class Blogs extends Component {
                             {this.state.blogs1.map((blog) => (
                                 <Paper className='blogs-card'>
                                     <div>
-                                        <img src={`${endpoint}/${blog.image}`} alt={blog.title} className='blogs-img' />
+                                        <img src={`${endpoint}/images/${blog.image}`} alt={blog.title} className='blogs-img' />
                                     </div>
                                     <div className='blogs-card-info'>
                                         <h2 className='bukra-bold'>{blog.title}</h2>
@@ -87,7 +87,7 @@ export default class Blogs extends Component {
                             {this.state.blogs2.map((blog) => (
                                 <Paper className='blogs-card'>
                                     <div>
-                                    <img src={`${endpoint}/${blog.image}`} alt={blog.title} className='blogs-img' />
+                                    <img src={`${endpoint}/images/${blog.image}`} alt={blog.title} className='blogs-img' />
                                     </div>
                                     <div className='blogs-card-info'>
                                         <h2>{blog.title}</h2>

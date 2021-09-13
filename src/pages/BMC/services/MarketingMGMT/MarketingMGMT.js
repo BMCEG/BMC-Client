@@ -20,7 +20,7 @@ export default class MarketingMGMT extends Component {
                 <br></br>
                 <br></br>
                 <div className='marketing-mgmt__banner'>
-                    <img className='marketing-mgmt__banner-img' src={`${endpoint}/marketing-header.png`} alt='Marketing Mgmt' />
+                    <img className='marketing-mgmt__banner-img' src={`${endpoint}/images/marketing-header.png`} alt='Marketing Mgmt' />
                 </div>
                 <br></br>
                 <br></br>
@@ -49,7 +49,7 @@ export default class MarketingMGMT extends Component {
                 <br></br>
                 <div className='marketing-mgmt__img--base'>
                     <div className='marketing-mgmt__body__img__border-left'></div>
-                    <img className='marketing-mgmt__img' src={`${endpoint}/strategic-img.jpeg`} alt='Marketing Mgmt' />
+                    <img className='marketing-mgmt__img' src={`${endpoint}/images/strategic-img.jpeg`} alt='Marketing Mgmt' />
                     <Typography className='toolbox__banner__caption toolbox__banner__caption--font toolbox__header--font--size'>
                         Why is marketing management important?
                     </Typography>

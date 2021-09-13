@@ -66,7 +66,7 @@ export default class Blog extends Component {
                 <div className="blog-root">
                     <div className='blog-grid'>
                         <div className='blog-img-base'>
-                            <img className='blog-img' src={`${endpoint}/${this.state.blog.image}`} alt={this.state.blog.title} />
+                            <img className='blog-img' src={`${endpoint}/images/${this.state.blog.image}`} alt={this.state.blog.title} />
                         </div>
                         <div className='blog-title bukra-bold'>
                             <h1>{this.state.blog.title}</h1>
@@ -91,7 +91,7 @@ export default class Blog extends Component {
                             <div className='recent-blog'>
                                 <Grid container>
                                     <Grid item xs={5} >
-                                    <img src={`${endpoint}/${blog.image}`} alt={blog.title} className='recent-blog-img' />
+                                    <img src={`${endpoint}/images/${blog.image}`} alt={blog.title} className='recent-blog-img' />
                                     </Grid>
                                     <Grid item xs={1}>
                                     </Grid>

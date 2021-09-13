@@ -28,7 +28,7 @@ export default class HR extends Component {
                 <br></br>
                 <br></br>
                 <div className='finance-accounting__banner'>
-                    <img className='hr__banner-img' src={`${endpoint}/hr-header.png`} alt='Marketing Mgmt' />
+                    <img className='hr__banner-img' src={`${endpoint}/images/hr-header.png`} alt='Marketing Mgmt' />
                 </div>
                 {/* <br></br> */}
                 <br></br>

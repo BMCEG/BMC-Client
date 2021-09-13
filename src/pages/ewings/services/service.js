@@ -37,7 +37,7 @@ export default class Service extends Component {
                         </div>
                         <div className='ewings-service-page-right'>
                             <div className='service-page-img-base'>
-                                <img src={`${endpoint}/${this.props.sideImage}`} alt='Img' className='service-page-img' />
+                                <img src={`${endpoint}/images/${this.props.sideImage}`} alt='Img' className='service-page-img' />
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ export default class Service extends Component {
                         </div>
                         <div className='ewings-service-page-right'>
                             <div className='service-page-img-base'>
-                                <img src={`${endpoint}/${this.props.sideImage}`} alt='Img' className='service-page-img' />
+                                <img src={`${endpoint}/images/${this.props.sideImage}`} alt='Img' className='service-page-img' />
                             </div>
                         </div>
                     </div>

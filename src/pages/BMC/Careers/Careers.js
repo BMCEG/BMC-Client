@@ -46,7 +46,7 @@ export default class Careers extends Component {
                 <br></br>         
                 <br></br>
                 <div className='strategic-planning__banner'>
-                    <img className='strategic-planning__banner-img' src={`${endpoint}/careers-h.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__banner-img' src={`${endpoint}/images/careers-h.png`} alt='Marketing Mgmt' />
                 </div>
                 <br></br>                <div className='job__divider' />
 

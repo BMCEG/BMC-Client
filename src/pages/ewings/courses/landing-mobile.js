@@ -89,7 +89,7 @@ export default class Landing extends Component {
                     }} variant='h3' component='h3' className='bukra-bold ewings-white-color course-header-mob'>{this.state.courseDetails.displayTitle}</Typography>
                 </div>
                 <div className='training-desc-img-base-mob'>
-                    <img className='training-desc-img-mob' src={`${endpoint}/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
+                    <img className='training-desc-img-mob' src={`${endpoint}/images/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
                 </div>
                 <div className='training-desc-text-mob'>
                     <br></br>
@@ -103,7 +103,7 @@ export default class Landing extends Component {
                     <br></br>
                     <div className='landing-outline-grid-mob'>
                         <div className='training-outlines-img-base-mob'>
-                            <img className='training-desc-img-mob' src={`${endpoint}/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
+                            <img className='training-desc-img-mob' src={`${endpoint}/images/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
                         </div>
 
                         <div className='training-desc-text'>
@@ -117,7 +117,7 @@ export default class Landing extends Component {
                     <hr className='ewings-course-list-seperator'></hr>
                 </div>
                 <div className='training-methodology-img-base-mob'>
-                    <img className='training-methodology-img-mob' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt='sds' />
+                    <img className='training-methodology-img-mob' src={`${endpoint}/images/${this.state.imageMethodologySrc}`} alt='sds' />
                     {/* <hr className='training-methodology-seperator-mob'></hr> */}
                     <div className='training-methodology-text-mob'>
                         <h2 className='bukra-bold ewings-white-color ewings-subtitle-mob'>Training Methodology</h2>
@@ -133,7 +133,7 @@ export default class Landing extends Component {
                         <br></br>
                         <br></br>
                         <div className="course-trainer-avatar-base">
-                            <img src={`${endpoint}/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
+                            <img src={`${endpoint}/images/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
                         </div>
                         <br></br>
                         <br></br>

@@ -23,10 +23,10 @@ export default class ServiceMob extends Component {
             <div className='ewings-service-page-root'>
                 <div className='ewings-service-page-mob'>
                     <div className='ewings-service-img-base-mobile'>
-                        <img className='ewings-service-img' src={`${endpoint}/${this.props.sideImage}`} alt='service' />
+                        <img className='ewings-service-img' src={`${endpoint}/images/${this.props.sideImage}`} alt='service' />
                     </div>
                     {/* <div className='service-page-title-details'>
-                        <img src={`${endpoint}/${this.props.logo}`} alt='logo' className='service-details-icon' />
+                        <img src={`${endpoint}/images/${this.props.logo}`} alt='logo' className='service-details-icon' />
                         <div className='service-details-name'>
                             <h1>{this.props.title}</h1>
                         </div>
@@ -43,7 +43,7 @@ export default class ServiceMob extends Component {
                 </div>
                 {/* <div className='service-page-right'>
                     <div className='service-page-img-base'>
-                        <img src={`${endpoint}/${this.props.sideImage}`} alt='Img' className='service-page-img' />
+                        <img src={`${endpoint}/images/${this.props.sideImage}`} alt='Img' className='service-page-img' />
                     </div>
                 </div> */}
             </div>

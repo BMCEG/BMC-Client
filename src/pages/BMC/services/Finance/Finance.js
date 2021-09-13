@@ -20,7 +20,7 @@ export default class Finance extends Component {
                 <br></br>
                 <br></br>
                 <div className='finance-accounting__banner'>
-                    <img className='finance-accounting__banner-img' src={`${endpoint}/FA-H.png`} alt='Marketing Mgmt' />
+                    <img className='finance-accounting__banner-img' src={`${endpoint}/images/FA-H.png`} alt='Marketing Mgmt' />
                 </div>
                 <br></br>
                 <br></br>

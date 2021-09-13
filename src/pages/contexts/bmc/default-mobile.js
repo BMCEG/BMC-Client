@@ -104,7 +104,7 @@ class DefaultPage extends Component {
                                     <img
                                         className="banner-photo-mobile"
                                         alt="howItWorks"
-                                        src={`${endpoint}/logo.png`}
+                                        src={`${endpoint}/images/logo.png`}
                                     />
                                 </div>
                             </div>
@@ -116,7 +116,7 @@ class DefaultPage extends Component {
                             <Grid item xs={6}>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img alt='placeholder' className='home-service-icon-mobile' src={`${endpoint}/service-strategic-planning-black.png`} />
+                                        <img alt='placeholder' className='home-service-icon-mobile' src={`${endpoint}/images/service-strategic-planning-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>Strategic Plan</h5>
@@ -130,7 +130,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img  alt='placeholder' className='home-service-icon-mobile' src={`${endpoint}/service-hr-black.png`} />
+                                        <img  alt='placeholder' className='home-service-icon-mobile' src={`${endpoint}/images/service-hr-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>HR Management</h5>
@@ -144,7 +144,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img alt='placeholder' className='home-service-icon-mobile' src={`${endpoint}/service-toolbox-black.png`} />
+                                        <img alt='placeholder' className='home-service-icon-mobile' src={`${endpoint}/images/service-toolbox-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>BMC Tool Box</h5>
@@ -160,7 +160,7 @@ class DefaultPage extends Component {
                             <Grid item xs={6}>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-marketing-mgmt-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/images/service-marketing-mgmt-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>Marketing Management</h5>
@@ -174,7 +174,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-marketing-mgmt-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/images/service-marketing-mgmt-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>Finance and Accounting</h5>
@@ -206,7 +206,7 @@ class DefaultPage extends Component {
                                     <img
                                         className="banner-photo-mobile"
                                         alt="howItWorks"
-                                        src={`${endpoint}/logo.png`}
+                                        src={`${endpoint}/images/logo.png`}
                                     />
                                 </div>
                             </div>
@@ -216,7 +216,7 @@ class DefaultPage extends Component {
                             <Grid item xs={6}>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-strategic-planning-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/images/service-strategic-planning-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>Strategic Plan</h5>
@@ -230,7 +230,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-hr-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/images/service-hr-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>HR Management</h5>
@@ -244,7 +244,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-toolbox-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/images/service-toolbox-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>BMC Tool Box</h5>
@@ -260,7 +260,7 @@ class DefaultPage extends Component {
                             <Grid item xs={6}>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-marketing-mgmt-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/images/service-marketing-mgmt-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>Marketing Management</h5>
@@ -274,7 +274,7 @@ class DefaultPage extends Component {
                                 </div>
                                 <div className="home-service-mobile">
                                     <div className='home-service-icon-base-mobile'>
-                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/service-marketing-mgmt-black.png`} />
+                                        <img className='home-service-icon-mobile' alt='placeholder' src={`${endpoint}/images/service-marketing-mgmt-black.png`} />
                                     </div>
                                     <div className='home-service-text-mobile'>
                                         <h5 className='bukra-bold'>Finance and Accounting</h5>
@@ -304,7 +304,7 @@ class DefaultPage extends Component {
                             {this.state.partners.map((partner, key) => (
                                 <div className='home-partner' key={key}>
                                     <Button variant='link' href='/partners'>
-                                        <img alt='placeholder' className='home-partner-img' src={`${endpoint}/${partner.logo}`} height='60px' />
+                                        <img alt='placeholder' className='home-partner-img' src={`${endpoint}/images/${partner.logo}`} height='60px' />
                                     </Button>
                                 </div>
                             ))}

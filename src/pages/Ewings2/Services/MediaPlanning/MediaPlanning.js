@@ -7,7 +7,7 @@ export default class MediaPlanning extends Component {
         return (
             <div className='ewings__digitalM__root'>
                 <div className='ewings__digitalM__banner'>
-                    <img className='ewings__media__banner__img' src={`${endpoint}/MediaPlanning-H.png`} alt='banner' />
+                    <img className='ewings__media__banner__img' src={`${endpoint}/images/MediaPlanning-H.png`} alt='banner' />
                     <div className='ewings__banner__title' style={{
                         backgroundImage: `url(${endpoint}/ewings-header.png  )`,
                         backgroundSize: 'cover',
@@ -22,7 +22,7 @@ export default class MediaPlanning extends Component {
                     </div>
                 </div>
                 <div className='ewings__digitalM__body'>
-                    <img className='ewings__mediaPlanning__body__ball__img__top-right' src={`${endpoint}/Ball.png`} alt='ball' />
+                    <img className='ewings__mediaPlanning__body__ball__img__top-right' src={`${endpoint}/images/Ball.png`} alt='ball' />
 
                     <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>
                         MEDIA PLANNING AND BUYING:
@@ -69,7 +69,7 @@ export default class MediaPlanning extends Component {
                     </Typography>
                     <br></br>
                     <br></br>
-                    <img className='ewings__mediaPlanning__body__ball__img__bottom-left' src={`${endpoint}/Ball.png`} alt='ball' />
+                    <img className='ewings__mediaPlanning__body__ball__img__bottom-left' src={`${endpoint}/images/Ball.png`} alt='ball' />
 
                 </div>
                 <br></br>

@@ -35,7 +35,7 @@ export default function foundersMessage() {
                     </Typography>
                     <br></br>
                     <br></br>
-                    <img className='founder-sig' src={`${endpoint}/signature.png`} alt='sig' />
+                    <img className='founder-sig' src={`${endpoint}/images/signature.png`} alt='sig' />
                     <Typography align='justify' variant='h5' component='h5' className='bukra-regular'>
                         Mohamed Nasr,
                     </Typography>
@@ -48,7 +48,7 @@ export default function foundersMessage() {
                 </div>
             </div>
             <div className='founder-img-base'>
-                <img className='founder-img' src={`${endpoint}/landing-founder.png`} alt='Founder Message' />
+                <img className='founder-img' src={`${endpoint}/images/landing-founder.png`} alt='Founder Message' />
             </div>
         </div>
     )

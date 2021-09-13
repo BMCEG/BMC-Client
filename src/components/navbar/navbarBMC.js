@@ -89,7 +89,7 @@ export default class NavbarBMC extends Component {
                 <div className='nav-bmc-left'>
                     <div className='title nav-logo'>
                         <Button variant="link" href='/' >
-                            <img src={`${endpoint}/logo-no-text.png`} alt='home' className='nav-logo-img' />
+                            <img src={`${endpoint}/images/logo-no-text.png`} alt='home' className='nav-logo-img' />
                         </Button>
                     </div>
                     <div className="title">
@@ -165,7 +165,7 @@ export default class NavbarBMC extends Component {
                     <div className='nav-sep' />
                     <div className='nav-logo-ewings'>
                         <Button variant="link" href='/ewings' >
-                            <img src={`${endpoint}/ewings-logo-greyscale.png`} alt='home' className='nav-logo-img-ewings' />
+                            <img src={`${endpoint}/images/ewings-logo-greyscale.png`} alt='home' className='nav-logo-img-ewings' />
                         </Button>
                     </div>
                 </div>

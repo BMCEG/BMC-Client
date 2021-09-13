@@ -79,8 +79,8 @@ export default class Homepage extends Component {
                                     <div className='ewings__home__banner__padding' />
                                     <div className='ewings__home__banner__center__mob'>
                                         <div className='ewings__home__banner__center__top'>
-                                            <img className='ewings__home__banner__center__left__img' alt='EWings' src={`${endpoint}/ewings-carousel-about-typography.png`} />
-                                            <img className='ewings__home__banner__center__right__img' alt='EWings' src={`${endpoint}/ewings-carousel-about.png`} />
+                                            <img className='ewings__home__banner__center__left__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-about-typography.png`} />
+                                            <img className='ewings__home__banner__center__right__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-about.png`} />
 
                                         </div>
                                         <div className='ewings__home__banner__center__bottom'>
@@ -102,8 +102,8 @@ export default class Homepage extends Component {
                                     <div className='ewings__home__banner__padding' />
                                     <div className='ewings__home__banner__center__mob'>
                                         <div className='ewings__home__banner__center__top'>
-                                            <img className='ewings__home__banner__center__left__img' alt='EWings' src={`${endpoint}/ewings-carousel-promise-typography.png`} />
-                                            <img className='ewings__home__banner__center__right__img' alt='EWings' src={`${endpoint}/ewings-carousel-promise.png`} />
+                                            <img className='ewings__home__banner__center__left__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-promise-typography.png`} />
+                                            <img className='ewings__home__banner__center__right__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-promise.png`} />
 
                                         </div>
                                         <div className='ewings__home__banner__center__bottom'>
@@ -130,8 +130,8 @@ export default class Homepage extends Component {
                                     <div className='ewings__home__banner__padding' />
                                     <div className='ewings__home__banner__center__mob'>
                                         <div className='ewings__home__banner__center__top'>
-                                            <img className='ewings__home__banner__center__left__img' alt='EWings' src={`${endpoint}/ewings-carousel-values-typography.png`} />
-                                            <img className='ewings__home__banner__center__right__img' alt='EWings' src={`${endpoint}/ewings-carousel-values.png`} />
+                                            <img className='ewings__home__banner__center__left__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-values-typography.png`} />
+                                            <img className='ewings__home__banner__center__right__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-values.png`} />
 
                                         </div>
                                         <div className='ewings__home__banner__center__bottom'>
@@ -153,8 +153,8 @@ export default class Homepage extends Component {
                                     <div className='ewings__home__banner__padding' />
                                     <div className='ewings__home__banner__center__mob'>
                                         <div className='ewings__home__banner__center__top'>
-                                            <img className='ewings__home__banner__center__left__img' alt='EWings' src={`${endpoint}/ewings-carousel-vision-typography.png`} />
-                                            <img className='ewings__home__banner__center__right__img' alt='EWings' src={`${endpoint}/ewings-carousel-vision.png`} />
+                                            <img className='ewings__home__banner__center__left__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-vision-typography.png`} />
+                                            <img className='ewings__home__banner__center__right__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-vision.png`} />
 
                                         </div>
                                         <div className='ewings__home__banner__center__bottom'>
@@ -187,7 +187,7 @@ export default class Homepage extends Component {
                                 <div className='ewings__home__banner__carousel--item'>
                                     <div className='ewings__home__banner__padding' />
                                     <div className='ewings__home__banner__left'>
-                                        <img className='ewings__home__banner__left__img' alt='EWings' src={`${endpoint}/ewings-carousel-about-typography.png`} />
+                                        <img className='ewings__home__banner__left__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-about-typography.png`} />
                                         <div className='ewings__home__banner__left__text'>
                                             <p className='ewings__home__banner__heading ewings__home__banner__heading--text'>
                                                 EWINGS
@@ -198,7 +198,7 @@ export default class Homepage extends Component {
                                         </div>
                                     </div>
                                     <div className='ewings__home__banner__right'>
-                                        <img className='ewings__home__banner__right__img' alt='EWings' src={`${endpoint}/ewings-carousel-about.png`} />
+                                        <img className='ewings__home__banner__right__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-about.png`} />
                                     </div>
                                     <div className='ewings__home__banner__padding' />
                                 </div>
@@ -207,7 +207,7 @@ export default class Homepage extends Component {
                                 <div className='ewings__home__banner__carousel--item'>
                                     <div className='ewings__home__banner__padding' />
                                     <div className='ewings__home__banner__left'>
-                                        <img className='ewings__home__banner__left__img' alt='EWings' src={`${endpoint}/ewings-carousel-promise-typography.png`} />
+                                        <img className='ewings__home__banner__left__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-promise-typography.png`} />
                                         <div className='ewings__home__banner__left__text'>
                                             <p className='ewings__home__banner__heading ewings__home__banner__heading--text'>
                                                 <span className='ewings__home__banner__body ewings__home__banner__body--text'>
@@ -223,7 +223,7 @@ export default class Homepage extends Component {
                                         </div>
                                     </div>
                                     <div className='ewings__home__banner__right'>
-                                        <img className='ewings__home__banner__right__img' alt='EWings' src={`${endpoint}/ewings-carousel-promise.png`} />
+                                        <img className='ewings__home__banner__right__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-promise.png`} />
                                     </div>
                                     <div className='ewings__home__banner__padding' />
                                 </div>
@@ -232,7 +232,7 @@ export default class Homepage extends Component {
                                 <div className='ewings__home__banner__carousel--item'>
                                     <div className='ewings__home__banner__padding' />
                                     <div className='ewings__home__banner__left'>
-                                        <img className='ewings__home__banner__left__img' alt='EWings' src={`${endpoint}/ewings-carousel-values-typography.png`} />
+                                        <img className='ewings__home__banner__left__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-values-typography.png`} />
                                         <div className='ewings__home__banner__left__text'>
                                             <p className='ewings__home__banner__heading ewings__home__banner__heading--text'>
                                                 EWINGS
@@ -243,7 +243,7 @@ export default class Homepage extends Component {
                                         </div>
                                     </div>
                                     <div className='ewings__home__banner__right'>
-                                        <img className='ewings__home__banner__right__img' alt='EWings' src={`${endpoint}/ewings-carousel-values.png`} />
+                                        <img className='ewings__home__banner__right__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-values.png`} />
                                     </div>
                                     <div className='ewings__home__banner__padding' />
                                 </div>
@@ -252,7 +252,7 @@ export default class Homepage extends Component {
                                 <div className='ewings__home__banner__carousel--item'>
                                     <div className='ewings__home__banner__padding' />
                                     <div className='ewings__home__banner__left'>
-                                        <img className='ewings__home__banner__left__img' alt='EWings' src={`${endpoint}/ewings-carousel-vision-typography.png`} />
+                                        <img className='ewings__home__banner__left__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-vision-typography.png`} />
                                         <div className='ewings__home__banner__left__text'>
                                             <p className='ewings__home__banner__heading ewings__home__banner__heading--text'>
                                                 <span className='ewings__home__banner__body ewings__home__banner__body--text'>
@@ -269,7 +269,7 @@ export default class Homepage extends Component {
                                         </div>
                                     </div>
                                     <div className='ewings__home__banner__right'>
-                                        <img className='ewings__home__banner__right__img' alt='EWings' src={`${endpoint}/ewings-carousel-vision.png`} />
+                                        <img className='ewings__home__banner__right__img' alt='EWings' src={`${endpoint}/images/ewings-carousel-vision.png`} />
                                     </div>
                                     <div className='ewings__home__banner__padding' />
                                 </div>
@@ -639,7 +639,7 @@ export default class Homepage extends Component {
                     {this.state.clients.map((client, index) => (
                         <div key={index} className='ewingshome__client'>
                             <Button variant='link' href='/partners'>
-                                <img alt='placeholder' className='ewingshome__client__img' src={`${endpoint}/${client.logo}`} height='120px' />
+                                <img alt='placeholder' className='ewingshome__client__img' src={`${endpoint}/images/${client.logo}`} height='120px' />
                             </Button>
                         </div>
                     ))}

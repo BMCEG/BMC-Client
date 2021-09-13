@@ -42,14 +42,14 @@ export default class Blogs extends Component {
                 <br></br>
                 <br></br>
                 <div className='strategic-planning__banner'>
-                    <img className='strategic-planning__banner-img' src={`${endpoint}/blogs-H.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__banner-img' src={`${endpoint}/images/blogs-H.png`} alt='Marketing Mgmt' />
                 </div>
                 <br></br>
                 <br></br>
                 {this.state.blogs.map((blog) => (
                     <>
                         <div className='blogs__row'>
-                            <img className='blogs__row__img' src={`${endpoint}/${blog.image}`} alt='service' />
+                            <img className='blogs__row__img' src={`${endpoint}/images/${blog.image}`} alt='service' />
                             <div className='blogs__row__details'>
                                 <Typography className='bmchome__service__row__details--header blogs__row__details__header--size'>
                                     {blog.title}

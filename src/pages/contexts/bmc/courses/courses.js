@@ -35,10 +35,10 @@ export default class CoursesList extends Component {
                         <div className='course-list-row'>
                             <Grid container>
                                 <Grid item xs={6} className='course-list-left'>
-                                    <img className='course-list-img' src={`${endpoint}/${course.images[0].src}`} />
+                                    <img className='course-list-img' src={`${endpoint}/images/${course.images[0].src}`} />
                                 </Grid>
                                 <Grid item xs={6} className='course-list-right'>
-                                <img className='course-list-img' src={`${endpoint}/${course.images[0].src}`} />
+                                <img className='course-list-img' src={`${endpoint}/images/${course.images[0].src}`} />
 
                                 </Grid>
                             </Grid>

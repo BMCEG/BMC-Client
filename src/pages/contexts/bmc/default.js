@@ -100,7 +100,7 @@ class DefaultPage extends Component {
                             <img
                                 className="banner-photo"
                                 alt="howItWorks"
-                                src={`${endpoint}/logo.png`}
+                                src={`${endpoint}/images/logo.png`}
                             />
                         </div>
                     </div>
@@ -113,7 +113,7 @@ class DefaultPage extends Component {
                                 <Grid container>
                                     <Grid item xs={3}>
                                         <div className='home-service-icon-base'>
-                                            <img className='home-service-icon' alt='placeholder' src={`${endpoint}/service-strategic-planning-black.png`} />
+                                            <img className='home-service-icon' alt='placeholder' src={`${endpoint}/images/service-strategic-planning-black.png`} />
                                         </div>
                                     </Grid>
                                     <Grid item xs={9} className='home-service-right'>
@@ -133,7 +133,7 @@ class DefaultPage extends Component {
                                 <Grid container>
                                     <Grid item xs={3}>
                                         <div className='home-service-icon-base'>
-                                            <img className='home-service-icon' alt='placeholder' src={`${endpoint}/service-hr-black.png`} />
+                                            <img className='home-service-icon' alt='placeholder' src={`${endpoint}/images/service-hr-black.png`} />
                                         </div>
                                     </Grid>
                                     <Grid item xs={9} className='home-service-right'>
@@ -156,7 +156,7 @@ class DefaultPage extends Component {
                                 <Grid container>
                                     <Grid item xs={3}>
                                         <div className='home-service-icon-base'>
-                                            <img className='home-service-icon' alt='placeholder' src={`${endpoint}/service-toolbox-black.png`} />
+                                            <img className='home-service-icon' alt='placeholder' src={`${endpoint}/images/service-toolbox-black.png`} />
                                         </div>
                                     </Grid>
                                     <Grid item xs={9} className='home-service-right'>
@@ -182,7 +182,7 @@ class DefaultPage extends Component {
                                 <Grid container>
                                     <Grid item xs={3}>
                                         <div className='home-service-icon-base'>
-                                            <img alt='placeholder' className='home-service-icon' src={`${endpoint}/service-marketing-mgmt-black.png`} />
+                                            <img alt='placeholder' className='home-service-icon' src={`${endpoint}/images/service-marketing-mgmt-black.png`} />
                                         </div>
                                     </Grid>
                                     <Grid item xs={9} className='home-service-right'>
@@ -205,7 +205,7 @@ class DefaultPage extends Component {
                                 <Grid container>
                                     <Grid item xs={3}>
                                         <div className='home-service-icon-base'>
-                                            <img alt='placeholder' className='home-service-icon' src={`${endpoint}/service-financial-black.png`} />
+                                            <img alt='placeholder' className='home-service-icon' src={`${endpoint}/images/service-financial-black.png`} />
                                         </div>
                                     </Grid>
                                     <Grid item xs={9} className='home-service-right'>
@@ -243,7 +243,7 @@ class DefaultPage extends Component {
                     {this.state.partners.map((partner) => (
                         <div className='home-partner'>
                             <Button variant='link' href='/partners'>
-                                <img alt='placeholder' className='home-partner-img' src={`${endpoint}/${partner.logo}`} height='120px' />
+                                <img alt='placeholder' className='home-partner-img' src={`${endpoint}/images/${partner.logo}`} height='120px' />
                             </Button>
                         </div>
                     ))}

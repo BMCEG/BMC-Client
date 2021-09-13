@@ -142,7 +142,7 @@ export default class Course extends Component {
                                             ))}
                                         </>
                                     </div>
-                                    <img className='trainer-info-img' src={`${endpoint}/${this.state.trainer.photoUrl}`} alt='avatar' />
+                                    <img className='trainer-info-img' src={`${endpoint}/images/${this.state.trainer.photoUrl}`} alt='avatar' />
                                     {/* <h4>URL Name: {this.state.course.title}</h4>
                                     <br></br>
                                     <h4>Course Fees: {this.state.course.fees} EGP</h4> */}

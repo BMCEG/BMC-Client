@@ -15,7 +15,7 @@ export default class NavbarMob extends Component {
             <Navbar className="ewingsnav__root" fixed="top">
                 <div className='bmcnav__left--mob'>
                     <Button variant='link' className='bmcnav__btn__logo bmcnav__btn--size' href='/'>
-                        <img alt='nav'src={`${endpoint}/ewings-full-logo.png`} className='bmcnav__logo--mob' />
+                        <img alt='nav'src={`${endpoint}/images/ewings-full-logo.png`} className='bmcnav__logo--mob' />
                     </Button>
                 </div>
 

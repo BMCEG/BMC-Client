@@ -70,7 +70,7 @@ export default class Consultations extends Component {
                 <br></br>
                 <br></br>
                 <div className='strategic-planning__banner'>
-                    <img className='strategic-planning__banner-img' src={`${endpoint}/consultations.h.png`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__banner-img' src={`${endpoint}/images/consultations.h.png`} alt='Marketing Mgmt' />
                 </div>
                 <br></br>
                 <br></br>

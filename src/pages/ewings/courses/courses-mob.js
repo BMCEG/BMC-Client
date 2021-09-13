@@ -37,7 +37,7 @@ export default class CoursesList extends Component {
                         <div className='ewings-course-list-row-mob'>
                             <Grid container>
                                 <Grid item xs={5} className='course-list-left'>
-                                    <img className='ewings-course-list-img-mob' alt={`${course.title}`} src={`${endpoint}/${course.images[0].src}`} />
+                                    <img className='ewings-course-list-img-mob' alt={`${course.title}`} src={`${endpoint}/images/${course.images[0].src}`} />
                                 </Grid>
                                 <Grid item xs={7} className='course-list-right-mob'>
                                     <p className='bukra-bold course-title-size-mob' style={{ color: 'white' }}>

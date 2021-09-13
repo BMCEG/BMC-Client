@@ -43,7 +43,7 @@ export default class Blog extends Component {
                 <br></br>
                 <br></br>
                 <div className='strategic-planning__banner'>
-                    <img className='strategic-planning__banner-img' src={`${endpoint}/${this.state.blog.image}`} alt='Marketing Mgmt' />
+                    <img className='strategic-planning__banner-img' src={`${endpoint}/images/${this.state.blog.image}`} alt='Marketing Mgmt' />
                 </div>
                 <br></br>
                 <br></br>

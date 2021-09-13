@@ -11,7 +11,7 @@ export default class Footer extends Component {
                 <div className="footer-margin">
                     <Grid container>
                         <Grid item xs={3} className='footer-logo-base'>
-                            <img className='footer-logo' src={`${endpoint}/logo.png`} alt='logo' />
+                            <img className='footer-logo' src={`${endpoint}/images/logo.png`} alt='logo' />
                         </Grid>
                         <Grid item xs={1}></Grid>
                         <Grid item xs={1}></Grid>

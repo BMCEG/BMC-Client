@@ -26,7 +26,7 @@ export default class Service extends Component {
             <div className='service-page-root' style={{ backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover' }}>
                 <div className='service-page-left'>
                     <div className='service-page-title-details'>
-                        <img src={`${endpoint}/${this.props.logo}`} alt='logo' className='service-details-icon' />
+                        <img src={`${endpoint}/images/${this.props.logo}`} alt='logo' className='service-details-icon' />
                         <div className='service-details-name'>
                             <Typography variant='h3' component='h3' className='bukra-bold'>
                                 {this.props.title}
@@ -46,7 +46,7 @@ export default class Service extends Component {
                 </div>
                 <div className='service-page-right'>
                     <div className='service-page-img-base'>
-                        <img src={`${endpoint}/${this.props.sideImage}`} alt='Img' className='service-page-img' />
+                        <img src={`${endpoint}/images/${this.props.sideImage}`} alt='Img' className='service-page-img' />
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ export default function strategicPlan() {
             <div className='strategic-planning-text'>
                 <div className='strategic-planning-details'>
 
-                    <img src={`${endpoint}/service-strategic-planning.png`} alt='logo' className='strategic-planning-icon' />
+                    <img src={`${endpoint}/images/service-strategic-planning.png`} alt='logo' className='strategic-planning-icon' />
                     <div className="strategic-planning-text-box">
                         <h1>STRATEGIC PLANNING</h1>
                     </div>
@@ -77,7 +77,7 @@ export default function strategicPlan() {
                 </div>
             </div>
             <div className='strategic-planning-img-base'>
-                <img className='strategic-planning-img' src={`${endpoint}/landing-strategic-planning.jpg`} alt='Founder Message' />
+                <img className='strategic-planning-img' src={`${endpoint}/images/landing-strategic-planning.jpg`} alt='Founder Message' />
             </div>
         </div>
     )

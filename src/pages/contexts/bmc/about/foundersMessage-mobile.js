@@ -6,7 +6,7 @@ export default function foundersMessage() {
     return (
         <div className="founder-root-mobile" style={{backgroundImage: `url(${endpoint}/bg-founder.png)`, backgroundSize: 'cover'}}>
             <div className='founder-img-base-mobile'>
-                <img className='founder-img' src={`${endpoint}/landing-founder.png`} alt='Founder Message' />
+                <img className='founder-img' src={`${endpoint}/images/landing-founder.png`} alt='Founder Message' />
             </div>
             <div className='founder-text-mobile'>
                 <div className="founder-text-box">
@@ -38,7 +38,7 @@ export default function foundersMessage() {
                     </Typography>
                     <br></br>
                     <br></br>
-                    <img className='founder-sig-mob' src={`${endpoint}/signature.png`} alt='sig' />
+                    <img className='founder-sig-mob' src={`${endpoint}/images/signature.png`} alt='sig' />
                     <Typography align='justify' variant='h6' component='h6' className='bukra-regular'>
                         Mohamed Nasr,
                     </Typography>

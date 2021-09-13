@@ -8,7 +8,7 @@ export default class SocialMediaMGMT extends Component {
         return (
             <div className='ewings__digitalM__root'>
                 <div className='ewings__digitalM__banner'>
-                    <img className='ewings__social__banner__img' src={`${endpoint}/SocialMedia-H.png`} alt='banner' />
+                    <img className='ewings__social__banner__img' src={`${endpoint}/images/SocialMedia-H.png`} alt='banner' />
                     <div className='ewings__banner__title' style={{
                         backgroundImage: `url(${endpoint}/ewings-header.png  )`,
                         backgroundSize: 'cover',
@@ -51,7 +51,7 @@ export default class SocialMediaMGMT extends Component {
                     <br></br>
                         <div className='ewings__socialMediaMGMT__sites__row'>
                             <div className='ewings__socialMediaMGMT__sites__row__img__base'>
-                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/Facebook 350X350.png`} alt='Facebook' />
+                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/images/Facebook 350X350.png`} alt='Facebook' />
                             </div>
                             <div className='ewings__socialMediaMGMT__sites__row__text'>
                                 <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>
@@ -74,7 +74,7 @@ export default class SocialMediaMGMT extends Component {
                         <br></br>
                         <div className='ewings__socialMediaMGMT__sites__row'>
                             <div className='ewings__socialMediaMGMT__sites__row__img__base'>
-                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/Twitter 350X350.png`} alt='Facebook' />
+                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/images/Twitter 350X350.png`} alt='Facebook' />
                             </div>
                             <div className='ewings__socialMediaMGMT__sites__row__text'>
                                 <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>
@@ -96,7 +96,7 @@ export default class SocialMediaMGMT extends Component {
                         <br></br>
                         <div className='ewings__socialMediaMGMT__sites__row'>
                             <div className='ewings__socialMediaMGMT__sites__row__img__base'>
-                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/YouTube 350X350.png`} alt='Facebook' />
+                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/images/YouTube 350X350.png`} alt='Facebook' />
                             </div>
                             <div className='ewings__socialMediaMGMT__sites__row__text'>
                                 <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>
@@ -117,7 +117,7 @@ export default class SocialMediaMGMT extends Component {
                         <br></br>
                         <div className='ewings__socialMediaMGMT__sites__row'>
                             <div className='ewings__socialMediaMGMT__sites__row__img__base'>
-                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/Instagram 350X350.png`} alt='Facebook' />
+                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/images/Instagram 350X350.png`} alt='Facebook' />
                             </div>
                             <div className='ewings__socialMediaMGMT__sites__row__text'>
                                 <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>
@@ -139,7 +139,7 @@ export default class SocialMediaMGMT extends Component {
                         <br></br>
                         <div className='ewings__socialMediaMGMT__sites__row'>
                             <div className='ewings__socialMediaMGMT__sites__row__img__base'>
-                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/whatsapp 350X350.png`} alt='Facebook' />
+                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/images/whatsapp 350X350.png`} alt='Facebook' />
                             </div>
                             <div className='ewings__socialMediaMGMT__sites__row__text'>
                                 <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>
@@ -161,7 +161,7 @@ export default class SocialMediaMGMT extends Component {
                     <MediaQuery maxWidth={900}>
                         <div className='ewings__socialMediaMGMT__sites__row--mob'>
                             <div className='ewings__socialMediaMGMT__sites__row__img__base'>
-                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/Facebook 350X350.png`} alt='Facebook' />
+                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/images/Facebook 350X350.png`} alt='Facebook' />
                             </div>
                             <div className='ewings__socialMediaMGMT__sites__row__text'>
                                 <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>
@@ -183,7 +183,7 @@ export default class SocialMediaMGMT extends Component {
                         <br></br>
                         <div className='ewings__socialMediaMGMT__sites__row--mob'>
                             <div className='ewings__socialMediaMGMT__sites__row__img__base'>
-                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/Twitter 350X350.png`} alt='Facebook' />
+                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/images/Twitter 350X350.png`} alt='Facebook' />
                             </div>
                             <div className='ewings__socialMediaMGMT__sites__row__text'>
                                 <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>
@@ -204,7 +204,7 @@ export default class SocialMediaMGMT extends Component {
                         <br></br>
                         <div className='ewings__socialMediaMGMT__sites__row--mob'>
                             <div className='ewings__socialMediaMGMT__sites__row__img__base'>
-                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/YouTube 350X350.png`} alt='Facebook' />
+                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/images/YouTube 350X350.png`} alt='Facebook' />
                             </div>
                             <div className='ewings__socialMediaMGMT__sites__row__text'>
                                 <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>
@@ -224,7 +224,7 @@ export default class SocialMediaMGMT extends Component {
                         <br></br>
                         <div className='ewings__socialMediaMGMT__sites__row--mob'>
                             <div className='ewings__socialMediaMGMT__sites__row__img__base'>
-                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/Instagram 350X350.png`} alt='Facebook' />
+                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/images/Instagram 350X350.png`} alt='Facebook' />
                             </div>
                             <div className='ewings__socialMediaMGMT__sites__row__text'>
                                 <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>
@@ -245,7 +245,7 @@ export default class SocialMediaMGMT extends Component {
                         <br></br>
                         <div className='ewings__socialMediaMGMT__sites__row--mob'>
                             <div className='ewings__socialMediaMGMT__sites__row__img__base'>
-                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/whatsapp 350X350.png`} alt='Facebook' />
+                                <img className='ewings__socialMediaMGMT__sites__row__img' src={`${endpoint}/images/whatsapp 350X350.png`} alt='Facebook' />
                             </div>
                             <div className='ewings__socialMediaMGMT__sites__row__text'>
                                 <Typography className='ewings__digitalM__subtitle ewings__home__title--font'>

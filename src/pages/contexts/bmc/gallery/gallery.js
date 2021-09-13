@@ -109,7 +109,7 @@ export default class gallery extends Component {
                                             playing="true"
                                         />
                                         :
-                                        <img className='gallery-picture' alt='placeholder' src={`${endpoint}/${picture.src}`} />
+                                        <img className='gallery-picture' alt='placeholder' src={`${endpoint}/images/${picture.src}`} />
                                     }
                                 </Button>
                             ))

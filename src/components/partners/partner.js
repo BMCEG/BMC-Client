@@ -20,7 +20,7 @@ export default class PartnerCard extends Component {
         return (
             <>
                 <Paper className='partner-paper'>
-                    <img src={`${endpoint}/${this.props.partner.logo}`} alt='partner' className='partner-img' />
+                    <img src={`${endpoint}/images/${this.props.partner.logo}`} alt='partner' className='partner-img' />
                 </Paper>
                 <br></br>
             </>

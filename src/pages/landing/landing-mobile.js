@@ -87,7 +87,7 @@ export default class Landing extends Component {
                             <h1 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Training Description</h1>
                             <br></br>
                             <div className='landing-mob-grid-img-base'>
-                                <img className='landing-grid-img' src={`${endpoint}/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
+                                <img className='landing-grid-img' src={`${endpoint}/images/${this.state.imageDescriptionSrc}`} alt="Trainer Avatar"></img>
                             </div>
                             <br></br>
                             <h3 className='bukra-regular'>{this.state.courseDetails.description}</h3>
@@ -103,7 +103,7 @@ export default class Landing extends Component {
                             <h1 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Training Outline</h1>
                             <br></br>
                             <div className='landing-mob-grid-img-base'>
-                                <img className='landing-grid-img' src={`${endpoint}/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
+                                <img className='landing-grid-img' src={`${endpoint}/images/${this.state.imageOutlineSrc}`} alt="Trainer Avatar"></img>
                             </div>
                             <br></br>
                             <h3 className='bukra-regular'>{this.state.courseDetails.outline}</h3>
@@ -119,7 +119,7 @@ export default class Landing extends Component {
                             <h1 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Training Methodology</h1>
                             <br></br>
                             <div className='landing-mob-grid-img-base'>
-                                <img className='landing-grid-img' src={`${endpoint}/${this.state.imageMethodologySrc}`} alt="Trainer Avatar"></img>
+                                <img className='landing-grid-img' src={`${endpoint}/images/${this.state.imageMethodologySrc}`} alt="Trainer Avatar"></img>
                             </div>
                             <br></br>
                             <h3 className='bukra-regular'>{this.state.courseDetails.methedology}</h3>
@@ -135,7 +135,7 @@ export default class Landing extends Component {
                             <h1 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Meet the Trainer</h1>
                             <br></br>
                             <div className='landing-mob-trainer-img-base '>
-                                <img src={`${endpoint}/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
+                                <img src={`${endpoint}/images/${this.state.courseTrainer.photoUrl}`} alt="Trainer Avatar" className="course-trainer-avatar"></img>
                             </div>
                             <br></br>
                             <h1 style={{textAlign: 'center'}} className='bukra-bold'>{this.state.courseTrainer.firstName} {this.state.courseTrainer.lastName}</h1>
@@ -160,7 +160,7 @@ export default class Landing extends Component {
                             <h1 className='bukra-bold' style={{ textShadow: '2px 2px lightgrey' }}>Duration and Fees</h1>
                             <br></br>
                             <div className='landing-mob-grid-img-base'>
-                                <img src={`${endpoint}/${this.state.imageScheduleSrc}`} alt="Trainer Avatar" className="landing-grid-img"></img>
+                                <img src={`${endpoint}/images/${this.state.imageScheduleSrc}`} alt="Trainer Avatar" className="landing-grid-img"></img>
                             </div>
                             <br></br>
 
