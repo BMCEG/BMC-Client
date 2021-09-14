@@ -18,7 +18,8 @@
 }
 
 .bmcnav__logo--ewings {
-  max-height: 8vh;
+  max-height: 7vh;
+  /* box-shadow: 1px 1px 1px red !important; */
 }
 .bmcnav__logo--mob {
   /* max-height: 5.5vh; */
@@ -40,17 +41,25 @@
   height: 60%;
   background-color: black !important;
 }
+@media screen and (max-width: 1250px) {
+  .bmcnav__divider {
+    margin-left: 22px !important;
+    margin-right: 22px !important;
+    width: 1px !important;
+    /* height: 60%; */
+    /* background-color: black !important; */
+  }
+}
 .bmcnav__left--mob {
   display: flex;
   /* background-color: chartreuse; */
   width: 65%;
   height: 100% !important;
-  
 }
 .bmcnav__btn {
   /* background-color: crimson !important; */
   /* text-align: left !important; */
-  min-width: 144px !important;
+  /* min-width: 144px !important; */
   /* width: 100%; */
   /* height: 100%; */
 
@@ -92,7 +101,7 @@
   animation: fadeIn 0.5s;
 }
 
-.dropdown__fadeOut{
+.dropdown__fadeOut {
   -webkit-animation: fadeOut 0.5s;
   animation: fadeOut 0.5s;
 }
@@ -146,7 +155,7 @@
     opacity: 0;
     z-index: -5500 !important;
   }
-  50%{
+  50% {
     /* transform: translateX(-50%); */
     opacity: 0;
   }
@@ -183,7 +192,7 @@
     url(../../../fonts/bukra-regular.OTF) format("truetype");
 }
 
-.nav__dropdown{
+.nav__dropdown {
   max-height: 60vh !important;
   overflow-y: scroll;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./storyBalls.css";
-import endpoint from '../helpers/api_service.js';
+import endpoint from '../../../helpers/api_service.js';
 
 export default class storyBalls extends Component {
     constructor(props) {
@@ -12,15 +12,15 @@ export default class storyBalls extends Component {
         this.state = {
             ball1Y: 0,
             ball1text: "none",
-            ball2Y: 0,
+            ball2Y: 10,
             ball2text: "none",
             ball3Y: 0,
             ball3text: "none",
-            ball4Y: 0,
+            ball4Y: 10,
             ball4text: "none",
             ball5Y: 0,
             ball5text: "none",
-            ball6Y: 0,
+            ball6Y: 10,
             ball6text: "none",
             ballHoverFlag: false,
             ballHovered: ''
@@ -31,7 +31,7 @@ export default class storyBalls extends Component {
         switch (ball) {
             case "ball1":
                 this.setState({
-                    ball1Y: -75,
+                    ball1Y: -120,
                     ball1text: "block",
                     ballHoverFlag: true,
                     ballHovered: '1'
@@ -39,7 +39,7 @@ export default class storyBalls extends Component {
                 break;
             case "ball2":
                 this.setState({
-                    ball2Y: 75,
+                    ball2Y: 145,
                     ball2text: "block",
                     ballHoverFlag: true,
                     ballHovered: '2'
@@ -47,7 +47,7 @@ export default class storyBalls extends Component {
                 break;
             case "ball3":
                 this.setState({
-                    ball3Y: -58,
+                    ball3Y: -88,
                     ball3text: "block",
                     ballHoverFlag: true,
                     ballHovered: '3'
@@ -55,7 +55,7 @@ export default class storyBalls extends Component {
                 break;
             case "ball4":
                 this.setState({
-                    ball4Y: 85,
+                    ball4Y: 120,
                     ball4text: "block",
                     ballHoverFlag: true,
                     ballHovered: '4'
@@ -63,7 +63,7 @@ export default class storyBalls extends Component {
                 break;
             case "ball5":
                 this.setState({
-                    ball5Y: -50,
+                    ball5Y: -90,
                     ball5text: "block",
                     ballHoverFlag: true,
                     ballHovered: '5'
@@ -71,7 +71,7 @@ export default class storyBalls extends Component {
                 break;
             case "ball6":
                 this.setState({
-                    ball6Y: 70,
+                    ball6Y: 135,
                     ball6text: "block",
                     ballHoverFlag: true,
                     ballHovered: '6'
@@ -94,7 +94,7 @@ export default class storyBalls extends Component {
                 break;
             case "ball2":
                 this.setState({
-                    ball2Y: 0,
+                    ball2Y: 10,
                     ball2text: "none",
                     ballHoverFlag: false,
                     ballHovered: ''
@@ -110,7 +110,7 @@ export default class storyBalls extends Component {
                 break;
             case "ball4":
                 this.setState({
-                    ball4Y: 0,
+                    ball4Y: 10,
                     ball4text: "none",
                     ballHoverFlag: false,
                     ballHovered: ''
@@ -126,7 +126,7 @@ export default class storyBalls extends Component {
                 break;
             case "ball6":
                 this.setState({
-                    ball6Y: 0,
+                    ball6Y: 10,
                     ball6text: "none",
                     ballHoverFlag: false,
                     ballHovered: ''
@@ -147,20 +147,24 @@ export default class storyBalls extends Component {
                                 style={{
                                     transform: `translate(0px, ${this.state.ball1Y}px)`,
                                 }}>
-                                <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
+                                <div style={{
+                                    textAlign: "left", paddingLeft: "1%", paddingTop: '12%',
+                                    transform: `translate(45px, 0px)`
+                                }}>
                                     2014
-                                </h2>
+                                </div>
                                 <div
                                     style={{
                                         display: `${this.state.ball1text}`,
+
                                     }}>
                                     <div className="story-node-text">
-                                        <h3>
-                                            Since inception, we have advised, planned and managed
-                                            investments valued over 6.5 billion EGP specializing in
-                                            real-estate development and construction and trading
-                                            industries
-                                        </h3>
+
+                                        Since inception, we have advised, planned and managed
+                                        investments valued over 6.5 billion EGP specializing in
+                                        real-estate development and construction and trading
+                                        industries
+
                                     </div>
                                 </div>
                             </div>
@@ -170,20 +174,26 @@ export default class storyBalls extends Component {
                                 style={{
                                     transform: `translate(0px, ${this.state.ball1Y}px)`,
                                 }}>
-                                <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
+                                <div style={{
+                                    textAlign: "left", paddingLeft: "1%", paddingTop: '12%',
+                                    transform: `translate(45px, 0px)`
+
+                                }}>
                                     2014
-                                </h2>
+                                </div>
                                 <div
                                     style={{
                                         display: `${this.state.ball1text}`,
+                                        transform: `translate(-2%, 5px)`
+
                                     }}>
                                     <div className="story-node-text">
-                                        <h3>
-                                            Since inception, we have advised, planned and managed
-                                            investments valued over 6.5 billion EGP specializing in
-                                            real-estate development and construction and trading
-                                            industries
-                                        </h3>
+
+                                        Since inception, we have advised, planned and managed
+                                        investments valued over 6.5 billion EGP specializing in
+                                        real-estate development and construction and trading
+                                        industries
+
                                     </div>
                                 </div>
                             </div>
@@ -199,20 +209,23 @@ export default class storyBalls extends Component {
                                 style={{
                                     transform: `translate(0px, ${this.state.ball3Y}px)`,
                                 }}>
-                                <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
+                                <div style={{
+                                    textAlign: "left", paddingLeft: "1%", paddingTop: '12%',
+                                    transform: `translate(4%, 0px)`
+                                }}>
                                     2016-2017
-                                </h2>
+                                </div>
                                 <div
                                     style={{
                                         display: `${this.state.ball3text}`,
                                         // transform: `translate(0px, ${this.state.ball1Y}px)`
                                     }}>
                                     <div className="story-node-text">
-                                        <h3>
-                                            Widen our scope of services to include Financial advisory,
-                                            serving new sectors like import & export, supporting
-                                            startups and entrepreneurs.
-                                        </h3>
+
+                                        Widen our scope of services to include Financial advisory,
+                                        serving new sectors like import & export, supporting
+                                        startups and entrepreneurs.
+
                                     </div>
                                 </div>
                             </div>
@@ -222,20 +235,25 @@ export default class storyBalls extends Component {
                                 style={{
                                     transform: `translate(0px, ${this.state.ball3Y}px)`,
                                 }}>
-                                <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
+                                <div style={{
+                                    textAlign: "left", paddingLeft: "1%", paddingTop: '12%',
+                                    transform: `translate(4%, 0px)`
+                                }}>
                                     2016-2017
-                                </h2>
+                                </div>
                                 <div
                                     style={{
                                         display: `${this.state.ball3text}`,
                                         // transform: `translate(0px, ${this.state.ball1Y}px)`
+                                        transform: `translate(-4%, 0px)`
+
                                     }}>
                                     <div className="story-node-text">
-                                        <h3>
-                                            Widen our scope of services to include Financial advisory,
-                                            serving new sectors like import & export, supporting
-                                            startups and entrepreneurs.
-                                        </h3>
+
+                                        Widen our scope of services to include Financial advisory,
+                                        serving new sectors like import & export, supporting
+                                        startups and entrepreneurs.
+
                                     </div>
                                 </div>
                             </div>
@@ -251,20 +269,23 @@ export default class storyBalls extends Component {
                                 style={{
                                     transform: `translate(0px, ${this.state.ball5Y}px)`,
                                 }}>
-                                <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
+                                <div style={{
+                                    textAlign: "left", paddingLeft: "1%", paddingTop: '12%',
+                                    transform: `translate(20px, 0px)`
+                                }}>
                                     2020
-                                </h2>
+                                </div>
                                 <div
                                     style={{
                                         display: `${this.state.ball5text}`,
                                         // transform: `translate(0px, ${this.state.ball1Y}px)`
                                     }}>
                                     <div className="story-node-text">
-                                        <h3>
-                                            Dealing with COVID 19 Pandemic with all our business clients
-                                            to pass this critical period with tailored crisis management
-                                            solutions for each sector and industry.
-                                        </h3>
+
+                                        Dealing with COVID 19 Pandemic with all our business clients
+                                        to pass this critical period with tailored crisis management
+                                        solutions for each sector and industry.
+
                                     </div>
                                 </div>
                             </div>
@@ -274,20 +295,24 @@ export default class storyBalls extends Component {
                                 style={{
                                     transform: `translate(0px, ${this.state.ball5Y}px)`,
                                 }}>
-                                <h2 style={{ textAlign: "left", paddingLeft: "1%", paddingTop: '12%' }}>
+                                <div style={{
+                                    textAlign: "left", paddingLeft: "1%", paddingTop: '12%',
+                                    transform: `translate(20px, 0px)`
+                                }}>
                                     2020
-                                </h2>
+                                </div>
                                 <div
                                     style={{
                                         display: `${this.state.ball5text}`,
+                                        transform: `translate(-30px, 0px)`
                                         // transform: `translate(0px, ${this.state.ball1Y}px)`
                                     }}>
                                     <div className="story-node-text">
-                                        <h3>
-                                            Dealing with COVID 19 Pandemic with all our business clients
-                                            to pass this critical period with tailored crisis management
-                                            solutions for each sector and industry.
-                                        </h3>
+
+                                        Dealing with COVID 19 Pandemic with all our business clients
+                                        to pass this critical period with tailored crisis management
+                                        solutions for each sector and industry.
+
                                     </div>
                                 </div>
                             </div>
@@ -368,46 +393,46 @@ export default class storyBalls extends Component {
                     <div className="story-node">
                         {this.state.ballHoverFlag && this.state.ballHovered !== '2' ?
                             <div className="story-node-year bukra-bold fadeOut">
-                                <h2
+                                <div
                                     className="story-node-year-bottom"
                                     style={{
                                         textAlign: "left",
                                         paddingLeft: "1%",
-                                        transform: `translate(0px, ${this.state.ball2Y}px)`, paddingTop: '3%'
+                                        transform: `translate(80px, ${this.state.ball2Y}px)`, paddingTop: '3%'
                                     }}>2015
-                                </h2>
+                                </div>
                                 <div
                                     style={{
                                         display: `${this.state.ball2text}`,
                                     }}>
                                     <div className="story-node-text-ball2">
-                                        <h3>
-                                            More industries included in the manufacturing and
-                                            agricultural sector ordering feasibility studies and setup for
-                                            factories in cosmeceuticals, detergents, food, and packing
-                                        </h3>
+
+                                        More industries included in the manufacturing and
+                                        agricultural sector ordering feasibility studies and setup for
+                                        factories in cosmeceuticals, detergents, food, and packing
+
                                     </div>
                                 </div>
                             </div>
                             : <div className="story-node-year bukra-bold fadeIn">
-                                <h2
+                                <div
                                     className="story-node-year-bottom"
                                     style={{
                                         textAlign: "left",
                                         paddingLeft: "1%",
-                                        transform: `translate(0px, ${this.state.ball2Y}px)`, paddingTop: '3%'
+                                        transform: `translate(80px, ${this.state.ball2Y}px)`, paddingTop: '3%'
                                     }}>2015
-                                </h2>
+                                </div>
                                 <div
                                     style={{
                                         display: `${this.state.ball2text}`,
                                     }}>
                                     <div className="story-node-text-ball2">
-                                        <h3>
-                                            More industries included in the manufacturing and
-                                            agricultural sector ordering feasibility studies and setup for
-                                            factories in cosmeceuticals, detergents, food, and packing
-                                        </h3>
+
+                                        More industries included in the manufacturing and
+                                        agricultural sector ordering feasibility studies and setup for
+                                        factories in cosmeceuticals, detergents, food, and packing
+
                                     </div>
                                 </div>
                             </div>
@@ -419,38 +444,38 @@ export default class storyBalls extends Component {
                     <div className="story-node">
                         <div className="story-node-year bukra-bold">
                             {this.state.ballHoverFlag && this.state.ballHovered !== '4' ?
-                                <h2
+                                <div
                                     className="story-node-year-bottom fadeOut"
                                     style={{
                                         textAlign: "left",
                                         paddingLeft: "1%"
                                         , paddingTop: '3%',
-                                        transform: `translate(0px, ${this.state.ball4Y}px)`,
+                                        transform: `translate(45%, ${this.state.ball4Y}px)`,
                                     }}>
                                     2018-2019
-                                </h2>
+                                </div>
                                 :
-                                <h2
+                                <div
                                     className="story-node-year-bottom fadeIn"
                                     style={{
                                         textAlign: "left",
                                         paddingLeft: "1%"
                                         , paddingTop: '3%',
-                                        transform: `translate(0px, ${this.state.ball4Y}px)`,
+                                        transform: `translate(45%, ${this.state.ball4Y}px)`,
                                     }}>
                                     2018-2019
-                                </h2>
+                                </div>
                             }
                             <div
                                 style={{
                                     display: `${this.state.ball4text}`,
                                 }}>
                                 <div className="story-node-text-ball4">
-                                    <h3>
-                                        Digital transformation, introducing a new scope of digital
-                                        marketing services, hiring digital experts, and blend of
-                                        thinkers, creatives, and designers.
-                                    </h3>
+
+                                    Digital transformation, introducing a new scope of digital
+                                    marketing services, hiring digital experts, and blend of
+                                    thinkers, creatives, and designers.
+
                                 </div>
                             </div>
                         </div>
@@ -462,20 +487,20 @@ export default class storyBalls extends Component {
                         <div
                             className="story-node-year bukra-bold">
                             {this.state.ballHoverFlag && this.state.ballHovered !== '6' ?
-                                <h2
+                                <div
                                     className="story-node-year-bottom fadeOut"
                                     style={{
-                                        textAlign: "left", paddingLeft: "1%", transform: `translate(100px, ${this.state.ball6Y}px)`, paddingTop: '3%',
+                                        textAlign: "left", paddingLeft: "1%", transform: `translate(60px, ${this.state.ball6Y}px)`, paddingTop: '3%',
                                     }}>
                                     2021
-                                </h2>
+                                </div>
                                 :
-                                <h2
+                                <div
                                     className="story-node-year-bottom fadeIn"
                                     style={{
-                                        textAlign: "left", paddingLeft: "1%", transform: `translate(100px, ${this.state.ball6Y}px)`, paddingTop: '3%',
+                                        textAlign: "left", paddingLeft: "1%", transform: `translate(60px, ${this.state.ball6Y}px)`, paddingTop: '3%',
                                     }}> 2021
-                                </h2>
+                                </div>
 
                             }
                             <div
@@ -484,12 +509,12 @@ export default class storyBalls extends Component {
                                     // transform: `translate(0px, ${this.state.ball6Y}px)`,
                                 }}>
                                 <div className="story-node-text-end">
-                                    <h3>
-                                        Widen our scope to include Taxation, more industries
-                                        included in the Banking and telecom sectors, providing
-                                        marketing advisory for Banks, financial firms, and
-                                        telecommunication companies
-                                    </h3>
+
+                                    Widen our scope to include Taxation, more industries
+                                    included in the Banking and telecom sectors, providing
+                                    marketing advisory for Banks, financial firms, and
+                                    telecommunication companies
+
                                 </div>
                             </div>
                         </div>

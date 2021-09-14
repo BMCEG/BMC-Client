@@ -1,11 +1,6 @@
 .ourStory-root {
     min-height: 100vh;
-    /* height: 950px; */
-    /* padding-top: 3%; */
     background-color: #f8fafb;
-    /* background-color: blanchedalmond; */
-    /* padding-top: 3%; */
-    /* background-image: url(./); */
 }
 .ourStory-root-mob {
     /* min-height: ; */
@@ -32,15 +27,25 @@
     width: 50%;
     margin: auto;
     /* display: none; */
-
+    
 }
 
 .ourStory-balls {
-    /* background-color: yellow; */
     width: 80%;
+    
+    /* min-height: 100vh; */
     margin: auto;
+    padding-top: 4vmin;
+    padding-bottom: 4vmin;
+    /* background-color: darkgreen; */
 }
 
+@media screen and (max-width: 1450px) {
+    .ourStory-balls{
+        width: 95% !important;
+        margin: auto !important;
+    }
+}
 .MuiPaper-root {
     background-color: transparent !important;
 }

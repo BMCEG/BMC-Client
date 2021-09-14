@@ -36,6 +36,7 @@ import JobPost from './pages/BMC/Careers/JobPost.js';
 import Courses from './pages/BMC/Courses/Courses.js';
 import Course from './pages/BMC/Courses/Course.js';
 
+// import OurStory from './pages/BMC/About/OurStory/OurStory.js';
 import OurStory from './pages/contexts/bmc/about/ourStory.js';
 import OurStoryMob from './pages/contexts/bmc/about/ourStory-mobile.js';
 import MeetTheExperts from './pages/contexts/bmc/about/meetTheExperts.js';

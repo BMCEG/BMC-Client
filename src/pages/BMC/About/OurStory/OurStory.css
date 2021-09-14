@@ -1,0 +1,23 @@
+.ourStory__root {
+    min-height: 100vh;
+    background-color: #f8fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.ourStory__balls__canvas {
+    width: 80%;
+    /* min-height: 100vh; */
+    margin: auto;
+    padding-top: 4vmin;
+    padding-bottom: 4vmin;
+    /* background-color: darkgreen; */
+}
+
+@media screen and (max-width: 1450px) {
+    .ourStory__balls__canvas{
+        width: 80% !important;
+        margin: auto !important;
+    }
+}

@@ -5,6 +5,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import endpoint from '../../../helpers/api_service';
+import MediaQuery from 'react-responsive';
 export default class Navbar2 extends Component {
     constructor(props) {
         super(props)
@@ -20,8 +21,6 @@ export default class Navbar2 extends Component {
     }
 
     handleMouseEnter(e) {
-        console.log("here")
-        // alert(e.target.name)
         this.setState({
             [e]: 'block'
         })
@@ -29,16 +28,13 @@ export default class Navbar2 extends Component {
 
     }
     handleMouseLeave(e) {
-        
+
         document.getElementById(e + '-menu').classList.add('dropdown__fadeOut')
         setTimeout(() => {
             this.setState({
                 [e]: 'none'
             })
         }, 500);
-
-
-        // document.getElementById(e).click();
 
     }
 
@@ -51,22 +47,15 @@ export default class Navbar2 extends Component {
                 </Button>
                 <div className='bmcnav__space' />
                 <div className='bmcnav__space' />
-                {/* <Button className='bmcnav__btn bmcnav__btn--size' variant='link' href='/'>
-                    Home
-                </Button>
-                <div className='bmcnav__space' /> */}
                 <Dropdown name='aboutToggle' onMouseEnter={() => this.handleMouseEnter('aboutToggle')} onMouseLeave={() => this.handleMouseLeave('aboutToggle')}>
                     <Dropdown.Toggle variant="link" id="aboutToggle" className='bmcnav__btn bmcnav__btn--size'>
                         About
                     </Dropdown.Toggle>
                     <Dropdown.Menu id='aboutToggle-menu' className='dropdown__menu' style={{ display: this.state.aboutToggle }}>
-                        {/* {this.state.items.map((item) => ( */}
                         <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/about/founder'>Founder's Message</Dropdown.Item>
                         <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/about/partners'>Partners' Message</Dropdown.Item>
                         <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/about/story'>Our Story</Dropdown.Item>
                         <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/whyBMC'>Why BMC</Dropdown.Item>
-                        {/* )) */}
-                        {/* } */}
                     </Dropdown.Menu>
                 </Dropdown>
                 <div className='bmcnav__space' />
@@ -75,8 +64,6 @@ export default class Navbar2 extends Component {
                         Services
                     </Dropdown.Toggle>
                     <Dropdown.Menu id="servicesToggle-menu" className='dropdown__menu' style={{ display: this.state.servicesToggle }}>
-
-                        {/* <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size'> */}
                         <Dropdown name='mentoringToggle' onMouseEnter={() => this.handleMouseEnter('mentoringToggle')} onMouseLeave={() => this.handleMouseLeave('mentoringToggle')}>
                             <Dropdown.Toggle id="mentoringToggle" variant="link" className='bmcnav__dropdown__item bmcnav__dropdown__item--nested bmcnav__btn--size'>
                                 Business Mentoring & Guidance
@@ -88,23 +75,11 @@ export default class Navbar2 extends Component {
                                 <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/financial'>Finance & Accoutning</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
-                        {/* </Dropdown.Item> */}
-
                         <Dropdown.Item variant="link" className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/corporate'>Corporate Governance</Dropdown.Item>
-
                         <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/services/toolbox'>BMC Toolbox</Dropdown.Item>
-
                         <Dropdown.Item className='bmcnav__dropdown__item bmcnav__btn--size' href='/courses'>Training & Development</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-                {/* <div className='bmcnav__space' />
-                <Button className='bmcnav__btn bmcnav__btn--size' href='/courses' variant='link'>
-                    Courses
-                </Button> */}
-                {/* <div className='bmcnav__space' />
-                <Button className='bmcnav__btn bmcnav__btn--size' href='/partners' variant='link'>
-                    Clients
-                </Button> */}
                 <div className='bmcnav__space' />
                 <Button className='bmcnav__btn bmcnav__btn--size' href='/consultations' variant='link'>
                     Consultations
@@ -122,12 +97,16 @@ export default class Navbar2 extends Component {
                     Contact
                 </Button>
                 <div className='bmcnav__space' />
-                <div className='bmcnav__divider'></div>
+                <MediaQuery minWidth={1250}>
+                    <div className='bmcnav__divider'></div>
+                </MediaQuery>
                 <Button variant='link' className='bmcnav__btn bmcnav__btn--size' href='/ewings'>
-
                     <img alt='nav' src={`${endpoint}/images/ewings-logo-greyscale.png`} className='bmcnav__logo--ewings' />
                 </Button>
+                <MediaQuery minWidth={1250}>
+                    {/* <div className='bmcnav__divider'></div> */}
                 <div className='bmcnav__space' />
+                </MediaQuery>
             </Navbar>
         )
     }
