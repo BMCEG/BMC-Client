@@ -107,8 +107,7 @@
   width: 400px;
   /* text-align: left; */
   /* background-color: yellowgreen; */
-  /* justify-content: center; */
-  /* display: flex; */
+  transform: translateX(-315px);
 }
 .story-year-mobile {
   /* background-color: brown; */
@@ -145,13 +144,13 @@
   float: left;
 }
 .story-node-text-ball2 {
-  transform: translate(105px, -29px);
-  border-left: 2px solid #636363;
+  transform: translate(25px, -35px);
+  border-right: 2px solid #636363;
   transition: all 5.5s ease-in;
   padding: 3%;
   font-family: "bukra-regular" !important;
   /* background: rgba(76, 175, 80, 0.6); */
-  text-align: left !important;
+  text-align: right !important;
   text-justify: inter-word !important;
   /* display: block; */
   -webkit-animation: fadeIn 0.5s;
@@ -159,13 +158,13 @@
   float: left;
 }
 .story-node-text-ball4 {
-  transform: translate(95px, -33px);
-  border-left: 2px solid #636363;
+  transform: translate(15px, -33px);
+  border-right: 2px solid #636363;
   transition: all 0.2s ease-in;
   padding: 3%;
   font-family: "bukra-regular" !important;
   /* background: rgba(76, 175, 80, 0.6); */
-  text-align: left !important;
+  text-align: right !important;
   text-justify: inter-word !important;
   /* display: block; */
   -webkit-animation: fadeIn 0.5s;
@@ -195,7 +194,6 @@
 }
 
 .story-node-text-end {
-  transform: translateX(-315px);
   border-right: 2px solid #636363;
   transition: all 0.2s ease-in;
   padding: 3%;
@@ -248,4 +246,8 @@
 .bukra-regular {
   font-family: "bukra-regular" !important;
   line-height: 150% !important;
+}
+
+.story__node__text--font--size {
+  font-size: 16px !important;
 }

@@ -158,7 +158,7 @@ export default class storyBalls extends Component {
                                         display: `${this.state.ball1text}`,
 
                                     }}>
-                                    <div className="story-node-text">
+                                    <div className="story-node-text story__node__text--font--size">
 
                                         Since inception, we have advised, planned and managed
                                         investments valued over 6.5 billion EGP specializing in
@@ -187,7 +187,7 @@ export default class storyBalls extends Component {
                                         transform: `translate(-2%, 5px)`
 
                                     }}>
-                                    <div className="story-node-text">
+                                    <div className="story-node-text story__node__text--font--size">
 
                                         Since inception, we have advised, planned and managed
                                         investments valued over 6.5 billion EGP specializing in
@@ -220,7 +220,7 @@ export default class storyBalls extends Component {
                                         display: `${this.state.ball3text}`,
                                         // transform: `translate(0px, ${this.state.ball1Y}px)`
                                     }}>
-                                    <div className="story-node-text">
+                                    <div className="story-node-text story__node__text--font--size">
 
                                         Widen our scope of services to include Financial advisory,
                                         serving new sectors like import & export, supporting
@@ -248,7 +248,7 @@ export default class storyBalls extends Component {
                                         transform: `translate(-4%, 0px)`
 
                                     }}>
-                                    <div className="story-node-text">
+                                    <div className="story-node-text story__node__text--font--size">
 
                                         Widen our scope of services to include Financial advisory,
                                         serving new sectors like import & export, supporting
@@ -280,7 +280,7 @@ export default class storyBalls extends Component {
                                         display: `${this.state.ball5text}`,
                                         // transform: `translate(0px, ${this.state.ball1Y}px)`
                                     }}>
-                                    <div className="story-node-text">
+                                    <div className="story-node-text story__node__text--font--size">
 
                                         Dealing with COVID 19 Pandemic with all our business clients
                                         to pass this critical period with tailored crisis management
@@ -307,7 +307,7 @@ export default class storyBalls extends Component {
                                         transform: `translate(-30px, 0px)`
                                         // transform: `translate(0px, ${this.state.ball1Y}px)`
                                     }}>
-                                    <div className="story-node-text">
+                                    <div className="story-node-text story__node__text--font--size">
 
                                         Dealing with COVID 19 Pandemic with all our business clients
                                         to pass this critical period with tailored crisis management
@@ -331,7 +331,7 @@ export default class storyBalls extends Component {
                             onMouseLeave={() => this.handleMouseLeave("ball1")}
                         />
                     </div>
-                    <div class="line"></div>
+                    <div className="line"></div>
 
                     <div className="story-node">
                         <img
@@ -342,7 +342,7 @@ export default class storyBalls extends Component {
                             onMouseLeave={() => this.handleMouseLeave("ball2")}
                         />
                     </div>
-                    <div class="line"></div>
+                    <div className="line"></div>
 
                     <div className="story-node">
                         <img
@@ -354,7 +354,7 @@ export default class storyBalls extends Component {
                         />
                     </div>
 
-                    <div class="line"></div>
+                    <div className="line"></div>
                     <div className="story-node">
                         <img
                             src={`${endpoint}/images/our-story-2018.png`}
@@ -364,7 +364,7 @@ export default class storyBalls extends Component {
                             onMouseLeave={() => this.handleMouseLeave("ball4")}
                         />
                     </div>
-                    <div class="line"></div>
+                    <div className="line"></div>
 
                     <div className="story-node">
                         <img
@@ -376,7 +376,7 @@ export default class storyBalls extends Component {
                         />
                     </div>
 
-                    <div class="line"></div>
+                    <div className="line"></div>
                     <div className="story-node">
                         <img
                             src={`${endpoint}/images/our-story-2021.png`}
@@ -398,14 +398,14 @@ export default class storyBalls extends Component {
                                     style={{
                                         textAlign: "left",
                                         paddingLeft: "1%",
-                                        transform: `translate(80px, ${this.state.ball2Y}px)`, paddingTop: '3%'
+                                        transform: `translate(393px, ${this.state.ball2Y}px)`, paddingTop: '3%'
                                     }}>2015
                                 </div>
                                 <div
                                     style={{
                                         display: `${this.state.ball2text}`,
                                     }}>
-                                    <div className="story-node-text-ball2">
+                                    <div className="story-node-text-ball2 story__node__text--font--size">
 
                                         More industries included in the manufacturing and
                                         agricultural sector ordering feasibility studies and setup for
@@ -420,14 +420,14 @@ export default class storyBalls extends Component {
                                     style={{
                                         textAlign: "left",
                                         paddingLeft: "1%",
-                                        transform: `translate(80px, ${this.state.ball2Y}px)`, paddingTop: '3%'
+                                        transform: `translate(393px, ${this.state.ball2Y}px)`, paddingTop: '3%'
                                     }}>2015
                                 </div>
                                 <div
                                     style={{
                                         display: `${this.state.ball2text}`,
                                     }}>
-                                    <div className="story-node-text-ball2">
+                                    <div className="story-node-text-ball2 story__node__text--font--size">
 
                                         More industries included in the manufacturing and
                                         agricultural sector ordering feasibility studies and setup for
@@ -450,7 +450,7 @@ export default class storyBalls extends Component {
                                         textAlign: "left",
                                         paddingLeft: "1%"
                                         , paddingTop: '3%',
-                                        transform: `translate(45%, ${this.state.ball4Y}px)`,
+                                        transform: `translate(360px, ${this.state.ball4Y}px)`,
                                     }}>
                                     2018-2019
                                 </div>
@@ -461,7 +461,7 @@ export default class storyBalls extends Component {
                                         textAlign: "left",
                                         paddingLeft: "1%"
                                         , paddingTop: '3%',
-                                        transform: `translate(45%, ${this.state.ball4Y}px)`,
+                                        transform: `translate(360px, ${this.state.ball4Y}px)`,
                                     }}>
                                     2018-2019
                                 </div>
@@ -470,7 +470,7 @@ export default class storyBalls extends Component {
                                 style={{
                                     display: `${this.state.ball4text}`,
                                 }}>
-                                <div className="story-node-text-ball4">
+                                <div className="story-node-text-ball4 story__node__text--font--size">
 
                                     Digital transformation, introducing a new scope of digital
                                     marketing services, hiring digital experts, and blend of
@@ -490,7 +490,7 @@ export default class storyBalls extends Component {
                                 <div
                                     className="story-node-year-bottom fadeOut"
                                     style={{
-                                        textAlign: "left", paddingLeft: "1%", transform: `translate(60px, ${this.state.ball6Y}px)`, paddingTop: '3%',
+                                        textAlign: "left", paddingLeft: "1%", transform: `translate(375px, ${this.state.ball6Y}px)`, paddingTop: '3%',
                                     }}>
                                     2021
                                 </div>
@@ -498,7 +498,7 @@ export default class storyBalls extends Component {
                                 <div
                                     className="story-node-year-bottom fadeIn"
                                     style={{
-                                        textAlign: "left", paddingLeft: "1%", transform: `translate(60px, ${this.state.ball6Y}px)`, paddingTop: '3%',
+                                        textAlign: "left", paddingLeft: "1%", transform: `translate(375px, ${this.state.ball6Y}px)`, paddingTop: '3%',
                                     }}> 2021
                                 </div>
 
@@ -508,7 +508,7 @@ export default class storyBalls extends Component {
                                     display: `${this.state.ball6text}`,
                                     // transform: `translate(0px, ${this.state.ball6Y}px)`,
                                 }}>
-                                <div className="story-node-text-end">
+                                <div className="story-node-text-end story__node__text--font--size">
 
                                     Widen our scope to include Taxation, more industries
                                     included in the Banking and telecom sectors, providing
