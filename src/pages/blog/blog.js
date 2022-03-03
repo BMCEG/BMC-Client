@@ -73,7 +73,7 @@ export default class Blog extends Component {
             <div className="blog-img-base">
               <img
                 className="blog-img"
-                src={`${endpoint}/images/${this.state.blog.image}`}
+                // src={`${endpoint}/images/${this.state.blog.image}`}
                 alt={this.state.blog.title}
               />
             </div>

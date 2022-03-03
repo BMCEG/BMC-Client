@@ -27,6 +27,7 @@ import ContactMob from './pages/BMC/Contact/Contact-Mob.js';
 
 import Blogs from './pages/BMC/Blogs/Blogs.js';
 import Blog from './pages/BMC/Blogs/Blog.js';
+import LogoBlog from './pages/BMC/Blogs/LogoBlog.js';
 
 import Consultations from './pages/BMC/Consultations/Consultations.js';
 
@@ -429,15 +430,23 @@ export default class App extends Component {
                   );
                 }}
               </Media>
-              <Media query="(min-width: 1024px)">
-                {(matches) => {
-                  return matches ? (
-                    <Route path="/blogs/:blogID" exact component={Blog} />
-                  ) : (
-                    <Route path="/blogs/:blogID" exact component={Blog} />
-                  );
-                }}
-              </Media>
+              {window.location.href.indexOf('62208281b6d69090b74dce04') > -1 ? (
+                <Route
+                  path="/blogs/62208281b6d69090b74dce04"
+                  exact
+                    component={LogoBlog}
+                />
+              ) : (
+                <Media query="(min-width: 1024px)">
+                  {(matches) => {
+                    return matches ? (
+                      <Route path="/blogs/:blogID" exact component={Blog} />
+                    ) : (
+                      <Route path="/blogs/:blogID" exact component={Blog} />
+                    );
+                  }}
+                </Media>
+              )}
 
               {this.state.isLanding ? null : (
                 <Media query="(min-width: 1024px)">

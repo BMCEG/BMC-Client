@@ -54,11 +54,12 @@
 .blog-img-base {
   /* background-color: red; */
   text-align: center;
+  height: 100px !important;
 }
 .blog-img {
   /* background-color: red; */
   /* text-align: center; */
-  width: 100%;
+  height: 100%;
 }
 
 .blog-title {

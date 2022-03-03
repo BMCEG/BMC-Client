@@ -19,6 +19,7 @@ export default class Blogs extends Component {
     await axios
       .get(`${endpoint}/blogs/`)
       .then((res) => {
+        console.log(res.data);
         this.setState({
           blogs: res.data,
         });
