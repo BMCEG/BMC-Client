@@ -11,7 +11,7 @@
 .clients__header--font {
   color: black;
   background-color: #f8fafb;
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
   margin: auto !important;
 }
 .clients__header--font--size {
@@ -20,12 +20,12 @@
   font-size: 18px !important;
 }
 .clients_row {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-    /* background-color: tomato; */
-    /* max-height: 70px; */
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  /* background-color: tomato; */
+  /* max-height: 70px; */
 }
 .clients__client {
   padding: 1%;
@@ -48,12 +48,12 @@
 }
 
 @font-face {
-  font-family: "bukra-bold";
-  src: local("bukra-bold"),
-    url(../../../fonts/bukra-bold.OTF) format("truetype");
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'),
+    url(../../../fonts/bukra-bold.OTF) format('truetype');
 }
 @font-face {
-  font-family: "bukra-regular";
-  src: local("bukra-regular"),
-    url(../../../fonts/bukra-regular.OTF) format("truetype");
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../../fonts/bukra-regular.OTF) format('truetype');
 }

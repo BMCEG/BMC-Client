@@ -1,36 +1,36 @@
 .default-root {
-    /* background-color: plum !important; */
-    /* object-fit: contain; */
-    /* display:flex; */
-    /* overflow:auto; */
+  /* background-color: plum !important; */
+  /* object-fit: contain; */
+  /* display:flex; */
+  /* overflow:auto; */
 }
 
 .banner-grid-dmap {
-    background-color: #F8F9FA;
-    padding: 1%;
-    margin: 1%;
-    height: 50vh;
+  background-color: #f8f9fa;
+  padding: 1%;
+  margin: 1%;
+  height: 50vh;
 }
 
 .banner-photo {
-    padding: 1%;
-    /* background-color: tomato; */
-    height: 100%;
-    text-align: center;
-    /* justify-content: center; */
-    /* margin: 30%; */
+  padding: 1%;
+  /* background-color: tomato; */
+  height: 100%;
+  text-align: center;
+  /* justify-content: center; */
+  /* margin: 30%; */
 }
 
 .carousel {
-    /* background-color: slateblue; */
-    /* padding: 1%; */
+  /* background-color: slateblue; */
+  /* padding: 1%; */
 }
 .carousel-item {
-    background-color: thistle;
-    /* height: 10%; */
+  background-color: thistle;
+  /* height: 10%; */
 }
 .carousel-slide {
-    padding: 1%;
-    background-color: turquoise;
-    width: 100vw;
+  padding: 1%;
+  background-color: turquoise;
+  width: 100vw;
 }

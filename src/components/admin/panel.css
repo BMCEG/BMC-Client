@@ -1,80 +1,79 @@
 .admin-panel-root {
-    /* background-color: lightsalmon; */
+  /* background-color: lightsalmon; */
 }
 
 .admin-panel-title {
-    height: 20vh;
-    /* background-color: lightskyblue; */
-    padding: 2%;
+  height: 20vh;
+  /* background-color: lightskyblue; */
+  padding: 2%;
 }
 
 .admin-panel-title-date {
-    /* background-color: darkviolet; */
-    text-align: right;
-    color: gray;
+  /* background-color: darkviolet; */
+  text-align: right;
+  color: gray;
 }
 
 .admin-panel-body {
-    /* background-color: darkgoldenrod; */
+  /* background-color: darkgoldenrod; */
 }
 
 .admin-panel-col {
-    /* background-color: darkgreen; */
-    /* text-align: center; */
+  /* background-color: darkgreen; */
+  /* text-align: center; */
 }
 
 .admin-panel-btn-base {
-    /* background-color: deeppink; */
-    text-align: center;
-    width: 70%;
-    margin: auto;
+  /* background-color: deeppink; */
+  text-align: center;
+  width: 70%;
+  margin: auto;
 }
 .admin-page-btn-base {
-    /* background-color: deeppink; */
-    text-align: center;
-    width: 10%;
-    margin: auto;
+  /* background-color: deeppink; */
+  text-align: center;
+  width: 10%;
+  margin: auto;
 }
 
 .admin-panel-btn-paper {
-    height: 20vh;
-    display: flex;
-    transition: 0.2s;
-    box-shadow: 2px 2px 5px black !important;
-    /* border-style: solid;
+  height: 20vh;
+  display: flex;
+  transition: 0.2s;
+  box-shadow: 2px 2px 5px black !important;
+  /* border-style: solid;
     border-width: 1px;
     border-color: black */
 }
 
 .admin-panel-btn-img-base {
-    background-color: firebrick;
-    width: 50%;
-    /* color: chocolate !important; */
+  background-color: firebrick;
+  width: 50%;
+  /* color: chocolate !important; */
 }
 
-.admin-panel-btn-img{
-    background-color: whitesmoke;
-    height: 100%;
-    width: 100% !important;
-    padding: 20%;
+.admin-panel-btn-img {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100% !important;
+  padding: 20%;
 }
 
-.admin-panel-btn-label{
-    /* background-color: dodgerblue; */
-    width: 25vw;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.admin-panel-btn-label {
+  /* background-color: dodgerblue; */
+  width: 25vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .admin-panel-btn {
-    min-width: 100% !important;
-    transition: 0.2s;
-  ;
-    /* padding: 20%; */
+  min-width: 100% !important;
+  transition: 0.2s;
+  /* padding: 20%; */
 }
 
 .admin-panel-btn:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }

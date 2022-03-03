@@ -58,7 +58,6 @@ export default class Landing extends Component {
     await axios
       .get(`${endpoint}/courses/${this.state.courseName}`)
       .then((res) => {
-        console.log(res.data);
         this.setState({
           courseDetails: res.data,
           courseFees: res.data.fees,
@@ -228,7 +227,7 @@ export default class Landing extends Component {
               <br></br>
               <br></br>
               <h3 className="bukra-medium course-meet-trainer-title">
-                {this.state.courseTrainer.firstName}{' '}
+                {this.state.courseTrainer.firstName}
                 {this.state.courseTrainer.lastName}
               </h3>
             </div>
@@ -252,13 +251,13 @@ export default class Landing extends Component {
                       Duration:- {schedule.duration} Hours
                     </h3>
                     <h3 className="bukra-regular ewings-course-booking-info">
-                      Start Date:-{' '}
+                      Start Date:-
                       <Moment format="dddd, DD/MM/YYYY">
                         {schedule.startDate}
                       </Moment>
                     </h3>
                     <h5 className="bukra-regular ewings-course-booking-info">
-                      End Date:-{' '}
+                      End Date:-
                       <Moment format="dddd, DD/MM/YYYY">
                         {schedule.endDate}
                       </Moment>

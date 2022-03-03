@@ -34,7 +34,7 @@
 
 .dropdown-ewings-item {
   color: white !important;
-  font-family: "bukra-regular";
+  font-family: 'bukra-regular';
   text-align: left !important;
 }
 
@@ -184,32 +184,32 @@
 }
 
 @font-face {
-  font-family: "bukra-bold";
-  src: local("bukra-bold"), url(../../fonts/bukra-bold.OTF) format("truetype");
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'), url(../../fonts/bukra-bold.OTF) format('truetype');
 }
 
 @font-face {
-  font-family: "bukra-regular";
-  src: local("bukra-regular"),
-    url(../../fonts/bukra-regular.OTF) format("truetype");
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../fonts/bukra-regular.OTF) format('truetype');
 }
 
 @font-face {
-  font-family: "bukra-medium";
-  src: local("bukra-medium"),
-    url(../../fonts/bukra-medium.OTF) format("truetype");
+  font-family: 'bukra-medium';
+  src: local('bukra-medium'),
+    url(../../fonts/bukra-medium.OTF) format('truetype');
 }
 
 .bukra-bold {
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
 }
 
 .bukra-regular {
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
 }
 
 .bukra-medium {
-  font-family: "bukra-medium" !important;
+  font-family: 'bukra-medium' !important;
 }
 
 .line-spacing {

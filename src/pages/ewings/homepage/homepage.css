@@ -1,198 +1,192 @@
 .ewings-homepage-text {
-    /* background-color: red; */
-    /* z-index: 0; */
-    /* height: fit-content; */
-    /* transform: translateY(-90vh); */
-    width: 100%;
-    padding-left: 17.5%;
-    padding-right: 17.5%;
-    top: 15%;
-    margin: auto;
-    position: absolute;
-    /* overflow-y: scroll; */
-    /* position:relative;
+  /* background-color: red; */
+  /* z-index: 0; */
+  /* height: fit-content; */
+  /* transform: translateY(-90vh); */
+  width: 100%;
+  padding-left: 17.5%;
+  padding-right: 17.5%;
+  top: 15%;
+  margin: auto;
+  position: absolute;
+  /* overflow-y: scroll; */
+  /* position:relative;
     overflow: hidden !important; */
-    /* height: 70vh; */
-    height: 100%;
-    /* margin-bottom: 50%; */
+  /* height: 70vh; */
+  height: 100%;
+  /* margin-bottom: 50%; */
 }
 
 .ewings-homepage-text-mob {
-    /* background-color: rgb(170, 169, 169); */
-    /* z-index: 0; */
-    /* transform: translateY(-90px); */
-    width: 85%;
-    margin: auto;
-    height: 62%;
-    padding: 10px;
-    overflow-y: hidden;
-    color: white;
-    /* position:relative;
+  /* background-color: rgb(170, 169, 169); */
+  /* z-index: 0; */
+  /* transform: translateY(-90px); */
+  width: 85%;
+  margin: auto;
+  height: 62%;
+  padding: 10px;
+  overflow-y: hidden;
+  color: white;
+  /* position:relative;
     overflow: hidden !important; */
-    /* margin-bottom: -159px; */
+  /* margin-bottom: -159px; */
 }
 
 .carousel-item {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .carousel-indicators {
-    display: none !important;
+  display: none !important;
 }
 
 .carousel-control-prev {
-    /* transform: translateX(-200px); */
-    /* display: none; */
-
+  /* transform: translateX(-200px); */
+  /* display: none; */
 }
 
 .carousel-control-next {
-    /* transform: translateX(200px); */
-    /* display: none; */
+  /* transform: translateX(200px); */
+  /* display: none; */
 }
 
 .ewings-homepage-root {
-    min-height: 100vh;
-    z-index: -5 !important;
-    /* background-color: #458CC8; */
+  min-height: 100vh;
+  z-index: -5 !important;
+  /* background-color: #458CC8; */
 }
 
 .ewings-homepage-root-mob {
-    background-color: #4694D6;
-    height: 70%;
-    overflow-y: scroll;
+  background-color: #4694d6;
+  height: 70%;
+  overflow-y: scroll;
 }
 
 .ewings-player {
-    /* max-height: 50%; */
-    /* position: absolute; */
+  /* max-height: 50%; */
+  /* position: absolute; */
 
-    /* width: 100%; */
-    /* object-fit: cover; */
+  /* width: 100%; */
+  /* object-fit: cover; */
 
-    /* background-color: springgreen; */
-    /* padding: 10%; */
-    /* height: 100% !important; */
-    /* width: 500px !important; */
+  /* background-color: springgreen; */
+  /* padding: 10%; */
+  /* height: 100% !important; */
+  /* width: 500px !important; */
 }
 
 .ewings-homepage-banner {
-    /* max-height: 110vh; */
-    position: relative;
-    overflow-y: hidden;
-    /* background-color: springgreen; */
+  /* max-height: 110vh; */
+  position: relative;
+  overflow-y: hidden;
+  /* background-color: springgreen; */
 }
 
 .home-service-ewings {
-    /* margin-top: 5%; */
-    margin: 5%;
-    background-color: #458CC8 !important;
-    box-shadow: 0px 0px 7px 2px rgba(12, 74, 97, 0.65);
-    -webkit-box-shadow: 0px 0px 7px 2px rgba(12, 74, 97, 0.65);
-    -moz-box-shadow: 0px 0px 7px 2px rgba(12, 74, 97, 0.65);
-    padding: 3%;
-    border-radius: 15px;
-    transition: all .2s;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-    max-height: 30vh;
-
+  /* margin-top: 5%; */
+  margin: 5%;
+  background-color: #458cc8 !important;
+  box-shadow: 0px 0px 7px 2px rgba(12, 74, 97, 0.65);
+  -webkit-box-shadow: 0px 0px 7px 2px rgba(12, 74, 97, 0.65);
+  -moz-box-shadow: 0px 0px 7px 2px rgba(12, 74, 97, 0.65);
+  padding: 3%;
+  border-radius: 15px;
+  transition: all 0.2s;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  max-height: 30vh;
 }
 
 .home-service-text-ewings {
-    /* border-left: 2px solid white; */
-    font-size: 1.1vw;
-    padding: 2%;
-    /* background-color: dodgerblue; */
-    /* display: block; */
+  /* border-left: 2px solid white; */
+  font-size: 1.1vw;
+  padding: 2%;
+  /* background-color: dodgerblue; */
+  /* display: block; */
 }
-.home-partners-ewings{
-        /* background-color: teal; */
-        display: flex;
-        justify-content: center;
-        padding-top: 2%;
-        box-shadow: 0px 1px 3px #393938;
-        overflow-x: scroll;
-    
-    
+.home-partners-ewings {
+  /* background-color: teal; */
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  box-shadow: 0px 1px 3px #393938;
+  overflow-x: scroll;
 }
 
-.ewings-home-service-text-desc{
-    /* text-align: center; */
-    font-size: .8vw;
-    /* padding-left: 1vw; */
-    /* padding-top: 1vh; */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    /* background-color: red; */
+.ewings-home-service-text-desc {
+  /* text-align: center; */
+  font-size: 0.8vw;
+  /* padding-left: 1vw; */
+  /* padding-top: 1vh; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* background-color: red; */
 }
 .home-service-text-ewings-mob {
-    /* border-left: 2px solid white; */
-    font-size: 3.5vw;
-    padding: 2%;
-    /* background-color: dodgerblue; */
-    /* display: block; */
+  /* border-left: 2px solid white; */
+  font-size: 3.5vw;
+  padding: 2%;
+  /* background-color: dodgerblue; */
+  /* display: block; */
 }
 
-.ewings-home-service-text-desc-mob{
-    /* text-align: center; */
-    font-size: 2.2vw;
-    /* padding-left: 1vw; */
-    /* padding-top: 1vh; */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    /* background-color: red; */
+.ewings-home-service-text-desc-mob {
+  /* text-align: center; */
+  font-size: 2.2vw;
+  /* padding-left: 1vw; */
+  /* padding-top: 1vh; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* background-color: red; */
 }
 
 .home-service-text-ewings-mob {
-    /* border-left: 2px solid white; */
-    padding-left: 1%;
-    padding: 2%;
-    /* background-color: dodgerblue; */
-    /* display: block; */
+  /* border-left: 2px solid white; */
+  padding-left: 1%;
+  padding: 2%;
+  /* background-color: dodgerblue; */
+  /* display: block; */
 }
 
 .ewings-color {
-    color: white !important;
+  color: white !important;
 }
 
 .home-service-ewing-btn {
-    background-color: #103442 !important
+  background-color: #103442 !important;
 }
 
 .home-partners-ewings {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 1px 3px #393938;
-    overflow-x: scroll;
-
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 1px 3px #393938;
+  overflow-x: scroll;
 }
 
 .home-partner-ewings {
-    margin: auto;
-    /* background-color: yellow; */
-    /* height: 100%; */
-    margin-top: 3%;
-    width: 120px;
-    text-align: center;
-    transition: transform .2s;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+  margin: auto;
+  /* background-color: yellow; */
+  /* height: 100%; */
+  margin-top: 3%;
+  width: 120px;
+  text-align: center;
+  transition: transform 0.2s;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 .home-partner-ewings:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .home-partner-img-ewings {
-    /* background-color: yellow; */
-    object-fit: contain;
-    width: 100%;
-
+  /* background-color: yellow; */
+  object-fit: contain;
+  width: 100%;
 }

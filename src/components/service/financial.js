@@ -1,32 +1,37 @@
-import React from 'react'
+import React from 'react';
 import './financial.css';
 import { Typography } from '@material-ui/core';
 
 export default function marketingMgmt() {
-    return (
-        <div>
-            <Typography align='justify' variant='h5' component='h5' className='bukra-regular lspacing'>
-                BMC’s Financial Management division has the aim to provide your company a full range of past and future comprehensive high quality services with a modern and practical approach in several fields.
-            </Typography>
-            <br></br>
-            <Typography align='justify' variant='h6' component='h6' className='bukra-regular lspacing'>
-                ·      Accounting & bookkeeping
-                <br></br>
-                ·      Business start-up
-                <br></br>
-                ·      Due diligence
-                <br></br>
-                ·      Cash management
-                <br></br>
-                ·      Internal audit function
-                <br></br>
-                ·      Budgeting & forecasting
-                <br></br>
-                ·      Internal process & Internal control system designation
-                <br></br>
-                ·      Financial analysis & projects evaluation
-                <br></br>
-            </Typography>
-        </div>
-    )
+  return (
+    <div>
+      <Typography
+        align="justify"
+        variant="h5"
+        component="h5"
+        className="bukra-regular lspacing"
+      >
+        BMC’s Financial Management division has the aim to provide your company
+        a full range of past and future comprehensive high quality services with
+        a modern and practical approach in several fields.
+      </Typography>
+      <br></br>
+      <Typography
+        align="justify"
+        variant="h6"
+        component="h6"
+        className="bukra-regular lspacing"
+      >
+        · Accounting & bookkeeping
+        <br></br>· Business start-up
+        <br></br>· Due diligence
+        <br></br>· Cash management
+        <br></br>· Internal audit function
+        <br></br>· Budgeting & forecasting
+        <br></br>· Internal process & Internal control system designation
+        <br></br>· Financial analysis & projects evaluation
+        <br></br>
+      </Typography>
+    </div>
+  );
 }

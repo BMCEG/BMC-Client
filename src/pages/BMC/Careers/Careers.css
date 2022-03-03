@@ -19,7 +19,7 @@
   border: none !important;
   text-align: right !important;
   padding: 5vmin !important;
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
 }
 .careers__tabs__posts {
   background-color: grey !important;
@@ -28,7 +28,7 @@
   width: 100%;
   text-align: left !important;
   padding: 5vmin !important;
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
 }
 
 .careers__tabs__canvas {
@@ -93,7 +93,7 @@
   border-radius: 10;
 }
 .careers__join__form__speciality {
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
   width: 75%;
   /* background-color: coral; */
   margin: auto !important;
@@ -130,7 +130,7 @@
   margin: auto !important;
   /* padding-left: 3%;
     padding-right: 3%; */
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
 }
 .careers__posts__post__info--header--size {
   font-size: 26px !important;
@@ -144,7 +144,7 @@
   }
   .careers__posts__post__info--exp--size {
     font-size: 16px !important;
-  }  
+  }
 }
 @media screen and (max-width: 600px) {
   .careers__posts__post__info--header--size {
@@ -152,7 +152,7 @@
   }
   .careers__posts__post__info--exp--size {
     font-size: 14px !important;
-  }  
+  }
 }
 @media screen and (max-width: 500px) {
   .careers__posts__post__info--header--size {
@@ -160,7 +160,7 @@
   }
   .careers__posts__post__info--exp--size {
     font-size: 12px !important;
-  }  
+  }
 }
 .careers__posts__post__info--exp {
   /* background-color: slateblue; */
@@ -168,7 +168,7 @@
   margin: auto !important;
   /* padding-left: 3%;
     padding-right: 3%; */
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
 }
 .careers__tabs_active__bar {
   width: 40%;
@@ -206,7 +206,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
   /* padding-right: 2vmin; */
 }
 .courses__join__submit__width {
@@ -265,27 +265,25 @@
   justify-content: space-between;
 }
 .job__info__tab {
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
   font-size: 16px !important;
   /* background-color: crimson; */
 }
 @media screen and (max-width: 850px) {
-  .job__info__tab{
+  .job__info__tab {
     font-size: 14px !important;
   }
-  .job__info{
+  .job__info {
     width: 85% !important;
   }
-  
 }
 @media screen and (max-width: 600px) {
-  .job__info__tab{
+  .job__info__tab {
     font-size: 16px !important;
   }
   /* .job__info{
     width: 85% !important;
   } */
-  
 }
 .job__divider {
   height: 7vmax;

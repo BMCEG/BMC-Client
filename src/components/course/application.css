@@ -1,107 +1,104 @@
 .application-modal-root {
-    background-color: lightgrey;
-    margin: auto;
-    /* position: relative; */
-    /* margin: 10%; */
-    height: 95vh !important;
-    /* padding: 3%; */
-    width: 50%;
-    display:flex !important;
-    /* align-items: center; */
-    justify-content: center;
-    border-radius: 25px;
+  background-color: lightgrey;
+  margin: auto;
+  /* position: relative; */
+  /* margin: 10%; */
+  height: 95vh !important;
+  /* padding: 3%; */
+  width: 50%;
+  display: flex !important;
+  /* align-items: center; */
+  justify-content: center;
+  border-radius: 25px;
 }
 .ewings-application-modal-root {
-    background-color: #fff;
-    margin: auto;
-    /* position: relative; */
-    /* margin: 10%; */
-    height: 95vh !important;
-    /* padding: 3%; */
-    width: 50%;
-    display:flex !important;
-    /* align-items: center; */
-    justify-content: center;
-    border-radius: 25px;
+  background-color: #fff;
+  margin: auto;
+  /* position: relative; */
+  /* margin: 10%; */
+  height: 95vh !important;
+  /* padding: 3%; */
+  width: 50%;
+  display: flex !important;
+  /* align-items: center; */
+  justify-content: center;
+  border-radius: 25px;
 }
 .application-modal-root-mob {
-    background-color: lightgrey;
-    margin: auto;
-    position: relative;
-    /* margin: 10%; */
-    min-height: 60%;
-    padding: 3%;
-    width: 90%;
-    display:flex !important;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
+  background-color: lightgrey;
+  margin: auto;
+  position: relative;
+  /* margin: 10%; */
+  min-height: 60%;
+  padding: 3%;
+  width: 90%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
 }
 .ewings-application-modal-root-mob {
-    background-color: #fff;
-    margin: auto;
-    position: relative;
-    /* margin: 10%; */
-    min-height: 60%;
-    padding: 3%;
-    width: 90%;
-    display:flex !important;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  /* margin: 10%; */
+  min-height: 60%;
+  padding: 3%;
+  width: 90%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
 }
-.ewings-application-logo{
-    /* background-color: yellow; */
-    width: 100% !important;
-    margin-bottom: 3vh !important;
-
+.ewings-application-logo {
+  /* background-color: yellow; */
+  width: 100% !important;
+  margin-bottom: 3vh !important;
 }
-.bmc-application-logo{
-    /* background-color: yellow; */
-    height: 25vh !important;
-    margin-bottom: 3vh !important;
-
+.bmc-application-logo {
+  /* background-color: yellow; */
+  height: 25vh !important;
+  margin-bottom: 3vh !important;
 }
 
-.application-mob{
-    display:flex;
-    /* height: 50%; */
-    flex-direction:column;
-    width: 85%;
-    /* padding: 5%; */
-    text-align:center;
-    /* background-color: l ightseagreen; */
+.application-mob {
+  display: flex;
+  /* height: 50%; */
+  flex-direction: column;
+  width: 85%;
+  /* padding: 5%; */
+  text-align: center;
+  /* background-color: l ightseagreen; */
 }
-.application{
-    display:flex;
-    /* height: 50%; */
-    flex-direction:column;
-    width: 70%;
-    /* padding: 5%; */
-    text-align:center;
-    /* background-color: lightseagreen; */
+.application {
+  display: flex;
+  /* height: 50%; */
+  flex-direction: column;
+  width: 70%;
+  /* padding: 5%; */
+  text-align: center;
+  /* background-color: lightseagreen; */
 }
 
-.application-form{
-    margin: 2% !important;
-    box-shadow: 1px 1px 1px black;
-    background-color: white;
+.application-form {
+  margin: 2% !important;
+  box-shadow: 1px 1px 1px black;
+  background-color: white;
 }
 
 .application-btn {
-    /* margin: 1% !important; */
-    box-shadow: 2px 2px 5px black;
-    width: 30%;
-    margin: auto;
-    background-color: darkslategrey !important;
-    border-color: darkslategrey !important;
-    
+  /* margin: 1% !important; */
+  box-shadow: 2px 2px 5px black;
+  width: 30%;
+  margin: auto;
+  background-color: darkslategrey !important;
+  border-color: darkslategrey !important;
 }
 
 .application-btn:hover {
-    background-color: slategray !important;
+  background-color: slategray !important;
 }
 
 .MuiMenu-list {
-    background-color: white !important;
+  background-color: white !important;
 }

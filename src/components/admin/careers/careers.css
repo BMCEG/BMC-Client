@@ -1,13 +1,13 @@
 .career-create-form-xp {
-    display: flex;
+  display: flex;
 }
 
 .career-create-form-xp-input {
-    width: 50% !important;
-    padding: 1%;
-    /* background-color: olive; */
+  width: 50% !important;
+  padding: 1%;
+  /* background-color: olive; */
 }
 
 .admin-careers-row-btn {
-    display: flex;
+  display: flex;
 }

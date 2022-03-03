@@ -1,59 +1,57 @@
-.ewings__digitalM__root{
-    min-height: 100vh !important;
-
+.ewings__digitalM__root {
+  min-height: 100vh !important;
 }
 
-.ewings__digitalM__banner{
-    /* min-width: 1920px; */
-    /* background-color: blue; */
+.ewings__digitalM__banner {
+  /* min-width: 1920px; */
+  /* background-color: blue; */
 }
-.ewings__digitalM__banner__img{
-    width: 100%;
-    min-height: 420px;
-    object-position: 85% 50%;
-    /* justify-content: end; */
-    object-fit: cover;
+.ewings__digitalM__banner__img {
+  width: 100%;
+  min-height: 420px;
+  object-position: 85% 50%;
+  /* justify-content: end; */
+  object-fit: cover;
 }
 
 .ewings__banner__title {
-    min-height: 250px;
-    position:absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    transform: translateY(-50%);
-  }
-  
-  @media screen and (min-width: 720px) {
-    .ewings__banner__title {
-        min-height: 400px !important;
-    }
-  }
-  @media screen and (min-width: 1050px) {
-    .ewings__banner__title {
-        min-height: 500px !important;
-    }
-  }
-  
-  .ewings__digitalM__body{
-      margin-top: 20vmin;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      /* margin: auto !important; */
-      /* background-color: blueviolet; */
-  }
+  min-height: 250px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(-50%);
+}
 
-  .ewings__digitalM__subtitle{
-      font-family: 'bukra-bold' !important;
-      color: #33729f;
-      text-align: left !important;
+@media screen and (min-width: 720px) {
+  .ewings__banner__title {
+    min-height: 400px !important;
   }
-
-  .ewings__digitalM__body__text{
-      font-family: 'bukra-regular' !important;
-      color: #33729f;
-      text-align: left !important;
-
+}
+@media screen and (min-width: 1050px) {
+  .ewings__banner__title {
+    min-height: 500px !important;
   }
+}
+
+.ewings__digitalM__body {
+  margin-top: 20vmin;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: auto !important; */
+  /* background-color: blueviolet; */
+}
+
+.ewings__digitalM__subtitle {
+  font-family: 'bukra-bold' !important;
+  color: #33729f;
+  text-align: left !important;
+}
+
+.ewings__digitalM__body__text {
+  font-family: 'bukra-regular' !important;
+  color: #33729f;
+  text-align: left !important;
+}

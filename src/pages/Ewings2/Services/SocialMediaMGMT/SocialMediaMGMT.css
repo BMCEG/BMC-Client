@@ -45,13 +45,13 @@
 }
 
 .ewings__digitalM__subtitle {
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
   color: #33729f;
   text-align: left !important;
 }
 
 .ewings__digitalM__body__text {
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
   color: #33729f;
   text-align: left !important;
 }
@@ -65,7 +65,7 @@
 .ewings__socialMediaMGMT__sites__row--mob {
   /* display: flex; */
   /* justify-content: center;  */
-/* text-align: center !important; */
+  /* text-align: center !important; */
   /* background-color: whitesmoke; */
 }
 .ewings__socialMediaMGMT__sites__row__img__base {
@@ -93,7 +93,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-/* margin: auto; */
+  /* margin: auto; */
   padding: 2vmin;
   /* background-color: yellowgreen; */
 }

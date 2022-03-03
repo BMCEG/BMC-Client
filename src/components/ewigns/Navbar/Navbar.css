@@ -23,7 +23,7 @@
 }
 .ewingsnav__logo--mob {
   max-height: 100% !important;
-  object-fit: contain !important;  
+  object-fit: contain !important;
   /* background-color: blueviolet !important; */
   /* margin-top: auto; */
   /* margin-bottom: auto; */
@@ -36,11 +36,10 @@
   height: 60%;
   background-color: #4694d6 !important;
 }
-.nav-dmap-right-mob{
+.nav-dmap-right-mob {
   width: 35%;
   text-align: right;
   /* background-color: blueviolet; */
-  
 }
 .bmcnav__left--mob {
   display: flex;
@@ -57,7 +56,7 @@
   /* min-width: 144px !important; */
   /* height: 100%; */
 
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
 }
 .ewingsnav__btn--size {
   font-size: 16px !important;
@@ -66,7 +65,7 @@
 .bmcnav__dropdown__item {
   margin-top: 5px;
   margin-bottom: 10px;
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
 }
 .bmcnav__dropdown__item--nested {
   /* width: 90%; */
@@ -166,12 +165,12 @@
 }
 
 @font-face {
-  font-family: "bukra-bold";
-  src: local("bukra-bold"),
-    url(../../../fonts/bukra-bold.OTF) format("truetype");
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'),
+    url(../../../fonts/bukra-bold.OTF) format('truetype');
 }
 @font-face {
-  font-family: "bukra-regular";
-  src: local("bukra-regular"),
-    url(../../../fonts/bukra-regular.OTF) format("truetype");
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../../fonts/bukra-regular.OTF) format('truetype');
 }

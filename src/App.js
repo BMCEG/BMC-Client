@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import BMCHomepage from './pages/BMC/Homepage/Homepage.js';
 import BMCHomepageMob from './pages/BMC/Homepage/Homepage-Mob.js';
@@ -36,15 +36,13 @@ import JobPost from './pages/BMC/Careers/JobPost.js';
 import Courses from './pages/BMC/Courses/Courses.js';
 import Course from './pages/BMC/Courses/Course.js';
 
-// import OurStory from './pages/BMC/About/OurStory/OurStory.js';
 import OurStory from './pages/contexts/bmc/about/ourStory.js';
 import OurStoryMob from './pages/contexts/bmc/about/ourStory-mobile.js';
 import MeetTheExperts from './pages/contexts/bmc/about/meetTheExperts.js';
 
-
 import EwingsHomepage from './pages/Ewings2/Homepage/Homepage.js';
 
-import DigitalMarketing from './pages/Ewings2/Services/DigitalMarketing/DigitalMarketing.js'
+import DigitalMarketing from './pages/Ewings2/Services/DigitalMarketing/DigitalMarketing.js';
 import MultimediaProd from './pages/Ewings2/Services/MultimediaProd/MultimediaProd.js';
 import SocialMediaMGMT from './pages/Ewings2/Services/SocialMediaMGMT/SocialMediaMGMT.js';
 import MediaPlanning from './pages/Ewings2/Services/MediaPlanning/MediaPlanning.js';
@@ -57,10 +55,8 @@ import CoursesListEwingsMob from './pages/ewings/courses/courses-mob.js';
 import CoursePageEwings from './pages/ewings/courses/landing.js';
 import CoursePageEwingsMob from './pages/ewings/courses/landing-mobile.js';
 
-
 import Gallery from './pages/contexts/bmc/gallery/gallery.js';
 import GalleryMob from './pages/contexts/bmc/gallery/gallery-mob.js';
-
 
 import AdminPage from './pages/admin/page.js';
 import AdminCreate from './pages/admin/users/users.js';
@@ -86,47 +82,35 @@ export default class App extends Component {
     super(props);
 
     this.state = {
-      homepageContext: "",
-      navbarContext: "bmc",
+      homepageContext: '',
+      navbarContext: 'bmc',
       isLanding: false,
       isMobileDevice: Boolean,
-      isLaptop: Boolean
-    }
+      isLaptop: Boolean,
+    };
   }
 
   zoomOutMobile() {
     var viewport = document.querySelector('meta[name="viewport"]');
 
     if (viewport) {
-      viewport.content = "initial-scale=0.1";
-      viewport.content = "width=1400";
+      viewport.content = 'initial-scale=0.1';
+      viewport.content = 'width=1400';
     }
   }
 
   componentDidMount() {
-    if (window.location.href.indexOf("ewings") > -1) {
-      // console.log("henlo")
+    if (window.location.href.indexOf('ewings') > -1) {
       this.setState({
-        navbarContext: 'ewings'
-      })
+        navbarContext: 'ewings',
+      });
     }
-
-    // if (window.location.pathname.length !== 8 && window.location.href.indexOf("courses") > -1) {
-    //   // console.log(window.location.pathname.length)
-
-    //   this.setState({
-    //     isLanding: true
-    //   })
-    // }
   }
-
 
   render() {
     return (
       <Router>
         <Switch>
-
-
           <Route path="/admin" exact component={AdminPage} />
 
           <Route path="/admin/create" exact component={AdminCreate} />
@@ -137,8 +121,16 @@ export default class App extends Component {
           <Route path="/admin/gallery" exact component={AdminGallery} />
 
           <Route path="/admin/courses" exact component={AdminCourses} />
-          <Route path="/admin/courses/:courseID" exact component={AdminCoursePage} />
-          <Route path="/admin/trainers/:trainerID" exact component={AdminTrainerPage} />
+          <Route
+            path="/admin/courses/:courseID"
+            exact
+            component={AdminCoursePage}
+          />
+          <Route
+            path="/admin/trainers/:trainerID"
+            exact
+            component={AdminTrainerPage}
+          />
 
           <Route path="/admin/careers" exact component={AdminCareers} />
           <Route path="/admin/careers/:jobID" exact component={AdminJob} />
@@ -146,410 +138,502 @@ export default class App extends Component {
           <Route path="/admin/requests" exact component={AdminRequests} />
 
           <Route path="/admin/partners" exact component={AdminPartners} />
-          <Route path="/admin/partners/:partnerID" exact component={AdminPartnerPage} />
+          <Route
+            path="/admin/partners/:partnerID"
+            exact
+            component={AdminPartnerPage}
+          />
 
           <Route path="/admin/contacts" exact component={AdminContacts} />
 
-          {this.state.navbarContext === 'bmc' ?
+          {this.state.navbarContext === 'bmc' ? (
             <>
-              {this.state.isLanding ? null :
+              {this.state.isLanding ? null : (
                 <>
-                  <Media queries={{
-                    mobile: "(max-width: 1024px)",
-                    small: "(min-width: 1300px) and (max-width: 1400px)",
-                    medium: "(min-width: 1400px) and (max-width: 1600px)",
-                    large: "(min-width: 1600px)",
-
-                  }}>
+                  <Media
+                    queries={{
+                      mobile: '(max-width: 1024px)',
+                      small: '(min-width: 1300px) and (max-width: 1400px)',
+                      medium: '(min-width: 1400px) and (max-width: 1600px)',
+                      large: '(min-width: 1600px)',
+                    }}
+                  >
                     {(matches) => {
-                      return matches.mobile ?
-                        <NavbarBMCMob handleSelectedContext={this.handleSelectedContext} />
-                        :
-                        <NavbarBMC handleSelectedContext={this.handleSelectedContext} />
+                      return matches.mobile ? (
+                        <NavbarBMCMob
+                          handleSelectedContext={this.handleSelectedContext}
+                        />
+                      ) : (
+                        <NavbarBMC
+                          handleSelectedContext={this.handleSelectedContext}
+                        />
+                      );
                     }}
                   </Media>
-                  <Media query='(min-width: 1024px)'>
-                    {(matches) => {
-                      return matches ?
-                        // <FloatingBtn />
-                        null
-                        :
-                        null
-                    }}
-                  </Media>
-                </>}
+                </>
+              )}
 
-
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <Route path='/temp' exact component={BMCHomepage} />
-                    :
-                    <Route path='/temp' exact component={BMCHomepage} />
+                  return matches ? (
+                    <Route path="/temp" exact component={BMCHomepage} />
+                  ) : (
+                    <Route path="/temp" exact component={BMCHomepage} />
+                  );
                 }}
               </Media>
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <Route path='/temp/fm' exact component={Finance} />
-                    :
-                    <Route path='/temp/fm' exact component={Finance} />
+                  return matches ? (
+                    <Route path="/temp/fm" exact component={Finance} />
+                  ) : (
+                    <Route path="/temp/fm" exact component={Finance} />
+                  );
                 }}
               </Media>
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <Route path='/' exact component={BMCHomepage} />
-                    :
-                    <Route path='/' exact component={BMCHomepageMob} />
+                  return matches ? (
+                    <Route path="/" exact component={BMCHomepage} />
+                  ) : (
+                    <Route path="/" exact component={BMCHomepageMob} />
+                  );
                 }}
               </Media>
 
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <Route path="/courses/:courseName" exact component={Course} />
-                    :
-                    <Route path="/courses/:courseName" exact component={Course} />
-                }}
-              </Media>
-
-
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/about/partners' exact component={PartnersMessage} />
-                    :
-                    <Route path='/about/partners' exact component={PartnersMessage} />
-                }}
-              </Media>
-
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/about/founder' exact component={FounderMessage} />
-                    :
-                    <Route path='/about/founder' exact component={FounderMessage} />
-                }}
-              </Media>
-
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/about/story' exact component={OurStory} />
-                    :
-                    <Route path='/about/story' exact component={OurStoryMob} />
-                }}
-              </Media>
-
-              <Route path='/about/experts' exact component={MeetTheExperts} />
-
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/whyBMC' exact component={WhyBMC} />
-                    :
-                    <Route path='/whyBMC' exact component={WhyBMCMob} />
-                }}
-              </Media>
-
-              {/* <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
+                  return matches ? (
                     <Route
-                      path='/services/strategic'
+                      path="/courses/:courseName"
                       exact
-                      render={() => (
-                        <Service logo='service-strategic-planning.png' sideImage='landing-strategic-planning.jpg' title='Strategic Planning' />
-                      )}
+                      component={Course}
                     />
-                    :
+                  ) : (
                     <Route
-                      path='/services/strategic'
+                      path="/courses/:courseName"
                       exact
-                      render={() => (
-                        <ServiceMob logo='service-strategic-planning.png' sideImage='landing-strategic-planning.jpg' title='Strategic Planning' />
-                      )}
+                      component={Course}
                     />
-                }}
-              </Media> */}
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/services/marketingMgmt' exact component={MarketingMGMT} />
-                    :
-                    <Route path='/services/marketingMgmt' exact component={MarketingMGMT} />
-                }}
-              </Media>
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/services/strategic' exact component={StrategicPlanning} />
-                    :
-                    <Route path='/services/strategic' exact component={StrategicPlanning} />
-                }}
-              </Media>
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/services/financial' exact component={Finance} />
-                    :
-                    <Route path='/services/financial' exact component={Finance} />
-                }}
-              </Media>
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/services/hr' exact component={HR} />
-                    :
-                    <Route path='/services/hr' exact component={HR} />
+                  );
                 }}
               </Media>
 
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <Route path='/services/toolbox' exact component={Toolbox} />
-                    :
-                    <Route path='/services/toolbox' exact component={Toolbox} />
+                  return matches ? (
+                    <Route
+                      path="/about/partners"
+                      exact
+                      component={PartnersMessage}
+                    />
+                  ) : (
+                    <Route
+                      path="/about/partners"
+                      exact
+                      component={PartnersMessage}
+                    />
+                  );
                 }}
               </Media>
 
-              {/* <Route path='/careers' exact component={CareerLanding} /> */}
-
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <Route path='/careers/:postingID' exact component={JobPost} />
-                    // <Route path='/careers/openings' exact component={CareerOpenings} />
-                    :
-                    <Route path='/careers/:postingID' exact component={JobPost} />
-                  // <Route path='/careers/openings' exact component={CareerOpeningsMob} />
-                }}
-              </Media>
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/careers' exact component={Careers} />
-                    :
-                    <Route path='/careers' exact component={Careers} />
+                  return matches ? (
+                    <Route
+                      path="/about/founder"
+                      exact
+                      component={FounderMessage}
+                    />
+                  ) : (
+                    <Route
+                      path="/about/founder"
+                      exact
+                      component={FounderMessage}
+                    />
+                  );
                 }}
               </Media>
 
-
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <Route path='/courses' exact component={Courses} />
-                    :
-                    <Route path='/courses' exact component={Courses} />
-                }}
-              </Media>
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/partners' exact component={Clients} />
-                    :
-                    <Route path='/partners' exact component={Clients} />
-                }}
-              </Media>
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/consultations' exact component={Consultations} />
-                    :
-                    <Route path='/consultations' exact component={Consultations} />
+                  return matches ? (
+                    <Route path="/about/story" exact component={OurStory} />
+                  ) : (
+                    <Route path="/about/story" exact component={OurStoryMob} />
+                  );
                 }}
               </Media>
 
+              <Route path="/about/experts" exact component={MeetTheExperts} />
 
-
-
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    // <Route path='/partners' exact component={Partners} />
-                    <Route path='/contact' exact component={Contact} />
-                    // <Route path='/blogs' exact component={Blogs} />
-                    :
-                    <Route path='/contact' exact component={ContactMob} />
-                  // <Route path='/blogs' exact component={BlogsMob} />
-                  // <Route path='/partners' exact component={PartnersMob} />    
-                }}
-              </Media>
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    // <Route path='/partners' exact component={Partners} />
-                    <Route path='/blogs' exact component={Blogs} />
-                    :
-                    <Route path='/blogs' exact component={Blogs} />
-                  // <Route path='/partners' exact component={PartnersMob} />      
-                }}
-              </Media>
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/blogs/:blogID' exact component={Blog} />
-                    :
-                    <Route path='/blogs/:blogID' exact component={Blog} />
+                  return matches ? (
+                    <Route path="/whyBMC" exact component={WhyBMC} />
+                  ) : (
+                    <Route path="/whyBMC" exact component={WhyBMCMob} />
+                  );
                 }}
               </Media>
 
-              {this.state.isLanding ? null :
-                <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route
+                      path="/services/marketingMgmt"
+                      exact
+                      component={MarketingMGMT}
+                    />
+                  ) : (
+                    <Route
+                      path="/services/marketingMgmt"
+                      exact
+                      component={MarketingMGMT}
+                    />
+                  );
+                }}
+              </Media>
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route
+                      path="/services/strategic"
+                      exact
+                      component={StrategicPlanning}
+                    />
+                  ) : (
+                    <Route
+                      path="/services/strategic"
+                      exact
+                      component={StrategicPlanning}
+                    />
+                  );
+                }}
+              </Media>
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route
+                      path="/services/financial"
+                      exact
+                      component={Finance}
+                    />
+                  ) : (
+                    <Route
+                      path="/services/financial"
+                      exact
+                      component={Finance}
+                    />
+                  );
+                }}
+              </Media>
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route path="/services/hr" exact component={HR} />
+                  ) : (
+                    <Route path="/services/hr" exact component={HR} />
+                  );
+                }}
+              </Media>
+
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route path="/services/toolbox" exact component={Toolbox} />
+                  ) : (
+                    <Route path="/services/toolbox" exact component={Toolbox} />
+                  );
+                }}
+              </Media>
+
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route
+                      path="/careers/:postingID"
+                      exact
+                      component={JobPost}
+                    />
+                  ) : (
+                    <Route
+                      path="/careers/:postingID"
+                      exact
+                      component={JobPost}
+                    />
+                  );
+                }}
+              </Media>
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route path="/careers" exact component={Careers} />
+                  ) : (
+                    <Route path="/careers" exact component={Careers} />
+                  );
+                }}
+              </Media>
+
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route path="/courses" exact component={Courses} />
+                  ) : (
+                    <Route path="/courses" exact component={Courses} />
+                  );
+                }}
+              </Media>
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route path="/partners" exact component={Clients} />
+                  ) : (
+                    <Route path="/partners" exact component={Clients} />
+                  );
+                }}
+              </Media>
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route
+                      path="/consultations"
+                      exact
+                      component={Consultations}
+                    />
+                  ) : (
+                    <Route
+                      path="/consultations"
+                      exact
+                      component={Consultations}
+                    />
+                  );
+                }}
+              </Media>
+
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route path="/contact" exact component={Contact} />
+                  ) : (
+                    <Route path="/contact" exact component={ContactMob} />
+                  );
+                }}
+              </Media>
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route path="/blogs" exact component={Blogs} />
+                  ) : (
+                    <Route path="/blogs" exact component={Blogs} />
+                  );
+                }}
+              </Media>
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route path="/blogs/:blogID" exact component={Blog} />
+                  ) : (
+                    <Route path="/blogs/:blogID" exact component={Blog} />
+                  );
+                }}
+              </Media>
+
+              {this.state.isLanding ? null : (
+                <Media query="(min-width: 1024px)">
                   {(matches) => {
-                    return matches ?
-                      // <>
-                      /* <FooterTop /> */
-                      <FooterBMC />
-                      // </>
-                      :
-                      <>
-                        <FooterMob />
-                        {/* <FloatingBtnMob /> */}
-
-                      </>
+                    return matches ? <FooterBMC /> : <FooterMob />;
                   }}
                 </Media>
-              }
-
+              )}
             </>
-            :
+          ) : (
             <>
-
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    // <FloatingBtn />
-                    <NavbarEwings />
-                    :
-                    // <NavbarDMapMob handleSelectedContext={this.handleSelectedContext} />
-                    <NavbarEwingsMob />
-                  // <FloatingBtnMob />
+                  return matches ? <NavbarEwings /> : <NavbarEwingsMob />;
                 }}
               </Media>
 
-
-              {/* <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    :
-                }}
-              </Media> */}
-
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
+                  return matches ? (
                     <Route
-                      path='/ewings'
+                      path="/ewings"
                       exact
-                      render={() => (
-                        <EwingsHomepage />
-                      )}
+                      render={() => <EwingsHomepage />}
                     />
-                    :
+                  ) : (
                     <Route
-                      path='/ewings'
+                      path="/ewings"
                       exact
-                      render={() => (
-                        <EwingsHomepage />
-                      )}
+                      render={() => <EwingsHomepage />}
                     />
+                  );
                 }}
               </Media>
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <Route path='/ewings/courses' exact component={CoursesListEwings} />
-                    :
-                    <Route path='/ewings/courses' exact component={CoursesListEwingsMob} />
+                  return matches ? (
+                    <Route
+                      path="/ewings/courses"
+                      exact
+                      component={CoursesListEwings}
+                    />
+                  ) : (
+                    <Route
+                      path="/ewings/courses"
+                      exact
+                      component={CoursesListEwingsMob}
+                    />
+                  );
                 }}
               </Media>
 
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <Route path='/ewings/courses/:courseName' exact component={CoursePageEwings} />
-                    :
-                    <Route path='/ewings/courses/:courseName' exact component={CoursePageEwingsMob} />
+                  return matches ? (
+                    <Route
+                      path="/ewings/courses/:courseName"
+                      exact
+                      component={CoursePageEwings}
+                    />
+                  ) : (
+                    <Route
+                      path="/ewings/courses/:courseName"
+                      exact
+                      component={CoursePageEwingsMob}
+                    />
+                  );
                 }}
               </Media>
 
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <Route path='/ewings/gallery' exact component={Gallery} />
-                    :
-                    <Route path='/ewings/gallery' exact component={GalleryMob} />
+                  return matches ? (
+                    <Route path="/ewings/gallery" exact component={Gallery} />
+                  ) : (
+                    <Route
+                      path="/ewings/gallery"
+                      exact
+                      component={GalleryMob}
+                    />
+                  );
                 }}
               </Media>
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <Route path='/ewings/services/digital' exact component={DigitalMarketing} />
-                    :
-                    <Route path='/ewings/services/digital' exact component={DigitalMarketing} />
+                  return matches ? (
+                    <Route
+                      path="/ewings/services/digital"
+                      exact
+                      component={DigitalMarketing}
+                    />
+                  ) : (
+                    <Route
+                      path="/ewings/services/digital"
+                      exact
+                      component={DigitalMarketing}
+                    />
+                  );
                 }}
               </Media>
-              <Media query='(min-width: 1024px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <Route path='/ewings/services/multimedia' exact component={MultimediaProd} />
-                    :
-                    <Route path='/ewings/services/multimedia' exact component={MultimediaProd} />
-                }}
-              </Media>
-
-
-
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/ewings/services/social' exact component={SocialMediaMGMT} />
-                    :
-                    <Route path='/ewings/services/social' exact component={SocialMediaMGMT} />
-                }}
-              </Media>
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/ewings/services/media' exact component={MediaPlanning} />
-                    :
-                    <Route path='/ewings/services/media' exact component={MediaPlanning} />
-                }}
-              </Media>
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/ewings/services/web' exact component={WebDevelopment} />
-                    :
-                    <Route path='/ewings/services/web' exact component={WebDevelopment} />
-                }}
-              </Media>
-              <Media query='(min-width: 1024px)'>
-                {(matches) => {
-                  return matches ?
-                    <Route path='/ewings/contact' exact component={ContactEwings} />
-                    :
-                    <Route path='/ewings/contact' exact component={ContactEwings} />
+                  return matches ? (
+                    <Route
+                      path="/ewings/services/multimedia"
+                      exact
+                      component={MultimediaProd}
+                    />
+                  ) : (
+                    <Route
+                      path="/ewings/services/multimedia"
+                      exact
+                      component={MultimediaProd}
+                    />
+                  );
                 }}
               </Media>
 
-
-              <Media query='(min-width: 1440px)'>
+              <Media query="(min-width: 1024px)">
                 {(matches) => {
-                  return matches ?
-                    <FooterEwings />
-                    :
-                    <FooterEwingsMob />
+                  return matches ? (
+                    <Route
+                      path="/ewings/services/social"
+                      exact
+                      component={SocialMediaMGMT}
+                    />
+                  ) : (
+                    <Route
+                      path="/ewings/services/social"
+                      exact
+                      component={SocialMediaMGMT}
+                    />
+                  );
+                }}
+              </Media>
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route
+                      path="/ewings/services/media"
+                      exact
+                      component={MediaPlanning}
+                    />
+                  ) : (
+                    <Route
+                      path="/ewings/services/media"
+                      exact
+                      component={MediaPlanning}
+                    />
+                  );
+                }}
+              </Media>
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route
+                      path="/ewings/services/web"
+                      exact
+                      component={WebDevelopment}
+                    />
+                  ) : (
+                    <Route
+                      path="/ewings/services/web"
+                      exact
+                      component={WebDevelopment}
+                    />
+                  );
+                }}
+              </Media>
+              <Media query="(min-width: 1024px)">
+                {(matches) => {
+                  return matches ? (
+                    <Route
+                      path="/ewings/contact"
+                      exact
+                      component={ContactEwings}
+                    />
+                  ) : (
+                    <Route
+                      path="/ewings/contact"
+                      exact
+                      component={ContactEwings}
+                    />
+                  );
                 }}
               </Media>
 
+              <Media query="(min-width: 1440px)">
+                {(matches) => {
+                  return matches ? <FooterEwings /> : <FooterEwingsMob />;
+                }}
+              </Media>
             </>
-          }
+          )}
         </Switch>
       </Router>
-    )
+    );
   }
 }

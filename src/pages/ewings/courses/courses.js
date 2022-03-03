@@ -28,7 +28,6 @@ export default class CoursesList extends Component {
           courses1: firstHalf,
           courses2: secondHalf,
         });
-        console.log(this.state);
       })
       .catch((err) => {
         console.log(err);

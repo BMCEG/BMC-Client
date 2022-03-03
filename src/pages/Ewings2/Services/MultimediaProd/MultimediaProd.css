@@ -1,13 +1,13 @@
-.ewings__multimediaProd__banner__img{
-    width: 100%;
-    min-height: 420px;
-    /* object-position: 85% 50%; */
-    /* justify-content: end; */
-    object-fit: cover;
+.ewings__multimediaProd__banner__img {
+  width: 100%;
+  min-height: 420px;
+  /* object-position: 85% 50%; */
+  /* justify-content: end; */
+  object-fit: cover;
 }
-.ewings__service__hr{
-    background-color: blue !important;
-    height: 1px;
-    margin-top: 3vmin;
-    margin-bottom: 3vmin;
+.ewings__service__hr {
+  background-color: blue !important;
+  height: 1px;
+  margin-top: 3vmin;
+  margin-bottom: 3vmin;
 }

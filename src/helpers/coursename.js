@@ -1,3 +1,3 @@
-export const getCourseName  = () => {
-    return localStorage.getItem('courseName');
+export const getCourseName = () => {
+  return localStorage.getItem('courseName');
 };

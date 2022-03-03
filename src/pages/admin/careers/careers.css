@@ -1,31 +1,31 @@
 .admin-careers-root {
-    padding-top: 3%;
-    display: flex;
-    /* height: 100vh; */
-    /* background-color: lightslategray; */
+  padding-top: 3%;
+  display: flex;
+  /* height: 100vh; */
+  /* background-color: lightslategray; */
 }
 
-.admin-careers-controls{
-    background-color: slategray;
-    width: 20%;
-    padding: 1%;
-    border-right: 5px solid darkslategrey;
-    /* border-radius: 100px; */
-    z-index: 1;
+.admin-careers-controls {
+  background-color: slategray;
+  width: 20%;
+  padding: 1%;
+  border-right: 5px solid darkslategrey;
+  /* border-radius: 100px; */
+  z-index: 1;
 }
 
 .admin-careers-body {
-    /* background-color: maroon; */
-    min-height: 120vh;
-    padding: 1%;
-    width: 100%;
+  /* background-color: maroon; */
+  min-height: 120vh;
+  padding: 1%;
+  width: 100%;
 }
 
 .admin-careers-controls-btns {
-    /* background-color: darkturquoise; */
+  /* background-color: darkturquoise; */
 }
 
 .admin-job-XPs {
-    display: flex;
-    /* background-color: deepskyblue; */
+  display: flex;
+  /* background-color: deepskyblue; */
 }

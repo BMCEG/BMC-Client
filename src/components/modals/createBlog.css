@@ -1,33 +1,33 @@
 .create-blog-root {
-    background-color: whitesmoke;
-    width: 60%;
-    margin: auto;
-    padding: 1%;
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px black;
+  background-color: whitesmoke;
+  width: 60%;
+  margin: auto;
+  padding: 1%;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
 }
 
-.create-blog-modal-post{
-    /* background-color: whitesmoke; */
-    padding: 1%;
-    width: 70%;
+.create-blog-modal-post {
+  /* background-color: whitesmoke; */
+  padding: 1%;
+  width: 70%;
 }
 
 .create-blog-modal-info {
-    padding: 1%;
-    width: 30%;
-    /* background-color: rebeccapurple; */
+  padding: 1%;
+  width: 30%;
+  /* background-color: rebeccapurple; */
 }
 
 .create-blog-btn-base {
-    /* background-color: blue; */
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    padding: 1%;
+  /* background-color: blue; */
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  padding: 1%;
 }
 
 .create-blog-btn {
-    width: 50%;
+  width: 50%;
 }

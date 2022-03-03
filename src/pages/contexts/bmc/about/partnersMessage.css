@@ -1,85 +1,83 @@
 .partner-root {
-    /* background-color: teal; */
-    /* height: 100vh; */
-    /* padding-top: 6%; */
-    display: flex;
-    /* background-color: thistle; */
+  /* background-color: teal; */
+  /* height: 100vh; */
+  /* padding-top: 6%; */
+  display: flex;
+  /* background-color: thistle; */
 }
 
 .page-margin {
-    margin-left: 10%;
-    margin-right: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .partner-text {
-    width: 80%;
-    /* box-shadow: 2px 0px 5px black; */
-    padding: 3%;
-    max-height: 100vh;
+  width: 80%;
+  /* box-shadow: 2px 0px 5px black; */
+  padding: 3%;
+  max-height: 100vh;
 }
 
 .partner-text-mobile {
-    overflow-y: scroll;
-    /* box-shadow: 2px 0px 5px black; */
-    padding: 3%;
-    /* background-color: blue; */
-    max-height: 750px;
-
+  overflow-y: scroll;
+  /* box-shadow: 2px 0px 5px black; */
+  padding: 3%;
+  /* background-color: blue; */
+  max-height: 750px;
 }
 
 .partner-text-msg {
-    margin-left: 6%;
-    margin-right: 6%;
-    height: 93%;
-    overflow-y: scroll;
-
+  margin-left: 6%;
+  margin-right: 6%;
+  height: 93%;
+  overflow-y: scroll;
 }
 
 .partner-sig {
-    width: 20%;
+  width: 20%;
 }
 
 .partner-img-base {
-    /* background-color: blue; */
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 2%;
+  /* background-color: blue; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
 }
 
 .partner-img {
-    width: 75%;
-    /* max-height: 100vh; */
-    margin: auto;
+  width: 75%;
+  /* max-height: 100vh; */
+  margin: auto;
 }
 
 .partner-text-box {
-    /* border-style: solid;
+  /* border-style: solid;
     border-color: black;
     border-width: 4px; */
-    /* background-color: blanchedalmond; */
-    width: fit-content;
-    font-family: 'bukra-bold' !important;
-    }
-
-@font-face {
-    font-family: 'bukra-bold';
-    src: local('bukra-bold'), url(../../../../fonts/bukra-bold.OTF) format('truetype');
+  /* background-color: blanchedalmond; */
+  width: fit-content;
+  font-family: 'bukra-bold' !important;
 }
 
 @font-face {
-    font-family: 'bukra-regular';
-    src: local('bukra-regular'), url(../../../../fonts/bukra-regular.OTF) format('truetype');
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'),
+    url(../../../../fonts/bukra-bold.OTF) format('truetype');
+}
+
+@font-face {
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../../../fonts/bukra-regular.OTF) format('truetype');
 }
 
 .bukra-bold {
-    font-family: 'bukra-bold' !important;
+  font-family: 'bukra-bold' !important;
 }
 
 .bukra-regular {
-    font-family: 'bukra-regular' !important;
-    line-height: 150% !important;
-
-
+  font-family: 'bukra-regular' !important;
+  line-height: 150% !important;
 }

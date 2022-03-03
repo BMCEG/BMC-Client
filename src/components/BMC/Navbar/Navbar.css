@@ -63,7 +63,7 @@
   /* width: 100%; */
   /* height: 100%; */
 
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
 }
 .bmcnav__btn__logo {
   /* background-color: darkcyan !impo rtant; */
@@ -72,7 +72,7 @@
   /* width: 100%; */
   /* height: 100%; */
 
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
 }
 .bmcnav__btn--size {
   font-size: 16px !important;
@@ -82,7 +82,7 @@
 .bmcnav__dropdown__item {
   margin-top: 5px;
   margin-bottom: 10px;
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
 }
 .bmcnav__dropdown__item--nested {
   /* width: 90%; */
@@ -182,14 +182,14 @@
 }
 
 @font-face {
-  font-family: "bukra-bold";
-  src: local("bukra-bold"),
-    url(../../../fonts/bukra-bold.OTF) format("truetype");
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'),
+    url(../../../fonts/bukra-bold.OTF) format('truetype');
 }
 @font-face {
-  font-family: "bukra-regular";
-  src: local("bukra-regular"),
-    url(../../../fonts/bukra-regular.OTF) format("truetype");
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../../fonts/bukra-regular.OTF) format('truetype');
 }
 
 .nav__dropdown {

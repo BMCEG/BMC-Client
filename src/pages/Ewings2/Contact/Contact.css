@@ -1,30 +1,30 @@
 .contact__root {
-    min-height: 100vh;
-    background-color: #f8fafb;
-  }
-  
-  .contact__root__contact {
-    display: flex;
-    width: 75%;
-    margin: auto;
-    /* background-color: yellow; */
-  }
-  .contact__root__contact--mob {
-    /* display: flex; */
-    width: 85%;
-    margin: auto;
-    /* background-color: yellow; */
-  }
-  
-  .contact__root__left {
-    /* background-color: teal; */
-    width: 50%;
-    padding: 1%;
-  }
-  
-  .contact__root__left--mob {
-    /* background-color: teal; */
-    width: 0%;
-    margin: auto;
-    padding: 1%;
-  }
+  min-height: 100vh;
+  background-color: #f8fafb;
+}
+
+.contact__root__contact {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  /* background-color: yellow; */
+}
+.contact__root__contact--mob {
+  /* display: flex; */
+  width: 85%;
+  margin: auto;
+  /* background-color: yellow; */
+}
+
+.contact__root__left {
+  /* background-color: teal; */
+  width: 50%;
+  padding: 1%;
+}
+
+.contact__root__left--mob {
+  /* background-color: teal; */
+  width: 0%;
+  margin: auto;
+  padding: 1%;
+}

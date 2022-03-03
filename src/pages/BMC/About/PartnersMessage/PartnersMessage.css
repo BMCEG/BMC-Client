@@ -16,13 +16,13 @@
   margin: auto;
 }
 .partners__body__subtitle {
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
 }
 .partners__body__subtitle--size {
   font-size: 20px !important;
 }
 .partners__body__text {
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
 }
 .partners__body__text--size {
   font-size: 14px !important;
@@ -37,7 +37,7 @@
   font-size: 18px !important;
 }
 .partners__sig__text--size {
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
   font-size: 14px !important;
 }
 
@@ -52,7 +52,7 @@
     font-size: 20px !important;
   }
   .partners__sig__text--size {
-    font-family: "bukra-regular" !important;
+    font-family: 'bukra-regular' !important;
     font-size: 16px !important;
   }
 }
@@ -67,17 +67,17 @@
     font-size: 22px !important;
   }
   .partners__sig__text--size {
-    font-family: "bukra-regular" !important;
+    font-family: 'bukra-regular' !important;
     font-size: 18px !important;
   }
 }
 @font-face {
-  font-family: "bukra-bold";
-  src: local("bukra-bold"),
-    url(../../../../fonts/bukra-bold.OTF) format("truetype");
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'),
+    url(../../../../fonts/bukra-bold.OTF) format('truetype');
 }
 @font-face {
-  font-family: "bukra-regular";
-  src: local("bukra-regular"),
-    url(../../../../fonts/bukra-regular.OTF) format("truetype");
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../../../fonts/bukra-regular.OTF) format('truetype');
 }

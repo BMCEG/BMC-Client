@@ -12,7 +12,7 @@
 .strategic-planning__title-font {
   color: black;
   background-color: #f8fafb;
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
   margin: auto !important;
 }
 .strategic-planning__banner {
@@ -31,14 +31,14 @@
   color: black;
   width: 100%;
   margin-left: 10% !important;
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
 }
 
 .strategic-planning__subtitle {
   display: flex;
 }
 .strategic-planning_subtitle-border {
-  background-color: #DCDDDE;
+  background-color: #dcddde;
   width: 25%;
 }
 
@@ -54,7 +54,7 @@
   margin-bottom: 2%;
 }
 .strategic-planning__body--text {
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
   word-wrap: break-word;
   white-space: pre-line;
 
@@ -62,7 +62,7 @@
   font-size: 14px !important;
 }
 .strategic-planning__body_canvas {
-  background-color: #DCDDDE;
+  background-color: #dcddde;
   width: 70%;
   padding: 5%;
   margin: auto;
@@ -127,12 +127,12 @@
 }
 
 @font-face {
-  font-family: "bukra-bold";
-  src: local("bukra-bold"),
-    url(../../../../fonts/bukra-bold.OTF) format("truetype");
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'),
+    url(../../../../fonts/bukra-bold.OTF) format('truetype');
 }
 @font-face {
-  font-family: "bukra-regular";
-  src: local("bukra-regular"),
-    url(../../../../fonts/bukra-regular.OTF) format("truetype");
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../../../fonts/bukra-regular.OTF) format('truetype');
 }

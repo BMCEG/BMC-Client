@@ -133,7 +133,7 @@
   border-left: 2px solid #636363;
   transition: all 0.2s ease-in;
   padding: 3%;
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
   /* background: rgba(76, 175, 80, 0.6); */
   text-align: left !important;
   text-justify: inter-word !important;
@@ -148,7 +148,7 @@
   border-right: 2px solid #636363;
   transition: all 5.5s ease-in;
   padding: 3%;
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
   /* background: rgba(76, 175, 80, 0.6); */
   text-align: right !important;
   text-justify: inter-word !important;
@@ -162,7 +162,7 @@
   border-right: 2px solid #636363;
   transition: all 0.2s ease-in;
   padding: 3%;
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
   /* background: rgba(76, 175, 80, 0.6); */
   text-align: right !important;
   text-justify: inter-word !important;
@@ -177,7 +177,7 @@
   transition: all 0.2s ease-in;
   padding: 3%;
   background-color: cyan;
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
   text-align: left !important;
   text-justify: inter-word !important;
   /* display: block; */
@@ -197,7 +197,7 @@
   border-right: 2px solid #636363;
   transition: all 0.2s ease-in;
   padding: 3%;
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
   /* z-index: -500 !important; */
   z-index: -9 !important;
   width: 400px;
@@ -228,23 +228,23 @@
 }
 
 @font-face {
-  font-family: "bukra-bold";
-  src: local("bukra-bold"),
-    url(../../../fonts/bukra-bold.OTF) format("truetype");
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'),
+    url(../../../fonts/bukra-bold.OTF) format('truetype');
 }
 
 @font-face {
-  font-family: "bukra-regular";
-  src: local("bukra-regular"),
-    url(../../../fonts/bukra-regular.OTF) format("truetype");
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../../fonts/bukra-regular.OTF) format('truetype');
 }
 
 .bukra-bold {
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
 }
 
 .bukra-regular {
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
   line-height: 150% !important;
 }
 

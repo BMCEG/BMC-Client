@@ -1,71 +1,79 @@
 .ourStory-root {
-    min-height: 100vh;
-    background-color: #f8fafb;
+  min-height: 100vh;
+  background-color: #f8fafb;
 }
 .ourStory-root-mob {
-    /* min-height: ; */
-    /* padding-top: 3%; */
-    background-color: #f8fafb;
-    /* background-color: blanchedalmond; */
-    /* padding-top: 3%; */
-    /* background-image: url(./); */
+  /* min-height: ; */
+  /* padding-top: 3%; */
+  background-color: #f8fafb;
+  /* background-color: blanchedalmond; */
+  /* padding-top: 3%; */
+  /* background-image: url(./); */
 }
 
 .ourStory-text-box {
-    /* margin: auto; */
-    /* border-style: solid;
+  /* margin: auto; */
+  /* border-style: solid;
     border-color: black;
     border-width: 4px;
     background-color: blanchedalmond; */
-    width: fit-content;
-    padding: 3%;
+  width: fit-content;
+  padding: 3%;
 }
 
-.hide{
-    padding: 2%;
-    background-color: burlywood;
-    width: 50%;
-    margin: auto;
-    /* display: none; */
-    
+.hide {
+  padding: 2%;
+  background-color: burlywood;
+  width: 50%;
+  margin: auto;
+  /* display: none; */
 }
 
 .ourStory-balls {
-    width: 80%;
-    
-    /* min-height: 100vh; */
-    margin: auto;
-    padding-top: 4vmin;
-    padding-bottom: 4vmin;
-    /* background-color: darkgreen; */
+  width: 80%;
+
+  /* min-height: 100vh; */
+  margin: auto;
+  padding-top: 4vmin;
+  padding-bottom: 4vmin;
+  /* background-color: darkgreen; */
 }
 
 @media screen and (max-width: 1450px) {
-    .ourStory-balls{
-        width: 95% !important;
-        margin: auto !important;
-    }
+  .ourStory-balls {
+    width: 95% !important;
+    margin: auto !important;
+  }
 }
 .MuiPaper-root {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .fadeIn {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity .5s linear;  }
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
 
 .fadeOut {
-    visibility: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.5s, opacity 2s linear;
+}
+
+@keyframes fadeInAnimation {
+  from {
     opacity: 0;
-    transition: visibility 0s .5s, opacity 2s linear;
   }
-  
-  @keyframes fadeInAnimation {
-      from { opacity: 0; }
-      to   { opacity: 1; }
+  to {
+    opacity: 1;
   }
-  @keyframes fadeOutAnimation {
-      from { opacity: 1; }
-      to   { opacity: 0; }
+}
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
   }
+  to {
+    opacity: 0;
+  }
+}

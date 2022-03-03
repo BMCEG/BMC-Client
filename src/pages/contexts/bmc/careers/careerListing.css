@@ -1,110 +1,109 @@
 .career-listing-root {
-    /* background-color: lightgray; */
-    /* min-height: 100vh; */
-    /* padding-top: 1%; */
+  /* background-color: lightgray; */
+  /* min-height: 100vh; */
+  /* padding-top: 1%; */
 }
 
 .career-listing-title {
-    padding: 2%;
-    text-align: center;
+  padding: 2%;
+  text-align: center;
 }
 
 .career-listing-details {
-    background-color: whitesmoke;
-    padding: 3%
+  background-color: whitesmoke;
+  padding: 3%;
 }
 
 .career-listing-page-margins {
-    padding-left: 16%;
-    padding-right: 16%;
-    /* padding-left: 16%; */
-    /* padding-top: 2%; */
+  padding-left: 16%;
+  padding-right: 16%;
+  /* padding-left: 16%; */
+  /* padding-top: 2%; */
 }
 .career-listing-page-margins-mobile {
-    /* padding-left: 16%; */
-    padding-right: 4%;
-    padding-left: 4%;
-    /* padding-top: 2%; */
+  /* padding-left: 16%; */
+  padding-right: 4%;
+  padding-left: 4%;
+  /* padding-top: 2%; */
 }
 
 .career-listing-subtitle {
-    padding-left: 1%;
+  padding-left: 1%;
 }
 
 .career-listing-subtitle-body {
-    padding-left: 2%;
-    white-space: pre-line;
+  padding-left: 2%;
+  white-space: pre-line;
 }
 
 .career-listing-application-title {
-    /* background-color: lightyellow; */
-    padding: 1%;
-    /* background-color: linen; */
-    background-color: whitesmoke;
+  /* background-color: lightyellow; */
+  padding: 1%;
+  /* background-color: linen; */
+  background-color: whitesmoke;
 }
 
 .career-listing-application-form {
-    padding: 1%;
-    background-color: whitesmoke;
+  padding: 1%;
+  background-color: whitesmoke;
 }
 
 .career-listing-application-row {
-    display: flex;
-    margin: 1%;
+  display: flex;
+  margin: 1%;
 }
 
 .career-listing-application-label {
-    width: 250px !important;
-    /* background-color: sandybrown; */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 250px !important;
+  /* background-color: sandybrown; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .career-listing-application-row-number {
-    width: 50% !important;
-    display: flex;
-    margin: 1%;
-    
-    
+  width: 50% !important;
+  display: flex;
+  margin: 1%;
 }
 .career-listing-application-row-email {
-    /* width: 1%; */
-    width: 50% !important;
-    display: flex;
-    margin: 1%;
-    padding-left: 2%;
-    /* background-color: blue; */
+  /* width: 1%; */
+  width: 50% !important;
+  display: flex;
+  margin: 1%;
+  padding-left: 2%;
+  /* background-color: blue; */
 }
 
 .lmao {
-    /* background-color: blueviolet; */
-    display: flex;
+  /* background-color: blueviolet; */
+  display: flex;
 }
 
 .career-listing-application-btn {
-    padding: 1%;
-    text-align: center;
+  padding: 1%;
+  text-align: center;
 }
 
 @font-face {
-    font-family: 'bukra-bold';
-    src: local('bukra-bold'), url(../../../../fonts/bukra-bold.OTF) format('truetype');
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'),
+    url(../../../../fonts/bukra-bold.OTF) format('truetype');
 }
 @font-face {
-    font-family: 'bukra-regular';
-    src: local('bukra-regular'), url(../../../../fonts/bukra-regular.OTF) format('truetype');
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../../../fonts/bukra-regular.OTF) format('truetype');
 }
 
 .bukra-bold {
-    font-family: 'bukra-bold' !important;
+  font-family: 'bukra-bold' !important;
 }
 
 .bukra-regular {
-    font-family: 'bukra-regular' !important;
-    
+  font-family: 'bukra-regular' !important;
 }
 .line-spacing {
-   line-height: 150% !important;
+  line-height: 150% !important;
 }

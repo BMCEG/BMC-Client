@@ -1,84 +1,91 @@
 .partner-paper {
-    margin-bottom: 10% !important;  
-    margin: auto;
-    /* padding: 2%; */
-    /* display: flex; */
-    height: 220px;
-    width: 220px;
-    /* margin: auto; */
-    /* padding: 4%; */
-    /* background-color: burlywood !important; */
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+  margin-bottom: 10% !important;
+  margin: auto;
+  /* padding: 2%; */
+  /* display: flex; */
+  height: 220px;
+  width: 220px;
+  /* margin: auto; */
+  /* padding: 4%; */
+  /* background-color: burlywood !important; */
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 .partner-paper-mobile {
-    margin-bottom: 10% !important;  
-    margin: auto;
-    /* padding: 2%; */
-    /* display: flex; */
-    height: 120px;
-    width: 120px;
-    /* margin: auto; */
-    /* padding: 4%; */
-    /* background-color: burlywood !important; */
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+  margin-bottom: 10% !important;
+  margin: auto;
+  /* padding: 2%; */
+  /* display: flex; */
+  height: 120px;
+  width: 120px;
+  /* margin: auto; */
+  /* padding: 4%; */
+  /* background-color: burlywood !important; */
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
 @-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .partner-img {
-    height: 100% !important;
-    /* padding: 2%; */
-    background-color: white;
-    /* min-width: 30%; */
-    /* max-width: 30%; */
-    width: 100%;
-    object-fit: contain;
-    padding: 5%;
-    transition: 0.2s;
-    box-shadow: 2px 2px 6px black;
+  height: 100% !important;
+  /* padding: 2%; */
+  background-color: white;
+  /* min-width: 30%; */
+  /* max-width: 30%; */
+  width: 100%;
+  object-fit: contain;
+  padding: 5%;
+  transition: 0.2s;
+  box-shadow: 2px 2px 6px black;
 }
 
-.partner-img:hover{
-    transform: scale(1.1);
+.partner-img:hover {
+  transform: scale(1.1);
 }
 
 .partner-details {
-    /* padding: 3%; */
-    margin: auto;
-    margin-left: 4%;
-    /* margin-bottom: 5%; */
-    width: 100%;
+  /* padding: 3%; */
+  margin: auto;
+  margin-left: 4%;
+  /* margin-bottom: 5%; */
+  width: 100%;
 }
 
 .partner-paper-hr {
-    width: 30%;
-    margin-left:0;
-    /* background-color: black; */
+  width: 30%;
+  margin-left: 0;
+  /* background-color: black; */
 }
 
 .partner-paper-links {
-    width: 100%;
-    height: 6vh;
+  width: 100%;
+  height: 6vh;
 }
 
 .partner-paper-link-btn {
-    background-color: darkgray !important;
-    color: white !important;
-    height: 100%;
-    margin: 1% !important;
+  background-color: darkgray !important;
+  color: white !important;
+  height: 100%;
+  margin: 1% !important;
 }
 
 .partner-paper-link-btn:hover {
-    background-color: grey !important;
-    /* border-radius: 100% !important; */
+  background-color: grey !important;
+  /* border-radius: 100% !important; */
 }
-

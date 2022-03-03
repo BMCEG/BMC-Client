@@ -12,7 +12,7 @@
 .founder-message__title-font {
   color: black;
   background-color: #f8fafb;
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
   margin-left: 5% !important;
 }
 
@@ -48,32 +48,31 @@
   -webkit-animation: fadeIn 0.5s;
   animation: fadeIn 0.5s;
 }
-.founder-message__body__img__border-left{
-    background-color: #636363 !important;
-    width: 60%;
-    height: 5vh;
-    transform: translate(-5%, 45%);
+.founder-message__body__img__border-left {
+  background-color: #636363 !important;
+  width: 60%;
+  height: 5vh;
+  transform: translate(-5%, 45%);
 }
-.founder-message__body__img__border-right{
-    background-color: #636363 !important;
-    width: 60%;
-    height: 5vh;
-    margin-left: auto;
-    transform: translate(5%, -45%);
-    z-index: 2;
+.founder-message__body__img__border-right {
+  background-color: #636363 !important;
+  width: 60%;
+  height: 5vh;
+  margin-left: auto;
+  transform: translate(5%, -45%);
+  z-index: 2;
 }
 .founder-message__heading {
   font-size: 18px !important;
-  padding-left: 1%;  
-  padding-right: 1%;  
-
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .foudner-message__text {
   font-size: 14px !important;
 }
 .founder-message__sig {
-    width: 70%;
+  width: 70%;
 }
 
 .founder-message__banner-img {
@@ -82,7 +81,6 @@
   max-height: 720px !important;
   object-fit: cover;
 }
-
 
 @media screen and (min-width: 400px) {
   .founder-message__heading {
@@ -93,7 +91,7 @@
   }
   .founder-message__sig {
     width: 20vmax;
-}
+  }
 }
 @media screen and (min-width: 800px) {
   .founder-message__heading {
@@ -105,12 +103,12 @@
 }
 
 @font-face {
-  font-family: "bukra-bold";
-  src: local("bukra-bold"),
-    url(../../../../fonts/bukra-bold.OTF) format("truetype");
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'),
+    url(../../../../fonts/bukra-bold.OTF) format('truetype');
 }
 @font-face {
-  font-family: "bukra-regular";
-  src: local("bukra-regular"),
-    url(../../../../fonts/bukra-regular.OTF) format("truetype");
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../../../fonts/bukra-regular.OTF) format('truetype');
 }

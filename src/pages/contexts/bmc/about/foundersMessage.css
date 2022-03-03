@@ -1,115 +1,114 @@
 .founder-root {
-    /* background-color: teal; */
-    /* height: 100vh; */
-    /* padding-top: 6%; */
-    display: flex;
-    /* background-color: thistle; */
+  /* background-color: teal; */
+  /* height: 100vh; */
+  /* padding-top: 6%; */
+  display: flex;
+  /* background-color: thistle; */
 }
-.founder-root-mobile{
-    /* background-color: teal; */
-    /* height: 100vh; */
-    /* padding-top: 6%; */
-    /* display: flex; */
-    /* background-color: thistle; */
+.founder-root-mobile {
+  /* background-color: teal; */
+  /* height: 100vh; */
+  /* padding-top: 6%; */
+  /* display: flex; */
+  /* background-color: thistle; */
 }
 
 .page-margin {
-    margin-left: 10%;
-    margin-right: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .message-body {
-    /* background-color: seagreen; */
-    height: 93%;
-    overflow-y: scroll;
-    /* margin-bottom: -20px; */
-    
+  /* background-color: seagreen; */
+  height: 93%;
+  overflow-y: scroll;
+  /* margin-bottom: -20px; */
 }
 .founder-text {
-    width: 80%;
-    /* box-shadow: 2px 0px 5px black; */
-    padding: 3%;
-    max-height: 100vh;
-    /* box-shadow: 5px 0 10px -3px #000000; */
+  width: 80%;
+  /* box-shadow: 2px 0px 5px black; */
+  padding: 3%;
+  max-height: 100vh;
+  /* box-shadow: 5px 0 10px -3px #000000; */
 }
 .founder-text-mobile {
-    /* width: 80%; */
-    overflow-y: scroll;
-    /* box-shadow: 2px 0px 5px black; */
-    padding: 3%;
-    /* background-color: blue; */
-    max-height: 750px;
-    /* box-shadow: 5px 0 10px -3px #000000; */
+  /* width: 80%; */
+  overflow-y: scroll;
+  /* box-shadow: 2px 0px 5px black; */
+  padding: 3%;
+  /* background-color: blue; */
+  max-height: 750px;
+  /* box-shadow: 5px 0 10px -3px #000000; */
 }
 
 .founder-text-msg-mobile {
-    margin-left: 6%;
-    margin-right: 6%;
-    font-family: 'bukra-regular' !important;
+  margin-left: 6%;
+  margin-right: 6%;
+  font-family: 'bukra-regular' !important;
 }
 
 .founder-sig-mob {
-    /* background-color: yellow; */
-    width: 70%;
+  /* background-color: yellow; */
+  width: 70%;
 }
 .founder-sig {
-    /* background-color: yellow; */
-    width: 20%;
+  /* background-color: yellow; */
+  width: 20%;
 }
 
 .founder-img-base {
-    /* background-color: blue; */
-    /* width: 50%; */
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    /* padding: 2%; */
-    /* background-color: rebeccapurple; */
+  /* background-color: blue; */
+  /* width: 50%; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* padding: 2%; */
+  /* background-color: rebeccapurple; */
 }
 .founder-img-base-mobile {
-    /* background-color: blue; */
-    /* width: 50%; */
-    height: 300px !important;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    /* padding: 2%; */
-    /* background-color: rebeccapurple; */
+  /* background-color: blue; */
+  /* width: 50%; */
+  height: 300px !important;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* padding: 2%; */
+  /* background-color: rebeccapurple; */
 }
 
 .founder-img {
-    width: 100%;
-    /* max-height: 100vh; */
-    /* margin: auto; */
-    object-fit: cover;
+  width: 100%;
+  /* max-height: 100vh; */
+  /* margin: auto; */
+  object-fit: cover;
 }
 
 .founder-text-box {
-    /* border-style: solid;
+  /* border-style: solid;
     border-color: black;
     border-width: 4px; */
-    /* background-color: blanchedalmond; */
-    width: fit-content;
-    font-family: 'bukra-bold' !important;
+  /* background-color: blanchedalmond; */
+  width: fit-content;
+  font-family: 'bukra-bold' !important;
 }
 
 @font-face {
-    font-family: 'bukra-bold';
-    src: local('bukra-bold'), url(../../../../fonts/bukra-bold.OTF) format('truetype');
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'),
+    url(../../../../fonts/bukra-bold.OTF) format('truetype');
 }
 
 @font-face {
-    font-family: 'bukra-regular';
-    src: local('bukra-regular'), url(../../../../fonts/bukra-regular.OTF) format('truetype');
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../../../fonts/bukra-regular.OTF) format('truetype');
 }
 
 .bukra-bold {
-    font-family: 'bukra-bold' !important;
+  font-family: 'bukra-bold' !important;
 }
 
 .bukra-regular {
-    font-family: 'bukra-regular' !important;
-    line-height: 150% !important;
-
-
+  font-family: 'bukra-regular' !important;
+  line-height: 150% !important;
 }

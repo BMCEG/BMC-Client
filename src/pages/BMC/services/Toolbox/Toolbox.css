@@ -10,7 +10,7 @@
 .toolbox__header--font {
   color: black;
   background-color: #f8fafb;
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
   margin: auto !important;
 }
 .toolbox__header--font--size {
@@ -25,8 +25,8 @@
   max-height: 80px !important;
   margin-right: 3%;
 }
-@media screen and (max-width: 600px){
-  .toolbox__body--left{
+@media screen and (max-width: 600px) {
+  .toolbox__body--left {
     width: 25% !important;
   }
 }
@@ -43,7 +43,7 @@
   transform: translate(0, -100%);
 }
 .toolbox__banner__caption--font {
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
   color: white;
 }
 .toolbox__body__img__border-right {
@@ -64,9 +64,9 @@
   }
 }
 @media screen and (max-width: 550px) {
-    .toolbox__body__img__border-right {
-        transform: translate(0%, -12vmin);
-    }
+  .toolbox__body__img__border-right {
+    transform: translate(0%, -12vmin);
+  }
 }
 @media screen and (min-width: 800px) {
   .toolbox__header--font--size {
@@ -78,12 +78,12 @@
 }
 
 @font-face {
-  font-family: "bukra-bold";
-  src: local("bukra-bold"),
-    url(../../../../fonts/bukra-bold.OTF) format("truetype");
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'),
+    url(../../../../fonts/bukra-bold.OTF) format('truetype');
 }
 @font-face {
-  font-family: "bukra-regular";
-  src: local("bukra-regular"),
-    url(../../../../fonts/bukra-regular.OTF) format("truetype");
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../../../fonts/bukra-regular.OTF) format('truetype');
 }

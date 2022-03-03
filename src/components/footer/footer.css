@@ -1,87 +1,86 @@
 .footer-root {
-    padding: 2%;
-    background-color: whitesmoke;
-    color: white;
-    width: 100%;
-    -webkit-box-shadow:inset 0 5px 10px -8px #000000;
-box-shadow:inset 0 5px 10px -8px #000000;
+  padding: 2%;
+  background-color: whitesmoke;
+  color: white;
+  width: 100%;
+  -webkit-box-shadow: inset 0 5px 10px -8px #000000;
+  box-shadow: inset 0 5px 10px -8px #000000;
 }
 
 .footer-margin {
-    margin-left: 10%;
-    margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 20%;
 }
 
 .grid {
-    background-color: red;
-    word-wrap: break-word;
-    white-space: pre-line;
-    overflow:hidden; 
+  background-color: red;
+  word-wrap: break-word;
+  white-space: pre-line;
+  overflow: hidden;
 }
 
 .footer-logo {
-    /* background-color: darksalmon; */
-    /* height: 20vh !important; */
-    height: 100%;
-    margin: auto;
-    /* margin-right: ; */
+  /* background-color: darksalmon; */
+  /* height: 20vh !important; */
+  height: 100%;
+  margin: auto;
+  /* margin-right: ; */
 }
 
 .footer-logo-mob {
-    /* background-color: darksalmon; */
-    /* height: 20vh !important; */
-    width: 100%;
-    /* margin-right: ; */
+  /* background-color: darksalmon; */
+  /* height: 20vh !important; */
+  width: 100%;
+  /* margin-right: ; */
 }
 
 .footer-logo-base {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-height: 200px;
-    /* background-color: deepskyblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 200px;
+  /* background-color: deepskyblue; */
 }
 
 .footer-mob-text {
-    /* background-color: aqua; */
-    width: 100%;
-}
-
-
-@font-face {
-    font-family: 'bukra-bold';
-    src: local('bukra-bold'), url(../../fonts/bukra-bold.OTF) format('truetype');
+  /* background-color: aqua; */
+  width: 100%;
 }
 
 @font-face {
-    font-family: 'bukra-regular';
-    src: local('bukra-regular'), url(../../fonts/bukra-regular.OTF) format('truetype');
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'), url(../../fonts/bukra-bold.OTF) format('truetype');
+}
+
+@font-face {
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../fonts/bukra-regular.OTF) format('truetype');
 }
 
 .bukra-bold {
-    font-family: 'bukra-bold' !important;
+  font-family: 'bukra-bold' !important;
 }
 
 .bukra-regular {
-    font-family: 'bukra-regular' !important;
-    line-height: 150% !important;
+  font-family: 'bukra-regular' !important;
+  line-height: 150% !important;
 }
 
 .lspacing {
-    
-    line-height: 150% !important;
+  line-height: 150% !important;
 }
 
 .fblack {
-    color: black !important;
-    font-family: 'bukra-bold' !important;
+  color: black !important;
+  font-family: 'bukra-bold' !important;
 }
 
 .footer-grid-col {
-    /* background-color: salmon; */
-    text-align: left;
+  /* background-color: salmon; */
+  text-align: left;
 }
 .footer-link {
-    /* background-color: sandybrown; */
-    text-align: left !important;
+  /* background-color: sandybrown; */
+  text-align: left !important;
 }

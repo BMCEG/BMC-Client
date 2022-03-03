@@ -12,7 +12,7 @@
 .finance-accounting__title-font {
   color: black;
   background-color: #f8fafb;
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
   margin: auto !important;
 }
 .finance-accounting__banner {
@@ -34,7 +34,7 @@
   color: black;
   width: 100%;
   margin-left: 10% !important;
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
 }
 
 .finance-accounting__subtitle {
@@ -80,7 +80,7 @@
   margin-bottom: 2%;
 }
 .finance-accounting__body--text {
-  font-family: "bukra-regular" !important;
+  font-family: 'bukra-regular' !important;
   padding: 1%;
   font-size: 14px !important;
 }
@@ -97,7 +97,7 @@
 .finance-accounting__body--text--card--heading {
   text-align: left;
   color: white;
-  font-family: "bukra-bold" !important;
+  font-family: 'bukra-bold' !important;
 }
 .finance-accounting__img--base {
   text-align: center;
@@ -142,12 +142,12 @@
 }
 
 @font-face {
-  font-family: "bukra-bold";
-  src: local("bukra-bold"),
-    url(../../../../fonts/bukra-bold.OTF) format("truetype");
+  font-family: 'bukra-bold';
+  src: local('bukra-bold'),
+    url(../../../../fonts/bukra-bold.OTF) format('truetype');
 }
 @font-face {
-  font-family: "bukra-regular";
-  src: local("bukra-regular"),
-    url(../../../../fonts/bukra-regular.OTF) format("truetype");
+  font-family: 'bukra-regular';
+  src: local('bukra-regular'),
+    url(../../../../fonts/bukra-regular.OTF) format('truetype');
 }

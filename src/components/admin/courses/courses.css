@@ -1,141 +1,137 @@
 .admin-applications-root {
-    background-color: snow;
+  background-color: snow;
 }
 
 .course-create-root {
-    /* background-color: springgreen; */
+  /* background-color: springgreen; */
 }
 
 .course-create-base {
-    background-color: whitesmoke;
-    width: 75%;
-    margin: auto;
-    padding: 2%;
-    box-shadow: 1px 1px 10px black;
+  background-color: whitesmoke;
+  width: 75%;
+  margin: auto;
+  padding: 2%;
+  box-shadow: 1px 1px 10px black;
 }
 .trainer-create-base {
-    background-color: whitesmoke;
-    width: 75%;
-    margin: auto;
-    padding: 2%;
-    box-shadow: 1px 1px 10px black;
+  background-color: whitesmoke;
+  width: 75%;
+  margin: auto;
+  padding: 2%;
+  box-shadow: 1px 1px 10px black;
 }
 
 .course-create-form {
-    /* background-color: tan; */
-    display: flex;
-    justify-content: center;
-    /* margin: auto; */
+  /* background-color: tan; */
+  display: flex;
+  justify-content: center;
+  /* margin: auto; */
 }
 .trainer-create-form {
-    /* background-color: tan; */
-    display: flex;
-    justify-content: center;
-    /* margin: auto; */
+  /* background-color: tan; */
+  display: flex;
+  justify-content: center;
+  /* margin: auto; */
 }
 
 .trainer-create-form-left {
-    /* background-color: turquoise; */
-    width: 50%;
-    padding: 1%;
+  /* background-color: turquoise; */
+  width: 50%;
+  padding: 1%;
 }
 .course-create-form-left {
-    /* background-color: turquoise; */
-    width: 33%;
-    padding: 1%;
+  /* background-color: turquoise; */
+  width: 33%;
+  padding: 1%;
 }
 .trainer-create-form-right {
-    /* background-color: deeppink; */
-    width: 50%;
-    padding: 1%;
+  /* background-color: deeppink; */
+  width: 50%;
+  padding: 1%;
 }
 .course-create-form-right {
-    /* background-color: deeppink; */
-    width: 33%;
-    padding: 1%;
+  /* background-color: deeppink; */
+  width: 33%;
+  padding: 1%;
 }
 .course-create-form-center {
-    /* background-color:gold; */
-    width: 33%;
-    padding: 1%;
+  /* background-color:gold; */
+  width: 33%;
+  padding: 1%;
 }
 .course-create-form-schedules {
-    /* background-color: white; */
-    border-radius: 10px;
-    padding: 3%;
+  /* background-color: white; */
+  border-radius: 10px;
+  padding: 3%;
 }
 .course-create-form-btn {
-    width: 100%;
+  width: 100%;
 }
 
-
 .course-create-modal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .course-create-modal-body {
-    background-color: whitesmoke;
-    width: 70%;
-    margin: auto;
-    padding: 2%;
-    display: flex;
-    opacity: 1 !important;
+  background-color: whitesmoke;
+  width: 70%;
+  margin: auto;
+  padding: 2%;
+  display: flex;
+  opacity: 1 !important;
 }
 .course-create-modal-body-left {
-    /* background-color: maroon; */
-    width: 60%;
-    /* margin: auto; */
-    padding: 2%;
+  /* background-color: maroon; */
+  width: 60%;
+  /* margin: auto; */
+  padding: 2%;
 }
 .course-create-modal-body-right {
-    /* background-color: darkblue; */
-    width: 40%;
-    /* margin: auto; */
-    padding: 2%;
+  /* background-color: darkblue; */
+  width: 40%;
+  /* margin: auto; */
+  padding: 2%;
 }
 .course-create-weekdate-btn {
-    width: 60%;
-    margin: auto;
+  width: 60%;
+  margin: auto;
 }
 .course-create-weekdate-btn-base {
-    padding: 1%;
-    display: flex;
-    justify-content: center;
-    /* background-color: darkcyan; */
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  /* background-color: darkcyan; */
 }
 .trainer-btn-base {
-    padding: 1%;
-    display: flex;
-    justify-content: center;
-    /* background-color: darkcyan; */
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  /* background-color: darkcyan; */
 }
 .course-create-weekdate-base {
-    padding: 1%;
-    border-radius: 10px;
-    background-color: white;
-    border: 1px solid black;
-    /* background-color: gray; */
-
+  padding: 1%;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid black;
+  /* background-color: gray; */
 }
 .trainer-create-qualification {
-    padding: 1%;
-    margin: 1%;
-    border-radius: 10px;
-    background-color: white;
-    border: 1px solid black;
-    /* background-color: gray; */
-
+  padding: 1%;
+  margin: 1%;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid black;
+  /* background-color: gray; */
 }
 .course-create-schedule-base {
-    padding: 1%;
-    border-radius: 10px;
-    /* background-color: gray; */
-
+  padding: 1%;
+  border-radius: 10px;
+  /* background-color: gray; */
 }
 
-.admin-contacts-row-btn{
-    display: flex;
-    padding: 1%;
+.admin-contacts-row-btn {
+  display: flex;
+  padding: 1%;
 }
